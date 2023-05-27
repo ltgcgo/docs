@@ -1,0 +1,10 @@
+[book]
+authors = ["Lumière Élevé"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Lightingale Docs"
+
+# book.toml
+[output.html]
+site-url = "/"
