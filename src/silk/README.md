@@ -3,7 +3,7 @@ Silk is an attempt to unify timelines of the MLP fandom. It is achieved by mergi
 
 By bringing the MLP fandom on the Fediverse together, we attempt to make the Fediverse an appealing place for bronies and pegasisters alike, without any grip from a commercial entity. Find interesting people, discover content creators, anything is possible.
 
-Don't know what Fediverse is? [Read this introduction](https://www.littleshyfim.com/brony-mastodon) written by LittleshyFiM.
+Don't know what Fediverse is? [Read this explanation](https://www.littleshyfim.com/brony-mastodon) written by LittleshyFiM.
 
 Don't know which server to join? A list of servers is [available here](include.md#instances)!
 
