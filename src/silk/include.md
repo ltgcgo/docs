@@ -23,4 +23,4 @@ We're open to include more instances to the list. If you host an instance which 
 * Not a roleplay instance
 
 ## Manual account inclusion
-If your account isn't on any of the instances listed above, and said instance isn't mainly for the MLP community, you can follow the [hook account](https://equestria.social/@silk) to get yourself included manually. The hook account may also follow some accounts to have the same effect.
+If your account isn't on any of the instances listed above, and said instance isn't mainly for the MLP community, you can follow the [hook account](https://equestria.social/@silk) to get yourself included manually. The hook account may also follow some accounts to have the same effect, mainly when said accounts do not have the ability to follow anyone (e.g. [Equestria Daily](https://pony.social/@equestriadaily@bird.im-in.space)).
