@@ -11,7 +11,7 @@ To put it simply, please stop using a VPN to access us.
 If you're familiar with accessing services hosted on mixnets, you can access our services [via alternative means](https://ltgc.cc/about.htm#access). Or if you don't want to go through the hassle, please disconnect from your VPN, and if you have access to either exit/outproxy-enabled mixnet (e.g. [Tor](https://torproject.org/), [I2P](https://geti2p.net/) (if you are comfortable with command line, we recommend using [I2Pd](https://i2pd.website) instead), [Lokinet](https://lokinet.org) or encrypted proxies, use them instead.
 
 ### What if I'm blocked wrongly?
-Within 18 hours, please [contact us](https://ltgc.cc/about.htm) and provide your Cloudflare Ray ID. After we've verified that you are indeed not connected from a VPN, you'll be unblocked as soon as possible.
+Within 18 hours, please [contact us](https://ltgc.cc/about.htm) and provide your Cloudflare Ray ID. After we've verified that you did indeed not connect from a VPN, you'll be unblocked as soon as possible.
 
 ### Could you stop blocking VPNs?
 No.
