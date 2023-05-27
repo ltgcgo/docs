@@ -11,3 +11,4 @@
 - [About](silk/README.md)
   - [Inclusion](silk/include.md)
   - [Moderation](silk/mod.md)
+  - [Usage](silk/use.md)

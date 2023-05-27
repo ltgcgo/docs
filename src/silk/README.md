@@ -3,3 +3,4 @@ Silk is an attempt to unify timelines of the MLP fandom. It is achieved by mergi
 
 * [Inclusion](silk/include.md)
 * [Moderation](silk/mod.md)
+* [Usage](silk/use.md)
