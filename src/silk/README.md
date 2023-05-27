@@ -15,13 +15,13 @@ Don't know which server to join? A list of servers is [available here](include.m
 The list of servers to merge timelines can be customized, while moderation on specific users are implemented with existing Mastodon features. Accounts muted by the hook account are excluded from any self-service exemptions, while ones blocked by the hook account are excluded from the timeline altogether.
 
 ## Hook accounts
-The main hook account is used for storing moderation information. Other instances usually do not need a hook account to be set up to read the local timeline.
+The primary hook account is used for storing moderation information. Other instances usually do not need a hook account to be set up to read the local timeline.
 
 Not every instance has its public timeline open to everyone though. As such, additional hook accounts are required on these instances.
 
 Below is the list of hook accounts.
 
-* [@silk@equestria.social](https://equestria.social/@silk)
+* [@silk@equestria.social](https://equestria.social/@silk) (primary)
 * [@silk@social.inex.rocks](https://social.inex.rocks/@silk)
 
 ## Open Source
