@@ -1,6 +1,20 @@
 # Silk
 Silk is an attempt to unify timelines of the MLP fandom. It is achieved by merging all public timelines of instances with Mastodon-compatible APIs, and accounts that followed this account if on other instances. To avoid stressing tracked servers and accounts, WebSocket and SSE connections are utilized whenever possible, with caches enforced.
 
-* [Inclusion](silk/include.md)
-* [Moderation](silk/mod.md)
-* [Usage](silk/use.md)
+By bringing the MLP fandom on the Fediverse together, we attempt to make the Fediverse an appealing place for bronies and pegasisters alike, without any grip from a commercial entity. Find interesting people, discover content creators, anything is possible.
+
+Don't know what Fediverse is? [Read this introduction](https://www.littleshyfim.com/brony-mastodon) written by LittleshyFiM.
+
+Don't know which server to join? A list of servers is [available here](include.md#instances)!
+
+* [Inclusion](include.md): What's included in the timeline, and which server to join.
+* [Moderation](mod.md): How we moderate the merged timeline.
+* [Usage](use.md): How to use Silk.
+
+## Technical implementation
+The list of servers to merge timelines can be customized, while moderation on specific users are implemented with existing Mastodon features. Accounts muted by the hook account are excluded from any self-service exemptions, while ones blocked by the hook account are excluded from the timeline altogether.
+
+## Open Source
+Silk is a piece of open source software, licensed under GNU AGPL 3.0 or later.
+
+If ready for public use, source code would be available on [GitHub](https://github.com/ltgcgo/silk/).
