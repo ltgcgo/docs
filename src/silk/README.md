@@ -1,5 +1,5 @@
 # Silk
-Silk is an attempt to unify timelines of the MLP fandom. It is achieved by merging all public timelines of instances with Mastodon-compatible APIs, and accounts that followed this account if on other instances. To avoid stressing tracked servers and accounts, WebSocket and SSE connections are utilized whenever possible, with caches enforced.
+Silk is an attempt to unify timelines of the MLP fandom on the Fediverse. It is achieved by merging all public timelines of instances with Mastodon-compatible APIs, and accounts that followed this account if on other instances. To avoid stressing tracked servers and accounts, WebSocket and SSE connections are utilized whenever possible, with caches enforced.
 
 By bringing the MLP fandom on the Fediverse together, we attempt to make the Fediverse an appealing place for bronies and pegasisters alike, without any grip from a commercial entity. Find interesting people, discover content creators, anything is possible.
 
