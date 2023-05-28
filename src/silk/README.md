@@ -21,8 +21,8 @@ Not every instance has its public timeline open to everyone though. As such, add
 
 Below is the list of hook accounts.
 
-* [@silk@equestria.social](https://equestria.social/@silk) (primary)
-* [@silk@social.inex.rocks](https://social.inex.rocks/@silk)
+* <a rel="me" href="https://equestria.social/@silk">@silk@equestria.social</a> (primary)
+* <a rel="me" href="https://social.inex.rocks/@silk">@silk@social.inex.rocks</a>
 
 ## Open Source
 Silk is a piece of open source software, licensed under GNU AGPL 3.0 or later.
