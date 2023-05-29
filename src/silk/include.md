@@ -15,7 +15,7 @@ The following instances have posts' content warning set as-is.
 
 ### CW by default
 Due to differences of the server rules, all of the following instances have posts' content warning enabled by default to comply the [moderation rules](mod.md).
-* [Pone.Social](https://pone.social)
+* ~~[Pone.Social](https://pone.social)~~ (removed due to technical difficulties on their side)
 
 ## Requesting instance inclusion
 We're open to include more instances to the list. If you host an instance which satisfies the following criteria, please [contact us](https://ltgc.cc/about.htm) to have your instance included.
