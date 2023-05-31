@@ -2,10 +2,10 @@
 
 [Home](README.md)
 
-# Moderation
-- [Moderation](mod/README.md)
-  - [Privacy policy](mod/privacy-policy.md)
-  - [Access denial](mod/access-denial.md)
+# Lightingale Community
+- [Affairs](ltgc/README.md)
+  - [Privacy policy](ltgc/privacy-policy.md)
+  - [Access denial](ltgc/access-denial.md)
 
 # Projects
 - [Silk](silk/README.md)

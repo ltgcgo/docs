@@ -4,7 +4,12 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Lightingale Docs"
+description = "The master documentation of the Lightingale Community."
 
-# book.toml
+[build]
+build-dir = "book"
+
 [output.html]
 site-url = "/"
+default-theme = "coal"
+preferred-dark-theme = "ayu"
