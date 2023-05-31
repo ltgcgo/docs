@@ -1,4 +1,4 @@
-# API
+# Silk API
 ## Endpoints
 
 ## Data structure
