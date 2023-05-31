@@ -1,4 +1,4 @@
-# Inclusion
+# Content Inclusion
 ## Instances
 Silk will attempt to merge public timelines on all servers listed below.
 

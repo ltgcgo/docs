@@ -1,4 +1,4 @@
-# Moderation
+# Timeline Moderation
 To grant as many members in the MLP community a pleasant experience as possible, we are enforcing a series of moderation rules on the merged timeline. The rules may change without prior notice, but we try our best to keep everyone notified.
 
 ## Instance auto-CW

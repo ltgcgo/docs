@@ -27,7 +27,7 @@ Data of an example post is shown below.
 	"card": null,
 	"poll": {
 		"id": "49940",
-		"atExpire": "2023-05-31T19:10:45.796Z",
+		"atExpire": 1685560245796,
 		"expired": false,
 		"multiple": false,
 		"sumVote": 0,
