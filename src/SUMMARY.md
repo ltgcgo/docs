@@ -11,4 +11,5 @@
 - [Silk](silk/README.md)
   - [Inclusion](silk/include.md)
   - [Moderation](silk/mod.md)
+  - [API](silk/api.md)
   - [Usage](silk/use.md)
