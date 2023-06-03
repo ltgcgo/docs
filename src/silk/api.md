@@ -36,7 +36,7 @@ Sents `EventWrapper` objects regardless of connection type.
 ```
 
 ### `Post`
-Except for `post.card` and properties shown as `null` here, the data structure of `Post` objects have been pinned down.
+Except for `Post.card` and properties shown as `null` here, the data structure of `Post` objects have been pinned down.
 
 Data of an example post is shown below.
 
