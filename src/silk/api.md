@@ -89,7 +89,7 @@ Data of an example post is shown below.
 	"boost": null,
 	"app": {
 		"name": "Web",
-		"site": null
+		"site": "https://joinmastodon.org/"
 	},
 	"user": {
 		"id": "109524364471531266",
