@@ -1,8 +1,41 @@
 # Silk API
+All APIs are assumed to be hosted at [api.ltgc.cc](https://api.ltgc.cc/) if without further clarification.
+
 ## Endpoints
+### `GET /nr/silk/servers`
+Grab a list of included servers, along with their auto-CW status.
+
+Returns an array of `Server` objects.
+
+### `GET /nr/silk/timeline`
+Fetches a list of posts already stored on the server.
+
+Returns an array of `Post` objects.
+
+### `WS/SSE /rt/silk/timeline`
+If there are changes made to the timeline, this endpoint will push such changes to the clients.
+
+Sents `EventWrapper` objects regardless of connection type.
 
 ## Data structure
-### Posts
+### `EventWrapper`
+```json
+{
+	"event": <String>, // "set", "delete"
+	"data": <Post>
+}
+```
+
+### `Server`
+```json
+{
+	"domain": "example.com",
+	"cw": false,
+	"active": true
+}
+```
+
+### `Post`
 Data of an example post is shown below.
 ```json
 {
