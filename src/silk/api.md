@@ -21,8 +21,8 @@ Sents `EventWrapper` objects regardless of connection type.
 ### `EventWrapper`
 ```json
 {
-	"event": <String>, // "set", "delete"
-	"data": <Post>
+	"event": <String>, // "set", "delete", "ack"
+	"data": <Post|String|null>
 }
 ```
 
@@ -36,7 +36,10 @@ Sents `EventWrapper` objects regardless of connection type.
 ```
 
 ### `Post`
+Except for `post.card` and properties shown as `null` here, the data structure of `Post` objects have been pinned down.
+
 Data of an example post is shown below.
+
 ```json
 {
 	"id": "110464545243574580",
