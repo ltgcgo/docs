@@ -9,7 +9,8 @@ Don't know which server to join? A list of servers is [available here](include.m
 
 * [Inclusion](include.md): What's included in the timeline, and which server to join.
 * [Moderation](mod.md): How we moderate the merged timeline.
-* [Usage](use.md): How to use Silk.
+* [Usage](use.md): How to use Silk Web.
+* [API](api.md): How to use Silk API.
 
 ## Technical implementation
 The list of servers to merge timelines can be customized, while moderation on specific users are implemented with existing Mastodon features. Accounts muted by the hook account are excluded from any self-service exemptions, while ones blocked by the hook account are excluded from the timeline altogether.
