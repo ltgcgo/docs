@@ -4,7 +4,7 @@ To grant as many members in the MLP community a pleasant experience as possible,
 The rules are set on the basis of least intervention. They may change without prior notice, but we try our best to keep everyone notified.
 
 ## Account exclusion
-Accounts matching any criteria below will get your account excluded from the merged timeline altogether.
+Accounts matching any criteria below will be excluded from the merged timeline altogether.
 
 * Nearly always advertise presence on other platforms without mingling on the Fediverse
 * Vent account
