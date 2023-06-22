@@ -16,7 +16,7 @@ We prepared for r/place in advance this year, but with multi-account and automat
 ## When is it expected to happen?
 On 23rd June 2023, Reddit's anniversary before its IPO. The exact time may vary, but it is rumored to happen at around 13:00 UTC.
 
-## How do I participate?
+## How do I participate as a My Little Pony fan?
 Lucky for us, a group of enthusiastic bronies established a faction before r/place even began, which became the main MLP faction of r/place 2023. But unlucky for us, said faction recently got splintered.
 
 ## Why the splinter?
@@ -24,7 +24,24 @@ The initial trigger was [an announcement on 18th June](https://discord.com/chann
 
 The ban alone did directly result in the creation of a faction, but it was a series of indications and later dealings sending the splinter onto a seemingly irreversible course: lack of transparency regarding joining the alliance, single parties meddling and forced the join, reluctance of communication regarding multi-account and automated pixel placement, with certain mods outright shunning and diverting arguments, all while removing downvotes on that specific announcement. All these enraged some parties, setting the splinter in stone.
 
+The current splinter does not dwindle the firepower MLP as a whole possesses, as both use the very same template.
+
 ## What about the pros and cons of automated pixel placements?
+### Pros
+* Relatively low resource consumption, good for low-end devices
+* Does not require you to stare at a screen and clicking your mouse for hours end
+  * Does not hinder you from your work
+  * Allows you to sleep as usual
+
+### Cons
+* If only with automated placements, one cannot experience the event to its fullest
+* Shamed by some people
+* "Does not believe in friendship"
+
+## How do existing implementations of automation fit?
+* **Browser overlay**: Auto-clicker is removed, and tab freeze circumvention becomes borked. Auto-focus and automatic colour picking still exist, but every pixel placement now requires user interactions.
+* **PonyPixel** (Python headless): Retired.
+* **Painted Palette** (JavaScript headless): A seperate manual-only mode is planned, but is largely unhindered.
 
 ## How should I join the factions?
 With the main faction prohibited discussions regarding several topics, the splintered-off faction offers a supplemental and more libre place where said topics are likely not forbidden. If you are fine with all the bureaucracy issues in the main faction, and agrees to stare at a screen for hours to place every single pixel manually, you can join the main faction. Otherwise, join the splintered-off faction.
@@ -32,7 +49,7 @@ With the main faction prohibited discussions regarding several topics, the splin
 ## Invite links
 Since Painted Palette by itself is a somewhat independent project, it has an additional place for dev talks unrelated to the splinter.
 
-* Secret r/place Brownies (splintered-off): [https://discord.gg/Nhf8HrWAku](https://discord.gg/Nhf8HrWAku)
+* Secret r/place Brownies (the splintered-off faction): [https://discord.gg/Nhf8HrWAku](https://discord.gg/Nhf8HrWAku)
 * Sky Splash's Island: [https://discord.gg/ZnU6sgDT](https://discord.gg/ZnU6sgDT)
 * Independent Painted Palette dev talks: [Discord topic](https://discord.com/channels/610559048387133515/1118853359668035605)
 * Main faction: `https://discord.gg/BronyPlace`
