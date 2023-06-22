@@ -9,7 +9,7 @@ r/place is a piece of social experiment run by Reddit, where every participant g
 With only the power of a single person, not much could be created. However, with the power of factions, there's no such thing as "impossible"!
 
 ## Why should I participate?
-Although r/place isn't an annual event, Reddit held r/place last year (2022) also. And last year, we suffered countless dozens of raids, most of them lost due to a lack of firepower, and were able to recover solely due to attackers went inactive, either sleeping or recess between raids. We hope we could stop the same from happening again.
+Although r/place isn't an annual event, Reddit held r/place last year (2022) also. And last year, we suffered countless dozens of raids, most of them lost due to a lack of firepower, and were able to recover solely because attackers went inactive eventually, either due to sleeping or due to recess between raids. We hope we could stop the same from happening again.
 
 We prepared for r/place in advance this year, but with multi-account and automated pixel placement banned in the main faction, all while protests regarding Reddit APIs going in full swing, the expected firepower looks even dimmer. Despite the ongoing Reddit API fiasco, we desperately need everyone we can hopefully get, to extend our firepower as much as possible for all possible defense. **Please consider participating the event!**
 
