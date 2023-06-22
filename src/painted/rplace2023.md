@@ -44,7 +44,7 @@ The current splinter does not dwindle the firepower MLP as a whole possesses, as
 * **Painted Palette** (JavaScript headless): A seperate manual-only mode is planned, but is largely unhindered.
 
 ## How should I join the factions?
-With the main faction prohibited discussions regarding several topics, the splintered-off faction offers a supplemental and more libre place where said topics are likely not forbidden. If you are fine with all the bureaucracy issues in the main faction, and agrees to stare at a screen for hours to place every single pixel manually, you can join the main faction. Otherwise, join the splintered-off faction.
+With the main faction prohibited discussions regarding several topics, the splintered-off faction offers a supplemental and more libre place where said topics are likely not forbidden. If you are fine with all the bureaucracy issues in the main faction, and agrees to stare at a screen for hours to place every single pixel manually, you can join the main faction. Otherwise, joining the splintered-off faction is much recommended.
 
 ## Invite links
 Since Painted Palette by itself is a somewhat independent project, it has an additional place for dev talks unrelated to the splinter.
