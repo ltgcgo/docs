@@ -33,6 +33,8 @@ For more advanced usage, please refer to [command line](cli.md) docs.
 > Node.js does not respect proxy settings. If proxies are needed, switch to Deno instead.
 
 * Run `./palette-bot batch`, and click on the link it provides.
+* Do you have Tor installed on your system? If yes and you're using Deno, run `./palette-tor batch` to use it without the tedious configuration process!
+* Are you running Painted Palette with Deno on Linux? If yes, run `./palette-proxy batch` to connect to public proxy pools with ease!
 
 ## Open Source
 Painted Palette is a piece of open-source software, licensed under GNU GPL 3.0.
