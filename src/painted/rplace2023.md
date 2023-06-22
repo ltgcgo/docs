@@ -4,7 +4,7 @@ _Written on 22nd June 2023_
 You know the drill: r/place 2023 is coming. So we prepared a list of FAQs, for you as a brony/pegasister to bootstrap your knowledge!
 
 ## What is r/place?
-r/place is a piece of social experiment run by Reddit, where every participant gets to place coloured pixels with a defined cooldown. With itself categorized as a form of "pixel battle", it is by far the largest pixel battle held across the globe.
+r/place is a social experiment run by Reddit, where every participant gets to place coloured pixels with a defined cooldown. With itself categorized as a form of "pixel battle", it is by far the largest pixel battle held across the globe.
 
 With only the power of a single person, not much could be created. However, with the power of factions, there's no such thing as "impossible"!
 
