@@ -39,7 +39,7 @@ The current splinter does not dwindle the firepower MLP as a whole possesses, as
 * "Does not believe in friendship"
 
 ## How do existing implementations of automation fit?
-* **Browser overlay**: Auto-clicker is removed, and tab freeze circumvention becomes borked. Auto-focus and automatic colour picking still exist, but every pixel placement now requires user interactions.
+* **Browser overlay**: Auto-clicker is removed, and tab freeze circumvention became borked. Auto-focus and automatic colour picking still exist, but every pixel placement now requires user interactions.
 * **PonyPixel** (Python headless): Retired.
 * **Painted Palette** (JavaScript headless): A seperate manual-only mode is planned, but is largely unhindered.
 
