@@ -6,7 +6,6 @@ To see a list of active projects not included here, feel free to visit the [proj
 Site powered by [mdBook](https://github.com/rust-lang/mdBook).
 
 ## Projects
-### JavaScript
 * [Bread](/bread/)
 * [Ditzy](/ditzy/)
 * [Eclipsed](/eclipsed/)

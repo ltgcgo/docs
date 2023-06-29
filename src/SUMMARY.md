@@ -8,12 +8,14 @@
   - [Access denial](ltgc/access-denial.md)
 
 # Projects
+- [Ditzy](ditzy/README.md)
+  - [Binary encoding format](ditzy/binfmt.md)
+- [Painted Palette](painted/README.md)
+  - [Web UI](painted/web.md)
+  - [Command line](painted/cli.md)
+  - [r/place 2023](painted/rplace2023.md)
 - [Silk](silk/README.md)
   - [Inclusion](silk/include.md)
   - [Moderation](silk/mod.md)
   - [API](silk/api.md)
   - [Usage](silk/use.md)
-- [Painted Palette](painted/README.md)
-  - [Web UI](painted/web.md)
-  - [Command line](painted/cli.md)
-  - [r/place 2023](painted/rplace2023.md)
