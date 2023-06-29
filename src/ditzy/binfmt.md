@@ -1,6 +1,7 @@
 # Binary encoding format
 ## Concepts
 ### Meek
+Originally, Meek is a technique emulating stateful connections over HTTP, utilized by Tor for its pluggable transports. It is now generalized to refer to any technique reconstructing stateful connections, regardless of the statefulness of underlying transport.
 
 ### MIDI
 MIDI is a standard for real-time communication between devices. It's originally designed for musical instruments, but has found its places in other fields requiring synchronization and/or automation as well, such as stage lighting systems.
@@ -22,6 +23,7 @@ Examples below.
 | 7    | `ad41296` | `00001010`<br/>`11010100`<br/>`00010010`<br/>`10010110` | `11010110`<br/>`11010000`<br/>`10100101`<br/>`00010110` | `d6d0a516` |
 
 ### QUIC
+QUIC is a general-purpose transport running on top of UDP, seeking to be a replacement over traditional TCP. It offers various advantages over traditional TCP, with the most notable ones being seamless connection migration and reduced communication latency.
 
 ## Specification
 ### Structure
