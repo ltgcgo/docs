@@ -52,5 +52,7 @@ IDs between `0` (`0x00`) and `31` (`0x1f`) are reserved for core functionalities
 | 3 | Jump |
 | 4 | Full message send |
 | 5 | Message acknowlege |
-| 6 | Feature enable |
-| 7 | Feature disable |
+| 6 | Error |
+| 7 | Implementation exclusive |
+| 8 | Partial message send |
+| 9 | Partial message send complete |
