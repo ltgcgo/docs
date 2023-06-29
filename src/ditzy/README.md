@@ -1,7 +1,7 @@
 # Ditzy
 Ditzy is a transport-agnostic universal multi-message encoding scheme, allowing stateful bidirectional communications regardless of the statefulness of the underlying transport. With the state of the reconstructed tunnel fully decoupled from the underlying transport, possibilities are endless.
 
-This project is a combination of [Tor HTTP Meek](https://gitweb.torproject.org/pluggable-transports/meek.git/), [MIDI 1.0](https://midi.org/specifications/midi1-specifications) and [QUIC](https://quicwg.org/).
+This project is inspired by [Tor HTTP Meek](https://gitweb.torproject.org/pluggable-transports/meek.git/), [MIDI 1.0](https://midi.org/specifications/midi1-specifications) and [QUIC](https://quicwg.org/).
 
 💌 Feel your messages delivered safely by your trustworthy Ponyvillan mailmare!
 
