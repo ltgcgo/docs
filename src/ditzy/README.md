@@ -9,7 +9,7 @@ The first draft was written on 18th Nov 2021, with the next iteration on 5th Feb
 
 ## Use cases
 * Bidirectional communication through incapable infrastructure (e.g. CDNs, request reflectors)
-* Seamless connection migration
+* Seamless connection migration on connection losses and IP changes
 * Replacing QUIC where UDP communication is not feasible
 * Connection multiplexing
 * Connection splitting
