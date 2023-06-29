@@ -17,6 +17,7 @@ The first draft was written on 18th Nov 2021, with the next iteration on 5th Feb
 
 ## Specifications
 * [Binary encoding format](binfmt.md)
+* [Recommended general implementation](generic.md)
 * [Recommended implementation over HTTP](http.md)
 * [Recommended implementation over DNS](dns.md)
 
