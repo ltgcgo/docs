@@ -10,8 +10,7 @@ The following instances have posts' content warning set as-is.
 * [Our Town](https://our-town.social)
 * [Mastopon](https://pon.ee)
 * [Ponies on Mastodon](https://pony.social)
-* [social.inex.rocks](https://social.inex.rocks)
-* [BronyFurry Mastodon](https://mstdn.bronyfurry.com)
+* ~~social.inex.rocks~~ (closed due to Russian censorship)
 
 ### CW by default
 Due to differences of the server rules, all of the following instances have posts' content warning enabled by default to comply the [moderation rules](mod.md).
