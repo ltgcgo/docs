@@ -3,7 +3,7 @@ _Written on 22nd June 2023_
 
 > **Warning**
 > 
-> r/place 2023 did not happen.
+> r/place 2023 did not happen _on 1st April or 23rd June_.
 
 You know the drill: r/place 2023 is coming. So we prepared a list of FAQs, for you as a brony/pegasister to bootstrap your knowledge!
 
