@@ -1,14 +1,14 @@
 # Command line
 The Windows build does not ship with a helper like `./palette-bot `. As such, please replace `./palette-bot ` with `deno run --allow-read --allow-write --allow-net `.
 
-If you need to specify custom proxies, define the `https_proxy` environment variable (e.g. `https_proxy=http://127.0.0.1:4444/`). On Linux with Deno, there are direct proxy integrations available, which can be used by replacing `./palette-bot ` with either `./palette-proxy ` for public proxy pools, or `./palette-tor ` for Tor.
+If you need to specify custom proxies, define the `https_proxy` environment variable (e.g. `https_proxy=http://127.0.0.1:4444/`). On Linux with Deno or Bun, there are direct proxy integrations available, which can be used by replacing `./palette-bot ` with either `./palette-proxy ` for public proxy pools, or `./palette-tor ` for Tor.
 
 ## Environment variables
 * `HTTP_PROXY`: Used by Deno and Bun to connect to upstream proxies.
 * `HTTPS_PROXY`: Same as above. Must be the same as `HTTP_PROXY`.
 * `NO_UPDATE`: Set to `1` to disable the automatic updater.
 * `PORT`: Set the listening port.
-* `SLEEP`: If not a false value, PP will behave as if `./palette-bot ctl sleep` is run.
+* `SLEEP`: Set to `1` to behave as if `./palette-bot ctl sleep` is run.
 
 ## `./palette-bot help`
 Prints help messages.
