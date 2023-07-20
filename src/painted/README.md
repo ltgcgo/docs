@@ -40,6 +40,11 @@ For more advanced usage, please refer to [command line](cli.md) docs.
 * Open a terminal session where `gui.cmd` is located.
 * Run with `.\deno.exe run --allow-read --allow-write --allow-net --allow-env deno.js <arguments>`.
 
+### Podman/Docker
+* Clone the repo via `git clone https://github.com/ltgcgo/painted-palette.git palette`.
+* Switch into `oci` via `cd ./palette/oci`.
+* Run `docker-compose up -d` if on Docker, or `podman-compose up -d` if on Podman.
+
 ## Open Source
 Painted Palette is a piece of open-source software, licensed under GNU GPL 3.0.
 
