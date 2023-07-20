@@ -7,7 +7,7 @@ If you need to specify custom proxies, define the `https_proxy` environment vari
 * `HTTP_PROXY`: Used by Deno and Bun to connect to upstream proxies.
 * `HTTPS_PROXY`: Same as above. Must be the same as `HTTP_PROXY`.
 * `NO_UPDATE`: Set to `1` to disable the automatic updater.
-* `PORT`: Set the listening port.
+* `PORT`: Set the port PP listens for REST API calls. Used in `./palette-bot ctl`.
 * `SLEEP`: Set to `1` to behave as if `./palette-bot ctl sleep` is run.
 
 ## `./palette-bot help`
