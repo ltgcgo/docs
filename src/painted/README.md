@@ -23,7 +23,7 @@ If you're up for the task, feel free to contribute, and expand our horizon of OS
 
 For more advanced usage, please refer to [command line](cli.md) docs.
 
-### Windows (Web UI only)
+### Windows (default GUI only)
 * Double-click `gui.cmd`, and click on the link it provides.
   * If the browser displays an error page, run `winFix.cmd` first, then restart `gui.cmd` to see if the problem goes away.
 
@@ -35,6 +35,10 @@ For more advanced usage, please refer to [command line](cli.md) docs.
 * Run `./palette-bot batch`, and click on the link it provides.
 * Do you have Tor installed on your system? If yes and you're using Deno, run `./palette-tor batch` to use it without the tedious configuration process!
 * Are you running Painted Palette with Deno on Linux? If yes, run `./palette-proxy batch` to connect to public proxy pools with ease!
+
+### Windows (CLI)
+* Open a terminal session where `gui.cmd` is located.
+* Run with `.\deno.exe run --allow-read --allow-write --allow-net --allow-env deno.js <arguments>`.
 
 ## Open Source
 Painted Palette is a piece of open-source software, licensed under GNU GPL 3.0.
