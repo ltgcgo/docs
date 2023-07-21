@@ -4,6 +4,10 @@ Painted Palette is a headless bot implemented purely in JavaScript, which helps 
 If the codebase isn't modified, in auto mode, Painted Palette runs on a defensive stance by default - as long as pixels covered by the template aren't badly damaged, it barely activates. If in manual mode, Painted Palette only places pixels when the user commands or schedules a pixel placement.
 
 ## Installation
+> **Warning**
+> 
+> Node.js does not support proxies, but it is currently the only viable option.
+
 With an acceptable Internet connection, the whole installation process should not take more than 20 seconds. On POSIX systems, the figure is even lower.
 
 If you're up for the task, feel free to contribute, and expand our horizon of OS support!
