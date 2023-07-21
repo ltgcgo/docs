@@ -1,7 +1,7 @@
 # Command line
-The Windows build does not ship with a helper like `./palette-bot `. As such, please replace `./palette-bot ` with `deno run --allow-read --allow-write --allow-net `.
+The Windows build does not ship with a helper like `./palette-bot `. As such, please replace `./palette-bot ` with `node node.js ` or `deno run --allow-read --allow-write --allow-net deno.js `.
 
-If you need to specify custom proxies, define the `https_proxy` environment variable (e.g. `https_proxy=http://127.0.0.1:4444/`). On Linux with Deno or Bun, there are direct proxy integrations available, which can be used by replacing `./palette-bot ` with either `./palette-proxy ` for public proxy pools, or `./palette-tor ` for Tor.
+With Deno or Bun, if you need to specify custom proxies, define the `https_proxy` environment variable (e.g. `https_proxy=http://127.0.0.1:4444/`). There are direct proxy integrations available on Linux and Android, which can be used by replacing `./palette-bot ` with either `./palette-proxy ` for public proxy pools, or `./palette-tor ` for Tor.
 
 ## Environment variables
 * `HTTP_PROXY`: Used by Deno and Bun to connect to upstream proxies.
