@@ -9,6 +9,7 @@ If you need to specify custom proxies, define the `https_proxy` environment vari
 * `NO_UPDATE`: Set to `1` to disable the automatic updater.
 * `PORT`: Set the port PP listens for REST API calls. Used in `./palette-bot ctl`.
 * `SLEEP`: Set to `1` to behave as if `./palette-bot ctl sleep` is run.
+* `TEMPLATE_URL`: Customize the pointer URL.
 
 ## `./palette-bot help`
 Prints help messages.
