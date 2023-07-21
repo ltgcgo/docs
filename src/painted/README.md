@@ -6,7 +6,7 @@ If the codebase isn't modified, in auto mode, Painted Palette runs on a defensiv
 ## Installation
 > **Warning**
 > 
-> Node.js does not support proxies, but it is currently the only viable option.
+> Node.js on Windows does not respect proxy settings. If proxies are needed, switch to Deno instead.
 
 With an acceptable Internet connection, the whole installation process should not take more than 20 seconds. On POSIX systems, the figure is even lower.
 
@@ -33,9 +33,6 @@ For more advanced usage, please refer to [command line](cli.md) docs.
   * If the browser displays an error page, run `winFix.cmd` first, then restart `gui.cmd` to see if the problem goes away.
 
 ### Linux, Android, macOS
-> **Warning**
-> 
-> Node.js does not respect proxy settings. If proxies are needed, switch to Deno instead.
 
 * Run `./palette-bot batch`, and click on the link it provides.
 * Do you have Tor installed on your system? If yes and you're using Deno, run `./palette-tor batch` to use it without the tedious configuration process!
