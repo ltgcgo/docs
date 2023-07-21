@@ -9,12 +9,13 @@ With an acceptable Internet connection, the whole installation process should no
 If you're up for the task, feel free to contribute, and expand our horizon of OS support!
 
 ### Windows
-1. Download the latest version of [`deno_windows.zip`](https://github.com/ltgcgo/painted-palette/releases/latest/download/deno_windows.zip).
-2. Extract `deno_windows.zip` to an appropriate folder of your liking.
+1. Download the latest version of [`node_windows.zip`](https://github.com/ltgcgo/painted-palette/releases/latest/download/node_windows.zip).
+2. Extract `node_windows.zip` to an appropriate folder of your liking.
 
 ### Linux, Android, macOS
 1. Ensure `bash`, `curl` and `unzip` are available.
-2. Run `bash <(curl -Ls https://github.com/ltgcgo/painted-palette/raw/main/src/bash/install.sh)`.
+2. Assign `export VARIANT=node`.
+3. Run `bash <(curl -Ls https://github.com/ltgcgo/painted-palette/raw/main/src/bash/install.sh)`.
 
 ## Running
 > **Warning**
@@ -24,7 +25,7 @@ If you're up for the task, feel free to contribute, and expand our horizon of OS
 For more advanced usage, please refer to [command line](cli.md) docs.
 
 ### Windows (default GUI only)
-* Double-click `gui.cmd`, and click on the link it provides.
+* Double-click `webui.cmd`, and click on the link it provides.
   * If the browser displays an error page, run `winFix.cmd` first, then restart `gui.cmd` to see if the problem goes away.
 
 ### Linux, Android, macOS
@@ -37,8 +38,8 @@ For more advanced usage, please refer to [command line](cli.md) docs.
 * Are you running Painted Palette with Deno on Linux? If yes, run `./palette-proxy batch` to connect to public proxy pools with ease!
 
 ### Windows (CLI)
-* Open a terminal session where `gui.cmd` is located.
-* Run with `.\deno.exe run --allow-read --allow-write --allow-net --allow-env deno.js <arguments>`.
+* Open a terminal session where `webui.cmd` is located.
+* Run with `.\node.exe node.js <arguments>`.
 
 ### Podman/Docker
 * Clone the repo via `git clone https://github.com/ltgcgo/painted-palette.git palette`.
