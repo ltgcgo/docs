@@ -3,6 +3,13 @@ Painted Palette is a headless bot implemented purely in JavaScript, which helps 
 
 If the codebase isn't modified, in auto mode, Painted Palette runs on a defensive stance by default - as long as pixels covered by the template aren't badly damaged, it barely activates. If in manual mode, Painted Palette only places pixels when the user commands or schedules a pixel placement.
 
+## Features
+* Extremely fast to build, fast and easy to deploy for anyone. IT prowness is not a problem.
+* No dependency compiling before running.
+* Fully-unattended automated updates.
+* Relatively low on resources.
+* Native support for multi-account deployments. (less than 10 per IP address)
+
 ## Installation
 > **Warning**
 > 
