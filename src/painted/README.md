@@ -29,7 +29,7 @@ If you're up for the task, feel free to contribute, and expand our horizon of OS
 For more advanced usage, please refer to [command line](cli.md) docs.
 
 ### Windows (default GUI only)
-* Double-click `webui.cmd`, and click on the link it provides.
+* Double-click `webui.cmd`, and click on the link it provides. Should point to <a target="_blank" href="http://127.0.0.1:14514/">127.0.0.1:14514</a> by default.
   * If the browser displays an error page, run `winFix.cmd` first, then restart `gui.cmd` to see if the problem goes away.
 
 ### Linux, Android, macOS
