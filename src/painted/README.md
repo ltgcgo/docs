@@ -26,7 +26,8 @@ If you're up for the task, feel free to contribute, and expand our horizon of OS
 ### Linux, Android, macOS
 1. Ensure `bash`, `curl` and `unzip` are available.
 2. Assign `export VARIANT=node`.
-3. Run `bash <(curl -Ls https://github.com/ltgcgo/painted-palette/raw/main/src/bash/install.sh)`.
+3. Make sure you have either Node.js 18 or Node.js 19 installed.
+4. Run `bash <(curl -Ls https://github.com/ltgcgo/painted-palette/raw/main/src/bash/install.sh)`.
 
 ## Running
 > **Warning**
