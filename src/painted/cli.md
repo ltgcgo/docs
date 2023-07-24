@@ -4,6 +4,7 @@ The Windows build does not ship with a helper like `./palette-bot `. As such, pl
 With Deno or Bun, if you need to specify custom proxies, define the `https_proxy` environment variable (e.g. `https_proxy=http://127.0.0.1:4444/`). There are direct proxy integrations available on Linux and Android, which can be used by replacing `./palette-bot ` with either `./palette-proxy ` for public proxy pools, or `./palette-tor ` for Tor.
 
 ## Environment variables
+* `BIND_ADDRESS`: Define a bind address. Do not include ports.
 * `HTTP_PROXY`: Used by Deno and Bun to connect to upstream proxies.
 * `HTTPS_PROXY`: Same as above. Must be the same as `HTTP_PROXY`.
 * `NO_UPDATE`: Set to `1` to disable the automatic updater.
