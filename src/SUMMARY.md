@@ -32,6 +32,7 @@
 - [Snowy](snowy/README.md)
 - [WingBlade](wingblade/README.md)
   - [System](wingblade/system.md)
+  - [Environment variables](wingblade/env.md)
   - [Filesystem](wingblade/file.md)
   - [Utilities](wingblade/util.md)
   - [Networking](wingblade/net.md)
