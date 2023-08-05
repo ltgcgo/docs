@@ -14,9 +14,11 @@ Octavia is compatible with a range of modes on MIDI synthesizers. A list of supp
 * `ns5r`: KORG NS5R mode. Compatible with NX5R, and has limited compatibility with KORG N1R and N5.
 * `x5d`: KORG X5D(R) mode. Compatible with AG-10.
 * `05rw`: KORG 05R/W and KORG X5 mode. Compatible with AG-10.
-* `krs`: KORG KROSS 2 mode.
 * `k11`: Kawai GMega and Kawai K11 mode.
 * `sg`: Akai SG mode.
+* `krs`: KORG KROSS 2 mode.
+* `s90es`: Yamaha S90 ES mode.
+* `motif`: Yamaha Motif ES mode.
 
 ### MIDI event types
 * `8`: Note off

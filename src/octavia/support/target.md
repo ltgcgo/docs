@@ -23,6 +23,8 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 | YAMAHA | PLG-150PF | P    | ✓    | ✕     |
 | YAMAHA | PLG-150VL | P    | ✓    | ✓     |
 | YAMAHA | PLG-100SG | P    | ✓    | ✓     |
+| YAMAHA | S90 ES    | L    | ✓    | ✓     |
+| YAMAHA | Motif ES  | L    | ✓    | ✓     |
 | KORG   | AG-10     | M    | ✓    | ✓     |
 | KORG   | 05R/W     | L    | ✓    | ✓     |
 | KORG   | X5DR      | L    | ✓    | ✓     |
@@ -92,6 +94,7 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 | MU1000      | L    | ✓      |
 | MU2000      | L    | ✓      |
 | MU500       | M    | ✓      |
+| PLG100-XG   | P    | ✓      |
 | QY700       | M    | ✓      |
 | QY70        | M    | ✓      |
 | QY100       | M    | ✓      |
