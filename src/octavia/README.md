@@ -37,8 +37,8 @@ We're now hosting a new place to handle development talks! If you don't have a G
 * [KORG 05/X5/N5](sysex/korgOld.md)
 
 ### API documentation
-* [`state.mjs`: the core processing unit](state/README.md)
-* [`basic.mjs`: the basis for visualizers](basic/README.md)
-* [`bridge.mjs`: the basis for middleware](bridge/README.md)
-* [`disp.mjs`: ready-made example visualizers](disp/README.md)
-* [`middle.mjs`: ready-made middleware with real-time translation capabilities](middle/README.md)
+* [`state.mjs`: the core processing unit](state/)
+* [`basic.mjs`: the basis for visualizers](basic/)
+* [`bridge.mjs`: the basis for middleware](bridge/)
+* [`disp.mjs`: ready-made example visualizers](disp/)
+* [`middle.mjs`: ready-made middleware](middle/)
