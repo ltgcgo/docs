@@ -37,6 +37,19 @@
 	</thead>
 	<tbody>
 		<tr>
+			<td>35</td>
+			<td>B~1</td>
+			<td>Tight Kick</td>
+			<td>Tight Kick 2</td>
+			<td>←</td>
+			<td>Rock Tight Kick</td>
+			<td>Electro Tight Kick</td>
+			<td>Analog Tight Kick</td>
+			<td>Jazz Tight Kick</td>
+			<td>Jazz Tight Kick</td>
+			<td>Jazz Kick</td>
+		</tr>
+		<tr>
 			<td>36</td>
 			<td>C~2</td>
 			<td>Kick</td>
