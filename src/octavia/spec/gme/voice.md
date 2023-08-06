@@ -1,4 +1,18 @@
 # Voice list
+## Drum voices
+| PC# | Drum Kit Name         | Optional |
+| --- | --------------------- | -------- |
+| 000 | Standard Kit          | No       |
+| 001 | Standard Kit 2        | Yes      |
+| 009 | Room Kit              | Yes      |
+| 016 | Power Kit/Rock Kit    | No       |
+| 024 | Electro Kit           | No       |
+| 025 | Analog Kit            | No       |
+| 032 | Jazz Kit              | No       |
+| 040 | Brush Kit             | No       |
+| 041 | Brush Kit 2           | Yes      |
+| 048 | Orchestra Kit         | No       |
+
 ## Melodic voices
 ### Piano
 | PC# | Voice Name               |
