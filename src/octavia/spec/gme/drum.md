@@ -47,7 +47,7 @@
 			<td>Rock Kick</td>
 			<td>Electro Kick</td>
 			<td>Analog Kick</td>
-			<td>←</td>
+			<td>Jazz Kick</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -75,7 +75,7 @@
 			<td>Rock Snare</td>
 			<td>Electro Snare</td>
 			<td>Analog Snare</td>
-			<td>←</td>
+			<td><i>Jazz Snare</i></td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -89,7 +89,7 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
+			<td><i>Jazz Hand Clap</i></td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -102,7 +102,7 @@
 			<td>Room Tight Snare</td>
 			<td>Rock Tight Snare</td>
 			<td>Electro Tight Snare</td>
-			<td>Analog Snare</td>
+			<td>Analog Tight Snare</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -117,7 +117,7 @@
 			<td>Rock Floor Tom Lo</td>
 			<td>Electro Floor Tom Lo</td>
 			<td>Analog Floor Tom Lo</td>
-			<td>←</td>
+			<td><i>Jazz Floor Tom Lo</i></td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -131,7 +131,7 @@
 			<td><i>Room Hi-Hat Closed</i></td>
 			<td><i>Hi-Hat Closed 2</i></td>
 			<td>Analog Hi-Hat Closed Lo</td>
-			<td>←</td>
+			<td><i>Jazz Hi-Hat Closed Lo</i></td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -145,7 +145,7 @@
 			<td>Rock Floor Tom Hi</td>
 			<td>Electro Floor Tom Hi</td>
 			<td>Analog Floor Tom Hi</td>
-			<td>←</td>
+			<td><i>Jazz Floor Tom Hi</i></td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -173,7 +173,7 @@
 			<td>Rock Low Tom</td>
 			<td>Electro Low Tom</td>
 			<td>Analog Low Tom</td>
-			<td>←</td>
+			<td><i>Jazz Low Tom</i></td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -187,7 +187,7 @@
 			<td><i>Room Hi-Hat Open</i></td>
 			<td><i>Hi-Hat Open 2</i></td>
 			<td>Analog Hi-Hat Open</td>
-			<td>←</td>
+			<td><i>Jazz Hi-Hat Open</i></td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -201,7 +201,7 @@
 			<td>Rock Mid Tom Lo</td>
 			<td>Electro Mid Tom Lo</td>
 			<td>Analog Mid Tom Lo</td>
-			<td>←</td>
+			<td><i>Jazz Mid Tom Lo</i></td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -215,7 +215,7 @@
 			<td>Rock Mid Tom Hi</td>
 			<td>Electro Mid Tom Hi</td>
 			<td>Analog Mid Tom Hi</td>
-			<td>←</td>
+			<td><i>Jazz Mid Tom Hi</i></td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -243,7 +243,7 @@
 			<td>Rock High Tom</td>
 			<td>Electro High Tom</td>
 			<td>Analog High Tom</td>
-			<td>←</td>
+			<td><i>Jazz High Tom</i></td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
