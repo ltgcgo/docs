@@ -13,6 +13,7 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 | MMA    | GM2       | S    | ✓    | ✓     |
 | Roland | MT-32     | S    | ✓    | ✓     |
 | Roland | GS        | S    | ✓    | ✓     |
+| Roland | SD        | S    | ✓    | ✓     |
 | YAMAHA | TG        | L    | ✓    | ✓     |
 | YAMAHA | XG¹       | S    | ✓    | ✓     |
 | YAMAHA | PLG-150AN | P    | ✓    | ✕     |

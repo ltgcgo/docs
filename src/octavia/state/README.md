@@ -10,6 +10,7 @@ Octavia is compatible with a range of modes on MIDI synthesizers. A list of supp
 * `gs`: Roland GS mode.
 * `xg`: Yamaha XG mode. Compatible with TG-100 and TG-300.
 * `g2`: General MIDI Level 2 mode.
+* `sd`: Roland SD mode.
 * `mt32`: Roland MT-32 mode.
 * `ns5r`: KORG NS5R mode. Compatible with NX5R, and has limited compatibility with KORG N1R and N5.
 * `x5d`: KORG X5D(R) mode. Compatible with AG-10.
