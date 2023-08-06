@@ -4,13 +4,13 @@
 | --- | --------------------- | -------- |
 | 000 | Standard Kit          | No       |
 | 001 | Standard Kit 2        | Yes      |
-| 009 | Room Kit              | Yes      |
+| 009 | Room Kit              | No       |
 | 016 | Power Kit/Rock Kit    | No       |
 | 024 | Electro Kit           | No       |
 | 025 | Analog Kit            | No       |
 | 032 | Jazz Kit              | No       |
 | 040 | Brush Kit             | No       |
-| 041 | Brush Kit 2           | Yes      |
+| 041 | Brush Kit 2           | No       |
 | 048 | Orchestra Kit         | No       |
 
 ## Melodic voices
