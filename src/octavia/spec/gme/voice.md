@@ -8,7 +8,7 @@
 | 016 | Power Kit/Rock Kit    | No       |
 | 024 | Electro Kit           | No       |
 | 025 | Analog Kit            | No       |
-| 032 | Jazz Kit              | No       |
+| 032 | Jazz Kit              | Yes      |
 | 040 | Brush Kit             | No       |
 | 048 | Orchestra Kit         | No       |
 

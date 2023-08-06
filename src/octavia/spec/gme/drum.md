@@ -281,7 +281,7 @@
 			<td>←</td>
 			<td>←</td>
 			<td>Brush Bell Ride</td>
-			<td>Timpani F</td>
+			<td>Timpani F 2</td>
 		</tr>
 		<tr>
 			<td>54</td>
