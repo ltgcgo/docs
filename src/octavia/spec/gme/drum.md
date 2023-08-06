@@ -60,7 +60,7 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
+			<td>Analog Side Stick</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -74,7 +74,7 @@
 			<td>Room Snare</td>
 			<td>Rock Snare</td>
 			<td>Electro Snare</td>
-			<td>←</td>
+			<td>Analog Snare</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -102,7 +102,7 @@
 			<td>Room Tight Snare</td>
 			<td>Rock Tight Snare</td>
 			<td>Electro Tight Snare</td>
-			<td>←</td>
+			<td>Analog Snare</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -116,7 +116,7 @@
 			<td>Room Floor Tom Lo</td>
 			<td>Rock Floor Tom Lo</td>
 			<td>Electro Floor Tom Lo</td>
-			<td>←</td>
+			<td>Analog Floor Tom Lo</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -130,7 +130,7 @@
 			<td><i>Room Hi-Hat Closed</i></td>
 			<td><i>Room Hi-Hat Closed</i></td>
 			<td><i>Hi-Hat Closed 2</i></td>
-			<td>←</td>
+			<td>Analog Hi-Hat Closed Lo</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -144,7 +144,7 @@
 			<td>Room Floor Tom Hi</td>
 			<td>Rock Floor Tom Hi</td>
 			<td>Electro Floor Tom Hi</td>
-			<td>←</td>
+			<td>Analog Floor Tom Hi</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -158,7 +158,7 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
+			<td>Analog Hi-Hat Closed Hi</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -172,7 +172,7 @@
 			<td>Room Low Tom</td>
 			<td>Rock Low Tom</td>
 			<td>Electro Low Tom</td>
-			<td>←</td>
+			<td>Analog Low Tom</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -186,7 +186,7 @@
 			<td><i>Room Hi-Hat Open</i></td>
 			<td><i>Room Hi-Hat Open</i></td>
 			<td><i>Hi-Hat Open 2</i></td>
-			<td>←</td>
+			<td>Analog Hi-Hat Open</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -200,7 +200,7 @@
 			<td>Room Mid Tom Lo</td>
 			<td>Rock Mid Tom Lo</td>
 			<td>Electro Mid Tom Lo</td>
-			<td>←</td>
+			<td>Analog Mid Tom Lo</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -214,7 +214,7 @@
 			<td>Room Mid Tom Hi</td>
 			<td>Rock Mid Tom Hi</td>
 			<td>Electro Mid Tom Hi</td>
-			<td>←</td>
+			<td>Analog Mid Tom Hi</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -228,7 +228,7 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
+			<td>Analog Cymbal Crash</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -242,7 +242,7 @@
 			<td>Room High Tom</td>
 			<td>Rock High Tom</td>
 			<td>Electro High Tom</td>
-			<td>←</td>
+			<td>Analog High Tom</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -326,7 +326,7 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
+			<td>Analog Cowbell</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -410,7 +410,7 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
+			<td>Analog Conga Hi</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -424,7 +424,7 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
+			<td>Analog Conga Mid</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -438,7 +438,7 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
+			<td>Analog Conga Lo</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -522,7 +522,7 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
+			<td>Analog Maracas</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -592,7 +592,7 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
+			<td>Analog Claves</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
