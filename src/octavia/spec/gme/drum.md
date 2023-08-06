@@ -16,7 +16,6 @@
 			<th>25</th>
 			<th>32</th>
 			<th>40</th>
-			<th>41</th>
 			<th>48</th>
 		</tr>
 		<tr>
@@ -29,7 +28,6 @@
 			<th rowspan=2>Analog Kit</th>
 			<th rowspan=2><i>Jazz&nbsp;Kit</i></th>
 			<th rowspan=2>Brush&nbsp;Kit</th>
-			<th rowspan=2><i>Brush Kit 2</i></th>
 			<th rowspan=2>Orchestra Kit</th>
 		</tr>
 		<tr>
@@ -48,9 +46,8 @@
 			<td>Electro Kick</td>
 			<td>Analog Kick</td>
 			<td>Jazz Kick</td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Kick</td>
+			<td>Concert Bass Drum</td>
 		</tr>
 		<tr>
 			<td>37</td>
@@ -61,7 +58,6 @@
 			<td>←</td>
 			<td>←</td>
 			<td>Analog Side Stick</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -76,9 +72,8 @@
 			<td>Electro Snare</td>
 			<td>Analog Snare</td>
 			<td><i>Jazz Snare</i></td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Tap</td>
+			<td>Concert Snare Drum</td>
 		</tr>
 		<tr>
 			<td>39</td>
@@ -90,9 +85,8 @@
 			<td>←</td>
 			<td>←</td>
 			<td><i>Jazz Hand Clap</i></td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Slap</td>
+			<td>Castanet</td>
 		</tr>
 		<tr>
 			<td>40</td>
@@ -104,9 +98,8 @@
 			<td>Electro Tight Snare</td>
 			<td>Analog Tight Snare</td>
 			<td>←</td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Swirl</td>
+			<td>Concert Snare Drum</td>
 		</tr>
 		<tr>
 			<td>41</td>
@@ -118,9 +111,8 @@
 			<td>Electro Floor Tom Lo</td>
 			<td>Analog Floor Tom Lo</td>
 			<td><i>Jazz Floor Tom Lo</i></td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Floor Tom Lo</td>
+			<td>Timpani F</td>
 		</tr>
 		<tr>
 			<td>42</td>
@@ -130,11 +122,10 @@
 			<td><i>Room Hi-Hat Closed</i></td>
 			<td><i>Room Hi-Hat Closed</i></td>
 			<td><i>Hi-Hat Closed 2</i></td>
-			<td>Analog Hi-Hat Closed Lo</td>
-			<td><i>Jazz Hi-Hat Closed Lo</i></td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Analog Hi-Hat Closed</td>
+			<td><i>Jazz Hi-Hat Closed</i></td>
+			<td>Brush Hi-Hat Closed</td>
+			<td>Timpani F#</td>
 		</tr>
 		<tr>
 			<td>43</td>
@@ -146,9 +137,8 @@
 			<td>Electro Floor Tom Hi</td>
 			<td>Analog Floor Tom Hi</td>
 			<td><i>Jazz Floor Tom Hi</i></td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Floor Tom Hi</td>
+			<td>Timpani G</td>
 		</tr>
 		<tr>
 			<td>44</td>
@@ -160,9 +150,8 @@
 			<td>←</td>
 			<td>Analog Hi-Hat Closed Hi</td>
 			<td>←</td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Hi-Hat Pedal</td>
+			<td>Timpani G#</td>
 		</tr>
 		<tr>
 			<td>45</td>
@@ -174,9 +163,8 @@
 			<td>Electro Low Tom</td>
 			<td>Analog Low Tom</td>
 			<td><i>Jazz Low Tom</i></td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Low Tom</td>
+			<td>Timpani A</td>
 		</tr>
 		<tr>
 			<td>46</td>
@@ -188,9 +176,8 @@
 			<td><i>Hi-Hat Open 2</i></td>
 			<td>Analog Hi-Hat Open</td>
 			<td><i>Jazz Hi-Hat Open</i></td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Hi-Hat Open</td>
+			<td>Timpani A#</td>
 		</tr>
 		<tr>
 			<td>47</td>
@@ -202,9 +189,8 @@
 			<td>Electro Mid Tom Lo</td>
 			<td>Analog Mid Tom Lo</td>
 			<td><i>Jazz Mid Tom Lo</i></td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Mid Tom Lo</td>
+			<td>Timpani B</td>
 		</tr>
 		<tr>
 			<td>48</td>
@@ -216,9 +202,8 @@
 			<td>Electro Mid Tom Hi</td>
 			<td>Analog Mid Tom Hi</td>
 			<td><i>Jazz Mid Tom Hi</i></td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Mid Tom Hi</td>
+			<td>Timpani C</td>
 		</tr>
 		<tr>
 			<td>49</td>
@@ -230,9 +215,8 @@
 			<td>←</td>
 			<td>Analog Cymbal Crash</td>
 			<td>←</td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Cymbal Crash</td>
+			<td>Timpani C#</td>
 		</tr>
 		<tr>
 			<td>50</td>
@@ -244,9 +228,8 @@
 			<td>Electro High Tom</td>
 			<td>Analog High Tom</td>
 			<td><i>Jazz High Tom</i></td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush High Tom</td>
+			<td>Timpani D</td>
 		</tr>
 		<tr>
 			<td>51</td>
@@ -258,9 +241,8 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Cymbal Ride</td>
+			<td>Timpani D#</td>
 		</tr>
 		<tr>
 			<td>52</td>
@@ -273,8 +255,7 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Timpani E</td>
 		</tr>
 		<tr>
 			<td>53</td>
@@ -286,15 +267,13 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Brush Bell Ride</td>
+			<td>Timpani F</td>
 		</tr>
 		<tr>
 			<td>54</td>
 			<td>F#3</td>
 			<td>Tambourine</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -316,7 +295,6 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>56</td>
@@ -327,7 +305,6 @@
 			<td>←</td>
 			<td>←</td>
 			<td>Analog Cowbell</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -343,14 +320,12 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Concert Cymbal 2</td>
 		</tr>
 		<tr>
 			<td>58</td>
 			<td>Bb3</td>
 			<td>Vibraslap</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -371,14 +346,12 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
-			<td>←</td>
+			<td>Concert Cymbal</td>
 		</tr>
 		<tr>
 			<td>60</td>
 			<td>C~4</td>
 			<td>Bongo Hi</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -400,7 +373,6 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>62</td>
@@ -411,7 +383,6 @@
 			<td>←</td>
 			<td>←</td>
 			<td>Analog Conga Hi</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -428,7 +399,6 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>64</td>
@@ -442,13 +412,11 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>65</td>
 			<td>F~4</td>
 			<td>Timbale Hi</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -470,13 +438,11 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>67</td>
 			<td>G~4</td>
 			<td>Agogo Hi</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -498,13 +464,11 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>69</td>
 			<td>A~4</td>
 			<td>Cabasa</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -526,13 +490,11 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>71</td>
 			<td>B~4</td>
 			<td>Short Whistle Hi</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -554,13 +516,11 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>73</td>
 			<td>C#5</td>
 			<td>Short Guiro</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -582,7 +542,6 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>75</td>
@@ -596,13 +555,11 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>76</td>
 			<td>E~5</td>
 			<td>Woodblock Hi</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -624,13 +581,11 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>78</td>
 			<td>F#5</td>
 			<td>Muted Cuica</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -652,13 +607,11 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>80</td>
 			<td>Ab5</td>
 			<td>Muted Triangle</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -680,13 +633,11 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>82</td>
 			<td>Bb5</td>
 			<td>Shaker</td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
@@ -708,14 +659,12 @@
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>
-			<td>←</td>
 		</tr>
 		<tr>
 			<td>84</td>
 			<td>C~6</td>
 			<td>Bell Tree</td>
 			<td><i>Bar Chimes</i></td>
-			<td>←</td>
 			<td>←</td>
 			<td>←</td>
 			<td>←</td>

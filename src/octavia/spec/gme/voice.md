@@ -10,7 +10,6 @@
 | 025 | Analog Kit            | No       |
 | 032 | Jazz Kit              | No       |
 | 040 | Brush Kit             | No       |
-| 041 | Brush Kit 2           | No       |
 | 048 | Orchestra Kit         | No       |
 
 ## Melodic voices
