@@ -1,4 +1,13 @@
 # System
+## `WingBlade.rt.cores`
+### Use
+Report the amount of CPU cores.
+
+### Syntax
+```js
+Number: WingBlade.rt.cores
+```
+
 ## `WingBlade.rt.exit`
 ### Use
 Exit the current runtime with given status code. `0` by default.

@@ -9,3 +9,12 @@ Projects utilizing WingBlade are expected to write web-oriented platform-agnosti
 * [Utilities](util.mjs)
 * [Networking](net.md)
 * [Web services](web.md)
+
+## Open Source
+Silk is a piece of open source software, licensed under GNU LGPL 3.0 or later.
+
+Source code is available on the following code hosting services.
+
+* [GitHub](https://github.com/ltgcgo/wingblade/)
+* [GitLab](https://gitlab.com/ltgc/oss/wingblade/)
+* [Codeberg](https://codeberg.org/ltgc/wingblade/)
