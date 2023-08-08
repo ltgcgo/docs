@@ -8,13 +8,24 @@ Exit the current runtime with given status code. `0` by default.
 undefined: WingBlade.rt.exit(Number: code = 0);
 ```
 
-## `WingBlade.rt.memUsed`
+## `WingBlade.rt.memory`
 ### Use
-Report memory usage of the current runtime. Refer to [`Deno.MemoryUsage`](https://deno.land/api?s=Deno.MemoryUsage) for details.
+Report memory usage of the current runtime. All values are in bytes.
 
 ### Syntax
 ```js
-MemoryUsage: WingBlade.rt.memUsed
+MemoryUsage: WingBlade.rt.memory
+```
+
+```js
+{
+	external: Number, // Memory associated with JS objects outside of the JS isolate.
+	free: Number, // The size of available RAM.
+	heapTotal: Number, // The total size of the heap of the JS engine.
+	heapUsed: Number, // The size of the heap used by the JS engine.
+	rss: Number, // Resident Set Size, aka memory occupied in RAM.
+	total: Number // The total size of the RAM.
+}
 ```
 
 ## `WingBlade.rt.networkDefer`

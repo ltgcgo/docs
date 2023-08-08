@@ -80,7 +80,7 @@ Except System Exclusive messages, the first byte of each MIDI event defines the 
 | 123 | `0x7b` | All Note Off          | 0     | No       |
 | 124 | `0x7c` | Omni Off              | 0     | Yes      |
 | 125 | `0x7d` | Omni On               | 0     | Yes      |
-| 126 | `0x7e` | Mono                  | 0     | No       |
+| 126 | `0x7e` | Mono                  | 0-16  | No       |
 | 127 | `0x7f` | Poly                  | 0     | No       |
 
 ### Types
