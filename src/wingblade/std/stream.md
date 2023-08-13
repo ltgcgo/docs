@@ -25,7 +25,7 @@ let object = new ChokerStream(Number: maxChunkSize = 1024, Boolean: alwaysCopy =
 ```
 ```js
 ChokerStream {
-	alwaysCopy: Boolean, // Read-only. Indicates whether chunks should be copied.
+	alwaysCopy: Boolean, // Read-only. Disables zero-copy when available if set to true.
 	chunk: Number, // A positive integer defining the normalized chunk size.
 	source: ReadableStream, // Get the choked readable stream.
 	sink: ReadableStream, // Read-only. The attached readable stream source.
