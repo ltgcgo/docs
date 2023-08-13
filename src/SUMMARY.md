@@ -43,3 +43,5 @@
   - [Utilities](wingblade/util.md)
   - [Networking](wingblade/net.md)
   - [Web services](wingblade/web.md)
+  - [Standard extensions]()
+    - [Web Stream](wingblade/std/stream.md)
