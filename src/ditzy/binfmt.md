@@ -53,8 +53,69 @@ IDs between `0` (`0x00`) and `31` (`0x1f`) are reserved for core functionalities
 | 2 | Connection aftertouch |
 | 3 | Jump |
 | 4 | Full message send |
-| 5 | Message acknowlege |
+| 5 | Message acknowledge |
 | 6 | Error |
 | 7 | Implementation exclusive |
 | 8 | Partial message send |
 | 9 | Partial message send complete |
+
+#### `0`: Connection close
+> Can be initiated bidirectionally.
+> 
+> Response should be exactly the same as request.
+
+Closes a connection. Payload can be used to carry optional arbitrary error messages.
+
+#### `1`: Connection open
+> Can be initiated bidirectionally.
+> 
+> Response should have the same frame ID as request.
+
+Opens a connection. Payload is used to define suggested connection timeout in milliseconds optionally.
+
+(Optional) If sent from the receiving end, the value contains would be the final timeout value used in the connection.
+
+#### `2`: Connection aftertouch
+> Can be initiated bidirectionally.
+> 
+> Response should have the same frame ID as request.
+
+Challenges a connection. Often used to implement connection latency tests.
+
+Payload is prefixed with a VLV7 value indicating challenge type, with all remaining bytes containing challenge details.
+
+##### Types
+* `0`: Latency test and keep-alive. No manipulation details field.
+
+#### `3`: Jump
+> Can be initiated bidirectionally.
+> 
+> No responses are needed for jumps, but the receiving end should synchronize frame IDs.
+
+Sends a junk frame. The receiving end should ignore jump messages.
+
+#### `4`: Full message send
+> Can be initiated bidirectionally.
+> 
+> Use type 5 (message acknowledge) to send acknowledgements with the same frame ID.
+
+Sends a full message.
+
+#### `5`: Message acknowledge
+> Can be initiated bidirectionally.
+
+Sends acknowledgements of messages. Additional acknowledgements of tail frame IDs are all encoded via VLV7.
+
+#### `6`: Error
+> Can be initiated bidirectionally.
+> 
+> No response is needed for errors, but the receiving end should synchronize frame IDs.
+
+Sends arbitrary errors without closing the connection.
+
+#### `7`: Implementation exclusive
+> Can be initiated bidirectionally.
+> 
+> Response should have the same frame ID as request.
+
+Implementation exclusive binary commands.
