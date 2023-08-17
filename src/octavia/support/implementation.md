@@ -64,7 +64,7 @@
 			<td>0-24 semitone steps<br/>14-bit resolution</td>
 		</tr>
 		<tr>
-			<td rowspan=52>Control Change</td>
+			<td rowspan=53>Control Change</td>
 			<td>0</td>
 			<td>✓</td>
 			<td>MSB Bank Select</td>
@@ -325,12 +325,17 @@
 			<td>Poly</td>
 		</tr>
 		<tr>
+			<td>128</td>
+			<td>✓</td>
+			<td>Dry level (internal)</td>
+		</tr>
+		<tr>
 			<td colspan=2>Program Change</td>
 			<td>0-127</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowspan=21>System Exclusive</td>
+			<td rowspan=22>System Exclusive</td>
 			<td>General MIDI</td>
 			<td>✓</td>
 			<td></td>
@@ -387,6 +392,11 @@
 		</tr>
 		<tr>
 			<td>Roland GS</td>
+			<td>✓</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Roland SD</td>
 			<td>✓</td>
 			<td></td>
 		</tr>
