@@ -34,16 +34,30 @@ Below is the list of data accessible by us if provided, on the server-side witho
 We also have access to data you explicitly choose to share with us. They may be in cleartext or in their encrypted form.
 
 ### Use
+#### General
+* Data explicitly stored by users will *likely* persist until takedowns.
+* During suspected infiltrations, we will use any information accessible to identify and exterminate unauthorized access. Data stored during this period will be removed as soon as related investigations are finished.
+* We do not share any information with any third-parties.
+* Data requests from individuals and law enforcement agencies will be assessed before any action is taken. See the data request section for details.
+
+#### Low-importance
+Unless overriden, these uses do not store data.
+
 * To deny access from clients we deem as unfit of service (WAF), we will use `Origin`, `Referer`, `Sec-CH-UA`, `Sec-Fetch-Site`, `User-Agent`, observed client IP address (if on clearnet/behind reverse proxies), IP packet fingerprints (if on clearnet) and TLS fingerprint.
 * To conserve bandwidth whenever we can, we will use `Accept-Encoding`.
 * To serve content to client's expectation, we will use `Accept`.
 * To distinguish between sessions if essential to the service client accesses, `Authorization` and/or basic cookies will be used.
 * To serve localized content in client's desired languages, we may use `Accept-Language`.
+
+#### Medium-importance
+Data stored from these uses will be kept for 24 hours.
+
 * Requests will be logged **without** observed IP addresses **only** upon causing non-critical software errors.
+
+#### High-importance
+Data stored from these uses will be kept until their removal.
+
 * Requests will be logged **with** observed IP addresses **only** upon causing critical software errors, or attempting to utilize known exploits.
-* During suspected infiltrations, we will use any information accessible to identify and exterminate unauthorized access. Data stored during this period will be removed if finished.
-* We do not share any information with any third-parties.
-* Data requests from individuals and law enforcement agencies will be assessed before any action is taken. See the data request section for details.
 
 ### Data request
 
