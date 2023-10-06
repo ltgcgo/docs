@@ -10,6 +10,8 @@ TL;DR, we have access to all of the data the client implementation chooses to sh
 Below is the list of data accessible by us if provided, on the server-side without user interaction.
 
 * When accessing via clearnet, the IP address of your exit.
+* When accessing via clearnet, IP packet fingerprints. (e.g. TCP fingerprint, UDP fingerprint)
+* TLS connection fingerprint, when connected via TLS.
 * Standardized client-identifying headers, if provided. Visit [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) for more information. Below is a list of possible headers, and may not include all headers.
   * `Accept`: Which types of content is accepted by the client.
   * `Accept-Encoding`: Encoding schemes accepted by the client, usually compression algorithms.
@@ -21,17 +23,27 @@ Below is the list of data accessible by us if provided, on the server-side witho
   * `Sec-Fetch-Mode`: Mode applied on requests.
   * `Sec-Fetch-Site`: Relationship between requested resource and source.
   * `User-Agent`: Implementation identification string provided by the client.
-  * `X-Forwarded-For`, `X-Real-IP`: If behind a reverse proxy, the connecting IP address observed by the reverse proxy. These headers are almost always stripped or spoofed on reverse proxies we have control of however.
+  * `X-Forwarded-For`, `X-Real-IP`: If behind a reverse proxy, the connecting IP address observed by the reverse proxy. These headers are almost always stripped, spoofed or generalized on reverse proxies we have control of however.
 * [Client hints](https://developer.mozilla.org/en-US/docs/Web/HTTP/Client_hints), sent by Chromium-based browsers (e.g. Google Chrome). Below is a list of headers sent unconditionally by Chromium-based browsers. To prevent us from receiving these headers, please switch to a browser that isn't based on Chromium.
   * `Sec-CH-UA`: Array of implementation identification strings provided by the client.
   * `Sec-CH-UA-Mobile`: If the client runs on mobile platforms (e.g. Android, iOS).
   * `Sec-CH-UA-Platform`: The platform running the client, usually OS families.
+* All other headers clients choose to provide.
 * When the service involves server-side dynamically-generated content, basic cookies allowing said service to function properly.
-* IP packet fingerprint. (e.g. TCP fingerprint, UDP fingerprint)
-* TLS connection fingerprint, when connected via TLS.
+
+We also have access to data you explicitly choose to share with us. They may be in cleartext or in their encrypted form.
 
 ### Use
-
+* To deny access from clients we deem as unfit of service (WAF), we will use `Origin`, `Referer`, `Sec-CH-UA`, `Sec-Fetch-Site`, `User-Agent`, observed client IP address (if on clearnet/behind reverse proxies), IP packet fingerprints (if on clearnet) and TLS fingerprint.
+* To conserve bandwidth whenever we can, we will use `Accept-Encoding`.
+* To serve content to client's expectation, we will use `Accept`.
+* To distinguish between sessions if essential to the service client accesses, `Authorization` and/or basic cookies will be used.
+* To serve localized content in client's desired languages, we may use `Accept-Language`.
+* Requests will be logged **without** observed IP addresses **only** upon causing non-critical software errors.
+* Requests will be logged **with** observed IP addresses **only** upon causing critical software errors, or attempting to utilize known exploits.
+* During suspected infiltrations, we will use any information accessible to identify and exterminate unauthorized access. Data stored during this period will be removed if finished.
+* We do not share any information with any third-parties.
+* Data requests from individuals and law enforcement agencies will be assessed before any action is taken. See the data request section for details.
 
 ### Data request
 
