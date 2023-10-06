@@ -4,13 +4,13 @@ By using services provided by the Lightingale Community, you agree to the follow
 ## Default
 Unless stated explicitly otherwise, the following policy will be applied to any web-based service run by the Lightingale Community.
 
-TL;DR, we have access to all of the data the client implementation chooses to share with us, but unless an error is caused, none of the data would be stored.
+TL;DR, we have access to all of the data the client implementation chooses to share with us, but unless an error is caused or you explicitly want us to, none of the data would be stored.
 
 ### Accessible
 Below is the list of data accessible by us if provided, on the server-side without user interaction.
 
 * When accessing via clearnet, the IP address of your exit.
-* Client-identifying headers, if provided. Visit [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) for more information. Below is a list of possible headers, and may not include all headers.
+* Standardized client-identifying headers, if provided. Visit [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) for more information. Below is a list of possible headers, and may not include all headers.
   * `Accept`: Which types of content is accepted by the client.
   * `Accept-Encoding`: Encoding schemes accepted by the client, usually compression algorithms.
   * `Accept-Language`: Languages expected by the client.
@@ -21,13 +21,17 @@ Below is the list of data accessible by us if provided, on the server-side witho
   * `Sec-Fetch-Mode`: Mode applied on requests.
   * `Sec-Fetch-Site`: Relationship between requested resource and source.
   * `User-Agent`: Implementation identification string provided by the client.
-  * `X-Forwarded-For`, `X-Real-IP`: If behind a reverse proxy, the connecting IP address observed by the reverse proxy.
-* [Client hints](https://developer.mozilla.org/en-US/docs/Web/HTTP/Client_hints), set by Chromium-based browsers (e.g. Google Chrome).
+  * `X-Forwarded-For`, `X-Real-IP`: If behind a reverse proxy, the connecting IP address observed by the reverse proxy. These headers are almost always stripped or spoofed on reverse proxies we have control of however.
+* [Client hints](https://developer.mozilla.org/en-US/docs/Web/HTTP/Client_hints), sent by Chromium-based browsers (e.g. Google Chrome). Below is a list of headers sent unconditionally by Chromium-based browsers. To prevent us from receiving these headers, please switch to a browser that isn't based on Chromium.
+  * `Sec-CH-UA`: Array of implementation identification strings provided by the client.
+  * `Sec-CH-UA-Mobile`: If the client runs on mobile platforms (e.g. Android, iOS).
+  * `Sec-CH-UA-Platform`: The platform running the client, usually OS families.
 * When the service involves server-side dynamically-generated content, basic cookies allowing said service to function properly.
 * IP packet fingerprint. (e.g. TCP fingerprint, UDP fingerprint)
 * TLS connection fingerprint, when connected via TLS.
 
 ### Use
+
 
 ### Data request
 
