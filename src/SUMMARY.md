@@ -6,6 +6,8 @@
 - [Affairs]()
   - [Privacy policy](ltgc/privacy-policy.md)
   - [Access denial](ltgc/access-denial.md)
+  - [Acceptable usage](ltgc/aup.md)
+  - [Terms of service](ltgc/tos.md)
 
 # Projects
 - [Ditzy](ditzy/README.md)
