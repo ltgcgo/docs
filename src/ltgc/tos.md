@@ -30,6 +30,8 @@ Lightingale Community is powered fully by and produces FOSS, fit under the defin
 Except for software, unless stated otherwise explicitly, content belongs to us is licensed under [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/). Our members hold the rights of content they produced.
 
 ## Your content
+*This section applies to services offering UGC.*
+
 You hold the rights to your own content, but you give us a license when submitting your content to us. Upon submission, you permit us to do the following to your submitted content. These terms are world-wide, non-exclusive, royalty-free, transferrable and perpetual.
 
 * To store and display your content, you permit us to use, copy, store, distribute your content in ways consistent with your use of the services.
