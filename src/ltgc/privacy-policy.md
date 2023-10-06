@@ -60,6 +60,13 @@ Data stored from these uses will be kept until their removal.
 * Requests will be logged **with** observed IP addresses **only** upon causing critical software errors, or attempting to utilize known exploits.
 
 ### Data request
+* Approved data requests will be fulfilled within 30 days since approval, in the form that's available to us. Encrypted data will be provided as-is, alongwith their respective decryption keys when available.
+* Individuals can file requests for their data, and will be approved upon proving ownership.
+* Law enforcement agencies can file requests for data, but will only be approved if all listed criteria are satisfied.
+  * Belongs to a political body deemed as "full democracy" or "flawed democracy" by *The Economist Democracy Index*.
+  * Provides sufficient information for proving their identity.
+  * Belongs to the political body where related services are hosted, or can provide proof that affected users violated our [acceptable usage policy](./aup.html).
+* If the service's ability to continue operation becomes next-to-impossible due to a failed compliance from a rejected data request, we will wipe all data stored on our behalf and cease operation on said service. The same goes for the Lightingale Community itself.
 
 ### Infrastructure providers
 We extensively rely on Cloudflare for our infrastructure on the clearnet. If you do **not** want to go through Cloudflare, feel free to access our services [through alternative means](https://ltgc.cc/about.htm#access). Otherwise, a copy of [privacy policy](https://www.cloudflare.com/en-gb/privacypolicy/) from Cloudflare could be obtained.
