@@ -1,4 +1,6 @@
 # Privacy policy
+As of 6th Oct 2023, these terms are not yet in effect.
+
 By using services provided by the Lightingale Community, you agree to the following terms.
 
 ## Default
