@@ -60,7 +60,7 @@ Data stored from these uses will be kept until their removal.
 * Requests will be logged **with** observed IP addresses **only** upon causing critical software errors, or attempting to utilize known exploits.
 
 ### Data request
-* Approved data requests will be fulfilled within 30 days since approval, in the form that's available to us. Encrypted data will be provided as-is, alongwith their respective decryption keys when available.
+* Approved data requests will be fulfilled within 30 days since approval, in the form that's available to us. Encrypted data will be provided as-is, along with their respective decryption keys when available.
 * Individuals can file requests for their data, and will be approved upon proving ownership.
 * Law enforcement agencies can file requests for data, but will only be approved if all listed criteria are satisfied. All data requests filed from law enforcement agencies will be made public.
   * Belongs to a political body deemed as "full democracy" or "flawed democracy" by *The Economist Democracy Index*.
