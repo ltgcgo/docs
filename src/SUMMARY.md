@@ -3,7 +3,7 @@
 [Home](README.md)
 
 # Lightingale Community
-- [Affairs](ltgc/README.md)
+- [Affairs]()
   - [Privacy policy](ltgc/privacy-policy.md)
   - [Access denial](ltgc/access-denial.md)
 
