@@ -25,7 +25,6 @@ AUP does not cover cases where reasons of policy enforcements are explained.
 * Engaging in distribution of illegal substances, human organs, guns and etc.
 * Promoting, encouraging and/or beautifying any of the following topics.
   * Crimes against humanity (e.g. massacre).
-  * Human right violations.
   * Terrorism, its practices and exercising organizations.
 * Distributing content matching any of the following criteria, without explicit warning to the target audience.
   * Malware.
