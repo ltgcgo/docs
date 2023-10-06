@@ -6,7 +6,7 @@ In this agreement...
 * The term "we", "us" or "our" refer to Lightingale Community itself and its members.
 * The term "service" or "services" refer to publicly-available listed services hosted on behalf of Lightingale Community. The list is available [here](https://ltgc.cc/service/).
 
-By using services provided by the Lightingale Community, you agree to the following terms. Specific services will apply amendments to fit their specific needs.
+By accessing content or using the services provided by the Lightingale Community, you agree to the following terms. Specific services will apply amendments to fit their specific needs.
 
 Any material changes to these terms will be publicly notified via our [Mastodon](https://fosstodon.org/@lightingale) and our [Telegram channel](https://t.me/s/ltgc_t) at least 7 days prior. If you wish to exercise your right to reject such changes, you can [file complaints to us](https://ltgc.cc/about.htm#contact-us), or stop using the service altogether.
 
@@ -23,13 +23,23 @@ Any material changes to these terms will be publicly notified via our [Mastodon]
 ## Acceptable usage
 As a user of services offered by us, you agree to adhere to our [acceptable usage policy](./aup.html). Violations of AUP will result in a termination, and may result in your data made [available to law enforcement agencies](./privacy-policy.html#data-request).
 
+We encourage you to report abuses of our services with proof. We accept reports made via email at `abuse (at) ltgc (dot) cc`.
+
 ## Donation
 *This section is subject to changes as our legal status changes.*
-Donations made to the Lightingale Community should be without further conditions.
+
+We are not responsible for fulfilling any additional requirement attached to the donations made to us.
+
+## Software
+Lightingale Community is powered fully by and produces FOSS, fit under the definition set by the [Free Software Foundation](https://www.gnu.org/philosophy/free-sw.en.html#fs-definition). Further acknowledgements may be made in README files when we use software projects that require them.
+
+## Content
+Except for software, unless stated otherwise explicitly, content belongs to us is licensed under [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## Applicable law
 *This section is subject to changes as our legal status changes.*
 
 ## Legal contact
 *This section is subject to changes as our legal status changes.*
-Legal contacts can be filed via email to `legal (at) ltgc (dot) cc`. We do not have a physical location available.
+
+Legal contacts may be filed via email to `legal (at) ltgc (dot) cc`. We do not have a physical location available.
