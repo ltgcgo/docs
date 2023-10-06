@@ -18,6 +18,8 @@ Any material changes to these terms will be publicly notified via our [Mastodon]
 
 * We reserve the right to terminate your access to some or all of our services.
 
+* We may deny access to certain services based on the geographic location of your immediate connection.
+
 * We will attempt to prevent disruptions, defects and losses of data in our offered services, but despite our best efforts, we do not and can not guarantee availability of all times, and we are not responsible for materials served by us. Our service comes with absolutely no warranty, to the extent permitted by applicable law. **You are solely responsible for your use of service.**
 
 ## The service
