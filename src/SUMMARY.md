@@ -39,6 +39,8 @@
   - [API](silk/api.md)
   - [Usage](silk/use.md)
 - [Snowy](snowy/README.md)
+- [SynPix](synpix/README.md)
+  - [Support table](synpix/support.md)
 - [WingBlade](wingblade/README.md)
   - [System](wingblade/system.md)
   - [Environment variables](wingblade/env.md)
