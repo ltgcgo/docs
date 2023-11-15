@@ -32,6 +32,7 @@
   - [Web UI](painted/web.md)
   - [Command line](painted/cli.md)
   - [r/place 2023](painted/rplace2023.md)
+- [Raven](raven/README.md)
 - [Silk](silk/README.md)
   - [Inclusion](silk/include.md)
   - [Moderation](silk/mod.md)

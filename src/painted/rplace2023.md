@@ -1,4 +1,8 @@
 # r/place 2023
+> **Warning**
+> 
+> Information on this page is outdated.
+
 _Written on 22nd June 2023_
 
 > **Warning**
