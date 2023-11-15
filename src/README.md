@@ -15,12 +15,14 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 ## Projects
 * [Berry](/berry/): 🍇 Simple port exposure tunnel for stream entropy manipulation.
 * [Bread](/bread/): 📦 Unified framework to stream binary in blocks.
+* [Crystal Quartz](/quartz/): 🎨 A colour palette generation system.
 * [Ditzy](/ditzy/): 📬 Reconstruct stateful sockets over stateless messages.
 * [Eclipsed](/eclipsed/): 🔊 The Royal Canterlot Voice for SSE/[`EventSource`](https://developer.mozilla.org/en-US/docs/Web/API/EventSource).
 * [Ensemble](/ensemble/): 🎶 A synth framework in Rust.
 * [Flitter](/flitter/): 🗂 A file viewer for the web, with minimal requirements.
 * [Gel](/gel/): ⛏ Rolling server container images, batteries included.
 * [Heartstrings](/heartstrings/): 📑 Create and modify lyrics and subtitles as quick as possible.
+* [Hyacinth](/hyacinth/): 💨 Build web projects with speed.
 * [Iceflakes](/iceflakes/): ❄️ Offline Linux installer images for everyone.
 * [Inkwell](/inkwell/): 📒 The grand central terminal / Le grand terminal central.
 * [Leaflet](/leaflet/): ⚠️ Stock Caddy error pages, free for anyone to use if kept credits.
