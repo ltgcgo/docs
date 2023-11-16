@@ -8,8 +8,8 @@ Site powered by [mdBook](https://github.com/rust-lang/mdBook).
 ## Services
 For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/service/).
 
-* [Lavender](/lavender/)
-* [Liquestria](/liquestria/)
+* [Lavender](/lavender/): Reddit-like Fediverse instance for the MLP fandom and LTGC.
+* [Liquestria](/liquestria/): Invite-only Minecraft survival multiplayer on mixnet.
 * [Matrix services](/matrix/): Managed Matrix bridges and more.
 
 ## Projects

@@ -22,7 +22,7 @@
 ### Rime
 [Rime](https://rime.im) is an IME framework for implementing custom input schemas for different languages.
 
-Rime is supported on [Linux via IBus](https://github.com/rime/ibus-rime), [Windows](https://github.com/rime/weasel) and [macOS](https://github.com/rime/squirrel). Platform support is extended with forks, e.g. gor fcitx5 ([`fcitx-rime`](https://github.com/fcitx/fcitx-rime)), Android ([Trime](https://github.com/osfans/trime)) and iOS ([Hamster](https://github.com/imfuxiao/Hamster), [iRime](https://github.com/jimmy54/iRime)).
+Rime is supported on [Linux via IBus](https://github.com/rime/ibus-rime), [Windows](https://github.com/rime/weasel) and [macOS](https://github.com/rime/squirrel). Platform support is extended with forks, e.g. for fcitx5 ([`fcitx-rime`](https://github.com/fcitx/fcitx-rime)), Android ([Trime](https://github.com/osfans/trime)) and iOS ([Hamster](https://github.com/imfuxiao/Hamster), [iRime](https://github.com/jimmy54/iRime)).
 
 The official Rime documentation is only available in Orthodox Chinese.
 
