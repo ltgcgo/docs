@@ -9,9 +9,13 @@
   - [Acceptable usage](ltgc/aup.md)
   - [Terms of service](ltgc/tos.md)
 
+# Services
+- [Matrix](matrix/README.md)
+
 # Projects
 - [Ditzy](ditzy/README.md)
   - [Binary encoding format](ditzy/binfmt.md)
+- [Gel](gel/README.md)
 - [Octavia](octavia/README.md)
   - [Implementation]()
     - [Audio effects](octavia/impl/efx.md)
