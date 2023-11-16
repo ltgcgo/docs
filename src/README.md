@@ -21,7 +21,7 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 * [`shx`](/shx/): 📜 Bash/PDKSH shell action executor.
 * [Stratus](/stratus/): ☕️ JavaScript runtime containers (Deno, Bun, Node.js).
 
-## Data sheets
+### Data sheets
 * [`midi-db`](/midi-db/): 🎹 Data concerning MIDI standards.
 * [Raven](/raven/): 💨 Lightning-fast intuitive typing.
 * [SynPix](/synpix/): 👾 The open pixel font for embedded LCDs.
