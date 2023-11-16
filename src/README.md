@@ -29,6 +29,10 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 ### Rust
 * [Ensemble](/ensemble/): 🎶 A synth framework in Rust.
 
+### Java
+* [Mogician](/mogician/): 
+* [Seperatist](/seperatist/): 
+
 ### JavaScript
 * [Berry](/berry/): 🍇 Simple port exposure tunnel for stream entropy manipulation.
 * [Bread](/bread/): 📦 Unified framework to stream binary in blocks.
