@@ -14,6 +14,9 @@ We offer bridges to the following platforms.
 * [Telegram](https://telegram.org) (via [mautrix-telegram](https://github.com/mautrix/telegram))
 
 ### FLOSS project bridges
-We also offer free bridging services to FLOSS projects.
+We also offer free bridging services to FLOSS projects if applied.
 
 * [RethinkDNS](https://rethinkdns.com) (Apache 2.0, MPL 2.0)
+
+### MLP fandom community bridges
+We also offer free bridging services to the approved communities within the MLP fandom.

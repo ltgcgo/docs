@@ -10,7 +10,7 @@
   - [Terms of service](ltgc/tos.md)
 
 # Services
-- [Matrix](matrix/README.md)
+- [Matrix services](matrix/README.md)
 
 # Projects
 - [Ditzy](ditzy/README.md)
