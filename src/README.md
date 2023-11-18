@@ -29,12 +29,15 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 ### Rust
 * [Ensemble](/ensemble/): 🎶 A synth framework in Rust.
 
+### Go
+* [Trampoline](/trampoline/): 🥁 Chat sockets to Matrix bridge.
+
 ### Java
 * [Mogician](/mogician/): 
-* [Seperatist](/seperatist/): 
+* [Seperatist](/seperatist/): 🔨 Seperated... As they should be.
 
 ### Kotlin
-* [Cotton](/cotton/): 💬 Minecraft to Matrix bridge.
+* [Cotton](/cotton/): 💬 PSK-authenticated Minecraft chat socket.
 
 ### JavaScript
 * [Berry](/berry/): 🍇 Simple port exposure tunnel for stream entropy manipulation.
