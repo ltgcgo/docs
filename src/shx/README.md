@@ -17,8 +17,8 @@ shx [<action> [<arguments>]]
 
 Scripts will be run with Bash when present. If not, they'll be run with any supported shell.
 
-## Standard actions
-`shx` comes with a collection of QoL standard actions.
+## Standard utilities
+`shx` comes with a collection of QoL standard utilities.
 
 * `amend`: Update and amend the current commit, then push to remote.
 * `build`: A placeholder action for projects using `shx` to build themselves.
