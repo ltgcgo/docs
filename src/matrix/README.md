@@ -10,8 +10,16 @@ As long as adhereing to the [Acceptable Usage Policy](/ltgc/aup.html), members o
 ### Platforms
 Managed bridges to the following platforms are offered by us.
 
+#### Group chat
+The following bridges support both group chats and direct messages.
+
 * [Discord](https://discord.com) (via [mautrix-discord](https://github.com/mautrix/discord))
 * [Telegram](https://telegram.org) (via [mautrix-telegram](https://github.com/mautrix/telegram))
+
+#### Direct message
+The following bridges only support direct messages.
+
+* [Twitter](https://twitter.com) (via [mautrix-twitter](https://github.com/mautrix/twitter))
 
 ### FLOSS project bridges
 If applied, we will offer free bridging services to the approved FLOSS projects.
