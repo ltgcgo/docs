@@ -30,7 +30,9 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 * [Ensemble](/ensemble/): 🎶 A synth framework in Rust.
 
 ### Go
+* [Floaty](/floaty/): ☁️ Prevent Caddy loopbacks... Without traceability.
 * [Trampoline](/trampoline/): 🥁 Chat sockets to Matrix bridge.
+* [Usher](/usher/): 🚸 Rolling sticky hash load balancing on Caddy.
 
 ### Java
 * [Mogician](/mogician/): 
