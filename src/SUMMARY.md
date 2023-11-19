@@ -15,6 +15,7 @@
 # Projects
 - [Ditzy](ditzy/README.md)
   - [Binary encoding format](ditzy/binfmt.md)
+- [Floaty](floaty/README.md)
 - [Gel](gel/README.md)
 - [Octavia](octavia/README.md)
   - [Implementation]()
