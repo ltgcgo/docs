@@ -14,7 +14,7 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 
 ## Projects
 ### POSIX Shell
-* [Gel](/gel/): ⛏ Rolling server container images, batteries included.
+* [Gel](/gel/): ⛏ Rolling server bases, batteries included.
 * [Hyacinth](/hyacinth/): 💨 Build web projects with speed.
 * [Iceflakes](/iceflakes/): ❄️ Offline Linux installer images for everyone.
 * [Nightglow](/nightglow/): 🌙 Yet another Cloudflare WARP client wrapper.
