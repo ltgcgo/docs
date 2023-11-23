@@ -52,4 +52,5 @@ After finishing the automated Gel setup, do the following to secure your SSH acc
 7. In `/etc/ssh/sshd_config`, do the following.
   * Set `PermitRootLogin` from `yes` to `no`.
   * Uncomment `AllowGroups` and `DenyGroups`.
+  * (optional) Change the listening port from `1122` to another.
 8. Restart `sshd` with `systemctl restart sshd`.
