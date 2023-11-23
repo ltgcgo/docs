@@ -48,7 +48,7 @@ After finishing the automated Gel setup, do the following to secure your SSH acc
 3. As the newly-created custom user, add the public keys used for SSH authorization.
 4. Keep the current SSH session active, and login as the new user to ensure access to machine is not lost.
 5. Allow the new user to use the `doas` command and verify. See the [Privilege elevation](#privilege-elevation) section for details.
-6. Add the new user to the `ssh` group. Example: `usermod -aG ssh <user>`.
+6. Add the new user to the `ssh` group, added automatically by the setup script. Example: `usermod -aG ssh <user>`.
 7. In `/etc/ssh/sshd_config`, do the following.
   * Set `PermitRootLogin` from `yes` to `no`.
   * Uncomment `AllowGroups` and `DenyGroups`.
