@@ -10,6 +10,7 @@
   - [Terms of service](ltgc/tos.md)
 
 # Services
+- [Lavender](lavender/README.md)
 - [Matrix services](matrix/README.md)
 
 # Projects
