@@ -32,6 +32,6 @@ We also offer free bridging services to the approved communities within the MLP 
 
 ## Matrix media repo services
 ### Discord media proxy
-Due to [MSC3860] being not supported on homeservers not implementing the [Matrix 1.7 specification](https://github.com/matrix-org/synapse/issues/15661), most Matrix homeservers will not recognize `discord-media.mau.dev`, the public redirecting Discord media repo. To circumvent this, we offer a custom cached Discord media proxy at `dmr.ltgc.cc` instead for use of bridges.
+Due to [MSC3860](https://github.com/matrix-org/matrix-spec-proposals/pull/3860) being not supported on homeservers not implementing the [Matrix 1.7 specification](https://github.com/matrix-org/synapse/issues/15661), most Matrix homeservers will not recognize `discord-media.mau.dev`, the public redirecting Discord media repo. To circumvent this, we offer a custom cached Discord media proxy at `dmr.ltgc.cc` instead for use of bridges.
 
 However, it will likely be shut down to public access if we notice it getting abused.
