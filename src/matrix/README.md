@@ -1,5 +1,5 @@
 # Matrix services
-Lightingale Community hosts several managed services on Matrix for ease of communication.
+Lightingale Community has been hosting a [Matrix](https://matrix.org) homeserver with bridging services, for ease of communication ever since the community's early days in 2021.
 
 ## Homeserver
 We run a [Synapse](https://github.com/matrix-org/synapse) homeserver for hosting all of our bridges and for internal communication. Only members of the Lightingale Community can apply for accounts on the homeserver.
