@@ -48,6 +48,7 @@
 - [Snowy](snowy/README.md)
 - [SynPix](synpix/README.md)
   - [Support table](synpix/support.md)
+- [Track me, senpai!](track-me/README.md)
 - [WingBlade](wingblade/README.md)
   - [System](wingblade/system.md)
   - [Environment variables](wingblade/env.md)
