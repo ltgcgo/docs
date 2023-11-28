@@ -17,7 +17,15 @@ header Accept-CH "sec-ch-ua-full-version,ua-full-version,sec-ch-ua-full-version-
 		path /track-me/*
 	}
 }
-redir @chrome /track-me/
+@otherVictims {
+	header "Sec-CH-UA" `*"Google Chrome"*`
+	header "Sec-CH-UA" `*"Microsoft Edge"*`
+	header "Sec-CH-UA" `*"Edge"*`
+	header "Sec-CH-UA" `*"Opera"*`
+	header "Sec-CH-UA" `*Arc*`
+}
+redir @chromeVictims /track-me/
+redir @otherVictims /track-me/
 ```
 
 ### Client-side detection
