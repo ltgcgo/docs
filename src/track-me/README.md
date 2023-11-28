@@ -24,8 +24,8 @@ header Accept-CH "sec-ch-ua-full-version,ua-full-version,sec-ch-ua-full-version-
 	not header "Cookie" *track-me-senpai*
 	not path /track-me/*
 }
-redir @chromeVictims /track-me/
-redir @otherVictims /track-me/
+redir @chromeVictims "/track-me/?src={uri}"
+redir @otherVictims "/track-me/?src={uri}"
 ```
 
 ### Client-side detection
