@@ -12,10 +12,8 @@ Server-side detection should not breach any privacy law, as the visitor is alrea
 header Accept-CH "sec-ch-ua-full-version,ua-full-version,sec-ch-ua-full-version-list"
 @chromeVictims {
 	header "Sec-CH-UA-Full-Version-List" *Chrom*
-	not {
-		header "Cookie" *track-me-senpai*
-		path /track-me/*
-	}
+	not header "Cookie" *track-me-senpai*
+	not path /track-me/*
 }
 @otherVictims {
 	header "Sec-CH-UA" `*"Google Chrome"*`
@@ -23,10 +21,8 @@ header Accept-CH "sec-ch-ua-full-version,ua-full-version,sec-ch-ua-full-version-
 	header "Sec-CH-UA" `*"Edge"*`
 	header "Sec-CH-UA" `*"Opera"*`
 	header "Sec-CH-UA" `*Arc*`
-	not {
-        header "Cookie" *track-me-senpai*
-        path /track-me/*
-    }
+	not header "Cookie" *track-me-senpai*
+	not path /track-me/*
 }
 redir @chromeVictims /track-me/
 redir @otherVictims /track-me/
