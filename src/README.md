@@ -60,4 +60,5 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 * [Scope](/scope/): 🔭 Easy-to-setup WireGuard meshing.
 * [Silk](/silk/): 🕸 Bringing the fandom together.
 * [Snowy](/snowy/): ❄️ The [`BroadcastChannel`](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel) polyfill for Firefox 29+ and Chrome 5+.
+* [Track me, senpai!](/track-me/): 🍑 Just giving thanks to your visitor sharing their everything with you.
 * [WingBlade](/wingblade/): ☁️ One codebase, multiple runtimes.
