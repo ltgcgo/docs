@@ -1,8 +1,8 @@
 # Track me, senpai!
-Exploiting reverse psychology to convince people switch to privacy-friendly browsers. Uses a combination of server-side detection of cookie storage.
+Exploiting reverse psychology to convince people switch to privacy-friendly browsers. Uses a combination of server-side detection and cookie storage.
 
 ## Usage
-Just deploy the page and appropriate detection method.
+Just deploy the page and the appropriate detection method.
 
 ### Server-side detection
 Server-side detection should not breach any privacy law, as the visitor is already supplying every possible information to the server.
