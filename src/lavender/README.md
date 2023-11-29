@@ -12,7 +12,7 @@ The service can be accessed from the addresses listed below.
 * Clearnet (not recommended): [lavender.ltgc.cc](https://lavender.ltgc.cc)
 * [Tor](https://torproject.org): [lavender...j33btaqd.onion](https://lavenderrhgg7cr5yb6suidzwi3znetl5jv3t2id6vnv6iepj33btaqd.onion)
 * [I2P](https://geti2p.net) ([I2Pd](https://i2pd.website/)): [lavender.ltgc.i2p](https://lavender.ltgc.i2p) or [lavender...v6bg4rfa.b32.i2p](https://lavenderhkhmbjscgagcrvw6jkl4a4jlbewtp5ksfxspv6bg4rfa.b32.i2p)
-* [Lokinet](https://lokinet.org): *coming soon*
+* [Lokinet](https://lokinet.org): [mwt5jdqg...jpxctyeo.loki](https://mwt5jdqgi49zwezkx3m8w816uquxah51oaiifymtsdohjpxctyeo.loki)
 * [Yggdrasil](https://yggdrasil-network.github.io): [lav.ygg.ltgc.cc](https://lav.ygg.ltgc.cc)
 
 ### Accounts
