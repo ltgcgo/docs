@@ -16,6 +16,7 @@ AUP does not cover cases where reasons of policy enforcements are explained.
 * Gaining unauthorized resource access.
 * Degrading the performance of our servers (e.g. flooding).
 * Violating others privacy (e.g. doxxing).
+* Impersonating existing identities without stating satire status.
 * Exploiting stolen identities.
 * Distributing unsolicited data (e.g. spam).
 * Scamming.
