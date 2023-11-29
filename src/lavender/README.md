@@ -19,10 +19,10 @@ The service can be accessed from the addresses listed below.
 #### Alpha phase
 Lavender is still in the alpha phase. During the alpha phase...
 
-* Only people already having a presence on Fediverse can apply for account registration. You must fulfill any criteria listed below.
-* * Have an account on one of the [Silked](https://fedi.ponysearch.eu/next) instances for more than 2 weeks, with at least 5 posts in total.
-  * Have an account on any public Fediverse instances for more than 2 weeks, with at least 5 posts in total, and is from the My Little Pony fandom.
-  * Be a member of the Lightingale Community.
+- Only people already having a presence on Fediverse can apply for account registration. You must fulfill any criteria listed below.
+  - Have an account on one of the [Silked](https://fedi.ponysearch.eu/next) instances for more than 2 weeks, with at least 5 posts in total.
+  - Have an account on any public Fediverse instances for more than 2 weeks, with at least 5 posts in total, and is from the My Little Pony fandom.
+  - Be a member of the Lightingale Community.
 
 ## Panels
 Lavender currently have the following panels.
