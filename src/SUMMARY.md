@@ -8,6 +8,7 @@
   - [Access denial](ltgc/access-denial.md)
   - [Acceptable usage](ltgc/aup.md)
   - [Terms of service](ltgc/tos.md)
+  - [UGC availability](ltgc/nougc.md)
 
 # Services
 - [Lavender](lavender/README.md)
