@@ -72,39 +72,39 @@ None of the consonants require two keys.
 #### Voiceless-voiced pairs
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
-| `p` |  |  |
-| `b` |  |  |
-| `t` |  |  |
-| `d` |  |  |
-| `k` |  |  |
-| `g` |  |  |
-| `s` |  |  |
-| `z` |  |  |
-| `f` |  |  |
-| `v` |  |  |
-| `T` |  |  |
-| `D` |  |  |
-| `S` |  |  |
-| `Z` |  |  |
-| `C` |  |  |
-| `j` |  |  |
-| `q` |  |  |
-| `Q` |  |  |
-| `c` |  |  |
-| `J` |  |  |
+| `p` | p |  |
+| `b` | b |  |
+| `t` | t |  |
+| `d` | d |  |
+| `k` | k |  |
+| `g` | g |  |
+| `s` | s |  |
+| `z` | z |  |
+| `f` | f |  |
+| `v` | v |  |
+| `T` | θ |  |
+| `D` | ð |  |
+| `S` | ʃ |  |
+| `Z` | ʒ |  |
+| `C` | tʃ |  |
+| `j` | dʒ |  |
+| `q` | tr |  |
+| `Q` | dr |  |
+| `c` | ts |  |
+| `J` | dz |  |
 
 #### Aspirated, nasal and etc
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
-| `h` |  |  |
-| `H` |  |  |
-| `m` |  |  |
-| `n` |  |  |
-| `N` |  |  |
-| `l` |  |  |
-| `r` |  |  |
-| `y` |  |  |
-| `w` |  |  |
+| `h` | h |  |
+| `H` | x |  |
+| `m` | m |  |
+| `n` | n |  |
+| `N` | ŋ |  |
+| `l` | l |  |
+| `r` | r |  |
+| `y` | j |  |
+| `w` | w |  |
 
 ### Specials
 These characters will only be present in their respective alphabets, and will be null-routed in others.
