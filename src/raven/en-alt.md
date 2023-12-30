@@ -1,4 +1,4 @@
-# English phonetical alphabets
+# English phonetic alphabets
 As per effort of decreasing the learning curve as much as possible, all English phonetical alphabets share the same set of key map.
 
 ## Included alphabets

@@ -4,7 +4,7 @@
 
 ## Target scripts
 * [Cyrillic](./cyrillic.md)
-* [Shavian](./shavian.md)
+* [English phonetic alphabets](./en-alt.md)
 
 ## Usage
 ### `m17n`
