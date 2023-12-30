@@ -40,7 +40,7 @@
   - [Command line](painted/cli.md)
   - [r/place 2023](painted/rplace2023.md)
 - [Raven](raven/README.md)
-  - [English](raven/en-alt.md)
+  - [English phonetic](raven/en-alt.md)
 - [shx](shx/README.md)
 - [Silk](silk/README.md)
   - [Inclusion](silk/include.md)
