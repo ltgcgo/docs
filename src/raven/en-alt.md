@@ -47,7 +47,7 @@ Vowels require at most two keys.
 #### Diphthongs
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
-| `ei` | eɪ | 𐑴 |
+| `ei` | eɪ | 𐑱 |
 | `ai` | aɪ | 𐑲 |
 | `oi` | ɔɪ | 𐑶 |
 | `eu` | əʊ | 𐑴 |
@@ -55,15 +55,16 @@ Vowels require at most two keys.
 | `au` | aʊ | 𐑬 |
 | `ir` | ɪə | 𐑾 |
 | `er` | ɛə | 𐑺 |
-| `ur` | ʊə | 𐑫 |
+| `ur` | ʊə | 𐑫𐑩 |
 
 #### Shavian compatibles
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
 | `aR` | ɑːr | 𐑸 |
 | `oR` | ɔːr | 𐑹 |
-| `eR` | ɛər | 𐑼 |
-| `Er` `ER` | ɜːr | 𐑻 |
+| `eR` | ɛər | 𐑺 |
+| `Er` | ər | 𐑼 |
+| `ER` | ɜːr | 𐑻 |
 | `iR` | ɪər | 𐑽 |
 | `yU` | juː | 𐑿 |
 
@@ -89,10 +90,10 @@ None of the consonants require two keys.
 | `Z` | ʒ | 𐑠 |
 | `C` | tʃ | 𐑗 |
 | `j` | dʒ | 𐑡 |
-| `q` | tr | 𐑑 |
-| `Q` | dr | 𐑛 |
-| `c` | ts | 𐑑 |
-| `J` | dz | 𐑛 |
+| `q` | tr | 𐑑𐑮 |
+| `Q` | dr | 𐑛𐑮 |
+| `c` | ts | 𐑑𐑕 |
+| `J` | dz | 𐑛𐑟 |
 
 #### Aspirated, nasal and etc
 | Sequence | BEPA | Shavian | Deseret |
