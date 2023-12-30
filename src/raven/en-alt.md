@@ -6,10 +6,14 @@ As per effort of decreasing the learning curve as much as possible, all English 
 BEPA is an adaptation of International Phonetic Alphabet, optimized to represent the sounds of British English, and by extension all of its variants.
 
 ### Shavian alphabet
-The [Shavian alphabet](https://en.wikipedia.org/wiki/Shavian_alphabet) is a constructed alphabet aims to permit efficient writing and spelling.
+The [Shavian alphabet](https://en.wikipedia.org/wiki/Shavian_alphabet) is a constructed alphabet aims to permit efficient writing and spelling for British English Received Pronunciation.
 
 ### Deseret alphabet
-The [Deseret alphabet](https://en.wikipedia.org/wiki/Deseret_alphabet) is a constructed alphabet developed to be used in an English-language spelling reform.
+> **Warning**
+> 
+> Due to a lack of several vowels, there are no plans to support the Deseret alphabet as of yet.
+
+The [Deseret alphabet](https://en.wikipedia.org/wiki/Deseret_alphabet) is a constructed alphabet developed to be used in an English-language spelling reform for American English.
 
 ## Key map
 Keys are ordered via BEPA.
