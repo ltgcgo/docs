@@ -8,7 +8,7 @@
 
 ## Usage
 ### `m17n`
-[`m17n`](https://www.nongnu.org/m17n/) is an IME library for mapped stream conversion of characters.
+[`m17n`](https://www.nongnu.org/m17n/) is an IME library for mapped stream conversion of characters. To develop schemas for `m17n`, read the [database tutorial](https://www.nongnu.org/m17n/manual-en/m17nDBTutorial.html#im-struct).
 
 `m17n` is included in both [IBus](https://github.com/ibus/ibus) (Intelligent Input Bus) and [`fcitx5`](https://fcitx-im.org).
 
@@ -21,7 +21,7 @@
   * If on IBus, run `ibus restart`.
 
 ### Rime
-[Rime](https://rime.im) is an IME framework for implementing custom input schemas for different languages.
+[Rime](https://rime.im) is an IME framework for implementing custom input schemas for different languages. To develop schemas for Rime, [read here](https://github.com/rime/home/wiki/RimeWithSchemata) (machine translation required).
 
 Rime is supported on [Linux via IBus](https://github.com/rime/ibus-rime), [Windows](https://github.com/rime/weasel) and [macOS](https://github.com/rime/squirrel). Platform support is extended with forks, e.g. for fcitx5 ([`fcitx-rime`](https://github.com/fcitx/fcitx-rime)), Android ([Trime](https://github.com/osfans/trime)) and iOS ([Hamster](https://github.com/imfuxiao/Hamster), [iRime](https://github.com/jimmy54/iRime)).
 
