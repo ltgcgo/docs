@@ -24,47 +24,48 @@ Vowels require at most two keys.
 #### Short vowels
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
-| `A` | æ |  |
-| `e` `eh` | ɛ |  |
-| `Ee` `EE` | e |  |
-| `i` `ih` | ɪ |  |
-| `o` `oh` | ɒ |  |
-| `a` `ah` | ʌ |  |
-| `u` `uh` | ʊ |  |
-| `E` `Eh` | ə |  |
-| `I` | i |  |
-| `U` | u |  |
+| `A` | æ | 𐑨 |
+| `e` `eh` | ɛ | 𐑧 |
+| `Ee` `EE` | e | 𐑧 |
+| `i` `ih` | ɪ | 𐑦 |
+| `o` `oh` | ɒ | 𐑪 |
+| `a` `ah` | ʌ | 𐑳 |
+| `u` `uh` | ʊ | 𐑫 |
+| `E` `Eh` | ə | 𐑩 |
+| `I` | i | 𐑦 |
+| `U` | u | 𐑫 |
 
 #### Long vowels
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
-| `ii` | iː |  |
-| `oo` | ɔː |  |
-| `ee` | ɜː |  |
-| `uu` | uː |  |
-| `aa` | ɑː |  |
+| `ii` | iː | 𐑰 |
+| `oo` | ɔː | 𐑷 |
+| `ee` | ɜː | 𐑻 |
+| `uu` | uː | 𐑵 |
+| `aa` | ɑː | 𐑭 |
 
 #### Diphthongs
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
-| `ei` | eɪ |  |
-| `ai` | aɪ |  |
-| `oi` | ɔɪ |  |
-| `eu` | əʊ |  |
-| `ou` | oʊ |  |
-| `au` | aʊ |  |
-| `ir` | ɪə |  |
-| `er` | ɛə |  |
-| `ur` | ʊə |  |
+| `ei` | eɪ | 𐑴 |
+| `ai` | aɪ | 𐑲 |
+| `oi` | ɔɪ | 𐑶 |
+| `eu` | əʊ | 𐑴 |
+| `ou` | oʊ | 𐑴 |
+| `au` | aʊ | 𐑬 |
+| `ir` | ɪə | 𐑾 |
+| `er` | ɛə | 𐑺 |
+| `ur` | ʊə | 𐑫 |
 
 #### Shavian compatibles
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
-| `aR` | ɑːr |  |
-| `oR` | ɔːr |  |
-| `eR` | ɛər |  |
-| `iR` | ɪər |  |
-| `yu` | juː |  |
+| `aR` | ɑːr | 𐑸 |
+| `oR` | ɔːr | 𐑹 |
+| `eR` | ɛər | 𐑼 |
+| `Er` `ER` | ɜːr | 𐑻 |
+| `iR` | ɪər | 𐑽 |
+| `yU` | juː | 𐑿 |
 
 ### Consonants
 None of the consonants require two keys.
@@ -72,39 +73,39 @@ None of the consonants require two keys.
 #### Voiceless-voiced pairs
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
-| `p` | p |  |
-| `b` | b |  |
-| `t` | t |  |
-| `d` | d |  |
-| `k` | k |  |
-| `g` | g |  |
-| `s` | s |  |
-| `z` | z |  |
-| `f` | f |  |
-| `v` | v |  |
-| `T` | θ |  |
-| `D` | ð |  |
-| `S` | ʃ |  |
-| `Z` | ʒ |  |
-| `C` | tʃ |  |
-| `j` | dʒ |  |
-| `q` | tr |  |
-| `Q` | dr |  |
-| `c` | ts |  |
-| `J` | dz |  |
+| `p` | p | 𐑐 |
+| `b` | b | 𐑚 |
+| `t` | t | 𐑑 |
+| `d` | d | 𐑛 |
+| `k` | k | 𐑒 |
+| `g` | g | 𐑜 |
+| `s` | s | 𐑕 |
+| `z` | z | 𐑟 |
+| `f` | f | 𐑓 |
+| `v` | v | 𐑝 |
+| `T` | θ | 𐑔 |
+| `D` | ð | 𐑞 |
+| `S` | ʃ | 𐑖 |
+| `Z` | ʒ | 𐑠 |
+| `C` | tʃ | 𐑗 |
+| `j` | dʒ | 𐑡 |
+| `q` | tr | 𐑑 |
+| `Q` | dr | 𐑛 |
+| `c` | ts | 𐑑 |
+| `J` | dz | 𐑛 |
 
 #### Aspirated, nasal and etc
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
-| `h` | h |  |
-| `H` | x |  |
-| `m` | m |  |
-| `n` | n |  |
-| `N` | ŋ |  |
-| `l` | l |  |
-| `r` | r |  |
-| `y` | j |  |
-| `w` | w |  |
+| `h` | h | 𐑣 |
+| `H` | x | 𐑣 |
+| `m` | m | 𐑥 |
+| `n` | n | 𐑯 |
+| `N` | ŋ | 𐑙 |
+| `l` | l | 𐑤 |
+| `r` | r | 𐑮 |
+| `y` | j | 𐑘 |
+| `w` | w | 𐑢 |
 
 ### Specials
 These characters will only be present in their respective alphabets, and will be null-routed in others.
