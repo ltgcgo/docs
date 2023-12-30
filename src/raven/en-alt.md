@@ -24,18 +24,47 @@ Vowels require at most two keys.
 #### Short vowels
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
+| `A` |
+| `e` `eh` |
+| `Ee` `EE` |
+| `i` `ih` |
+| `o` `oh` |
+| `a` `ah` |
+| `u` `uh` |
+| `E` `Eh` |
+| `I` |
+| `U` |
 
 #### Long vowels
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
+| `ii` |
+| `oo` |
+| `ee` |
+| `uu` |
+| `aa` |
 
 #### Diphthongs
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
+| `ei` |
+| `ai` |
+| `oi` |
+| `eu` |
+| `ou` |
+| `au` |
+| `ir` |
+| `er` |
+| `ur` |
 
 #### Shavian compatibles
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
+| `aR` |
+| `oR` |
+| `eR` |
+| `iR` |
+| `yu` |
 
 ### Consonants
 None of the consonants require two keys.
@@ -43,10 +72,39 @@ None of the consonants require two keys.
 #### Voiceless-voiced pairs
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
+| `p` |
+| `b` |
+| `t` |
+| `d` |
+| `k` |
+| `g` |
+| `s` |
+| `z` |
+| `f` |
+| `v` |
+| `T` |
+| `D` |
+| `S` |
+| `Z` |
+| `C` |
+| `j` |
+| `q` |
+| `Q` |
+| `c` |
+| `J` |
 
 #### Aspirated, nasal and etc
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
+| `h` |
+| `H` |
+| `m` |
+| `n` |
+| `N` |
+| `l` |
+| `r` |
+| `y` |
+| `w` |
 
 ### Specials
 These characters will only be present in their respective alphabets, and will be null-routed in others.
