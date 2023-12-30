@@ -20,6 +20,11 @@
 * Restart your IME framework.
   * If on IBus, run `ibus restart`.
 
+#### Android
+> **Warning**
+> 
+> No input methods on Android support `m17n` currently. For its possible support on Android, please check out the [issue](https://github.com/fcitx5-android/fcitx5-android/issues/414) in the [`fcitx5-android`](https://github.com/fcitx5-android/fcitx5-android) project.
+
 ### Rime
 [Rime](https://rime.im) is an IME framework for implementing custom input schemas for different languages. To develop schemas for Rime, [read here](https://github.com/rime/home/wiki/RimeWithSchemata) (machine translation required).
 
@@ -40,3 +45,10 @@ The official Rime documentation is only available in Orthodox Chinese.
 * (Optional) Customize the new schema as you see fit.
 * Enable the new schema in `%APPDATA%\\Rime\\default.custom.yaml`.
 * Redeploy Rime via start menu or right-click menu of the taskbar icon.
+
+#### Android
+##### fcitx5-android
+TBD.
+
+##### Trime
+TBD.
