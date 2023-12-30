@@ -4,6 +4,7 @@
 
 ## Target scripts
 * [Cyrillic](./cyrillic.md)
+* [Shavian](./shavian.md)
 
 ## Usage
 ### `m17n`
