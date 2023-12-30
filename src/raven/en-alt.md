@@ -19,9 +19,40 @@ The [Deseret alphabet](https://en.wikipedia.org/wiki/Deseret_alphabet) is a cons
 Keys are ordered via BEPA.
 
 ### Vowels
+Vowels require at most two keys.
+
+#### Short vowels
+| Sequence | BEPA | Shavian | Deseret |
+| -------- | ---- | ------- | ------- |
+
+#### Long vowels
+| Sequence | BEPA | Shavian | Deseret |
+| -------- | ---- | ------- | ------- |
+
+#### Diphthongs
+| Sequence | BEPA | Shavian | Deseret |
+| -------- | ---- | ------- | ------- |
+
+#### Shavian compatibles
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
 
 ### Consonants
+None of the consonants require two keys.
+
+#### Voiceless-voiced pairs
 | Sequence | BEPA | Shavian | Deseret |
 | -------- | ---- | ------- | ------- |
+
+#### Aspirated, nasal and etc
+| Sequence | BEPA | Shavian | Deseret |
+| -------- | ---- | ------- | ------- |
+
+### Specials
+These characters will only be present in their respective alphabets, and will be null-routed in others.
+
+| Sequence | BEPA | Shavian | Deseret | Description |
+| -------- | ---- | ------- | ------- | ----------- |
+| `x` | ˈ | N/A | N/A | Primary stress in BEPA/IPA. |
+| `X` | ˌ | N/A | N/A | Secondary stress in BEPA/IPA. |
+| `ax ex ix ox ux` | N/A | · | N/A | Naming dot in Shavian. |
