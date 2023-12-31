@@ -27,6 +27,8 @@
 
 ### Miscellaneous
 * Caddy
+* FabricMC
+* Nixpkgs
 * Syncthing
 
 ## Used technologies
