@@ -5,6 +5,8 @@ To see a list of active projects not included here, feel free to visit the [proj
 
 Site powered by [mdBook](https://github.com/rust-lang/mdBook).
 
+Clearnet CDNs are generously provided by [Cloudflare](https://cloudflare.com), [GCoreLabs](https://gcorelabs.com/cdn), [CloudFront](https://aws.amazon.com/cloudfront/), [CacheFly](https://cachefly.com) and [Fastly](https://www.fastly.com/fast-forward) free of charge.
+
 ## Services
 For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/service/).
 
