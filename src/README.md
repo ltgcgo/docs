@@ -42,6 +42,7 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 
 ### Kotlin
 * [Cotton](/cotton/): 💬 PSK-authenticated Minecraft chat socket.
+* [Pulsewave](/pulsewave/): 🔊 Universal modularized cross-device audio connections (Android).
 
 ### JavaScript
 * [Berry](/berry/): 🍇 Simple port exposure tunnel for stream entropy manipulation.
