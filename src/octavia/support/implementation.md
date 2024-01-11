@@ -64,7 +64,7 @@
 			<td>0-24 semitone steps<br/>14-bit resolution</td>
 		</tr>
 		<tr>
-			<td rowspan=53>Control Change</td>
+			<td rowspan=68>Control Change</td>
 			<td>0</td>
 			<td>✓</td>
 			<td>MSB Bank Select</td>
@@ -328,6 +328,81 @@
 			<td>128</td>
 			<td>✓</td>
 			<td>Dry level (internal)</td>
+		</tr>
+		<tr>
+			<td>129</td>
+			<td>✓</td>
+			<td>VL Pressure (internal)</td>
+		</tr>
+		<tr>
+			<td>130</td>
+			<td>✓</td>
+			<td>VL Embouchure (internal)</td>
+		</tr>
+		<tr>
+			<td>131</td>
+			<td>✓</td>
+			<td>VL Tonguing (internal)</td>
+		</tr>
+		<tr>
+			<td>132</td>
+			<td>✓</td>
+			<td>VL Scream (internal)</td>
+		</tr>
+		<tr>
+			<td>133</td>
+			<td>✓</td>
+			<td>VL Breath Noise (internal)</td>
+		</tr>
+		<tr>
+			<td>134</td>
+			<td>✓</td>
+			<td>VL Growl (internal)</td>
+		</tr>
+		<tr>
+			<td>135</td>
+			<td>✓</td>
+			<td>VL Throat Formant (internal)</td>
+		</tr>
+		<tr>
+			<td>136</td>
+			<td>✓</td>
+			<td>VL Harmonic Enhancer (internal)</td>
+		</tr>
+		<tr>
+			<td>137</td>
+			<td>✓</td>
+			<td>VL Damping (internal)</td>
+		</tr>
+		<tr>
+			<td>138</td>
+			<td>✓</td>
+			<td>VL Absorption (internal)</td>
+		</tr>
+		<tr>
+			<td>139</td>
+			<td>✓</td>
+			<td>VL Filter (internal)</td>
+		</tr>
+		<tr>
+			<td>140</td>
+			<td>✓</td>
+			<td>VL Amplitude (internal)</td>
+		</tr>
+		<tr>
+			<td>141</td>
+			<td>✓</td>
+			<td>VL Breath Mode (internal)</td>
+		</tr>
+		<tr>
+			<td>142~149</td>
+			<td>✓</td>
+			<td>DX Carrier Level 1~8 (internal)</td>
+		</tr>
+		<tr>
+			<td>150~157</td>
+			<td>✓</td>
+			<td>DX Modulator Level 1~8 (internal)</td>
 		</tr>
 		<tr>
 			<td colspan=2>Program Change</td>
