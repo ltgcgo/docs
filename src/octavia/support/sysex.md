@@ -7,19 +7,19 @@
 * (blank): N/A
 
 ### Mutual instructions
-|                 | GM | GM2 | MT-32 | XG | GS | 05R/W | X5D | NS5R | GMega | GMega LX | SG-01 | GZ-50M |
-| --------------- | -- | --- | ----- | -- | -- | ----- | --- | ---- | ----- | -------- | ----- | ------ |
-| System reset    | ✓  | ✓   | ✓     | ✓  | ✓  |       |     |      | ✓     | ✓        | ✓     |        |
-| Master setup    | ✓  | ✓   | ✓     | ✓  | ✓  |       |     | ✓    | ✓     | ✓        |       |        |
-| Reverb setup    |    | ✕   |       | ✓  | ✓  |       |     |      | ✓     | ✓        | ✓     | ✓      |
-| Chorus setup    |    | ✕   |       | ✓  | ✓  |       |     |      | ✓     | ✓        | ✓     | ✓      |
-| Variation setup |    | ?   |       | ✓  | ✓  |       |     |      |       |          |       |        |
-| Part setup      |    | ?   |       | ✓  | ✓  | ✓     | ✓   | ✓    | ✓     | ✓        |       |        |
-| Equalizer       |    |     |       | ✓  | ✓  |       |     |      |       |          |       |        |
-| EFX / insertion |    |     |       | -  | ✓³ |       |     | -    |       |          |       |        |
-| Bitmap display¹ |    |     |       | ✓  | ✓  |       |     | ✓    |       |          |       |        |
-| Text display²   |    |     | ✓     | ✓  | ✓  |       |     | ✓    |       |          |       |        |
-| Drum setup      |    | ?   | ✕     | ✕  | ✕  | ✕     | ✕   | ✕    | ✕     | ✕        |       |        |
+|                 | GM | GM2 | MT-32 | XG | GS | 05R/W | X5D | NS5R | SD | GMega | GMega LX | SG-01 | GZ-50M |
+| --------------- | -- | --- | ----- | -- | -- | ----- | --- | ---- | -- | ----- | -------- | ----- | ------ |
+| System reset    | ✓  | ✓   | ✓     | ✓  | ✓  |       |     |      | ✓  | ✓     | ✓        | ✓     |        |
+| Master setup    | ✓  | ✓   | ✓     | ✓  | ✓  |       |     | ✓    | ✕  | ✓     | ✓        |       |        |
+| Reverb setup    |    | ✓   |       | ✓  | ✓  |       |     |      | ✓  | ✓     | ✓        | ✓     | ✓      |
+| Chorus setup    |    | ✓   |       | ✓  | ✓  |       |     |      | ✓  | ✓     | ✓        | ✓     | ✓      |
+| Variation setup |    | ?   |       | ✓  | ✓  |       |     |      |    |       |          |       |        |
+| Part setup      |    | ?   |       | ✓  | ✓  | ✓     | ✓   | ✓    | ✓  | ✓     | ✓        |       |        |
+| Equalizer       |    |     |       | ✓  | ✓  |       |     |      | ✕  |       |          |       |        |
+| EFX / insertion |    |     |       | -  | ✓³ |       |     | -    | ✓  |       |          |       |        |
+| Bitmap display¹ |    |     |       | ✓  | ✓  |       |     | ✓    |    |       |          |       |        |
+| Text display²   |    |     | ✓     | ✓  | ✓  |       |     | ✓    |    |       |          |       |        |
+| Drum setup      |    | ?   | ✓     | ✓  | ✓  | ✕     | ✕   | ✓    | ✕  | ✕     | ✕        |       |        |
 
 1. Support in GS is called "frame draw", and with multi-page support.
 2. Called "letter display" in XG, and "text insert" in GS.
