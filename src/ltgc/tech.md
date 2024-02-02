@@ -54,6 +54,7 @@ Technologies listed here will have their usage be discouraged and avoided. Howev
 * [Node.js](https://nodejs.org)
 * [PHP](https://php.net)
 * [Python](https://python.org)
+* [TypeScript](https://www.typescriptlang.org)
 
 ### Operating systems
 * [Ubuntu](https://ubuntu.com)
