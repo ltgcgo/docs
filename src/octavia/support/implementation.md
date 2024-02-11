@@ -332,67 +332,67 @@
 		<tr>
 			<td>129</td>
 			<td>✓</td>
-			<td>VL Pressure (internal)</td>
+			<td>VL Breath Mode (internal)</td>
 		</tr>
 		<tr>
 			<td>130</td>
 			<td>✓</td>
-			<td>VL Embouchure (internal)</td>
+			<td>VL Pressure (internal)</td>
 		</tr>
 		<tr>
 			<td>131</td>
 			<td>✓</td>
-			<td>VL Tonguing (internal)</td>
+			<td>VL Embouchure (internal)</td>
 		</tr>
 		<tr>
 			<td>132</td>
 			<td>✓</td>
-			<td>VL Scream (internal)</td>
+			<td>VL Tonguing (internal)</td>
 		</tr>
 		<tr>
 			<td>133</td>
 			<td>✓</td>
-			<td>VL Breath Noise (internal)</td>
+			<td>VL Scream (internal)</td>
 		</tr>
 		<tr>
 			<td>134</td>
 			<td>✓</td>
-			<td>VL Growl (internal)</td>
+			<td>VL Breath Noise (internal)</td>
 		</tr>
 		<tr>
 			<td>135</td>
 			<td>✓</td>
-			<td>VL Throat Formant (internal)</td>
+			<td>VL Growl (internal)</td>
 		</tr>
 		<tr>
 			<td>136</td>
 			<td>✓</td>
-			<td>VL Harmonic Enhancer (internal)</td>
+			<td>VL Throat Formant (internal)</td>
 		</tr>
 		<tr>
 			<td>137</td>
 			<td>✓</td>
-			<td>VL Damping (internal)</td>
+			<td>VL Harmonic Enhancer (internal)</td>
 		</tr>
 		<tr>
 			<td>138</td>
 			<td>✓</td>
-			<td>VL Absorption (internal)</td>
+			<td>VL Damping (internal)</td>
 		</tr>
 		<tr>
 			<td>139</td>
 			<td>✓</td>
-			<td>VL Filter (internal)</td>
+			<td>VL Absorption (internal)</td>
 		</tr>
 		<tr>
 			<td>140</td>
 			<td>✓</td>
-			<td>VL Amplitude (internal)</td>
+			<td>VL Filter (internal)</td>
 		</tr>
 		<tr>
 			<td>141</td>
 			<td>✓</td>
-			<td>VL Breath Mode (internal)</td>
+			<td>VL Amplitude (internal)</td>
 		</tr>
 		<tr>
 			<td>142~149</td>
