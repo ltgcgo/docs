@@ -332,7 +332,7 @@
 		<tr>
 			<td>129</td>
 			<td>✓</td>
-			<td>VL Breath Mode (internal)</td>
+			<td><s>VL Breath Mode (internal)</s>Unused</td>
 		</tr>
 		<tr>
 			<td>130</td>
