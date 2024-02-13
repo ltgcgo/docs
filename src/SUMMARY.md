@@ -20,6 +20,7 @@
   - [Binary encoding format](ditzy/binfmt.md)
 - [Floaty](floaty/README.md)
 - [Gel](gel/README.md)
+  - [Usage](gel/usage.md)
 - [Octavia](octavia/README.md)
   - [Implementation]()
     - [Audio effects](octavia/impl/efx.md)
