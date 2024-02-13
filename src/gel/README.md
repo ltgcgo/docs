@@ -33,6 +33,13 @@ For bare-metal, virtual machines and LXC containers. Do <u>not</u> run native in
 2. Execute `sh <(curl -Ls https://github.com/ltgcgo/gel/releases/latest/download/install.sh)`.
 3. Connect to the SSH with `ssh -p 1122 <serverIP>`. User passwords won't change, but SSH settings will. See the [SSH](#ssh) section for details.
 
+#### Additional considerations
+##### Alpine Linux
+Gel needs the community repo to be enabled in order to function.
+
+##### openSUSE Leap
+`doas` is not available on the platform. The regular `sudo` is used instead.
+
 ### Containers
 Container images are only offered as a convenient way of inspecting the installations.
 
