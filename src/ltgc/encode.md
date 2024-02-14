@@ -99,6 +99,8 @@ When high sampling rates are required, choose Vorbis. When support for the Apple
 
 Below are the suggested bitrates under different scenarios, when encoding stereo audio content under either 44.1kHz or 48kHz. Audio content should be encoded with constrained variable bitrate (CVBR).
 
+The AAC-LC encoder in question is `libfdk_aac`, being the best FOSS AAC-LC encoder out there. The only AAC-LC encoder better than `libfdk_aac` is Apple's Audio Toolbox, which is proprietary and not in consideration.
+
 | Codec  | Basic   | Stream  | Balanced | Generic | Quality |
 | ------ | ------- | ------- | -------- | ------- | ------- |
 | Opus   | 96kbps  | 144kbps | 160kbps  | 192kbps | 256kbps |
