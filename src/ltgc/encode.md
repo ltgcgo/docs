@@ -90,6 +90,8 @@ MozJPEG-fronted JPEG XL encoding hasn't been tested yet.
 
 The full feature set comparison chart is [available on Cloudinary](https://res.cloudinary.com/cloudinary-marketing/image/upload/w_700,c_fill,f_auto,q_auto,dpr_2.0/Web_Assets/blog/Battle-of-the-Codecs_fnl.png).
 
+![Battle of the image codecs!](https://res.cloudinary.com/cloudinary-marketing/image/upload/w_700,c_fill,f_auto,q_auto,dpr_2.0/Web_Assets/blog/Battle-of-the-Codecs_fnl.png)
+
 ### Lossless
 WebP Lossless should be the lossless image codec to be offered. JPEG XL Lossless should only be offered when it proves to be smaller than WebP in a case-by-case scenario.
 
