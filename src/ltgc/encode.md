@@ -100,4 +100,32 @@ When web support isn't planned, or the target platforms aren't severely underpow
 
 ## Compression
 ### Web
+Brotli should be preferred over `gzip` at all times. Static low-entropy content (e.g. plain text files) should always be pre-compressed, with or without the original uncompressed file available.
+
+<div><table>
+	<thead><tr>
+		<th>Algorithm</th>
+		<th>Use</th>
+		<th>Params</th>
+	</tr></thead>
+	<tbody><tr>
+		<td rowspan=2>Brotli</td>
+		<td>Real-time</td>
+		<td><code>brotli -4</code></td>
+	</tr><tr>
+		<td>Precompression</td>
+		<td><code>brotli -q 11</code></td>
+	</tr><tr>
+		<td rowspan=2>gzip</td>
+		<td>Real-time</td>
+		<td><code>gzip -4</code></td>
+	</tr><tr>
+		<td>Precompression</td>
+		<td><code>zopfli --i25</code></td>
+	</tr></tbody>
+</table></div>
+
 ### Bundle
+`bzip2` should be the default bundle compression algorithm, unless either `lzip` or `xz` is proven to be better in a case-by-case scenario.
+
+Due to platform differences, `xz` should be avoided for automation scripts that may install compression algorithms on the fly.
