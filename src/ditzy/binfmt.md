@@ -46,20 +46,20 @@ The frame ID is iterated from `0` to `268435455` (`0xfffffff`, 2<sup>28</sup> - 
 ### Commands
 IDs between `0` (`0x00`) and `31` (`0x1f`) are reserved for core functionalities. Extenstions are free to utilize any ID between `32` (`0x20`) and `255` (`0xff`).
 
-Different commands have different support levels. To meet a certain support level, features of the indicated level on client-side (CL, client level) and server-side (SL, server level) must be implemented.
+Different commands have different support levels. To meet a certain support level, features of the indicated level  must be implemented.
 
-| ID | Command | CL | SL |
-| -- | ------- | -- | -- |
-| 0 | Socket close | 1 | 1 |
-| 1 | Socket open | 1 | 1 |
-| 2 | Socket aftertouch | 2 | 1 |
-| 3 | Jump | 2 | 1 |
-| 4 | Full message send | 1 | 1 |
-| 5 | Message acknowledge | 1 | 1 |
-| 6 | Error | 2 | 2 |
-| 7 | Implementation exclusive | 3 | 3 |
-| 8 | Partial message send | 3 | 3 |
-| 9 | Partial message send complete | 3 | 3 |
+| ID | Command | Level |
+| -- | ------- | ----- |
+| 0 | Socket close | 1 |
+| 1 | Socket open | 1 |
+| 2 | Socket aftertouch | 2 |
+| 3 | Jump | 2 |
+| 4 | Full message send | 1 |
+| 5 | Message acknowledge | 1 |
+| 6 | Error | 2 |
+| 7 | Implementation exclusive | 3 |
+| 8 | Partial message send | 3 |
+| 9 | Partial message send complete | 3 |
 
 #### `0`: Socket close
 > Can be initiated bidirectionally.
