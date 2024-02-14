@@ -5,39 +5,53 @@ None of the encodings listed are involved with patent concerns.
 	<thead><tr>
 		<th>Usage</th>
 		<th>Encoding</th>
+		<th>Extension</th>
 	</tr></thead>
 	<tbody><tr>
 		<td rowspan=2><b>Rasterized image</b></td>
 		<td>JPEG XL</td>
+		<td><code>.jxl</code></td>
 	</tr><tr>
 		<td>WebP</td>
+		<td><code>.webp</code></td>
 	</tr><tr>
 		<td><b>Vector image</b></td>
 		<td>SVG</td>
+		<td><code>.svg</code></td>
 	</tr><tr>
 		<td rowspan=3><b>Lossy audio</b></td>
 		<td>Opus</td>
+		<td><code>.opus</code></td>
 	</tr><tr>
 		<td>Vorbis</td>
+		<td><code>.ogg</code></td>
 	</tr><tr>
 		<td>AAC-LC</td>
+		<td><code>.m4a</code> <code>.aac</code></td>
 	</tr><tr>
 		<td rowspan=2><b>Lossless audio</b></td>
 		<td>WavPack</td>
+		<td><code>.wv</code></td>
 	</tr><tr>
 		<td>FLAC</td>
+		<td><code>.flac</code></td>
 	</tr><tr>
 		<td rowspan=2><b>Web compression</b></td>
 		<td>Brotli</td>
+		<td><code>.br</code></td>
 	</tr><tr>
 		<td>gzip</td>
+		<td><code>.gz</code></td>
 	</tr><tr>
 		<td rowspan=3><b>Bundle compression</b></td>
 		<td>bzip2</td>
+		<td><code>.bz2</code> <code>.tbz2</code></td>
 	</tr><tr>
 		<td>lzip</td>
+		<td><code>.lz</code> <code>.tlz</code></td>
 	</tr><tr>
 		<td>xz</td>
+		<td><code>.xz</code> <code>.txz</code></td>
 	</tr></tbody>
 </table></div>
 
