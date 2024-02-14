@@ -32,13 +32,13 @@ Each Ditzy message is formed by directly combining multiple frames together. The
 | Length | Value | Description |
 | ------ | ----- | ----------- |
 | 1 | [#Commands](#commands) | Command ID |
-| 1~7 | (7-bit VLV) | Connection ID |
+| 1~7 | (7-bit VLV) | Socket ID |
 | 1~4 | (7-bit VLV) | Frame ID |
 | 1+ | (7-bit VLV) | Payload length |
 | 0+ | (any) | Payload data |
 
-### Connection ID
-The connection ID is randomly selected between `0` and `281474976710655` (`0xffffffffffff`, 2<sup>48</sup> - 1).
+### Socket ID
+The socket ID is randomly selected between `0` and `281474976710655` (`0xffffffffffff`, 2<sup>48</sup> - 1).
 
 ### Frame ID
 The frame ID is iterated from `0` to `268435455` (`0xfffffff`, 2<sup>28</sup> - 1) on the side where connections are initiated. When `268435455` is reached, the message ID is expected to roll back to `0`.
@@ -48,9 +48,9 @@ IDs between `0` (`0x00`) and `31` (`0x1f`) are reserved for core functionalities
 
 | ID | Command |
 | -- | ------- |
-| 0 | Connection close |
-| 1 | Connection open |
-| 2 | Connection aftertouch |
+| 0 | Socket close |
+| 1 | Socket open |
+| 2 | Socket aftertouch |
 | 3 | Jump |
 | 4 | Full message send |
 | 5 | Message acknowledge |
@@ -59,28 +59,28 @@ IDs between `0` (`0x00`) and `31` (`0x1f`) are reserved for core functionalities
 | 8 | Partial message send |
 | 9 | Partial message send complete |
 
-#### `0`: Connection close
+#### `0`: Socket close
 > Can be initiated bidirectionally.
 > 
 > Response should be exactly the same as request.
 
 Closes a connection. Payload can be used to carry optional arbitrary error messages.
 
-#### `1`: Connection open
+#### `1`: Socket open
 > Can be initiated bidirectionally.
 > 
 > Response should have the same frame ID as request.
 
-Opens a connection. Payload is used to define suggested connection timeout in milliseconds optionally.
+Opens a connection. Payload is used to define suggested Socket timeout in milliseconds optionally.
 
 (Optional) If sent from the receiving end, the value contains would be the final timeout value used in the connection.
 
-#### `2`: Connection aftertouch
+#### `2`: Socket aftertouch
 > Can be initiated bidirectionally.
 > 
 > Response should have the same frame ID as request.
 
-Challenges a connection. Often used to implement connection latency tests.
+Challenges a connection. Often used to implement Socket latency tests.
 
 Payload is prefixed with a VLV7 value indicating challenge type, with all remaining bytes containing challenge details.
 
