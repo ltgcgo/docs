@@ -9,7 +9,9 @@
   - [Acceptable usage](ltgc/aup.md)
   - [Terms of service](ltgc/tos.md)
   - [UGC availability](ltgc/nougc.md)
+- [Guidelines]()
   - [Technologies](ltgc/tech.md)
+  - [Content encoding](ltgc/encode.md)
 
 # Services
 - [Lavender](lavender/README.md)
