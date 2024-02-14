@@ -54,9 +54,23 @@ DitzyStream {
 The raw interface sending data to and receiving data from as streams.
 
 ```js
+DitzyPipe {
 	i: ReadableStream
 	o: WritableStream
+}
 ```
 
 #### `DitzySocket`
 A `WebSocket`-like interface to send messages to and receive messages from.
+
+```js
+DitzySocket {
+	readyState: Number <readonly>,
+	textOnly: Boolean,
+	send(msg: Uint8Array|String),
+	close(): null,
+	onclose: Uint8Array|String,
+	onmessage: Uint8Array|String,
+	onopen: null
+}
+```
