@@ -93,7 +93,7 @@ The full feature set comparison chart is [available on Cloudinary](https://res.c
 ![Battle of the image codecs!](https://res.cloudinary.com/cloudinary-marketing/image/upload/w_700,c_fill,f_auto,q_auto,dpr_2.0/Web_Assets/blog/Battle-of-the-Codecs_fnl.png)
 
 ### Lossless
-WebP Lossless should be the lossless image codec to be offered. JPEG XL Lossless should only be offered when it proves to be smaller than WebP in a case-by-case scenario.
+WebP Lossless should always be offered when lossless image codecs are required. JPEG XL Lossless should only be offered alongside when it proves to be smaller than WebP in a case-by-case scenario.
 
 ## Audio encoding
 ### Lossy
