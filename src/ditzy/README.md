@@ -34,8 +34,8 @@ This interface needs to implement the following public methods to let `DitzyStre
 
 ```js
 DitzyDriver {
-	send(): WritableStream // Where data gets sent out
-	onmessage: ReadableStream // Where data gets received
+	send(): WritableStream, // Where data gets sent out
+	onmessage: ReadableStream, // Where data gets received
 }
 ```
 
@@ -44,9 +44,9 @@ The master stream, where underlying sockets gets multiplexed and de-multiplexed.
 
 ```js
 DitzyStream {
-	driver: DitzyDriver // The underlying driver
-	pipe(): DitzyPipe // Creates a new connection
-	sock(): DitzySocket // Creates a new connection
+	driver: DitzyDriver, // The underlying driver
+	pipe(): DitzyPipe, // Creates a new connection
+	sock(): DitzySocket, // Creates a new connection
 }
 ```
 
@@ -55,8 +55,8 @@ The raw interface sending data to and receiving data from as streams.
 
 ```js
 DitzyPipe {
-	i: ReadableStream
-	o: WritableStream
+	i: ReadableStream,
+	o: WritableStream,
 }
 ```
 
