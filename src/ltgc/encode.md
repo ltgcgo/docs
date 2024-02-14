@@ -140,6 +140,6 @@ Brotli should be preferred over `gzip` at all times. Static low-entropy content 
 </table></div>
 
 ### Bundle
-`bzip2` should be the default bundle compression algorithm, unless either `lzip` or `xz` is proven to be better in a case-by-case scenario.
+`bzip2` should be the default bundle compression algorithm, unless either `lzip` or `xz` is proven to be better in a case-by-case scenario. Quality should always set to `9`, unless a lower quality value is proven to yield a better result for smaller files.
 
 Due to platform differences, `xz` should be avoided for automation scripts that may install compression algorithms on the fly.
