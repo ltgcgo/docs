@@ -21,6 +21,22 @@ The following bridges only support direct messages.
 
 * [Twitter](https://twitter.com) (via [mautrix-twitter](https://github.com/mautrix/twitter))
 
+### Known issues
+#### Global
+- Due to some unknown bug in Caddy, requests with bodies larger than 1000 KiB will be cut off by Caddy without emitting errors. This will cause some media messages fail to upload, and in turn, get bridged.
+  - This is an issue plaguing all of the web infrastructure within LTGC for quite some while now.
+- Animated stickers on certain platforms may only get their first frame be bridged, due to varying media codec support on different platforms.
+- Double-bridged replies may not work on certain platforms.
+
+#### Telegram
+- Reactions aren't bridged from Telegram.
+- The Telegram bridge suffers from downtimes caused by Python, the underlying runtime. It has to be manually rebooted.
+- Bot messages from Telegram cannot be bridged to other platforms, per Telegram's restriction.
+- Senders from other platforms cannot be transparently bridged to Telegram, requiring embedding their display names as message content.
+
+#### Discord
+- Due to Discord validating time-sensitive HMAC codes on attachment URLs, media from Discord cannot be bridged currently.
+
 ## Bridging service
 ### FLOSS projects
 If applied, we will offer free bridging services to the approved FLOSS projects.

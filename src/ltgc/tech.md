@@ -48,7 +48,7 @@ Technologies listed here have some of our projects using them. None of the techn
 * [PostgreSQL](https://postgresql.org/)
 
 ## Avoided technologies
-Technologies listed here will have their usage be discouraged and avoided. However, projects can still develop for them, only if the use of them is necessary.
+Technologies listed here will have their usage be discouraged and avoided. However, projects can still develop for them only if necessary. Software already developed with these technologies can also be deployed.
 
 ### Languages and runtimes
 * [Node.js](https://nodejs.org)
