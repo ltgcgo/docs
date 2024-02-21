@@ -52,6 +52,10 @@ None of the encodings listed are involved with patent concerns.
 	</tr><tr>
 		<td>xz</td>
 		<td><code>.xz</code> <code>.txz</code></td>
+	</tr><tr>
+		<td><b>Font</b></td>
+		<td>WOFF2</td>
+		<td><code>.woff2</code></td>
 	</tr></tbody>
 </table></div>
 
@@ -120,6 +124,8 @@ When web support isn't planned, or the target platforms aren't severely underpow
 ### Web
 Brotli should be preferred over `gzip` at all times. Static low-entropy content (e.g. plain text files) should always be pre-compressed, with or without the original uncompressed file available.
 
+For static precompression, the original file can be omitted when the space is constrained, serving only precompressed blobs. When compatibility with other infrastructure isn't in consideration, precompressed `gzip` files can also be omitted, although it's not recommended in most cases.
+
 <div><table>
 	<thead><tr>
 		<th>Algorithm</th>
@@ -147,3 +153,6 @@ Brotli should be preferred over `gzip` at all times. Static low-entropy content 
 `bzip2` should be the default bundle compression algorithm, unless either `lzip` or `xz` is proven to be better in a case-by-case scenario. Quality should always set to `9`, unless a lower quality value is proven to yield a better result for smaller files.
 
 Due to platform differences, `xz` should be avoided for automation scripts that may install compression algorithms on the fly.
+
+## Font
+As practically all modern browsers support the WOFF2 font format, all required TrueType and OpenType fonts must be served as WOFF2 files instead. If for unspecified reasons that original files must be served, always consider precompression and avoid storing uncompressed files.
