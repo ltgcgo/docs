@@ -15,8 +15,10 @@
 * [Yggdrasil](https://yggdrasil-network.github.io)
 
 ### Operating systems
+* [AlmaLinux](https://almalinux.org)
 * [Alpine Linux](https://alpinelinux.org)
 * [Debian](https://debian.org)
+* [openSUSE](https://opensuse.org)
 * [Rocky Linux](https://rockylinux.org)
 
 ### Virtualization and containerization
@@ -37,9 +39,6 @@ Technologies listed here have some of our projects using them. None of the techn
 - [Java](https://java.com/en/)
   - [OpenJDK](https://openjdk.org)
   - [Microsoft OpenJDK](https://microsoft.com/openjdk)
-
-### Operating systems
-* [openSUSE](http://opensuse.org/)
 
 ### Virtualization and containerization
 * [Docker](https://docker.io/)
