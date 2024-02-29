@@ -55,8 +55,8 @@ The above portion is not yet decided.
 | 001 | Bright Grand Piano       |
 | 002 | Electric Grand Piano     |
 | 003 | Honky-tonk Piano         |
-| 004 | Electric Piano 1         |
-| 005 | Electric Piano 2         |
+| 004 | Electric Piano           |
+| 005 | Chorused Electric Piano  |
 | 006 | Harpsichord              |
 | 007 | Clavichord               |
 
@@ -185,7 +185,7 @@ The above portion is not yet decided.
 ### Synth pad
 | PC# | Voice Name               |
 | --- | ------------------------ |
-| 088 | New Age Pad              |
+| 088 | New Age Pad<sup>1</sup>  |
 | 089 | Warm Pad                 |
 | 090 | Poly Synth Pad           |
 | 091 | Choir Pad                |
@@ -193,6 +193,8 @@ The above portion is not yet decided.
 | 093 | Metal Pad                |
 | 094 | Halo Pad                 |
 | 095 | Sweep Pad                |
+
+1. Or "Fantasia Pad".
 
 ### Synth melodic sound effects
 | PC# | Voice Name               |
