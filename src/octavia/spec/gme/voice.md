@@ -1,31 +1,49 @@
 # Voice list
 ## Drum voices
+Drum kits will reside on MSB 124, and all level 1 kits will also reside on MSB 120.
+
+The above portion is not yet decided.
+
 | PC# | Drum Kit Name         | Level |
 | --- | --------------------- | ----- |
 | 000 | Standard Kit          | 1     |
 | 001 | Standard Kit 2        | 2     |
+| 002 | Standard Kit 3        | 4     |
+| 003 | Standard Kit L/R      | 5     |
 | 008 | Room Kit              | 1     |
 | 009 | Hip Hop Kit           | 3     |
 | 010 | Jungle Kit            | 3     |
 | 011 | Techno Kit            | 4     |
+| 012 | Dark Room Kit         | 5     |
+| 013 | House Kit             | 4     |
+| 014 | Techno Kit High       | 4     |
+| 015 | Techno Kit Low        | 4     |
 | 016 | Power Kit/Rock Kit    | 1     |
+| 017 | Rock Kit 2            | 3     |
+| 018 | Rock Kit 3            | 4     |
+| 019 | R&B Kit               | 4     |
 | 024 | Electro Kit           | 1     |
 | 025 | Analog Kit            | 1     |
 | 026 | Analog Kit 2          | 3     |
 | 027 | Dance Kit             | 3     |
+| 028 | Rave Kit              | 5     |
 | 030 | Apogee Kit            | 4     |
 | 031 | Perigee Kit           | 4     |
 | 032 | Jazz Kit              | 2     |
+| 033 | Jazz Kit L/R          | 5     |
 | 040 | Brush Kit             | 1     |
 | 041 | Brush Kit 2           | 4     |
 | 048 | Orchestra Kit         | 1     |
 | 049 | Ethnic Kit            | 2     |
 | 050 | Sakura Kit            | 5     |
 | 051 | China Kit             | 5     |
-| 052 | Asian Kit             | 4     |
+| 052 | Asian Kit             | 3     |
+| 053 | Orchestra Kit Y       | 5     |
 | 054 | Gamelan Kit           | 5     |
 | 055 | Gamelan Kit 2         | 5     |
 | 056 | SFX Kit               | 2     |
+| 057 | SFX Kit Y             | 2     |
+| 058 | SFX Kit Y 2           | 2     |
 | 060 | SFX Kit 2             | 5     |
 | 064 | Percussion Kit        | 2     |
 
