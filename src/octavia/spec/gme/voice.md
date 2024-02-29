@@ -1,16 +1,33 @@
 # Voice list
 ## Drum voices
-| PC# | Drum Kit Name         | Optional |
-| --- | --------------------- | -------- |
-| 000 | Standard Kit          | No       |
-| 001 | Standard Kit 2        | Yes      |
-| 009 | Room Kit              | No       |
-| 016 | Power Kit/Rock Kit    | No       |
-| 024 | Electro Kit           | No       |
-| 025 | Analog Kit            | No       |
-| 032 | Jazz Kit              | Yes      |
-| 040 | Brush Kit             | No       |
-| 048 | Orchestra Kit         | No       |
+| PC# | Drum Kit Name         | Level |
+| --- | --------------------- | ----- |
+| 000 | Standard Kit          | 1     |
+| 001 | Standard Kit 2        | 2     |
+| 008 | Room Kit              | 1     |
+| 009 | Hip Hop Kit           | 3     |
+| 010 | Jungle Kit            | 3     |
+| 011 | Techno Kit            | 4     |
+| 016 | Power Kit/Rock Kit    | 1     |
+| 024 | Electro Kit           | 1     |
+| 025 | Analog Kit            | 1     |
+| 026 | Analog Kit 2          | 3     |
+| 027 | Dance Kit             | 3     |
+| 030 | Apogee Kit            | 4     |
+| 031 | Perigee Kit           | 4     |
+| 032 | Jazz Kit              | 2     |
+| 040 | Brush Kit             | 1     |
+| 041 | Brush Kit 2           | 4     |
+| 048 | Orchestra Kit         | 1     |
+| 049 | Ethnic Kit            | 2     |
+| 050 | Sakura Kit            | 5     |
+| 051 | China Kit             | 5     |
+| 052 | Asian Kit             | 4     |
+| 054 | Gamelan Kit           | 5     |
+| 055 | Gamelan Kit 2         | 5     |
+| 056 | SFX Kit               | 2     |
+| 060 | SFX Kit 2             | 5     |
+| 064 | Percussion Kit        | 2     |
 
 ## Melodic voices
 ### Piano
