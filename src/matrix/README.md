@@ -39,13 +39,18 @@ The following bridges only support direct messages.
 
 ## Bridging service
 ### FLOSS projects
-If applied, we will offer free bridging services to the approved FLOSS projects.
+If applied and approved, we will offer free bridging services to the approved FLOSS projects.
 
 * [RethinkDNS](https://rethinkdns.com) (Apache 2.0, MPL 2.0)
 * [Xray](https://xtls.github.io/en/) (MPL)
 
 ### MLP fandom communities
-We also offer free bridging services to the approved communities within the MLP fandom.
+We offer free bridging services to the approved communities within the MLP fandom after approval.
+
+### Not-for-profit entities
+We offer free bridging services to not-for-profit entities after approval.
+
+* [Uncyclopedia (Traditional Chinese)](https://uncyclopedia.tw)
 
 ## Matrix media repo services
 ### Discord media proxy
