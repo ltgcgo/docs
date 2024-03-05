@@ -1,5 +1,5 @@
 # Acceptable Usage Policy
-*As of 6th Oct 2023, these terms are not yet in effect.*
+*These terms do not yet have legal liabilities, however they are enforced.*
 
 <u>Underlined</u> terms should have definitions available in the *Definitions* section.
 
