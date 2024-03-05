@@ -42,6 +42,7 @@ The following bridges only support direct messages.
 If applied, we will offer free bridging services to the approved FLOSS projects.
 
 * [RethinkDNS](https://rethinkdns.com) (Apache 2.0, MPL 2.0)
+* [Xray](https://xtls.github.io/en/) (MPL)
 
 ### MLP fandom communities
 We also offer free bridging services to the approved communities within the MLP fandom.
