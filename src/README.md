@@ -33,6 +33,7 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 
 ### Go
 * [Floaty](/floaty/): ☁️ Prevent Caddy loopbacks... Without traceability.
+* [Pulsewave Desktop](/pulsewave/): 🔊 Universal modularized cross-device audio connections (Linux, Windows, macOS).
 * [Trampoline](/trampoline/): 🥁 Chat sockets to Matrix bridge.
 * [Usher](/usher/): 🚸 Rolling sticky hash load balancing on Caddy.
 
@@ -42,7 +43,7 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 
 ### Kotlin
 * [Cotton](/cotton/): 💬 PSK-authenticated Minecraft chat socket.
-* [Pulsewave](/pulsewave/): 🔊 Universal modularized cross-device audio connections (Android).
+* [Pulsewave Android](/pulsewave/): 🔊 Universal modularized cross-device audio connections (Android).
 
 ### JavaScript
 * [Berry](/berry/): 🍇 Simple port exposure tunnel for stream entropy manipulation.
@@ -60,8 +61,10 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 * [Octavia](/octavia/): 🎻 Event-driven multi-standard MIDI state-tracking library.
 * [Painted Palette](/painted/): 🎨 Painting palettes, one pixel at a time.
 * [Parchment](/parchment/): 📃 Mark-down based client-side page generator.
+* [Rochelle](/rochelle/): 🔪 Stream chunk splitting.
 * [Scope](/scope/): 🔭 Easy-to-setup WireGuard meshing.
 * [Silk](/silk/): 🕸 Bringing the fandom together.
 * [Snowy](/snowy/): ❄️ The [`BroadcastChannel`](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel) polyfill for Firefox 29+ and Chrome 5+.
 * [Track me, senpai!](/track-me/): 🍑 Just giving thanks to your visitor sharing their everything with you.
+* [Twinkle](/twinkle/): 📜 A simple WAL for JavaScript.
 * [WingBlade](/wingblade/): ☁️ One codebase, multiple runtimes.

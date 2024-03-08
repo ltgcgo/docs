@@ -45,6 +45,8 @@
   - [r/place 2023](painted/rplace2023.md)
 - [Raven](raven/README.md)
   - [English phonetic](raven/en-alt.md)
+- [Rochelle](rochelle/README.md)
+  - [Text emitter](rochelle/text-emit.md)
 - [shx](shx/README.md)
 - [Silk](silk/README.md)
   - [Inclusion](silk/include.md)
