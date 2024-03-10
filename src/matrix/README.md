@@ -27,10 +27,12 @@ The following bridges only support direct messages.
   - This is an issue plaguing all of the web infrastructure within LTGC for quite some while now.
 - Animated stickers on certain platforms may only get their first frame be bridged, due to varying media codec support on different platforms.
 - Double-bridged replies may not work on certain platforms.
+- The bridge may become unresponsive when overloaded. You can help us relieve this problem via donations!
 
 #### Telegram
 - Reactions aren't bridged from Telegram.
 - The Telegram bridge suffers from downtimes caused by Python, the underlying runtime. It has to be manually rebooted.
+- The Telegram bridge will randomly become unresponsive for no other reason than the underlying Python runtime.
 - Bot messages from Telegram cannot be bridged to other platforms, per Telegram's restriction.
 - Senders from other platforms cannot be transparently bridged to Telegram, requiring embedding their display names as message content.
 
@@ -54,6 +56,6 @@ We offer free bridging services to not-for-profit entities after approval.
 
 ## Matrix media repo services
 ### Discord media proxy
-Due to [MSC3860](https://github.com/matrix-org/matrix-spec-proposals/pull/3860) being not supported on homeservers not implementing the [Matrix 1.7 specification](https://github.com/matrix-org/synapse/issues/15661), most Matrix homeservers will not recognize `discord-media.mau.dev`, the public redirecting Discord media repo. To circumvent this, we offer a custom cached Discord media proxy at `dmr.ltgc.cc` instead for use of bridges.
+Due to [MSC3860](https://github.com/matrix-org/matrix-spec-proposals/pull/3860) being unsupported on homeservers not implementing the [Matrix 1.7 specification](https://github.com/matrix-org/synapse/issues/15661), most homeservers will not recognize `discord-media.mau.dev`, the public redirecting Discord media repo. To circumvent this, we offer a custom cached Discord media proxy at `dmr.ltgc.cc` instead for use of bridges, however it will likely be shut down to public access if we notice it getting abused.
 
-However, it will likely be shut down to public access if we notice it getting abused.
+After Discord implemented expirations on media links with HMAC validation, the media proxy now only serves avatars, stickers and custom emojis.

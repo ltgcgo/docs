@@ -66,5 +66,5 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 * [Silk](/silk/): 🕸 Bringing the fandom together.
 * [Snowy](/snowy/): ❄️ The [`BroadcastChannel`](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel) polyfill for Firefox 29+ and Chrome 5+.
 * [Track me, senpai!](/track-me/): 🍑 Just giving thanks to your visitor sharing their everything with you.
-* [Twinkle](/twinkle/): 📜 Task wait signals and WAL.
+* [Twinkle Sprinkle](/twinkle/): 📜 Task wait signals and simple WAL.
 * [WingBlade](/wingblade/): ☁️ One codebase, multiple runtimes.
