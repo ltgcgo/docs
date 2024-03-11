@@ -3,8 +3,10 @@
 💨 Lightning-fast intuitive typing.
 
 ## Target scripts
-* [Cyrillic](./cyrillic.md)
+* [Arabic script](./arabic.md)
+* [Cyrillic script](./cyrillic.md)
 * [English phonetic alphabets](./en-alt.md)
+* [Mongolian](./mn.md)
 
 ## Usage
 ### `m17n`
