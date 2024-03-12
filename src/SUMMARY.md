@@ -15,6 +15,7 @@
 
 # Services
 - [Lavender](lavender/README.md)
+  - [Panels](lavender/panel.md)
 - [Matrix services](matrix/README.md)
 
 # Projects
