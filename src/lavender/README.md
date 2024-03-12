@@ -15,21 +15,17 @@ The service can be accessed from the addresses listed below.
 * [Lokinet](https://lokinet.org): [mwt5jdqg...jpxctyeo.loki](https://mwt5jdqgi49zwezkx3m8w816uquxah51oaiifymtsdohjpxctyeo.loki)
 * [Yggdrasil](https://yggdrasil-network.github.io): [lav.ygg.ltgc.cc](https://lav.ygg.ltgc.cc)
 
-### Accounts
+### Account registration
 #### Alpha phase
 Lavender is still in the alpha phase. During the alpha phase...
 
 - Only people already having a presence on Fediverse can apply for account registration. You must fulfill any criteria listed below.
-  - Have an account on one of the [Silked](https://fedi.ponysearch.eu/next) instances for more than 2 weeks, with at least 5 posts in total.
-  - Have an account on any public Fediverse instances for more than 2 weeks, with at least 5 posts in total, and is from the My Little Pony fandom.
+  - Have an account on one of the [listed public](https://fedi.ponysearch.eu/next) instances for more than 14 days, with at least 7 posts in total.
+  - Have an account on any public Fediverse instances for more than 14 days, with at least 7 posts in total, and the identity relates to the My Little Pony fandom.
   - Be a member of the Lightingale Community.
 
 ## Panels
-Lavender currently have the following panels.
-
-### Fedi Pony Arts Weekly
-New artists on Fediverse often complain about not reaching enough audiences. So what's the solution? Well, with a weekly panel posting a collection of pony art published on the Fediverse, of course!
-
-Name is not final. Rules haven't been set, either.
+Read [Lavender panels](./panel.md).
 
 ## Moderation
+WIP
