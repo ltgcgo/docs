@@ -15,8 +15,11 @@ The service can be accessed from the addresses listed below.
 * [Lokinet](https://lokinet.org): [mwt5jdqg...jpxctyeo.loki](https://mwt5jdqgi49zwezkx3m8w816uquxah51oaiifymtsdohjpxctyeo.loki)
 * [Yggdrasil](https://yggdrasil-network.github.io): [lav.ygg.ltgc.cc](https://lav.ygg.ltgc.cc)
 
-### Account registration
-#### Alpha phase
+## Panels
+Read [Lavender panels](./panel.md).
+
+## Account registration
+### Alpha phase
 Lavender is still in the alpha phase. During the alpha phase...
 
 - Only people already having a presence on Fediverse can apply for account registration. You must fulfill any criteria listed below.
@@ -24,8 +27,9 @@ Lavender is still in the alpha phase. During the alpha phase...
   - Have an account on any public Fediverse instances for more than 14 days, with at least 7 posts in total, and the identity relates to the My Little Pony fandom.
   - Be a member of the Lightingale Community.
 
-## Panels
-Read [Lavender panels](./panel.md).
-
 ## Moderation
-WIP
+### Alpha phase
+Lavender is still in the alpha phase. During the alpha phase...
+
+- Only accounts on the instance itself can apply to become a moderator.
+- Only with two or more 
