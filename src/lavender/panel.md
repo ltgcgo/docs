@@ -23,9 +23,11 @@ Submissions will be denied if they match at least one of criteria listed below.
 * Violates LTGC AUP.
 * Was posted for longer than 14 days to the deadline of the target issue.
 
-#### Voting
+#### Voting and issuing
 Voting of each submission is done in a room accessible to all panel organizers. While the room is bridged to Discord and Telegram, only votes from Matrix and Discord are counted due to technical limitations.
 
-Each eligible voter can part one `:star:` emoji to give a submission an upvote. Submissions with high vote count will be ordered first, and submissions sharing the same vote count have their exact order determined by the hash of the origin URL.
+Each eligible voter can part one ⭐️(`:star:`) emoji to give a submission an upvote. Submissions with high vote count will be ordered first, and submissions sharing the same vote count have their exact order determined by the hash of the origin URL. No downvotes are available.
 
-### Issuing
+Voting of each issue generally begins at 12:00 UTC +0 on every Saturday, and ends at 18:00 UTC +0 on the next day. The dataset should be available shortly after the voting ends, and any organizer can release the issue with the dataset.
+
+To prevent accusations of theft, except for the cover art, all submission images must be hotlinked from source. Cover art is selected among the submission with the top 60% vote count, entirely by the organizer posting the issue with their own preferences. However, it's advised to avoid featuring the same artist within the span of 9 issues, and artists new to the Fediverse are advised to be preferred.
