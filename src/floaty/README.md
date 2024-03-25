@@ -29,11 +29,11 @@ floaty [length [rollDuration]] [{
 
 Whenever Floaty is initialized, the placeholder `http.floaty` would become available within that server block, where placeholders from HTTP handlers are accessible.
 
-When not defined, pool names are generated randomly upon server block provisioning. Floaty pools with the same pool name share the same set of pools. If two Floaty pools with the same name differ on field settings, when trying to modify settings of an existing field, Caddy will error out.
+Generated ID lengths can be any value between `4` and `96`, and out-of-bound values will be clamped into this range. By default, length is set to `8`. Longer IDs may cause excessive resource usage.
 
-Generated ID lengths can be any value between `4` and `96`, and out-of-bound values will be clamped into this range. By default, length is set to `8`. Longer IDs may cause unwanted CPU consumption.
+Roll duration can be set to any value above 10 seconds with millisecond precision, if supported by the [Go duration syntax](https://pkg.go.dev/time#ParseDuration). It's set to 15 minutes by default. A lower rolling duration may cause excessive resource usage.
 
-Roll duration can be set to any value above 10 seconds with millisecond precision, if supported by the [Go duration syntax](https://pkg.go.dev/time#ParseDuration). It's set to 15 minutes by default. A lower rolling duration may cause unwanted CPU consumption.
+When a request is received, Floaty will attempt to check if any of the needed request IDs have expired. Only when expired upon receiving a request, will Floaty begin to regenerate a new ID. This will add a little bit of overhead to each request, however it will prevent unnecessary ID rerolls when not in use.
 
 #### Examples
 Adding a response header with a default Floaty ID:
