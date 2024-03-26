@@ -39,7 +39,7 @@ Vowels require at most two keys.
 | Sequence | BEPA | Shavian | Deseret | Example |
 | -------- | ---- | ------- | ------- | ------- |
 | `ii` | iː | 𐑰 | | **ea**t |
-| `oo` | ɔː | 𐑷 | | h**al** |
+| `oo` | ɔː | 𐑷 | | **al**l |
 | `ee` | ɜː | 𐑻 | | h**e**r |
 | `uu` | uː | 𐑵 | | wh**o** |
 | `aa` | ɑː | 𐑭 | | c**a**r |
