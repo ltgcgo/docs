@@ -45,8 +45,8 @@ Vowels require at most two keys.
 | `aa` | ɑː | 𐑭 | | c**a**r |
 
 #### Diphthongs
-| Sequence | BEPA | Shavian | Deseret |
-| -------- | ---- | ------- | ------- |
+| Sequence | BEPA | Shavian | Deseret | Example |
+| -------- | ---- | ------- | ------- | ------- |
 | `ei` | eɪ | 𐑱 | | c**a**ke |
 | `ai` | aɪ | 𐑲 | | l**i**ke |
 | `oi` | ɔɪ | 𐑶 | | **oi**l |
