@@ -55,7 +55,10 @@ We offer free bridging services to not-for-profit entities after approval.
 * [Uncyclopedia (Traditional Chinese)](https://uncyclopedia.tw)
 
 ## Matrix media repo services
-### Discord media proxy
-Due to [MSC3860](https://github.com/matrix-org/matrix-spec-proposals/pull/3860) being unsupported on homeservers not implementing the [Matrix 1.7 specification](https://github.com/matrix-org/synapse/issues/15661), most homeservers will not recognize `discord-media.mau.dev`, the public redirecting Discord media repo. To circumvent this, we offer a custom cached Discord media proxy at `dmr.ltgc.cc` instead for use of bridges, however it will likely be shut down to public access if we notice it getting abused.
+### Active Discord media proxy
+As Discord began requiring expiring HMAC validations on media attachments, the Discord bridge now switches to an active proxying approach, before reuploading/re-serving re-encoded optimized media attachments becomes viable. Files delivered via this new approach will be served at `dma.ltgc.cc`.
 
-After Discord implemented expirations on media links with HMAC validation, the media proxy now only serves avatars, stickers and custom emojis.
+### Passive Discord media proxy
+Due to [MSC3860](https://github.com/matrix-org/matrix-spec-proposals/pull/3860) being unsupported on homeservers without conformation of the [Matrix 1.7 specification](https://github.com/matrix-org/synapse/issues/15661), homeservers will not recognize `discord-media.mau.dev`, the public redirecting Discord media repo. To circumvent this, we offer a custom cached Discord media proxy at `dmr.ltgc.cc` instead for use of bridges, however it will likely be shut down to public access if we notice it getting abused.
+
+After Discord implemented expirations on media attachment links with HMAC validation, the media proxy now only serves non-attachment files, like avatars, stickers and custom emojis. Since passive media proxy is less costly to run than active media proxies, it's used whenever possible.
