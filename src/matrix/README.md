@@ -38,6 +38,7 @@ The following bridges only support direct messages.
 
 #### Discord
 - Due to Discord validating time-sensitive HMAC codes on attachment URLs, media from Discord cannot be bridged currently.
+  - This was fixed on 27th March 2024, where a combination of active and passive media proxying was deployed.
 
 ## Bridging service
 ### FLOSS projects
