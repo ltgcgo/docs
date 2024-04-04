@@ -44,14 +44,14 @@ None of the encodings listed are involved with patent concerns.
 		<td><code>.gz</code></td>
 	</tr><tr>
 		<td rowspan=3><b>Bundle compression</b></td>
+		<td>xz</td>
+		<td><code>.xz</code> <code>.txz</code></td>
+	</tr><tr>
 		<td>bzip2</td>
 		<td><code>.bz2</code> <code>.tbz2</code></td>
 	</tr><tr>
 		<td>lzip</td>
 		<td><code>.lz</code> <code>.tlz</code></td>
-	</tr><tr>
-		<td>xz</td>
-		<td><code>.xz</code> <code>.txz</code></td>
 	</tr><tr>
 		<td><b>Font</b></td>
 		<td>WOFF2</td>
