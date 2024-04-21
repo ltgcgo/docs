@@ -39,26 +39,38 @@ The most feature-rich visualizer built on top of Octavia available. Inspired by 
 | Max shown parts  | 64 | 64 | 128  | 8  | 1   | 64       | 16  |
 | PC# start index  | 1  | 1  | 1    | Both | 1 | 0        | N/A |
 | Voice details    | PB | P  | PB   | PF | P   | PF       | N   |
+| Current mode     | B  | L  | C    | B  | B   | D        | D   |
 | Letter display   | ✓  | ✓  | ✓    | ✓  | ✓   | ✓        | ✓   |
 | Bitmap display   | ✓  | ✓  | ✓    | ✓  | ✓   | ✓        | ✓   |
 | Wider bitmap     | ✕  | ✕  | ✓    | ✓  | ✕   | ✓        | ✕   |
+| Chord display¹   | ✕  | ✕  | ✕    | ✓  | ✓   | ✓        | ✕   |
 | Pixel blur       | ✓³ | ✓  | ✓    | ✕  | ✓³  | ✓        | ✕   |
 | Lyrics           | ✕  | ✕  | ✕    | ✕  | ✓   | ✓        | ✓   |
-| Chord display¹   | ✕  | ✕  | ✕    | ✓  | ✓   | ✓        | ✕   |
+| Song title       | ✕  | ✓  | ✕    | ✓  | ✓   | ✓        | ✓   |
+| Meta events      | ✕  | ✕  | ✕    | ✕  | ✕   | ✓        | ✓   |
 | Effect sends     | ✓  | ✓  | ✓    | ✕  | ✕   | ✓        | ✓   |
 | Effect types     | ✕  | ✕  | ✓    | ✕  | ✕   | ✓        | ✕   |
 | Switch part      | ✓  | ✓  | ✓    | ✓  | ✓   | ✓        | ✕   |
 | PB/Transpose     | ✓  | ✓  | ✓    | ✓  | ✕   | ✓        | ✓   |
+| Current position | ✕  | ✕  | ✕    | ✓  | ✓   | ✓        | ✓   |
 | VL monitor       | ✕  | ✕  | ✕    | ✕  | ✕   | ✓        | ✕   |
 | DX monitor       | ✕  | ✕  | ✕    | ✕  | ✕   | ✓        | ✕   |
 | User sound sets  | ✓  | ✓  | ✓    | ✓  | ✓   | ✓        | ✓   |
 | Custom MDAT      | ✕  | ✕  | ✕    | ✕  | ✕   | ✓        | ✕   |
 
+### Voice details
 * N: Name only
 * P: With program number
 * B: With bank number
 * F: With full bank numbers
 
+### Current mode
+* B: Bitmap prompt
+* L: Letter prompt
+* C: Colour change
+* D: Dedicated slot
+
+### Additional notes
 1. Planned feature, not yet implemented.
 2. Octavia NS5R can render voice names with at most 12 characters under certain conditions.
 3. Except for Octavia MU and Octavia PSR, the intensity of pixel blur is customizable.
