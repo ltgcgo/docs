@@ -39,7 +39,7 @@ The most feature-rich visualizer built on top of Octavia available. Inspired by 
 | Max shown parts  | 64 | 64 | 128  | 8  | 1   | 64       | 16  |
 | PC# start index  | 1  | 1  | 1    | Both | 1 | 0        | N/A |
 | Voice details    | PB | P  | PB   | PF | P   | PF       | N   |
-| Current mode     | B  | L  | C    | B  | B   | D        | D   |
+| Current mode     | B  | L  | C    | B  | BL  | CD       | D   |
 | Letter display   | ✓  | ✓  | ✓    | ✓  | ✓   | ✓        | ✓   |
 | Bitmap display   | ✓  | ✓  | ✓    | ✓  | ✓   | ✓        | ✓   |
 | Wider bitmap     | ✕  | ✕  | ✓    | ✓  | ✕   | ✓        | ✕   |
