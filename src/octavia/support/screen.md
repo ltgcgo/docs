@@ -36,6 +36,7 @@ The most feature-rich visualizer built on top of Octavia available. Inspired by 
 |                  | MU | SC | NS5R | QY | PSR | Cambiare |
 | ---------------- | -- | -- | ---- | -- | --- | -------- |
 | Max name length  | 8  | 12 | 10²  | 8  | 8   | 24       |
+| Max shown parts  | 64 | 64 | 128  | 8  | 1   | 64       |
 | Letter display   | ✓  | ✓  | ✓    | ✓  | ✓   | ✓        |
 | Bitmap display   | ✓  | ✓  | ✓    | ✓  | ✓   | ✓        |
 | Wider bitmap     | ✕  | ✕  | ✓    | ✓  | ✕   | ✓        |
