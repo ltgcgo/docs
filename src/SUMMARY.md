@@ -32,6 +32,7 @@
     - [Specs](octavia/support/implementation.md)
     - [SysEx](octavia/support/sysex.md)
     - [Targets](octavia/support/target.md)
+    - [Standard visualizers](octavia/support/screen.md)
   - [API]()
     - [state.mjs](octavia/state/README.md)
   - [Specifications]()
