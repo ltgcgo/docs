@@ -48,6 +48,8 @@ The most feature-rich visualizer built on top of Octavia available. Inspired by 
 | PB/Transpose     | ✓  | ✓  | ✓    | ✓  | ✕   | ✓        |
 | VL monitor       | ✕  | ✕  | ✕    | ✕  | ✕   | ✓        |
 | DX monitor       | ✕  | ✕  | ✕    | ✕  | ✕   | ✓        |
+| User sound sets  | ✓  | ✓  | ✓    | ✓  | ✓   | ✓        |
+| Custom MDAT      | ✕  | ✕  | ✕    | ✕  | ✕   | ✓        |
 
 1. Planned feature, not yet implemented.
 2. Octavia NS5R can render voice names with at most 12 characters under certain conditions.
