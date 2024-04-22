@@ -25,6 +25,7 @@ The following bridges only support direct messages.
 #### Global
 - Due to some unknown bug in Caddy, requests with bodies larger than 1000 KiB will be cut off by Caddy without emitting errors. This will cause some media messages fail to upload, and in turn, get bridged.
   - This is an issue plaguing all of the web infrastructure within LTGC for quite some while now.
+  - The request body problem was fixed on 14th April 2024 when we updated Caddy network-wide with two plugins removed.
 - Animated stickers on certain platforms may only get their first frame be bridged, due to varying media codec support on different platforms.
 - Double-bridged replies may not work on certain platforms.
 - The bridge may become unresponsive when overloaded. You can help us relieve this problem via donations!
@@ -61,6 +62,6 @@ We offer free bridging services to not-for-profit entities after approval.
 As Discord began requiring expiring HMAC validations on media attachments, the Discord bridge now switches to an active proxying approach, before reuploading/re-serving re-encoded optimized media attachments becomes viable. Files delivered via this new approach will be served at `dma.ltgc.cc`.
 
 ### Passive Discord media proxy
-Due to [MSC3860](https://github.com/matrix-org/matrix-spec-proposals/pull/3860) being unsupported on homeservers without conformation of the [Matrix 1.7 specification](https://github.com/matrix-org/synapse/issues/15661), homeservers will not recognize `discord-media.mau.dev`, the public redirecting Discord media repo. To circumvent this, we offer a custom cached Discord media proxy at `dmr.ltgc.cc` instead for use of bridges, however it will likely be shut down to public access if we notice it getting abused.
+Due to [MSC3860](https://github.com/matrix-org/matrix-spec-proposals/pull/3860) being unsupported on homeservers without conformation of the [Matrix 1.7 specification](https://github.com/matrix-org/synapse/issues/15661), homeservers will not recognize `discord-media.mau.dev`, the public redirecting Discord media repo. To circumvent this, we offer a custom cached Discord media proxy at `dmr.ltgc.cc` instead for use with bridges, however it will likely be shut down to public access if we notice it getting abused.
 
 After Discord implemented expirations on media attachment links with HMAC validation, the media proxy now only serves non-attachment files, like avatars, stickers and custom emojis. Since passive media proxy is less costly to run than active media proxies, it's used whenever possible.
