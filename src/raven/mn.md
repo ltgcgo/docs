@@ -3,7 +3,7 @@ Some letters in traditional Mongolian may have multiple codepoints and mappings,
 
 ## Vowels
 | U+ | Keymap | IPA | Mongolian | Manchu | Sibe | Todo |
-| -- | -- | -- | -- | -- | -- |
+| -- | ------ | --- | --------- | ------ | ---- | ---- |
 | 1820 | `a` | ɑ | ᠠ | ᠠ | ᠠ | ᠠ |
 | 1821 | `e` | ə | ᠡ | ᡝ | ᡝ | ᡄ |
 | 1822 | `i` | i | ᠢ | ᡳ | ᡞ | ᡅ |
@@ -17,7 +17,7 @@ Some letters in traditional Mongolian may have multiple codepoints and mappings,
 
 ## Consonants
 | U+ | Keymap | IPA | Mongolian | Manchu | Sibe | Todo |
-| -- | -- | -- | -- | -- | -- | -- |
+| -- | ------ | --- | --------- | ------ | ---- | ---- |
 | 1828 | `n` | n | ᠨ | ᠨ | ᠨ | ᠨ |
 | 1829 | `N` | ŋ | ᠩ | ᠩ | ᡢ | ᡊ |
 | 182A | `b` | b | ᠪ | ᠪ | ᠪ | ᡋ |
