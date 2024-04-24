@@ -32,7 +32,7 @@ Vowels require at most two keys.
 | `a` `ah` | ʌ | 𐑳 | 𐐲 | c**u**t |
 | `u` `uh` | ʊ | 𐑫 | 𐐳 | c**oo**k |
 | `E` `Eh` | ə | 𐑩 | 𐐲 | lov**e**r |
-| `I` | i | 𐑦 | 𐐨 |
+| `I` | i | 𐑦 | 𐐨 | unit**y** |
 | `U` | u | 𐑫 | 𐐭 |
 
 #### Long vowels
@@ -87,7 +87,7 @@ None of the consonants require two keys.
 | `T` | θ | 𐑔 | 𐑃 | **th**ank |
 | `D` | ð | 𐑞 | 𐑄 | mo**th**er |
 | `S` | ʃ | 𐑖 | 𐑇 | **sh**ell |
-| `Z` | ʒ | 𐑠 | 𐑈 | |
+| `Z` | ʒ | 𐑠 | 𐑈 | vi**s**ion |
 | `C` | tʃ | 𐑗 | 𐐽 | **ch**ips |
 | `j` | dʒ | 𐑡 | 𐐾 | **j**uice |
 | `q` | tr | 𐑑𐑮 | 𐐻𐑉 | **tr**y |
