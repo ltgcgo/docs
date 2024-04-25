@@ -5,7 +5,7 @@ Octavia comes with a set of modular standard visualizers with each release.
 ### Octavia MU
 * **Lead developer**: Lumière Élevé
 
-A recreation of the screens on the Yamaha MU line up.
+A recreation of the screens on the Yamaha MU line up. Bitmap is collected with collective effort.
 
 ### Octavia SC
 * **Lead developer**: Lumière Élevé
@@ -15,12 +15,12 @@ A recreation of the screens on Roland SC-55, Roland SC-88 and Roland SC-88 Pro.
 ### Octavia NS5R
 * **Lead developer**: Lumière Élevé
 
-A recreation of the screens on KORG NS5R.
+A recreation of the screens on KORG NS5R, with help from JayB.
 
 ### Octavia QY
 * **Lead developer**: Lumière Élevé
 
-A recreation of the screens on the Yamaha QY line up.
+A recreation of the screens on the Yamaha QY line up, with help from JayB.
 
 ### Octavia PSR
 * **Lead developer**: GFHK-SDGM
