@@ -59,6 +59,13 @@
 | `GDN` | `PO` | Gdansk, Pomeranian | Gdańsk, Pomorskie |
 | `WAW` | `PO` | Warsaw, Masovian | Warszawa, Mazowieckie |
 | `LIS` | `PT` | Lisbon | Lisboa |
+| `EKT` | `RU` | Yekaterinburg, Sverdlovsk | Екатеринбург, Свердловская область |
+| `KHV` | `RU` | Khabarovsk, Khabarovsk Krai | Хабаровск, Хабаровский край |
+| `KZN` | `RU` | Kazan, Tatarstan | Казань, Татарстан |
+| `MOS` | `RU` | Moscow | Москва |
+| `OVB` | `RU` | Novosibirsk, Novosibirsk Oblast | Новосибирск, Новосибирская область |
+| `SPT` | `RU` | Saint Petersburg | Санкт-Петербург |
+| `VVO` | `RU` | Vladivostok, Primorsky Krai | Владивосток, Приморский край |
 | `STO` | `SE` | Stockholm | |
 | `TNP` | `SE` | Tjoernarp, Scania | Tjörnarp, Skåne |
 | `SGP` | `SG` | Singapore | |
