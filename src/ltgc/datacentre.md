@@ -50,3 +50,28 @@
 | `DNK` | `UA` | Dnipro, Dnipropetrovsk Oblast | Дніпро, Дніпропетровська область |
 | `HRK` | `UA` | Kharkiv, Kharkiv Oblast | Харків, Харківська область |
 | `IEV` | `UA` | Kyiv | Київ |
+| `ASH` | `US` | Ashburn, Virginia | |
+| `ATL` | `US` | Atlanta, Georgia | |
+| `BUF` | `US` | Buffalo, New York | |
+| `CHI` | `US` | Chicago, Illinois | |
+| `DAL` | `US` | Dallas, Texas | |
+| `DEN` | `US` | Denver, Colorado | |
+| `EWR` | `US` | Newark, New York | |
+| `FET` | `US` | Fremont, California | |
+| `HIO` | `US` | Hillsboro, Portland | |
+| `HON` | `US` | Honolulu, Hawaii | Honolulu, Hawaiʻi |
+| `HST` | `US` | Houston, Texas | |
+| `JAX` | `US` | Jacksonville, Florida | |
+| `LAS` | `US` | Las Vegas, Nevada | |
+| `LAX` | `US` | Los Angeles, California | |
+| `MIA` | `US` | Miami, Florida | |
+| `NYC` | `US` | New York City, New York | |
+| `PHX` | `US` | Phoenix, Arizona | |
+| `POR` | `US` | Portland, Oregon | |
+| `SCC` | `US` | Secaucus, New Jersey | |
+| `SEA` | `US` | Seattle, Washington | |
+| `SJC` | `US` | San Jose, California | |
+| `SLC` | `US` | Salt Lake City, Utah | |
+| `SNU` | `US` | Santa Clara, California | |
+| `STL` | `US` | St. Louis, Missouri | |
+| `TPA` | `US` | Tampa, Florida | |
