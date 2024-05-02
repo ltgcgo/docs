@@ -46,6 +46,14 @@
 | `LUX` | `LU` | Luxembourg | Lëtzebuerg |
 | `KIV` | `MD` | Chisinau | Chișinău |
 | `KUL` | `MY` | Kuala Lumpur | |
+| `AMS` | `NL` | Amsterdam, North Holland | Amsterdam, Noord-Holland |
+| `DRT` | `NL` | Dronten, Flevoland | |
+| `HAG` | `NL` | The Hague, South Holland | Den Haag, Zuid-Holland |
+| `HRL` | `NL` | Haarlem, North Holland | Haarlem, Noord-Holland |
+| `MPL` | `NL` | Meppel, Drenthe | |
+| `NLW` | `NL` | Naaldwijk, South Holland | Naaldwijk, Zuid-Holland |
+| `WMR` | `NL` | Wormer, North Holland | Wormer, Noord-Hooland |
+| `RTM` | `NL` | Rotterdam, South Holland | Rotterdam, Zuid-Holland |
 | `OSL` | `NO` | Oslo | |
 | `TRF` | `NO` | Sandefjord, Vestfold og Telemark | |
 | `GDN` | `PO` | Gdansk, Pomeranian | Gdańsk, Pomorskie |
