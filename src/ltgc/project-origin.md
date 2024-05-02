@@ -10,7 +10,11 @@
 - **Hyacinth**: "JS projects should be built faster!"
 - **Painted Palette**: "What if I made a better headless bot?"
 - **WingBlade**: "Can I make the same codebase run everywhere?"
+- (unnamed): "Let's build a clean, lightweight and ad-free boardgame experience!"
+- **Linen**: "Wanna run an r/place replica of our own?"
+- **Cubics**: "Want a convenient diagram generator for Rubik's cube-like puzzles..."
 - **Raven**: "I don't want to relearn a keyboard layout to type in another writing system."
+- (unnamed): "Wanna optimize Minecraft?"
 - **Rosegap**: "Daily Dose of Pony needs an ad system."
 - **Ink Stone**: "Will SynPix ever be released as font files?"
 

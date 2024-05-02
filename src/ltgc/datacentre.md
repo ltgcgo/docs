@@ -40,7 +40,7 @@
 | `INZ` | `JP` | Inzai, Chiba | 千葉県印西市 |
 | `OSK` | `JP` | Ōsaka | 大阪府 |
 | `TYO` | `JP` | Tökyö | 東京都 |
-| `CCN` | `KO` | Chuncheon | 江原特別自治道春川市 |
+| `CCN` | `KO` | Chuncheon, Gangwon | 江原特別自治道春川市 |
 | `ICN` | `KO` | Incheon | 仁川廣域市 |
 | `SOL` | `KO` | Seoul | 서울特別市 |
 | `LUX` | `LU` | Luxembourg | Lëtzebuerg |
