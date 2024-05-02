@@ -29,8 +29,8 @@
 | `BHX` | `GB` | Birmingham, West Midlands, England | |
 | `CVT` | `GB` | Coventry, West Midlands, England | |
 | `LON` | `GB` | London, Greater London, England | |
-| `MDH` | `GB` | Maidenhead, Berkshire, England | |
 | `MAN` | `GB` | Manchester, Greater Manchester, England | |
+| `MDH` | `GB` | Maidenhead, Berkshire, England | |
 | `PSM` | `GB` | Portsmouth, Hampshire, England | |
 | `RDT` | `GB` | Redditch, Worcestershire, England | |
 | `BUD` | `HU` | Budapest | |
@@ -38,8 +38,8 @@
 | `MXP` | `IT` | Milan, Lombardy | Milano, Lombardia |
 | `ROM` | `IT` | Rome, Lazio | Roma, Lazio |
 | `INZ` | `JP` | Inzai, Chiba | 千葉県印西市 |
-| `OSK` | `JP` | Ösaka | 大阪府 |
-| `TYO` | `JP` | Tokyo | 東京都 |
+| `OSK` | `JP` | Ōsaka | 大阪府 |
+| `TYO` | `JP` | Tökyö | 東京都 |
 | `CCN` | `KO` | Chuncheon | 江原特別自治道春川市 |
 | `ICN` | `KO` | Incheon | 仁川廣域市 |
 | `SOL` | `KO` | Seoul | 서울特別市 |
@@ -52,8 +52,8 @@
 | `HRL` | `NL` | Haarlem, North Holland | Haarlem, Noord-Holland |
 | `MPL` | `NL` | Meppel, Drenthe | |
 | `NLW` | `NL` | Naaldwijk, South Holland | Naaldwijk, Zuid-Holland |
-| `WMR` | `NL` | Wormer, North Holland | Wormer, Noord-Hooland |
 | `RTM` | `NL` | Rotterdam, South Holland | Rotterdam, Zuid-Holland |
+| `WMR` | `NL` | Wormer, North Holland | Wormer, Noord-Hooland |
 | `OSL` | `NO` | Oslo | |
 | `TRF` | `NO` | Sandefjord, Vestfold og Telemark | |
 | `GDN` | `PO` | Gdansk, Pomeranian | Gdańsk, Pomorskie |
