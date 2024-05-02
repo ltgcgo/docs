@@ -12,6 +12,8 @@
 - [Guidelines]()
   - [Technologies](ltgc/tech.md)
   - [Content encoding](ltgc/encode.md)
+  - [Region and DC codes](ltgc/datacentre.md)
+  - [Versioning](ltgc/versioning.md)
 - [Miscellaneous]()
   - [Project origins](ltgc/project-origin.md)
 
