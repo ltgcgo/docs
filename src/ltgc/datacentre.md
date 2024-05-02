@@ -6,6 +6,12 @@
 | `MEL` | `AU` | Melbourne, Victoria | |
 | `SYD` | `AU` | Sydney, New South Wales | |
 | `SOF` | `BG` | Sofia | София |
+| `TOR` | `CA` | Toronto, Ontario | |
+| `YBN` | `CA` | Beauharnois, Quebec | Beauharnois, Québec |
+| `YHZ` | `CA` | Halifax, Nova Scotia | |
+| `YUL` | `CA` | Montreal, Quebec | Montréal, Québec |
+| `YVR` | `CA` | Vancouver, British Colombia | |
+| `YWG` | `CA` | Winnipeg, Manitoba | |
 | `GVA` | `CH` | Geneva | Genève |
 | `ZRH` | `CH` | Zurich | Zürich |
 | `DUS` | `DE` | Dusseldorf, North Rhine-Westphalia | Düsseldorf, Nordrhein-Westfalen |
@@ -39,6 +45,7 @@
 | `SOL` | `KO` | Seoul | 서울特別市 |
 | `LUX` | `LU` | Luxembourg | Lëtzebuerg |
 | `KIV` | `MD` | Chisinau | Chișinău |
+| `KUL` | `MY` | Kuala Lumpur | |
 | `OSL` | `NO` | Oslo | |
 | `TRF` | `NO` | Sandefjord, Vestfold og Telemark | |
 | `GDN` | `PO` | Gdansk, Pomeranian | Gdańsk, Pomorskie |
