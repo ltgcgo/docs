@@ -12,6 +12,8 @@
 - [Guidelines]()
   - [Technologies](ltgc/tech.md)
   - [Content encoding](ltgc/encode.md)
+- [Miscellaneous]()
+  - [Project origins](ltgc/project-origin.md)
 
 # Services
 - [Lavender](lavender/README.md)

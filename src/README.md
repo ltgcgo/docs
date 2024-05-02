@@ -33,17 +33,17 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 
 ### Go
 * [Floaty](/floaty/): ☁️ Prevent Caddy loopbacks... Without traceability.
-* [Pulsewave Desktop](/pulsewave/): 🔊 Universal modularized cross-device audio connections (Linux, Windows, macOS).
+<!--* [Pulsewave Desktop](/pulsewave/): 🔊 Universal modularized cross-device audio connections (Linux, Windows, macOS).
 * [Trampoline](/trampoline/): 🥁 Chat sockets to Matrix bridge.
-* [Usher](/usher/): 🚸 Rolling sticky hash load balancing on Caddy.
+* [Usher](/usher/): 🚸 Rolling sticky hash load balancing on Caddy.-->
 
 ### Java
 * [Mogician](/mogician/): 
 * [Seperatist](/seperatist/): 🔨 Seperated... As they should be.
 
 ### Kotlin
-* [Cotton](/cotton/): 💬 PSK-authenticated Minecraft chat socket.
-* [Pulsewave Android](/pulsewave/): 🔊 Universal modularized cross-device audio connections (Android).
+<!--* [Cotton](/cotton/): 💬 PSK-authenticated Minecraft chat socket.
+* [Pulsewave Android](/pulsewave/): 🔊 Universal modularized cross-device audio connections (Android).-->
 
 ### JavaScript
 * [Berry](/berry/): 🍇 Simple port exposure tunnel for stream entropy manipulation.
@@ -51,8 +51,9 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 * [Crystal Quartz](/quartz/): 🎨 A colour palette generation system.
 * [Ditzy](/ditzy/): 📬 Reconstruct stateful sockets over stateless messages.
 * [Eclipsed](/eclipsed/): 🔊 The Royal Canterlot Voice for SSE/[`EventSource`](https://developer.mozilla.org/en-US/docs/Web/API/EventSource).
-* [Flitter](/flitter/): 🗂 A file viewer for the web, with minimal requirements.
-* [Heartstrings](/heartstrings/): 📑 Create and modify lyrics and subtitles as quick as possible.
+<!--* [Flitter](/flitter/): 🗂 A file viewer for the web, with minimal requirements.
+* [Heartstrings](/heartstrings/): 📑 Create and modify lyrics and subtitles as quick as possible.-->
+* [Ink Stone](/inkstone/): 🖼 Modify font files with ease.
 * [Inkwell](/inkwell/): 📒 The grand central terminal / Le grand terminal central.
 * [Leaflet](/leaflet/): ⚠️ Stock Caddy error pages, free for anyone to use if kept credits.
 * [Lightfelt](/lightfelt/): 🕸 A collection of JS snippets for the Web and Deno.
@@ -62,6 +63,7 @@ For shorter descriptions, see [Lightingale Services List](https://ltgc.cc/servic
 * [Painted Palette](/painted/): 🎨 Painting palettes, one pixel at a time.
 * [Parchment](/parchment/): 📃 Mark-down based client-side page generator.
 * [Rochelle](/rochelle/): 🔪 Stream chunk splitting.
+* [Rosegap](/rosegap/): 🌹🌙 Pleasant ads without compromises.
 * [Scope](/scope/): 🔭 Easy-to-setup WireGuard meshing.
 * [Silk](/silk/): 🕸 Bringing the fandom together.
 * [Snowy](/snowy/): ❄️ The [`BroadcastChannel`](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel) polyfill for Firefox 29+ and Chrome 5+.
