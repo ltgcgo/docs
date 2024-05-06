@@ -74,9 +74,9 @@ Different commands have different support levels. To meet a certain support leve
 | 3  | Jump | 1 |
 | 4  | Full message send | 1 |
 | 5  | Message acknowledge | 2 |
-| 6  | Error | 2 |
-| 7  | Set client ID | 1 |
-| 8  | Implementation exclusive | 3 |
+| 6  | Set client ID | 1 |
+| 7  | Implementation exclusive | 2 |
+| 8  | Error | 2 |
 | 9  | Partial message send | 3 |
 | 10 | Partial message send complete | 3 |
 
@@ -130,21 +130,21 @@ Sends a full message.
 
 Sends acknowledgements of messages. Additional acknowledgements of tail frame IDs are all encoded via VLV7.
 
-#### `6`: Error
-> Can be initiated bidirectionally.
-> 
-> No response is needed for errors. Frame ID has no effect.
-
-Sends arbitrary errors without closing the connection.
-
-#### `7`: Set client ID
+#### `6`: Set client ID
 > Can only be sent from clients. No responses from the server whatsoever.
 
 Sets a request of Ditzy message to a client ID. Client IDs are random 16-char Base64-like sequences that are never decoded. This **must** be the first message in every Ditzy request.
 
-#### `8`: Implementation exclusive
+#### `7`: Implementation exclusive
 > Can be initiated bidirectionally.
 > 
 > Response should have the same frame ID as request. Frame ID has no effect otherwise.
 
 Implementation exclusive binary commands.
+
+#### `8`: Error
+> Can be initiated bidirectionally.
+> 
+> No response is needed for errors. Frame ID has no effect.
+
+Sends arbitrary errors without closing the connection.
