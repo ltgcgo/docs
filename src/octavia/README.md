@@ -20,10 +20,11 @@ We're now hosting a new place to handle development talks! If you don't have a G
 * Telegram group chat: [Click to join DTM Hub](https://t.me/+0I30mcOPTSQ0ZGIx)
 
 ## Further documentation
-### Support table
+### Support coverage
 * [Implementation sheet](support/implementation.md)
 * [SysEx instructions sheet](support/sysex.md)
 * [Targets](support/target.md)
+* [Standard visualizers](support/screen.md)
 
 ### Implementation
 * [Basic messages](impl/basic.md)
