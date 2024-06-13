@@ -35,7 +35,7 @@
 | `RDT` | `GB` | Redditch, Worcestershire, England | |
 | `BUD` | `HU` | Budapest | |
 | `DUB` | `IE` | Dublin, Leinster | Baile Átha Cliath, Cúige Laighean |
-| `MXP` | `IT` | Milan, Lombardy | Milano, Lombardia |
+| `MIL` | `IT` | Milan, Lombardy | Milano, Lombardia |
 | `ROM` | `IT` | Rome, Lazio | Roma, Lazio |
 | `INZ` | `JP` | Inzai, Chiba | 千葉県印西市 |
 | `OSK` | `JP` | Ōsaka | 大阪府 |
@@ -62,7 +62,7 @@
 | `EKT` | `RU` | Yekaterinburg, Sverdlovsk | Екатеринбург, Свердловская область |
 | `KHV` | `RU` | Khabarovsk, Khabarovsk Krai | Хабаровск, Хабаровский край |
 | `KZN` | `RU` | Kazan, Tatarstan | Казань, Татарстан |
-| `MOS` | `RU` | Moscow | Москва |
+| `MOW` | `RU` | Moscow | Москва |
 | `OVB` | `RU` | Novosibirsk, Novosibirsk Oblast | Новосибирск, Новосибирская область |
 | `SPT` | `RU` | Saint Petersburg | Санкт-Петербург |
 | `VVO` | `RU` | Vladivostok, Primorsky Krai | Владивосток, Приморский край |
