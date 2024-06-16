@@ -1,4 +1,6 @@
 # SysEx Instructions
+For a list of supported modes, refer to [`state.mjs` internal mode IDs](../state/#midi-modes).
+
 ## Supported SysEx Instructions
 * ✓: Supported
 * -: Partially supported

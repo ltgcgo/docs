@@ -1,6 +1,8 @@
 # Octavia standard visualizers
 Octavia comes with a set of modular standard visualizers with each release.
 
+For a guide on how to use the public demos, refer to [demo visualizer usage](../demo/scr.md).
+
 ## Visualizers
 ### Octavia Cambiare
 * **Lead developer**: Lumière Élevé
@@ -39,32 +41,37 @@ A recreation of the screens on Yamaha PSR.
 
 A recreation of the screen on Roland SC-8850. Thanks SSQMinky and GFHK-SDGM for bitmap collection!
 
+### Octavia MU15
+* **Lead developer**: Lumière Élevé
+
+A recreation of the screen on Yamaha MU15.
+
 ## Support and specification table
-|                  | MU | SC | NS5R | QY | PSR | SC-8850 | Cambiare | TUI |
-| ---------------- | -- | -- | ---- | -- | --- | ------- | -------- | --- |
-| Max name length  | 8  | 12 | 10²  | 8  | 8   | 12      | 24       | 8   |
-| Max shown parts  | 64 | 64 | 128  | 8  | 1   | 64      | 64       | 16  |
-| PC# start index  | 1  | 1  | 1    | Both | 1 | 1       | 0        | N/A |
-| Voice details    | PB | P  | PB   | PF | P   | PB      | PF       | N   |
-| Current mode     | B  | L  | C    | B  | BL  | D       | CD       | D   |
-| Voice bitmap     | ✓  | ✕  | ✕    | ✓  | ✓   | ✓       | ✕        | ✕   |
-| Letter display   | ✓  | ✓  | ✓    | ✓  | ✓   | ✓       | ✓        | ✓   |
-| Bitmap display   | ✓  | ✓  | ✓    | ✓  | ✓   | ✓       | ✓        | ✓   |
-| Wider bitmap     | ✕  | ✕  | ✓    | ✓  | ✕   | ✓       | ✓        | ✕   |
-| Chord display¹   | ✕  | ✕  | ✕    | ✓  | ✓   | ✕       | ✓        | ✕   |
-| Pixel blur       | ✓³ | ✓  | ✓    | ✕  | ✓³  | ✓       | ✓        | ✕   |
-| Lyrics           | ✕  | ✕  | ✕    | ✕  | ✓   | ✕       | ✓        | ✓   |
-| Song title       | ✕  | ✓  | ✕    | ✓  | ✓   | ✕       | ✓        | ✓   |
-| Meta events      | ✕  | ✕  | ✕    | ✕  | ✕   | ✕       | ✓        | ✓   |
-| Effect sends     | ✓  | ✓  | ✓    | ✕  | ✕   | ✕       | ✓        | ✓   |
-| Effect types     | ✕  | ✕  | ✓    | ✕  | ✕   | ✕       | ✓        | ✕   |
-| Switch part      | ✓  | ✓  | ✓    | ✓  | ✓   | ✓       | ✓        | ✕   |
-| PB/Transpose     | ✓  | ✓  | ✓    | ✓  | ✕   | ✕       | ✓        | ✓   |
-| Current position | ✕  | ✕  | ✕    | ✓  | ✓   | ✕       | ✓        | ✓   |
-| VL monitor       | ✕  | ✕  | ✕    | ✕  | ✕   | ✕       | ✓        | ✕   |
-| DX monitor       | ✕  | ✕  | ✕    | ✕  | ✕   | ✕       | ✓        | ✕   |
-| User sound sets  | ✓  | ✓  | ✓    | ✓  | ✓   | ✕       | ✓        | ✓   |
-| Custom MDAT      | ✕  | ✕  | ✕    | ✕  | ✕   | ✕       | ✓        | ✕   |
+|                  | MU | SC | NS5R | QY | PSR | SC-8850 | MU15 | Cambiare | TUI |
+| ---------------- | -- | -- | ---- | -- | --- | ------- | ---- | -------- | --- |
+| Max name length  | 8  | 12 | 10²  | 8  | 8   | 12      | 8    | 24       | 8   |
+| Max shown parts  | 64 | 64 | 128  | 8  | 1   | 64      | 64   | 64       | 16  |
+| PC# start index  | 1  | 1  | 1    | Both | 1 | 1       | 1    | 0        | N/A |
+| Voice details    | PB | P  | PB   | PF | P   | PB      | P    | PF       | N   |
+| Current mode     | B  | L  | C    | B  | BL  | D       | B    | CD       | D   |
+| Voice bitmap     | ✓  | ✕  | ✕    | ✓  | ✓   | ✓       | ✕    | ✕        | ✕   |
+| Letter display   | ✓  | ✓  | ✓    | ✓  | ✓   | ✓       | ✓    | ✓        | ✓   |
+| Bitmap display   | ✓  | ✓  | ✓    | ✓  | ✓   | ✓       | ✓    | ✓        | ✓   |
+| Wider bitmap     | ✕  | ✕  | ✓    | ✓  | ✕   | ✓       | ✕    | ✓        | ✕   |
+| Chord display¹   | ✕  | ✕  | ✕    | ✓  | ✓   | ✕       | ✕    | ✓        | ✕   |
+| Pixel blur       | ✓³ | ✓  | ✓    | ✕  | ✓³  | ✓       | ✓³   | ✓        | ✕   |
+| Lyrics           | ✕  | ✕  | ✕    | ✕  | ✓   | ✕       | ✕    | ✓        | ✓   |
+| Song title       | ✕  | ✓  | ✕    | ✓  | ✓   | ✕       | ✕    | ✓        | ✓   |
+| Meta events      | ✕  | ✕  | ✕    | ✕  | ✕   | ✕       | ✕    | ✓        | ✓   |
+| Effect sends     | ✓  | ✓  | ✓    | ✕  | ✕   | ✕       | ✕    | ✓        | ✓   |
+| Effect types     | ✕  | ✕  | ✓    | ✕  | ✕   | ✕       | ✕    | ✓        | ✕   |
+| Switch part      | ✓  | ✓  | ✓    | ✓  | ✓   | ✓       | ✓    | ✓        | ✕   |
+| PB/Transpose     | ✓  | ✓  | ✓    | ✓  | ✕   | ✕       | ✕    | ✓        | ✓   |
+| Current position | ✕  | ✕  | ✕    | ✓  | ✓   | ✕       | ✕    | ✓        | ✓   |
+| VL monitor       | ✕  | ✕  | ✕    | ✕  | ✕   | ✕       | ✕    | ✓        | ✕   |
+| DX monitor       | ✕  | ✕  | ✕    | ✕  | ✕   | ✕       | ✕    | ✓        | ✕   |
+| User sound sets  | ✓  | ✓  | ✓    | ✓  | ✓   | ✓       | ✓    | ✓        | ✓   |
+| Custom MDAT      | ✕  | ✕  | ✕    | ✕  | ✕   | ✕       | ✕    | ✓        | ✕   |
 
 ### Voice details
 * N: Name only
@@ -81,4 +88,4 @@ A recreation of the screen on Roland SC-8850. Thanks SSQMinky and GFHK-SDGM for 
 ### Additional notes
 1. Planned feature, not yet implemented.
 2. Octavia NS5R can render voice names with at most 12 characters under certain conditions.
-3. Except for Octavia MU and Octavia PSR, the intensity of pixel blur is customizable.
+3. Except for Octavia MU, Octavia PSR and Octavia MU15, the intensity of pixel blur is customizable.

@@ -5,7 +5,7 @@ The following list of targets have their support by Octavia status presented in 
 
 A supported standard may also have a list of specific target models listed.
 
-For specific SysEx support range, refer to [Supported SysEx Instructions](./sysex.md);
+For specific SysEx support range, refer to [Supported SysEx Instructions](./sysex.md). For a list of supported modes, refer to [`state.mjs` internal mode IDs](../state/#midi-modes).
 
 | Vendor | Target    | Type | Bank | SysEx |
 | ------ | --------- | ---- | ---- | ----- |
@@ -16,10 +16,10 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 | Roland | SD        | S    | ✓    | ✓     |
 | YAMAHA | TG        | L    | ✓    | ✓     |
 | YAMAHA | XG¹       | S    | ✓    | ✓     |
-| YAMAHA | PLG-150AN | P    | ✓    | ✕     |
+| YAMAHA | PLG-150AN | P    | ✓    | -     |
 | YAMAHA | PLG-150AP | P    | ✓    | ✕     |
 | YAMAHA | PLG-150DR | P    | ✓    | ✕     |
-| YAMAHA | PLG-150DX | P    | ✓    | ✕     |
+| YAMAHA | PLG-150DX | P    | ✓    | -     |
 | YAMAHA | PLG-150PC | P    | ✓    | ✕     |
 | YAMAHA | PLG-150PF | P    | ✓    | ✕     |
 | YAMAHA | PLG-150VL | P    | ✓    | ✓     |
@@ -61,11 +61,11 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 | SC-88     | L    | ✓      |
 | SC-88 Pro | L    | ✓      |
 | SC-8850   | L    | ✓      |
-| SD-20     | M    | -      |
-| SD-35     | M    | -      |
-| SD-50     | M    | -      |
-| SD-80     | M    | -      |
-| SD-90     | M    | -      |
+| SD-20     | M    | ✓      |
+| SD-35     | M    | ✓      |
+| SD-50     | M    | ✓      |
+| SD-80     | M    | ✓      |
+| SD-90     | M    | ✓      |
 | SK-50     | L    | -      |
 
 #### Yamaha TG
@@ -83,7 +83,7 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 | ----------- | ---- | ------ |
 | DBXG50      | M    | ✓      |
 | DBXG51      | M    | ✓      |
-| DBXG60      | M    | -      |
+| DBXG60      | M    | ✓      |
 | MU5         | M    | ✓      |
 | MU80        | M    | ✓      |
 | MU50        | M    | ✓      |
@@ -99,8 +99,8 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 | QY700       | M    | ✓      |
 | QY70        | M    | ✓      |
 | QY100       | M    | ✓      |
-| SW60XG      | M    | -      |
-| SW1000XG    | M    | -      |
+| SW60XG      | M    | ✓      |
+| SW1000XG    | M    | ✓      |
 | S-YXG50     | M    | ✓      |
 | S-YXG70     | M    | ✓      |
 | S-YXG100    | M    | ✓      |

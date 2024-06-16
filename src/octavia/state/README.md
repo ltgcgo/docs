@@ -7,19 +7,23 @@ Octavia is compatible with a range of modes on MIDI synthesizers. A list of supp
 
 * `?`: The default "nothing" mode. Octavia will try to detect the correct mode.
 * `gm`: General MIDI mode.
-* `gs`: Roland GS mode.
-* `xg`: Yamaha XG mode. Compatible with TG-100 and TG-300.
+* `gs`: Roland GS mode. GS is short for General Sound.
+* `xg`: Yamaha XG mode. Compatible with TG-100 and TG-300. XG is short for eXtended General.
+* `sc`: Roland GS mode, but with mode 1 or mode 2 set. Specific to Roland SoundCanvas SC-88 and up.
 * `g2`: General MIDI Level 2 mode.
-* `sd`: Roland SD mode.
-* `mt32`: Roland MT-32 mode.
+* `sd`: Roland SD mode. SD is used for Roland's Studio Canvas lineup.
 * `ns5r`: KORG NS5R mode. Compatible with NX5R, and has limited compatibility with KORG N1R and N5.
 * `x5d`: KORG X5D(R) mode. Compatible with AG-10.
 * `05rw`: KORG 05R/W and KORG X5 mode. Compatible with AG-10.
-* `k11`: Kawai GMega and Kawai K11 mode.
+* `k11`: Kawai GMega or K11 mode.
 * `sg`: Akai SG mode.
 * `krs`: KORG KROSS 2 mode.
 * `s90es`: Yamaha S90 ES mode.
 * `motif`: Yamaha Motif ES mode.
+* `mt32`: Roland MT-32 mode.
+* `doc`: Yamaha DOC mode. DOC is short for Disk Orchestra Collection.
+* `qy10`: Yamaha QY10 native mode.
+* `qy20`: Yamaha QY20 native mode.
 
 ### MIDI event types
 * `8`: Note off

@@ -20,6 +20,10 @@ We're now hosting a new place to handle development talks! If you don't have a G
 * Telegram group chat: [Click to join DTM Hub](https://t.me/+0I30mcOPTSQ0ZGIx)
 
 ## Further documentation
+### Demo usage
+* [Visualizers](demo/scr.md)
+* [Middleware](demo/mw.md)
+
 ### Support coverage
 * [Implementation sheet](support/implementation.md)
 * [SysEx instructions sheet](support/sysex.md)
@@ -43,3 +47,4 @@ We're now hosting a new place to handle development talks! If you don't have a G
 * [`bridge.mjs`: the basis for middleware](bridge/)
 * [`disp.mjs`: ready-made example visualizers](disp/)
 * [`middle.mjs`: ready-made middleware](middle/)
+* [`micc.mjs`: streaming assembler and disassembler](micc/)
