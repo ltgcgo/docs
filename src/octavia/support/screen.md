@@ -36,6 +36,8 @@ The font used for labels is Numito Sans, licensed under SIL OFL.
 
 A recreation of the screens on KORG NS5R, with help from JayB.
 
+The font used for labels is Jost, licensed under SIL OFL.
+
 ### Octavia QY
 * **Lead developer**: Lumière Élevé
 
