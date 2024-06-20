@@ -21,56 +21,7 @@ The first draft was written on 18th Nov 2021, with the next iteration on 5th Feb
 
 ## Specifications
 * [Binary encoding format](binfmt.md)
-* [Recommended general implementation](generic.md)
-* [Recommended implementation over HTTP](http.md)
-* [Recommended implementation over DNS](dns.md)
+* [Recommended implementation practices](generic.md)
 
 ## Reference implementation API docs
 ### JavaScript
-#### `DitzyDriver`
-The underlying transport interface to be used by DitzyStream. Connection management and congestion control happens here.
-
-This interface needs to implement the following public methods to let `DitzyStream` function properly.
-
-```js
-DitzyDriver {
-	send(): WritableStream, // Where data gets sent out
-	onmessage: ReadableStream, // Where data gets received
-}
-```
-
-#### `DitzyStream`
-The master stream, where underlying sockets gets multiplexed and de-multiplexed. Individual sockets can be established with `DitzySocket` or `DitzyPipe`.
-
-```js
-DitzyStream {
-	driver: DitzyDriver, // The underlying driver
-	pipe(): DitzyPipe, // Creates a new connection
-	sock(): DitzySocket, // Creates a new connection
-}
-```
-
-#### `DitzyPipe`
-The raw interface sending data to and receiving data from as streams.
-
-```js
-DitzyPipe {
-	i: ReadableStream,
-	o: WritableStream,
-}
-```
-
-#### `DitzySocket`
-A `WebSocket`-like interface to send messages to and receive messages from.
-
-```js
-DitzySocket {
-	readyState: Number <readonly>,
-	textOnly: Boolean,
-	send(msg: Uint8Array|String),
-	close(): null,
-	onclose: Uint8Array|String,
-	onmessage: Uint8Array|String,
-	onopen: null
-}
-```
