@@ -25,6 +25,7 @@
 # Projects
 - [Ditzy](ditzy/README.md)
   - [Binary encoding format](ditzy/binfmt.md)
+  - [Recommended practices](ditzy/generic.md)
 - [Floaty](floaty/README.md)
 - [Gel](gel/README.md)
   - [Usage](gel/usage.md)

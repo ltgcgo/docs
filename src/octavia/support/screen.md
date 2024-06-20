@@ -14,12 +14,22 @@ The most feature-rich visualizer built on top of Octavia available. Inspired by 
 
 A recreation of the screens on the Yamaha MU line up. Bitmap is collected with collective effort.
 
-Special thanks to all of the people who had contributed the MU bitmap! (contributor list lost)
+The font used for labels is Public Sans, licensed under SIL OFL.
+
+#### Bitmap contributors
+Special thanks to all of the people who had contributed the MU bitmap! If you see your name missing here, please contact us for proper credits.
+
+* MIDIMan
+* Lumière Élevé
+* GFHK-SDGM
+* MJG0117
 
 ### Octavia SC
 * **Lead developer**: Lumière Élevé
 
 A recreation of the screens on Roland SC-55, Roland SC-88 and Roland SC-88 Pro.
+
+The font used for labels is Numito Sans, licensed under SIL OFL.
 
 ### Octavia NS5R
 * **Lead developer**: Lumière Élevé
@@ -39,7 +49,16 @@ A recreation of the screens on Yamaha PSR.
 ### Octavia SC-8850
 * **Lead developer**: Lumière Élevé
 
-A recreation of the screen on Roland SC-8850. Thanks SSQMinky and GFHK-SDGM for bitmap collection!
+A recreation of the screen on Roland SC-8850.
+
+#### Bitmap contributors
+Special thanks to all of the people who had contributed the SC-8850 bitmap!
+
+* SSQMinky
+* MasteredRealm
+* Thorndust
+* GFHK-SDGM
+* Lumière Élevé
 
 ### Octavia MU15
 * **Lead developer**: Lumière Élevé

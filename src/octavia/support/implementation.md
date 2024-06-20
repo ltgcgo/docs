@@ -232,32 +232,32 @@
 		<tr>
 			<td>84</td>
 			<td>✓</td>
-			<td>Portamento Control</td>
+			<td>Portamento Source Note</td>
 		</tr>
 		<tr>
 			<td>91</td>
 			<td>✓</td>
-			<td>Reverb</td>
+			<td>Effect 1 Send (Reverb)</td>
 		</tr>
 		<tr>
 			<td>92</td>
 			<td>✓</td>
-			<td>Tremelo</td>
+			<td>Effect 2 Send (Tremolo)</td>
 		</tr>
 		<tr>
 			<td>93</td>
 			<td>✓</td>
-			<td>Chorus</td>
+			<td>Effect 3 Send (Chorus)</td>
 		</tr>
 		<tr>
 			<td>94</td>
 			<td>✓</td>
-			<td>Variation</td>
+			<td>Effect 4 Send (Variation/Delay)</td>
 		</tr>
 		<tr>
 			<td>95</td>
 			<td>✓</td>
-			<td>Phaser</td>
+			<td>Effect 5 Send (Phaser)</td>
 		</tr>
 		<tr>
 			<td>96</td>
