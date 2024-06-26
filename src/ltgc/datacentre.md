@@ -23,14 +23,17 @@
 | `MAD` | `ES` | Madrid | |
 | `HEL` | `FI` | Helsinki, Uusimaa | Helsinki, Uudenmann |
 | `LIL` | `FR` | Lille, Nord, Hauts-de-France | |
+| `MRS` | `FR` | Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur | |
 | `PAR` | `FR` | Paris, Île-de-France | |
 | `RBX` | `FR` | Roubaix, Nord, Hauts-de-France | |
 | `SXB` | `FR` | Strasbourg, Bas-Rhin, Grand Est | |
 | `BHX` | `GB` | Birmingham, West Midlands, England | |
 | `CVT` | `GB` | Coventry, West Midlands, England | |
+| `CWL` | `GB` | Cardiff, South Glamorgan, Wales | Caerdydd, De Morgannwg, Cymru |
 | `LON` | `GB` | London, Greater London, England | |
 | `MAN` | `GB` | Manchester, Greater Manchester, England | |
 | `MDH` | `GB` | Maidenhead, Berkshire, England | |
+| `NWP` | `GB` | Newport, Gwent, Wales | Casnewydd, Gwent, Cymru |
 | `PSM` | `GB` | Portsmouth, Hampshire, England | |
 | `RDT` | `GB` | Redditch, Worcestershire, England | |
 | `BUD` | `HU` | Budapest | |
