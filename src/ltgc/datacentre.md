@@ -12,6 +12,7 @@
 | `YUL` | `CA` | Montreal, Quebec | Montréal, Québec |
 | `YVR` | `CA` | Vancouver, British Colombia | |
 | `YWG` | `CA` | Winnipeg, Manitoba | |
+| `YYC` | `CA` | Calgary, Alberta | |
 | `GVA` | `CH` | Geneva | Genève |
 | `ZRH` | `CH` | Zurich | Zürich |
 | `DUS` | `DE` | Dusseldorf, North Rhine-Westphalia | Düsseldorf, Nordrhein-Westfalen |
@@ -36,7 +37,11 @@
 | `NWP` | `GB` | Newport, Gwent, Wales | Casnewydd, Gwent, Cymru |
 | `PSM` | `GB` | Portsmouth, Hampshire, England | |
 | `RDT` | `GB` | Redditch, Worcestershire, England | |
+| `HKG` | `HK` | Hong Kong | 香港 |
+| `HKW` | `HK` | Tsuen Wan, Tsuen Wan, New Territories | 新界荃灣區荃灣 |
+| `HTK` | `HK` | Tseung Kwan O, Sai Kung, New Territories | 新界西貢區將軍澳 |
 | `BUD` | `HU` | Budapest | |
+| `JKT` | `ID` | Jarkata, Java, Indonesia | |
 | `DUB` | `IE` | Dublin, Leinster | Baile Átha Cliath, Cúige Laighean |
 | `MIL` | `IT` | Milan, Lombardy | Milano, Lombardia |
 | `ROM` | `IT` | Rome, Lazio | Roma, Lazio |
@@ -72,6 +77,8 @@
 | `STO` | `SE` | Stockholm | |
 | `TNP` | `SE` | Tjoernarp, Scania | Tjörnarp, Skåne |
 | `SGP` | `SG` | Singapore | |
+| `SGS` | `SG` | Simei | 四美 |
+| `TPE` | `TW` | Taipei City | 臺北市 |
 | `DNK` | `UA` | Dnipro, Dnipropetrovsk Oblast | Дніпро, Дніпропетровська область |
 | `HRK` | `UA` | Kharkiv, Kharkiv Oblast | Харків, Харківська область |
 | `IEV` | `UA` | Kyiv | Київ |
