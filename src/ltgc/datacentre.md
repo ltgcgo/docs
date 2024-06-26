@@ -5,6 +5,8 @@
 | `VIE` | `AT` | Vienna | Wien |
 | `MEL` | `AU` | Melbourne, Victoria | |
 | `SYD` | `AU` | Sydney, New South Wales | |
+| `ANR` | `BE` | Antwerp, Flanders | Anvers, Flamande / Antwerpen, Vlaanderen |
+| `GHI` | `BE` | Saint-Ghislain, Hainaut, Wallonia | Saint-Guilagne, Hénau, Walonnie |
 | `SOF` | `BG` | Sofia | София |
 | `TOR` | `CA` | Toronto, Ontario | |
 | `YBN` | `CA` | Beauharnois, Quebec | Beauharnois, Québec |
@@ -18,11 +20,14 @@
 | `DUS` | `DE` | Dusseldorf, North Rhine-Westphalia | Düsseldorf, Nordrhein-Westfalen |
 | `FAL` | `DE` | Falkenstein, Bavaria | Falkenstein, Bayern |
 | `FRA` | `DE` | Frankfurt, Hesse | Frankfurt, Hessen |
+| `LBG` | `DE` | Limburg, Hesse | Limburg an der Lahn, Hessen |
 | `MUC` | `DE` | Munich, Bavaria | München, Bayern |
 | `NUE` | `DE` | Nuremberg, Bavaria | Nürnberg, Bayern |
 | `BCN` | `ES` | Barcelona, Catalonia | Barcelona, Cataluña |
 | `MAD` | `ES` | Madrid | |
 | `HEL` | `FI` | Helsinki, Uusimaa | Helsinki, Uudenmann |
+| `HMX` | `FI` | Hamina, Kotka-Hamina, Kymenlaakso | |
+| `GVS` | `FR` | Gravelines, Dunkirk, Nord, Hauts-de-France | Gravelines, Dunkerque, Nord, Hauts-de-France |
 | `LIL` | `FR` | Lille, Nord, Hauts-de-France | |
 | `MRS` | `FR` | Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur | |
 | `PAR` | `FR` | Paris, Île-de-France | |
@@ -45,6 +50,7 @@
 | `DUB` | `IE` | Dublin, Leinster | Baile Átha Cliath, Cúige Laighean |
 | `MIL` | `IT` | Milan, Lombardy | Milano, Lombardia |
 | `ROM` | `IT` | Rome, Lazio | Roma, Lazio |
+| `TRN` | `IT` | Turin, Piedmont | Turin, Piemont / Torino, Piemonte |
 | `INZ` | `JP` | Inzai, Chiba | 千葉県印西市 |
 | `OSK` | `JP` | Ōsaka | 大阪府 |
 | `TYO` | `JP` | Tökyö | 東京都 |
@@ -56,6 +62,7 @@
 | `KUL` | `MY` | Kuala Lumpur | |
 | `AMS` | `NL` | Amsterdam, North Holland | Amsterdam, Noord-Holland |
 | `DRT` | `NL` | Dronten, Flevoland | |
+| `EEM` | `NL` | Eemshaven, Het Hogeland, Groningen | |
 | `HAG` | `NL` | The Hague, South Holland | Den Haag, Zuid-Holland |
 | `HRL` | `NL` | Haarlem, North Holland | Haarlem, Noord-Holland |
 | `MPL` | `NL` | Meppel, Drenthe | |
@@ -77,7 +84,10 @@
 | `STO` | `SE` | Stockholm | |
 | `TNP` | `SE` | Tjoernarp, Scania | Tjörnarp, Skåne |
 | `SGP` | `SG` | Singapore | |
-| `SGS` | `SG` | Simei | 四美 |
+| `SGG` | `SG` | Jurong West, West Region | 西區裕廊西 |
+| `SGS` | `SG` | Simei, Tampine, East Region | 東區淡賓尼四美 |
+| `IST` | `TR` | Istanbul, Marmara | İstanbul, Marmara Bölgesi |
+| `CHW` | `TW` | Changhua County | 彰化縣 |
 | `TPE` | `TW` | Taipei City | 臺北市 |
 | `DNK` | `UA` | Dnipro, Dnipropetrovsk Oblast | Дніпро, Дніпропетровська область |
 | `HRK` | `UA` | Kharkiv, Kharkiv Oblast | Харків, Харківська область |
@@ -85,25 +95,32 @@
 | `ASH` | `US` | Ashburn, Virginia | |
 | `ATL` | `US` | Atlanta, Georgia | |
 | `BUF` | `US` | Buffalo, New York | |
+| `CBL` | `US` | Council Bluffs, Iowa | |
 | `CHI` | `US` | Chicago, Illinois | |
+| `CLB` | `US` | Colombus, Ohio | |
 | `DAL` | `US` | Dallas, Texas | |
 | `DEN` | `US` | Denver, Colorado | |
+| `DLS` | `US` | The Dalles, Wasco County, Oregon | |
 | `EWR` | `US` | Newark, New York | |
 | `FET` | `US` | Fremont, California | |
-| `HIO` | `US` | Hillsboro, Portland | |
+| `FQC` | `US` | (Vint Hill,) Fauquier County, Virginia | |
+| `HIO` | `US` | Hillsboro, Portland, Oregon | |
 | `HON` | `US` | Honolulu, Hawaii | Honolulu, Hawaiʻi |
 | `HST` | `US` | Houston, Texas | |
 | `JAX` | `US` | Jacksonville, Florida | |
 | `LAS` | `US` | Las Vegas, Nevada | |
 | `LAX` | `US` | Los Angeles, California | |
 | `MIA` | `US` | Miami, Florida | |
+| `MSP` | `US` | Minneapolis, Minnesota | |
 | `NYC` | `US` | New York City, New York | |
 | `PHX` | `US` | Phoenix, Arizona | |
 | `POR` | `US` | Portland, Oregon | |
 | `SCC` | `US` | Secaucus, New Jersey | |
 | `SEA` | `US` | Seattle, Washington | |
+| `SFO` | `US` | San Francisco, California | |
 | `SJC` | `US` | San Jose, California | |
 | `SLC` | `US` | Salt Lake City, Utah | |
 | `SNU` | `US` | Santa Clara, California | |
 | `STL` | `US` | St. Louis, Missouri | |
 | `TPA` | `US` | Tampa, Florida | |
+| `USB` | `US` | Moncks Corner, South Carolina | |
