@@ -29,7 +29,7 @@ Special thanks to all of the people who had contributed the MU bitmap! If you se
 
 A recreation of the screens on Roland SC-55, Roland SC-88 and Roland SC-88 Pro.
 
-The font used for labels is Numito Sans, licensed under SIL OFL.
+The font used for labels is Work Sans, licensed under SIL OFL.
 
 ### Octavia NS5R
 * **Lead developer**: Lumière Élevé
