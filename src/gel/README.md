@@ -3,10 +3,10 @@
 
 Gel is a set of scripts to quickly prepare supported base Linux distributions for use in cloud, aiming to lessen the burden interacting with servers. For Alpine Linux, it comes with a simple OpenRC wrapper to get several `systemctl` commands working for OpenRC.
 
-Gel is extensively used throughout Lightingale Community's infrastructure.
+Gel is extensively used throughout Lightingale Community's infrastructure, either for host servers or for LXC containers. Read more on [infrastructure](../ltgc/infra.md).
 
 ## Flavours
-Gel comes with two flavours for each supported base distribution: **slim** and **full**.
+Gel mostly comes with two flavours for each supported base distribution: **slim** and **full**.
 
 The full flavour targets all sorts of servers. Unless storage is severely constrained, this is the flavour to go for.
 
