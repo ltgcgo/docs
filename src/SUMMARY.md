@@ -20,7 +20,7 @@
 # Services
 - [Lavender](lavender/README.md)
   - [Panels](lavender/panel.md)
-- [Matrix services](matrix/README.md)
+- [IM services](matrix/README.md)
 
 # Projects
 - [Ditzy](ditzy/README.md)
