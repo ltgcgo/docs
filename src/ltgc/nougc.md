@@ -55,7 +55,7 @@ If you've been redirected to this page, it's likely that you have been denied di
 
 ### Denied from high-liberty UGC services
 * `BO`: Bolivia
-* `CD`: Congo
+* `CD`: Democratic Republic of Congo
 * `CM`: Cameroon
 * `GQ`: Equatorial Guinea
 * `HK`: Hong Kong
