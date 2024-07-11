@@ -64,7 +64,7 @@
 			<td>0-24 semitone steps<br/>14-bit resolution</td>
 		</tr>
 		<tr>
-			<td rowspan=68>Control Change</td>
+			<td rowspan=69>Control Change</td>
 			<td>0</td>
 			<td>✓</td>
 			<td>MSB Bank Select</td>
@@ -233,6 +233,11 @@
 			<td>84</td>
 			<td>✓</td>
 			<td>Portamento Source Note</td>
+		</tr>
+		<tr>
+			<td>88</td>
+			<td>✓</td>
+			<td>High Resolution Velocity<br/><i>Store only</i></td>
 		</tr>
 		<tr>
 			<td>91</td>
@@ -405,8 +410,220 @@
 			<td>DX Modulator Level 1~8 (internal)</td>
 		</tr>
 		<tr>
+			<td rowspan=13>Registered Parameters</td>
+			<td><code>0x0000</code></td>
+			<td>✓</td>
+			<td>Pitch Bend Range/Sensitivity</td>
+		</tr>
+		<tr>
+			<td><code>0x0001</code></td>
+			<td>✓</td>
+			<td>Fine Tuning</td>
+		</tr>
+		<tr>
+			<td><code>0x0002</code></td>
+			<td>✓</td>
+			<td>Coarse Tuning</td>
+		</tr>
+		<tr>
+			<td><code>0x0005</code></td>
+			<td>✓</td>
+			<td>Modulation Depth</td>
+		</tr>
+		<tr>
+			<td><code>0x3d00</code></td>
+			<td>✕</td>
+			<td>3D Azimuth Angle</td>
+		</tr>
+		<tr>
+			<td><code>0x3d01</code></td>
+			<td>✕</td>
+			<td>3D Elevation Angle</td>
+		</tr>
+		<tr>
+			<td><code>0x3d02</code></td>
+			<td>✕</td>
+			<td>3D Gain</td>
+		</tr>
+		<tr>
+			<td><code>0x3d03</code></td>
+			<td>✕</td>
+			<td>3D Distance Ratio</td>
+		</tr>
+		<tr>
+			<td><code>0x3d04</code></td>
+			<td>✕</td>
+			<td>3D Max Distance</td>
+		</tr>
+		<tr>
+			<td><code>0x3d05</code></td>
+			<td>✕</td>
+			<td>3D Gain at Bound</td>
+		</tr>
+		<tr>
+			<td><code>0x3d06</code></td>
+			<td>✕</td>
+			<td>3D Reference Distance Ratio</td>
+		</tr>
+		<tr>
+			<td><code>0x3d07</code></td>
+			<td>✕</td>
+			<td>3D Pan Spread Angle</td>
+		</tr>
+		<tr>
+			<td><code>0x3d08</code></td>
+			<td>✕</td>
+			<td>3D Roll Angle</td>
+		</tr>
+		<tr>
+			<td rowspan=29>Non-Registered Parameters</td>
+			<td><code>0x0108</code></td>
+			<td>✓</td>
+			<td>Vibrato Rate<br/><i>Redirected to cc76</i></td>
+		</tr>
+		<tr>
+			<td><code>0x0109</code></td>
+			<td>✓</td>
+			<td>Vibrato Depth<br/><i>Redirected to cc77</i></td>
+		</tr>
+		<tr>
+			<td><code>0x010a</code></td>
+			<td>✓</td>
+			<td>Vibrato Delay<br/><i>Redirected to cc78</i></td>
+		</tr>
+		<tr>
+			<td><code>0x0120</code></td>
+			<td>✓</td>
+			<td>Brightness (LPF Cutoff)<br/><i>Redirected to cc74</i></td>
+		</tr>
+		<tr>
+			<td><code>0x0121</code></td>
+			<td>✓</td>
+			<td>Resonance<br/><i>Redirected to cc71</i></td>
+		</tr>
+		<tr>
+			<td><code>0x0124</code></td>
+			<td>✓</td>
+			<td>HPF Cutoff</td>
+		</tr>
+		<tr>
+			<td><code>0x0130</code></td>
+			<td>✓</td>
+			<td>EQ Bass Gain</td>
+		</tr>
+		<tr>
+			<td><code>0x0131</code></td>
+			<td>✓</td>
+			<td>EQ Treble Gain</td>
+		</tr>
+		<tr>
+			<td><code>0x0134</code></td>
+			<td>✓</td>
+			<td>EQ Bass Frequency</td>
+		</tr>
+		<tr>
+			<td><code>0x0135</code></td>
+			<td>✓</td>
+			<td>EQ Treble Frequency</td>
+		</tr>
+		<tr>
+			<td><code>0x0163</code></td>
+			<td>✓</td>
+			<td>Release Time<br/><i>Redirected to cc72</i></td>
+		</tr>
+		<tr>
+			<td><code>0x0164</code></td>
+			<td>✓</td>
+			<td>Attack Time<br/><i>Redirected to cc73</i></td>
+		</tr>
+		<tr>
+			<td><code>0x0166</code></td>
+			<td>✓</td>
+			<td>Delay Time<br/><i>Redirected to cc75</i></td>
+		</tr>
+		<tr>
+			<td><code>0x14rr</code></td>
+			<td>✓</td>
+			<td>Drum Brightness (LPF Cutoff)</td>
+		</tr>
+		<tr>
+			<td><code>0x15rr</code></td>
+			<td>✓</td>
+			<td>Drum Resonance</td>
+		</tr>
+		<tr>
+			<td><code>0x16rr</code></td>
+			<td>✓</td>
+			<td>Drum Attack Time</td>
+		</tr>
+		<tr>
+			<td><code>0x17rr</code></td>
+			<td>✓</td>
+			<td>Drum Decay Time</td>
+		</tr>
+		<tr>
+			<td><code>0x18rr</code></td>
+			<td>✓</td>
+			<td>Drum Coarse Tuning</td>
+		</tr>
+		<tr>
+			<td><code>0x19rr</code></td>
+			<td>✓</td>
+			<td>Drum Fine Tuning</td>
+		</tr>
+		<tr>
+			<td><code>0x1arr</code></td>
+			<td>✓</td>
+			<td>Drum Level</td>
+		</tr>
+		<tr>
+			<td><code>0x1crr</code></td>
+			<td>✓</td>
+			<td>Drum Pan</td>
+		</tr>
+		<tr>
+			<td><code>0x1drr</code></td>
+			<td>✓</td>
+			<td>Drum Reverb Send</td>
+		</tr>
+		<tr>
+			<td><code>0x1err</code></td>
+			<td>✓</td>
+			<td>Drum Chorus Send</td>
+		</tr>
+		<tr>
+			<td><code>0x1frr</code></td>
+			<td>✓</td>
+			<td>Drum Variation/Delay Send</td>
+		</tr>
+		<tr>
+			<td><code>0x24rr</code></td>
+			<td>✓</td>
+			<td>Drum HPF Cutoff</td>
+		</tr>
+		<tr>
+			<td><code>0x30rr</code></td>
+			<td>✓</td>
+			<td>Drum EQ Bass Gain</td>
+		</tr>
+		<tr>
+			<td><code>0x31rr</code></td>
+			<td>✓</td>
+			<td>Drum EQ Treble Gain</td>
+		</tr>
+		<tr>
+			<td><code>0x34rr</code></td>
+			<td>✓</td>
+			<td>Drum EQ Bass Frequency</td>
+		</tr>
+		<tr>
+			<td><code>0x35rr</code></td>
+			<td>✓</td>
+			<td>Drum EQ Treble Frequency</td>
+		</tr>
+		<tr>
 			<td colspan=2>Program Change</td>
-			<td>0-127</td>
+			<td>✓ 0-127</td>
 			<td></td>
 		</tr>
 		<tr>

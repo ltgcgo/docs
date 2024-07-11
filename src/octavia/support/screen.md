@@ -79,6 +79,7 @@ A recreation of the screen on Yamaha MU15.
 | Letter display   | ✓  | ✓  | ✓    | ✓  | ✓   | ✓       | ✓    | ✓        | ✓   |
 | Bitmap display   | ✓  | ✓  | ✓    | ✓  | ✓   | ✓       | ✓    | ✓        | ✓   |
 | Wider bitmap     | ✕  | ✕  | ✓    | ✓  | ✕   | ✓       | ✕    | ✓        | ✕   |
+| Screen dump      | ✕  | ✕  | ✓    | ✕  | ✕   | ✓       | ✕    | ✕        | ✕   |
 | Chord display¹   | ✕  | ✕  | ✕    | ✓  | ✓   | ✕       | ✕    | ✓        | ✕   |
 | Pixel blur       | ✓³ | ✓  | ✓    | ✕  | ✓³  | ✓       | ✓³   | ✓        | ✕   |
 | Lyrics           | ✕  | ✕  | ✕    | ✕  | ✓   | ✕       | ✕    | ✓        | ✓   |
