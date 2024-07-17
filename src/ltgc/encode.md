@@ -124,9 +124,19 @@ The AAC-LC encoder in question is `libfdk_aac`, being the best FOSS AAC-LC encod
 Keep in mind that the scenario under "basic" indicates that, all audio content encoded with provided parameters should be virtually indistinguishable from LAME-encoded MP3 files at 192kbps.
 
 ### Lossless
-Streaming lossless audio is generally considered a bad idea.
+Streaming lossless audio is generally considered a bad idea due to high bandwidth usage. It's generally more useful for archival purposes.
 
-When web support isn't planned, or the target platforms aren't severely underpowered, WavPack is the recommended codec for storing lossless audio. Recommended encoding parameters for the official CLI util: `wavpack -hhvx -x 3`
+You should choose FLAC when...
+* Browser support is needed.
+* The target is severely underpowered.
+* The target only supports FLAC for lossless audio compression.
+
+You should choose WavPack when...
+* You need a smaller file.
+* Higher bit depth is needed (more than 24).
+
+* **WavPack**: `wavpack -hhvx -x 3`
+* **FLAC**: `flac -V8 -e --no-padding -f`
 
 ## Compression
 ### Web
