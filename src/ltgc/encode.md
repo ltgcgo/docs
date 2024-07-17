@@ -8,12 +8,15 @@ None of the encodings listed are involved with patent concerns.
 		<th>Extension</th>
 	</tr></thead>
 	<tbody><tr>
-		<td rowspan=2><b>Rasterized image</b></td>
+		<td rowspan=3><b>Rasterized image</b></td>
 		<td>JPEG XL</td>
 		<td><code>.jxl</code></td>
 	</tr><tr>
 		<td>WebP</td>
 		<td><code>.webp</code></td>
+	</tr><tr>
+		<td>AVIF</td>
+		<td><code>.avif</code></td>
 	</tr><tr>
 		<td><b>Vector image</b></td>
 		<td>SVG</td>
@@ -67,7 +70,7 @@ As WebP is properly supported in every browser built for systems newer than Wind
 
 Compared to all other image formats, JPEG XL offers jawdropping image fidelity, unmatched quality-to-size ratio, proper progressive loading and better responsiveness. The cherry on top of JPEG XL would be its ability to losslessly transcode from existing JPEG files, offering about 20% size reduction with cheap JPEG lossless bitstream reconstruction, which paves its way to be a backwards-compatible drop-in replacement for image storage and distribution.
 
-MozJPEG-fronted JPEG XL encoding hasn't been tested yet.
+mozJPEG-fronted JPEG, while offering a good choice for backwards-compatibility, shouldn't be used unless necessary when size is a consideration. AVIF should be avoided for lossy encoding.
 
 <div><table>
 	<thead><tr>
@@ -78,14 +81,17 @@ MozJPEG-fronted JPEG XL encoding hasn't been tested yet.
 	<tbody><tr>
 		<td rowspan=2>JPEG XL</td>
 		<td>Delivery</td>
-		<td><code>cjxl -d 2.2 -e 4 -p</code></td>
+		<td><code>cjxl -d 2 -e 4 -p</code></td>
 	</tr><tr>
 		<td>Archival</td>
-		<td><code>cjxl -d 1.1 -e 4 -p</code></td>
+		<td><code>cjxl -d 1 -e 4 -p</code></td>
 	</tr><tr>
-		<td rowspan=2>WebP</td>
-		<td>Delivery</td>
-		<td><code>cwebp -m 5 -psnr 56</code></td>
+		<td rowspan=3>WebP</td>
+		<td>Delivery (perception)</td>
+		<td><code>cwebp -m 5 -psnr 56 -qrange 90 95</code></td>
+	</tr><tr>
+		<td>Delivery (fast-encode)</td>
+		<td><code>cwebp -m 5 -q 95</code></td>
 	</tr><tr>
 		<td>Archival</td>
 		<td><code>cwebp -m 5 -q 99</code></td>
@@ -97,7 +103,9 @@ The full feature set comparison chart is [available on Cloudinary](https://res.c
 ![Battle of the image codecs!](https://res.cloudinary.com/cloudinary-marketing/image/upload/w_700,c_fill,f_auto,q_auto,dpr_2.0/Web_Assets/blog/Battle-of-the-Codecs_fnl.png)
 
 ### Lossless
-WebP Lossless should always be offered when lossless image codecs are required. JPEG XL Lossless should only be offered alongside when it proves to be smaller than WebP in a case-by-case scenario.
+AVIF is the current best solution for lossless image encoding, with JPEG XL tailing behind. If size is the bigger factor, choose AVIF lossless. If compatibility is a concern, choose WebP lossless. JPEG XL in its current state doesn't offer much advantage against AVIF.
+
+Do *not* enable progressive encoding for JPEG XL lossless, or the resulting file will be several times bigger than PNG files.
 
 ## Audio encoding
 ### Lossy
@@ -113,7 +121,7 @@ The AAC-LC encoder in question is `libfdk_aac`, being the best FOSS AAC-LC encod
 | Vorbis | 128kbps | 160kbps | 192kbps  | 224kbps | 320kbps |
 | AAC-LC | 128kbps | 160kbps | 192kbps  | 224kbps | 320kbps |
 
-Keep in mind that the scenario under "basic" indicates that, all audio content encoded with provided parameters should be virtually undistinguishable from LAME-encoded MP3 files at 192kbps.
+Keep in mind that the scenario under "basic" indicates that, all audio content encoded with provided parameters should be virtually indistinguishable from LAME-encoded MP3 files at 192kbps.
 
 ### Lossless
 Streaming lossless audio is generally considered a bad idea.
