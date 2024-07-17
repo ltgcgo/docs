@@ -47,14 +47,14 @@ None of the encodings listed are involved with patent concerns.
 		<td><code>.gz</code></td>
 	</tr><tr>
 		<td rowspan=3><b>Bundle compression</b></td>
-		<td>xz</td>
-		<td><code>.xz</code> <code>.txz</code></td>
+		<td>lzip</td>
+		<td><code>.lz</code> <code>.tlz</code></td>
 	</tr><tr>
 		<td>bzip2</td>
 		<td><code>.bz2</code> <code>.tbz2</code></td>
 	</tr><tr>
-		<td>lzip</td>
-		<td><code>.lz</code> <code>.tlz</code></td>
+		<td>xz</td>
+		<td><code>.xz</code> <code>.txz</code></td>
 	</tr><tr>
 		<td><b>Font</b></td>
 		<td>WOFF2</td>
@@ -127,16 +127,18 @@ Keep in mind that the scenario under "basic" indicates that, all audio content e
 Streaming lossless audio is generally considered a bad idea due to high bandwidth usage. It's generally more useful for archival purposes.
 
 You should choose FLAC when...
-* Browser support is needed.
-* The target is severely underpowered.
-* The target only supports FLAC for lossless audio compression.
+- Browser support is needed.
+- The target is severely underpowered.
+- The target only supports FLAC for lossless audio compression.
 
 You should choose WavPack when...
-* You need a smaller file.
-* Higher bit depth is needed (more than 24).
+- You need a smaller file.
+- Higher bit depth is needed (more than 24).
 
-* **WavPack**: `wavpack -hhvx -x 3`
-* **FLAC**: `flac -V8 -e --no-padding -f`
+| Codec | Parameters |
+| ----- | ---------- |
+| WavPack | `wavpack -hhvx -x 3` |
+| FLAC | `flac -V8 -e --no-padding -f` |
 
 ## Compression
 ### Web
@@ -168,9 +170,9 @@ For static precompression, the original file can be omitted when the space is co
 </table></div>
 
 ### Bundle
-`bzip2` should be the default bundle compression algorithm, unless either `lzip` or `xz` is proven to be better in a case-by-case scenario. Quality should always set to `9`, unless a lower quality value is proven to yield a better result for smaller files.
+`lzip` is the de-facto standard of bundle compression, featuring good compression ratio with data recovery abilities. Quality should always set to `9`, unless a lower quality value is proven to yield a better result for smaller files, or time constraints are set.
 
-Due to platform differences, `xz` should be avoided for automation scripts that may install compression algorithms on the fly.
+`bzip2` or `xz` should only be considered for compatibility purposes.
 
 ## Font
 As practically all modern browsers support the WOFF2 font format, all required TrueType and OpenType fonts must be served as WOFF2 files instead. If for unspecified reasons that original files must be served, always consider precompression and avoid storing uncompressed files.
