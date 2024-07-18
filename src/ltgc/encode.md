@@ -65,12 +65,15 @@ None of the encodings listed are involved with patent concerns.
 Read below for further details.
 
 ## Rasterized image encoding
-### Lossy
+### Lossy still
 As WebP is properly supported in every browser built for systems newer than Windows XP, and it offers better quality-to-size ratio than all JPEG encoders, it is considered the best fallback format. However, as JPEG XL exists as an all-around better universal image format, lossy images should also be encoded with JPEG XL whenever possible.
 
 Compared to all other image formats, JPEG XL offers jawdropping image fidelity, unmatched quality-to-size ratio, proper progressive loading and better responsiveness. The cherry on top of JPEG XL would be its ability to losslessly transcode from existing JPEG files, offering about 20% size reduction with cheap JPEG lossless bitstream reconstruction, which paves its way to be a backwards-compatible drop-in replacement for image storage and distribution.
 
-mozJPEG-fronted JPEG, while offering a good choice for backwards-compatibility, shouldn't be used unless necessary when size is a consideration. AVIF should be avoided for lossy encoding.
+Things to take notice of:
+
+* mozJPEG-fronted JPEG, while offering a good choice for backwards-compatibility, shouldn't be used unless necessary when size is a consideration.
+* AVIF offers an advantage on size, when progressive support, boundary artifacts and codec performance (slower than all others multiple times) aren't in consideration.
 
 <div><table>
 	<thead><tr>
@@ -88,13 +91,17 @@ mozJPEG-fronted JPEG, while offering a good choice for backwards-compatibility, 
 	</tr><tr>
 		<td rowspan=3>WebP</td>
 		<td>Delivery (perception)</td>
-		<td><code>cwebp -m 5 -psnr 56 -qrange 90 95</code></td>
+		<td><code>cwebp -m 5 -psnr 56 -qrange 90 99</code></td>
 	</tr><tr>
 		<td>Delivery (fast-encode)</td>
 		<td><code>cwebp -m 5 -q 95</code></td>
 	</tr><tr>
 		<td>Archival</td>
 		<td><code>cwebp -m 5 -q 99</code></td>
+	</tr><tr>
+		<td>AVIF</td>
+		<td>Delivery</td>
+		<td><code>[effort=4,lossless=false,Q=90]</code></td>
 	</tr></tbody>
 </table></div>
 
@@ -102,10 +109,13 @@ The full feature set comparison chart is [available on Cloudinary](https://res.c
 
 ![Battle of the image codecs!](https://res.cloudinary.com/cloudinary-marketing/image/upload/w_700,c_fill,f_auto,q_auto,dpr_2.0/Web_Assets/blog/Battle-of-the-Codecs_fnl.png)
 
-### Lossless
+### Lossless still
 AVIF is the current best solution for lossless image encoding, with JPEG XL tailing behind. If size is the bigger factor, choose AVIF lossless. If compatibility is a concern, choose WebP lossless. JPEG XL in its current state doesn't offer much advantage against AVIF.
 
 Do *not* enable progressive encoding for JPEG XL lossless, or the resulting file will be several times bigger than PNG files.
+
+### Lossy animated
+Lossy animated WebP is the current baseline for animated image sequences, while lossy animated AVIF offers the best quality against others by a wide margin. Lossy animated JPEG XL doesn't offer a significant advantage against WebP, and is currently beaten by AVIF.
 
 ## Audio encoding
 ### Lossy
