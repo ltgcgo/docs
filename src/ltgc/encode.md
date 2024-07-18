@@ -85,18 +85,24 @@ Things to take notice of:
 		<th>Params</th>
 	</tr></thead>
 	<tbody><tr>
-		<td rowspan=2>JPEG XL</td>
-		<td>Delivery</td>
+		<td rowspan=4>JPEG XL</td>
+		<td>Delivery (quality)</td>
+		<td><code>cjxl -d 2 -e 7 -p</code></td>
+	</tr><tr>
+		<td>Archival (quality)</td>
+		<td><code>cjxl -d 1 -e 7 -p</code></td>
+	</tr><tr>
+		<td>Delivery (speed)</td>
 		<td><code>cjxl -d 2 -e 4 -p</code></td>
 	</tr><tr>
-		<td>Archival</td>
+		<td>Archival (speed)</td>
 		<td><code>cjxl -d 1 -e 4 -p</code></td>
 	</tr><tr>
 		<td rowspan=3>WebP</td>
 		<td>Delivery (perception)</td>
 		<td><code>cwebp -m 5 -psnr 56 -qrange 90 99</code></td>
 	</tr><tr>
-		<td>Delivery (fast-encode)</td>
+		<td>Delivery (speed)</td>
 		<td><code>cwebp -m 5 -q 95</code></td>
 	</tr><tr>
 		<td>Archival</td>
