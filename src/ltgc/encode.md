@@ -39,7 +39,10 @@ None of the encodings listed are involved with patent concerns.
 		<td>FLAC</td>
 		<td><code>.flac</code></td>
 	</tr><tr>
-		<td rowspan=2><b>Web compression</b></td>
+		<td rowspan=3><b>Web compression</b></td>
+		<td>Zstd</td>
+		<td><code>.zst</code></td>
+	</tr><tr>
 		<td>Brotli</td>
 		<td><code>.br</code></td>
 	</tr><tr>
@@ -152,9 +155,9 @@ You should choose WavPack when...
 
 ## Compression
 ### Web
-Brotli should be preferred over `gzip` at all times. Static low-entropy content (e.g. plain text files) should always be pre-compressed, with or without the original uncompressed file available.
+Brotli should be preferred over `gzip` at all times. Static low-entropy content (e.g. plain text files) should always be pre-compressed, with or without the original uncompressed file available. For dynamic content compression, `zstd` at level 8 consumes less than half of the resources used for Brotli, all the while outperforming Brotli on the output size.
 
-For static precompression, the original file can be omitted when the space is constrained, serving only precompressed blobs. When compatibility with other infrastructure isn't in consideration, precompressed `gzip` files can also be omitted, although it's not recommended in most cases.
+For static precompression, the original file can be omitted when the space is constrained, serving only precompressed blobs. When compatibility with other infrastructure isn't in consideration, precompressed `gzip` files can also be omitted, although it's not recommended in most cases. Zstd isn't suitable for static precompression, as even at compression level 22 it falls behind Brotli at its highest compression level. However, a recommendation is still available for reasonable reference.
 
 <div><table>
 	<thead><tr>
@@ -169,6 +172,13 @@ For static precompression, the original file can be omitted when the space is co
 	</tr><tr>
 		<td>Precompression</td>
 		<td><code>brotli -q 11</code></td>
+	</tr><tr>
+		<td rowspan=2>Zstd</td>
+		<td>Real-time</td>
+		<td><code>zstd -8</code></td>
+	</tr><tr>
+		<td>Precompression</td>
+		<td><code>zstd -16</code></td>
 	</tr><tr>
 		<td rowspan=2>gzip</td>
 		<td>Real-time</td>
