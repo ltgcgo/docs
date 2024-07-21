@@ -529,17 +529,17 @@
 		<tr>
 			<td><code>0x0163</code></td>
 			<td>✓</td>
-			<td>Release Time<br/><i>Redirected to cc72</i></td>
+			<td>Attack Time<br/><i>Redirected to cc73</i></td>
 		</tr>
 		<tr>
 			<td><code>0x0164</code></td>
 			<td>✓</td>
-			<td>Attack Time<br/><i>Redirected to cc73</i></td>
+			<td>Decay Time<br/><i>Redirected to cc75</i></td>
 		</tr>
 		<tr>
 			<td><code>0x0166</code></td>
 			<td>✓</td>
-			<td>Delay Time<br/><i>Redirected to cc75</i></td>
+			<td>Release Time<br/><i>Redirected to cc72</i></td>
 		</tr>
 		<tr>
 			<td><code>0x14rr</code></td>
