@@ -80,39 +80,59 @@ Things to take notice of:
 * AVIF is observed to have fewer observable artifacts for images with a simpler shading.
 * The reference AVIF settings provide a balancing point between JXL -d 1 and JXL -d 2.
 
+Explanations of image encoding uses:
+* **Delivery**: Size-first with generally-acceptable quality.
+* **Archival**: Balance between size and quality.
+* **Near-lossless**: Shaving as much size as possible, while still being mostly indistinguishable, even when zoomed in at 200%.
+
+Based on experiments, the size ratio values approach expectation on a large scale. Individual images may have varied results.
+
 <div><table>
 	<thead><tr>
 		<th>Codec</th>
 		<th>Use</th>
 		<th>Params</th>
+		<th>Ratio</th>
 	</tr></thead>
 	<tbody><tr>
 		<td rowspan=4>JPEG XL</td>
 		<td>Delivery (quality)</td>
 		<td><code>cjxl -j 0 -d 2 -e 7 -p --progressive_dc 1</code></td>
-	</tr><tr>
-		<td>Archival (quality)</td>
-		<td><code>cjxl -j 0 -d 1 -e 7 -p --progressive_dc 1</code></td>
+		<td>8.46%</td>
 	</tr><tr>
 		<td>Delivery (speed)</td>
 		<td><code>cjxl -j 0 -d 2 -e 4 -p --progressive_dc 1</code></td>
+		<td>-</td>
 	</tr><tr>
-		<td>Archival (speed)</td>
-		<td><code>cjxl -j 0 -d 1 -e 4 -p --progressive_dc 1</code></td>
+		<td>Archival</td>
+		<td><code>cjxl -j 0 -d 1 -e 7 -p --progressive_dc 1</code></td>
+		<td>13.8%</td>
 	</tr><tr>
-		<td rowspan=3>WebP</td>
-		<td>Delivery (perception)</td>
+		<td>Near-lossless</td>
+		<td><code>cjxl -j 0 -m 1 -d 0.25 -e 7</code></td>
+		<td></td>
+	</tr><tr>
+		<td rowspan=4>WebP</td>
+		<td>Delivery (quality)</td>
 		<td><code>cwebp -m 5 -psnr 56 -qrange 90 99</code></td>
+		<td>20.5%</td>
 	</tr><tr>
 		<td>Delivery (speed)</td>
 		<td><code>cwebp -m 5 -q 95</code></td>
+		<td>18.4%</td>
 	</tr><tr>
 		<td>Archival</td>
 		<td><code>cwebp -m 5 -q 99</code></td>
+		<td>-</td>
+	</tr><tr>
+		<td>Near-lossless</td>
+		<td><code>cwebp -near_lossless 60</code></td>
+		<td>62.7%</td>
 	</tr><tr>
 		<td>AVIF</td>
 		<td>Delivery</td>
 		<td><code>[effort=4,lossless=false,Q=90]</code></td>
+		<td>15%</td>
 	</tr></tbody>
 </table></div>
 
@@ -125,10 +145,10 @@ JPEG XL lossless and WebP lossless are mostly on par, either could be the better
 
 Do *not* enable progressive encoding for JPEG XL lossless, or the resulting file will be several times bigger than PNG files.
 
-| Codec | Parameters |
-| ----- | ---------- |
-| JPEG XL | `cjxl -j 0 -d 0 -e 7` |
-| WebP | `cwebp -m 6 -lossless` |
+| Codec | Parameters | Ratio |
+| ----- | ---------- | ----- |
+| JPEG XL | `cjxl -j 0 -d 0 -e 7` | 70.2% |
+| WebP | `cwebp -m 6 -lossless` | 78.1% |
 
 ### Lossy animated
 Lossy animated WebP is the current baseline for animated image sequences, while lossy animated AVIF offers the best quality against others by a wide margin. Lossy animated JPEG XL doesn't offer a significant advantage against WebP, and is currently beaten by AVIF.
