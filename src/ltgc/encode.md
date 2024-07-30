@@ -91,11 +91,11 @@ Explanations of image encoding uses:
 
 | Uses | SSIMULACRA2 | Butteraugli | DSSIM |
 | ---- | ----------- | ----------- | ----- |
-| Delivery | 80 | 2.0 | |
-| Archival | 85 | 1.0 | |
-| Near-lossless | 90+ | 0.4- | |
+| Delivery | 80 | 2.0 | 0.0008 |
+| Archival | 85 | 1.0 | 0.0004 |
+| Near-lossless | 90+ | 0.4- | 0.0001- |
 
-Based on experiments, the size ratio values approach expectation on a large scale. Lossless inputs induce lower expectations, while lossy inputs induce higher expectations. Individual images may have varied results.
+The size ratio values listed below approach expectations on a large scale, based on experiments conducted on a relatively large scale with non-photographic images modelling 15.6% lossy inputs. Lossless inputs induce better (smaller) expectations, while lossy inputs tip the balance in reverse. Photograpic images will generally have a better (smaller) ratio than non-photographic images, but individual images may still have greatly varied results.
 
 <div class="table-wrapper"><table>
 	<thead><tr>
