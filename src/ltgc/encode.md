@@ -8,9 +8,12 @@ None of the encodings listed are involved with patent concerns.
 		<th>Extension</th>
 	</tr></thead>
 	<tbody><tr>
-		<td rowspan=3><b>Rasterized image</b></td>
+		<td rowspan=4><b>Rasterized image</b></td>
 		<td>JPEG XL</td>
 		<td><code>.jxl</code></td>
+	</tr><tr>
+		<td>JPEG</td>
+		<td><code>.jpg</code></td>
 	</tr><tr>
 		<td>WebP</td>
 		<td><code>.webp</code></td>
@@ -75,19 +78,26 @@ Compared to all other image formats, JPEG XL offers jawdropping image fidelity, 
 
 Things to take notice of:
 
-* mozJPEG-fronted JPEG, while offering a good choice for backwards-compatibility, shouldn't be used unless necessary when size is a consideration.
+* mozJPEG-fronted JPEG, while offering a good choice for backwards-compatibility, shouldn't be used unless necessary when size is a consideration. mozJPEG is generally superseded by `jpegli`.
 * AVIF offers an advantage on size, when progressive support, boundary artifacts and codec performance (slower than all others multiple times) aren't in consideration.
 * AVIF is observed to have fewer observable artifacts for images with a simpler shading.
-* The reference AVIF settings provide a balancing point between JXL -d 1 and JXL -d 2.
+* The reference AVIF settings provide a balancing point between JXL `-d 1` and JXL `-d 2`.
+* `jpegli` for JPEG from the JPEG XL team are being looked upon. If possible, it will provide a reasonable front for backwards-compatible JPEG XL encoding.
 
 Explanations of image encoding uses:
 * **Delivery**: Size-first with generally-acceptable quality.
 * **Archival**: Balance between size and quality.
 * **Near-lossless**: Shaving as much size as possible, while still being mostly indistinguishable, even when zoomed in at 200%.
 
-Based on experiments, the size ratio values approach expectation on a large scale. Individual images may have varied results.
+| Uses | SSIMULACRA2 | Butteraugli | DSSIM |
+| ---- | ----------- | ----------- | ----- |
+| Delivery | 80 | 2.0 | |
+| Archival | 85 | 1.0 | |
+| Near-lossless | 90+ | 0.4- | |
 
-<div><table>
+Based on experiments, the size ratio values approach expectation on a large scale. Lossless inputs induce lower expectations, while lossy inputs induce higher expectations. Individual images may have varied results.
+
+<div class="table-wrapper"><table>
 	<thead><tr>
 		<th>Codec</th>
 		<th>Use</th>
@@ -110,7 +120,7 @@ Based on experiments, the size ratio values approach expectation on a large scal
 	</tr><tr>
 		<td>Near-lossless</td>
 		<td><code>cjxl -j 0 -m 1 -d 0.25 -e 7</code></td>
-		<td></td>
+		<td>27.1%</td>
 	</tr><tr>
 		<td rowspan=4>WebP</td>
 		<td>Delivery (quality)</td>
