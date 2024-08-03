@@ -24,4 +24,5 @@ The slim flavour targets container hosts and VM hosts, which barely gets interac
 | `photon` | N/A | Photon Linux | No |
 
 ## Usage & Security
-Further instructions [available here](usage.md).
+- [Installation and primitive security](usage.md)
+- [LXC setup](lxc.md)

@@ -1,13 +1,13 @@
-## Usage
+## Installation
 ### Native
 For bare-metal, virtual machines and LXC containers. Do <u>not</u> run native install scripts other than on new machines.
 
 1. On any of the supported distros, make sure `curl` is available.
-2. Execute `sh <(curl -Ls https://github.com/ltgcgo/gel/releases/latest/download/install.sh)`.
-3. Connect to the SSH with `ssh -p 1122 <serverIP>`. User passwords won't change, but SSH settings will. See the [SSH](#ssh) section for details.
+2. Execute `sh <(curl -Ls https://github.com/ltgcgo/gel/releases/latest/download/install.sh)`. (or `sh <(curl -Ls https://codeberg.org/ltgc/gel/releases/download/latest/install.sh)`)
+3. Connect via SSH with `ssh -p 1122 <serverIP>`. User passwords won't change, but SSH settings will. See the [SSH](#ssh) section for details.
 
 ### Containers
-Container images are only offered as a convenient way of inspecting the installations.
+Container images are only offered as a convenient way of evaluating the installations.
 
 1. Spin up one of the available Gel flavours.
     1. Images are available on the [Docker Hub](https://hub.docker.com/r/ltgc/gel) if you want to save time. Use `podman pull docker.io/ltgc/gel:<flavour>` to pull the images.
@@ -20,19 +20,6 @@ Gel needs the community repo to be enabled in order to function.
 
 #### openSUSE Leap
 `doas` is not available on the platform. The regular `sudo` is used instead.
-
-## LXC installation
-### Debian
-`apt install lxc`
-
-### openSUSE
-`zypper in lxc`
-
-### Rocky Linux/AlmaLinux
-`dnf install lxc`
-
-### Alpine
-`apk add lxc lxcfs lxc-download lxc-bridge`
 
 ## Security
 ### Privilege elevation
