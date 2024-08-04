@@ -38,6 +38,19 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 
 1. Octavia implements XG level 3.0 or later, and XG version 2.0 or later.
 
+#### Custom sound banks
+- Voice name maps (`.mdat`)
+- SysEx bank dumps (`.syx`)
+  - KORG X5 (05R/W)
+  - KORG X5D (X5DR)
+  - KORG NS5R (NX5R)
+  - ~~KORG Trinity~~
+  - ~~Yamaha PLG-AN (AN200)~~
+- Yamaha S90 ES Voice Editor (`.s7e`)
+- ~~Yamaha Motif ES Voice Editor (`.w7e`)~~
+- Korg Program/Combi/Global (`.pcg`)
+  - Korg KROSS 2
+
 ### Specific targets
 #### Roland MT-32
 | Target  | Type | Status |
