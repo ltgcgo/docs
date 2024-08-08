@@ -16,6 +16,7 @@
   - [Versioning](ltgc/versioning.md)
 - [Miscellaneous]()
   - [Project origins](ltgc/project-origin.md)
+  - [List of technologies](ltgc/list-tech.md)
 
 # Services
 - [Lavender](lavender/README.md)
