@@ -28,5 +28,6 @@
 | [Spiderfire](https://github.com/Redfire75369/spiderfire) | SpiderMonkey | No |
 | [WinterJS](https://winterjs.org) | SpiderMonkey | No |
 | [Bare](https://docs.pears.com/bare-reference/overview) | QuickJS | No |
+| [Javy](https://github.com/bytecodealliance/javy) | QuickJS | No |
 | [LLRT](https://github.com/awslabs/llrt) | QuickJS | No |
 | [txiki.js](https://github.com/saghul/txiki.js) | QuickJS | No |
