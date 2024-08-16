@@ -38,6 +38,7 @@
   - [Implementation]()
     - [Audio effects](octavia/impl/efx.md)
     - [RPN/NRPN](octavia/impl/pn.md)
+    - [Voice map format](octavia/impl/maps.md)
   - [Support]()
     - [Specs](octavia/support/implementation.md)
     - [SysEx](octavia/support/sysex.md)
