@@ -17,6 +17,7 @@
 - [Miscellaneous]()
   - [Project origins](ltgc/project-origin.md)
   - [List of technologies](ltgc/list-tech.md)
+  - [Sizes of data types](ltgc/list-dtype.md)
 
 # Services
 - [Lavender](lavender/README.md)
