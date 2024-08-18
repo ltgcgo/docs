@@ -1,5 +1,7 @@
 ## Container setup
 ### LXC
+This section documents the processes of configuring LXC on distros supported by Gel.
+
 #### Installation
 - Alpine: `apk add lxc lxcfs lxc-download lxc-bridge`
 - Debian: `apt install lxc`
@@ -82,6 +84,12 @@ As an example, we're setting the start UID and start GID to 1148576, and allocat
 root:1148576:65536
 ```
 
+If you're going to run unprivileged containers inside the target unprivileged LXC, below is an example reserving enough subordinate IDs for use.
+
+```sh
+root:1148576:262144
+```
+
 ##### Apply mapped IDs in configuration
 To apply the mapped IDs, head to `/var/lib/lxc/<containerName>` and modify the `config` file. According to the containerized distro chosen, there may be seperate user namespace profiles, so switch to those if you encounter problems.
 
@@ -90,6 +98,15 @@ To apply the mapped IDs, head to `/var/lib/lxc/<containerName>` and modify the `
 lxc.include = /usr/share/lxc/config/userns.conf
 lxc.idmap = u 0 1148576 65536
 lxc.idmap = g 0 1148576 65536
+```
+
+If you've chosen to use the larger ID space for unprivileged containers above, below is the corresponding example.
+
+```ini
+# Remapped user and group IDs
+lxc.include = /usr/share/lxc/config/userns.conf
+lxc.idmap = u 0 1148576 262144
+lxc.idmap = g 0 1148576 262144
 ```
 
 ##### Change owner of the container root
@@ -109,3 +126,48 @@ chmod 640 /var/lib/lxc/<containerName>/config
 ```
 
 ### Podman
+This section documents the processes of setting up Podman on distros supported by Gel. To get Podman functioning, `fuse` and `tun` support has to be present.
+
+If you're running Podman inside an (unprivileged) LXC container, make sure the steps listed below have all been applied to the host LXC container, all of which could be found above.
+
+- Assign a larger ID space
+- Enable FUSE
+- Enable nested containerization
+- Enable TUN
+
+#### Installation
+> **Warning**
+> 
+> - Certain distros (e.g. Debian) may not have a functioning version of `crun`. Install `crun` from [Nixpkgs](https://search.nixos.org) when such errors are encountered.
+> - A few distros like Photon do not have `podman-compose` bundled.
+> - If you encounter warnings regarding `/` not being shared, fix temporarily with `mount --make-rshared /`. Read [Alpine Wiki](https://wiki.alpinelinux.org/wiki/Podman#Shared_mount) for further info.
+
+- Alpine: `apk add podman podman-compose`
+- Debian: `apt install podman podman-compose`
+- openSUSE: `zypper in podman podman-compose`
+- Rocky Linux/AlmaLinux: `dnf install podman podman-compose`
+- Photon: `tdnf install podman`
+
+After installation, run a "Hello World" container to ensure everything works correctly.
+
+```sh
+podman run --rm hello-world
+```
+
+If problems occur, below is an example command for debugging.
+
+```sh
+podman run --security-opt="seccomp=unconfined" --log-level=debug --rm hello-world
+```
+
+#### Manual subordinate ID assign
+> **Note**
+> Distros may already have this section configured automatically. Only follow this section when you encounter problems.
+
+Explanations about subordinate IDs are [available in previous sections](#select-and-map-subordinate-ids). If you encounter Podman complaining about IDs, below is an example inside unprivileged LXC containers to apply in both `/etc/subuid` and `/etc/subgid`.
+
+```sh
+<username>:65536:131072
+```
+
+Run `podman system migrate` whenever the assigned subordinate ID space changes.
