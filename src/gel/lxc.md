@@ -36,6 +36,14 @@ lxc.start.auto = 1
 lxc.start.delay = 4 # In seconds
 ```
 
+#### Enable nested containerization
+In the container config, have the following lines.
+
+```ini
+# Allow nested containerization
+lxc.include = /usr/share/lxc/config/nesting.conf
+```
+
 #### Enable FUSE
 In the container config, have the following lines.
 
