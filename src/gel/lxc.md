@@ -66,6 +66,49 @@ lxc.cgroup2.devices.allow = c 10:200 rwm
 #### Limit container network access
 _From [How to restrict network access of LXC container](https://babarowski.com/blog/how-to-restrict-network-in-lxc/)._
 
+#### Raise limits on opened files
+_From [Proxmox ulimit hell: how to really increase open files ?](https://forum.proxmox.com/threads/proxmox-ulimit-hell-how-to-really-increase-open-files.81073/)_
+
+In `/etc/sysctl.conf`, make sure the following lines are present. Feel free to adjust the values to your needs.
+
+```ini
+fs.inotify.max_queued_events = 1048576
+fs.inotify.max_user_instances = 1048576
+fs.inotify.max_user_watches = 1048576
+vm.max_map_count = 262144
+```
+
+In `/etc/security/limits.conf`, have the following lines. Feel free to adjust the values to your needs.
+
+```ini
+*     soft  nofile  1048576 unset
+*     hard  nofile  1048576 unset
+root  soft  nofile  1048576 unset
+root  hard  nofile  1048576 unset
+*     soft  memlock 1048576 unset
+*     hard  memlock 1048576 unset
+```
+
+In the container config, have the following lines. Feel free to adjust the values to your needs.
+
+```ini
+# Raise limits on opened files
+lxc.prlimit.nofile = 1048576
+```
+
+Inside the container, have the following lines in `/etc/security/limits.conf`. Feel free to adjust the values to your needs.
+
+```ini
+*     soft  nofile  1048576 unset
+*     hard  nofile  1048576 unset
+root  soft  nofile  1048576 unset
+root  hard  nofile  1048576 unset
+*     soft  memlock 1048576 unset
+*     hard  memlock 1048576 unset
+```
+
+Reboot the host and the container(s) to apply the changes.
+
 #### Manual unprivileged container setup
 _Extended from [this blog post](https://blog.benoitblanchon.fr/lxc-unprivileged-container/)._
 
@@ -134,6 +177,7 @@ If you're running Podman inside an (unprivileged) LXC container, make sure the s
 - Enable FUSE
 - Enable nested containerization
 - Enable TUN
+- Raise limits on opened files
 
 #### Installation
 > **Warning**
