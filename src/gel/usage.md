@@ -3,7 +3,7 @@
 For bare-metal, virtual machines and LXC containers. Do <u>not</u> run native install scripts other than on new machines.
 
 1. On any of the supported distros, make sure `curl` is available.
-2. Execute `sh <(curl -Ls https://github.com/ltgcgo/gel/releases/latest/download/install.sh)`. (or `sh <(curl -Ls https://codeberg.org/ltgc/gel/releases/download/latest/install.sh)`)
+2. Execute `sh <(curl -Ls https://github.com/ltgcgo/gel/releases/latest/download/install.sh)`. (or `sh <(curl -Ls https://codeberg.org/ltgc/gel/releases/download/latest/install.sh)`, use `GEL_SLIM=1` to enable slim installation)
 3. Connect via SSH with `ssh -p 1122 <serverIP>`. User passwords won't change, but SSH settings will. See the [SSH](#ssh) section for details.
 
 ### Containers

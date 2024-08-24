@@ -12,6 +12,15 @@ This section documents the processes of configuring LXC on distros supported by 
 #### Config files
 - Container config files: `/var/lib/lxc/<name>/config`
 
+#### Container creation from official templates
+When creating containers from official templates, you'll be presented with a list of available distros, alongwith release names and CPU architectures. [Visit for the full list](https://images.linuxcontainers.org).
+
+To select a source image directly without the selection prompt, use the following command.
+
+```sh
+lxc-create -t download -n "<name>" -- --dist <distro> --release <release> --arch <arch>
+```
+
 #### Assign static IPs
 _From [Setup network bridge in lxc-net](https://stanislas.blog/2018/02/setup-network-bridge-lxc-net/)._
 
