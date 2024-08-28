@@ -75,6 +75,23 @@ lxc.cgroup2.devices.allow = c 10:200 rwm
 #### Limit container network access
 _From [How to restrict network access of LXC container](https://babarowski.com/blog/how-to-restrict-network-in-lxc/)._
 
+#### Limit CPU and RAM usage
+_From [Memory Controller ・cgroup2](https://facebookmicrosites.github.io/cgroup2/docs/cpu-controller.html)._
+
+In the container config, follow the example provided below.
+
+```ini
+# Limit CPU and RAM
+lxc.cgroup2.memory.min = 268435456
+lxc.cgroup2.memory.max = 536870912
+lxc.cgroup2.cpu.max = 500000 1000000
+```
+
+This sets the container to...
+
+- Use at most 512 MiB of RAM (hard limit), with 256 MiB guaranteed (hard limit).
+- Allows using half of a core's worth of computing power.
+
 #### Raise limits on opened files
 _From [Proxmox ulimit hell: how to really increase open files ?](https://forum.proxmox.com/threads/proxmox-ulimit-hell-how-to-really-increase-open-files.81073/)_
 

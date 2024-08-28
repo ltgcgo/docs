@@ -52,6 +52,7 @@ Technologies listed here may have been used by some of our projects. None of the
 
 ### Virtualization and containerization
 - [Docker](https://docker.io/)
+- [Xen](https://xenproject.org)
 
 ### Miscellaneous
 - [PostgreSQL](https://postgresql.org/)
@@ -77,6 +78,9 @@ Usage of technologies listed here are entirely banned within LTGC. Bans do not e
 ### Frameworks
 - [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet)
 - [JSP](https://www.oracle.com/java/technologies/jspt.html)
+
+### Virtualization and containerization
+- [OpenVZ](https://openvz.org)
 
 ### Miscellaneous
 - [LXD](https://ubuntu.com/lxd)
