@@ -32,12 +32,19 @@ Custom script files defining properties of drum kits and their voices.
 ### Voice property maps
 TSV files describing certain properties of individual voices.
 
+- `VXP`: Voice property ID
+
 #### VL properties
 - `BNS`: VL Breath Noise Source
   - `0`: None
   - `1`: Modulation wheel
   - `2`: Blow strength
-  - `3`: Blow strength + throat formant
+  - `4`: Throat formant
+- `BNM`: VL Breath Noise Amplitude from Mod Wheel
+  - `0`: 0
+  - `127`: 1
+- `BNB`: VL Breath Noise Amplitude from Blow strength
+- `BNT`: VL Breath Noise Amplitude from Throat formant
 - `BAD`: VL Breath Attack Duration, specified in milliseconds
 - `BAL`: VL Breath Attack Level
   - `0`: -64 (from a very wide triangle)
