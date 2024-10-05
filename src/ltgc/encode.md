@@ -82,17 +82,17 @@ Things to take notice of:
 * AVIF offers an advantage on size, when progressive support, boundary artifacts and codec performance (slower than all others multiple times) aren't in consideration.
 * AVIF is observed to have fewer observable artifacts for images with a simpler shading.
 * The reference AVIF settings provide a balancing point between JXL `-d 1` and JXL `-d 2`.
-* `jpegli` for JPEG from the JPEG XL team are being looked upon. If possible, it will provide a reasonable front for backwards-compatible JPEG XL encoding.
+* `jpegli` for JPEG from the JPEG XL team provides a reasonable front for backwards-compatible JPEG XL encoding. The estimated file size on fronted JPEG XL files are around 82.5% of the original JPEG files.
 
 Explanations of image encoding uses:
 * **Delivery**: Size-first with generally-acceptable quality.
-* **Archival**: Balance between size and quality.
+* **Delivery+**: Balance between size and quality.
 * **Near-lossless**: Shaving as much size as possible, while still being mostly indistinguishable, even when zoomed in at 200%.
 
 | Uses | SSIMULACRA2 | Butteraugli | DSSIM |
 | ---- | ----------- | ----------- | ----- |
 | Delivery | 80 | 2.0 | 0.0008 |
-| Archival | 85 | 1.0 | 0.0004 |
+| Delivery+ | 85 | 1.0 | 0.0004 |
 | Near-lossless | 90+ | 0.4- | 0.0001- |
 
 The size ratio values listed below approach expectations on a large scale, based on experiments conducted on a relatively large scale with non-photographic images modelling 15.6% lossy inputs. Lossless inputs induce better (smaller) expectations, while lossy inputs tip the balance in reverse. Photograpic images will generally have a better (smaller) ratio than non-photographic images, but individual images may still yield greatly varied results.
@@ -108,41 +108,46 @@ The size ratio values listed below approach expectations on a large scale, based
 		<td rowspan=4>JPEG XL</td>
 		<td>Delivery (quality)</td>
 		<td><code>cjxl -j 0 -d 2 -e 7 -p --progressive_dc 1</code></td>
-		<td>8.46%</td>
+		<td>8.52%</td>
 	</tr><tr>
 		<td>Delivery (speed)</td>
 		<td><code>cjxl -j 0 -d 2 -e 4 -p --progressive_dc 1</code></td>
 		<td>-</td>
 	</tr><tr>
-		<td>Archival</td>
+		<td>Delivery+</td>
 		<td><code>cjxl -j 0 -d 1 -e 7 -p --progressive_dc 1</code></td>
-		<td>13.8%</td>
+		<td>14%</td>
 	</tr><tr>
 		<td>Near-lossless</td>
-		<td><code>cjxl -j 0 -m 1 -d 0.25 -e 7</code></td>
-		<td>27.1%</td>
+		<td><code>cjxl -j 0 -m 1 -d 0.2 -e 7</code></td>
+		<td>32.6%</td>
 	</tr><tr>
 		<td rowspan=4>WebP</td>
 		<td>Delivery (quality)</td>
 		<td><code>cwebp -m 5 -psnr 56 -qrange 90 99</code></td>
-		<td>20.5%</td>
+		<td>21.2%</td>
 	</tr><tr>
 		<td>Delivery (speed)</td>
 		<td><code>cwebp -m 5 -q 95</code></td>
-		<td>18.4%</td>
+		<td>16.8%</td>
 	</tr><tr>
-		<td>Archival</td>
+		<td>Delivery+</td>
 		<td><code>cwebp -m 5 -q 99</code></td>
 		<td>-</td>
 	</tr><tr>
 		<td>Near-lossless</td>
 		<td><code>cwebp -near_lossless 60</code></td>
-		<td>62.7%</td>
+		<td>62.3%</td>
+	</tr><tr>
+		<td>JPEG</td>
+		<td>Delivery</td>
+		<td><code>cjpegli -d 1 -p 2</code></td>
+		<td>16.8%</td> 
 	</tr><tr>
 		<td>AVIF</td>
 		<td>Delivery</td>
 		<td><code>[effort=4,lossless=false,Q=90]</code></td>
-		<td>15%</td>
+		<td>15.7%</td>
 	</tr></tbody>
 </table></div>
 

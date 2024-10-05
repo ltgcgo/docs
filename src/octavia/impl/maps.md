@@ -44,9 +44,14 @@ TSV files describing certain properties of individual voices.
   - `0`: -1
   - `64`: 0
   - `127`: 1
-- `BNB`: VL Breath Noise Amplitude from Blow strength
-- `BNT`: VL Breath Noise Amplitude from Throat formant
+- `BNB`: VL Breath Noise Amplitude from Blow Strength
+- `BNT`: VL Breath Noise Amplitude from Throat Formant
 - `BNV`: VL Breath Noise Value Floor
+  - `-128`: -1
+  - `0`: 0
+  - `127`: 1
+- `BND`: VL Breath Noise Blow Strength Decay Duration
+- `BNL`: VL Breath Noise Blow Strength Decay Level
 - `BAD`: VL Breath Attack Duration, specified in milliseconds
 - `BAL`: VL Breath Attack Level
   - `0`: -64 (from a very wide triangle)
