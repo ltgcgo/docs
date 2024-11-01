@@ -203,37 +203,44 @@ You should choose WavPack when...
 
 ## Compression
 ### Web
-Brotli should be preferred over `gzip` at all times. Static low-entropy content (e.g. plain text files) should always be pre-compressed, with or without the original uncompressed file available. For dynamic content compression, `zstd` at level 8 consumes less than half of the resources used for Brotli, all the while outperforming Brotli on the output size.
+Brotli should be preferred over `gzip` at all times. Static low-entropy content (e.g. plain text files) should always be pre-compressed, with or without the original uncompressed file available. For dynamic content compression, `zstd` at level 8 consumes significantly less than the resources used for Brotli, all the while outperforming Brotli in terms of output size.
 
-For static precompression, the original file can be omitted when the space is constrained, serving only precompressed blobs. When compatibility with other infrastructure isn't in consideration, precompressed `gzip` files can also be omitted, although it's not recommended in most cases. Zstd isn't suitable for static precompression, as even at compression level 22 it falls behind Brotli at its highest compression level. However, a recommendation is still available for reasonable reference.
+For static precompression, the original file can be omitted when the space is constrained, serving only precompressed blobs. When compatibility with other infrastructure isn't in consideration, precompressed `gzip` files can also be omitted, although it's not recommended in most cases. `zstd` isn't suitable for static precompression, as even at compression level 22 it falls behind Brotli at its highest compression level. However, a recommendation is still available for reasonable reference. Zopfli is an alternative compressor for `gzip`, which `--i1` outperforms `gzip` even at level 9.
 
 <div><table>
 	<thead><tr>
 		<th>Algorithm</th>
 		<th>Use</th>
 		<th>Params</th>
+		<th>Reduction<br/>Ratio</th>
 	</tr></thead>
 	<tbody><tr>
 		<td rowspan=2>Brotli</td>
 		<td>Real-time</td>
 		<td><code>brotli -4</code></td>
+		<td>69.64%</td>
 	</tr><tr>
 		<td>Precompression</td>
 		<td><code>brotli -q 11</code></td>
+		<td>73.41%</td>
 	</tr><tr>
 		<td rowspan=2>Zstd</td>
 		<td>Real-time</td>
 		<td><code>zstd -8</code></td>
+		<td>71.32%</td>
 	</tr><tr>
-		<td>Precompression</td>
+		<td>Precompression<br/><i>(not recommended)</i></td>
 		<td><code>zstd -16</code></td>
+		<td>72.92%</td>
 	</tr><tr>
 		<td rowspan=2>gzip</td>
 		<td>Real-time</td>
 		<td><code>gzip -4</code></td>
+		<td>66.48%</td>
 	</tr><tr>
 		<td>Precompression</td>
 		<td><code>zopfli --i25</code></td>
+		<td>>68%</td>
 	</tr></tbody>
 </table></div>
 
