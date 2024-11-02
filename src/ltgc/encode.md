@@ -205,7 +205,9 @@ You should choose WavPack when...
 ### Web
 Brotli should be preferred over `gzip` at all times. Static low-entropy content (e.g. plain text files) should always be pre-compressed, with or without the original uncompressed file available. For dynamic content compression, `zstd` at level 8 consumes significantly less than the resources used for Brotli, all the while outperforming Brotli in terms of output size.
 
-For static precompression, the original file can be omitted when the space is constrained, serving only precompressed blobs. When compatibility with other infrastructure isn't in consideration, precompressed `gzip` files can also be omitted, although it's not recommended in most cases. `zstd` isn't suitable for static precompression, as even at compression level 22 it falls behind Brotli at its highest compression level. However, a recommendation is still available for reasonable reference. Zopfli is an alternative compressor for `gzip`, which `--i1` outperforms `gzip` even at level 9.
+For static precompression, the original file can be omitted when the space is constrained, serving only precompressed blobs. When compatibility with other infrastructure isn't in consideration, precompressed `gzip` files can also be omitted, although it's not recommended in most cases. `zstd` isn't suitable for static precompression, as even at compression level 22 it falls behind Brotli at its highest compression level. However, a recommendation is still available for reasonable reference. Zopfli is an alternative compressor for `gzip`, which `--i1` outperforms `gzip` even at level 9, however only `--i1` and `--i2` are recommeded for general use.
+
+The table below provides a quick reference of levels and estimated size reduction by use case.
 
 <div><table>
 	<thead><tr>
@@ -216,33 +218,35 @@ For static precompression, the original file can be omitted when the space is co
 	</tr></thead>
 	<tbody><tr>
 		<td rowspan=2>Brotli</td>
-		<td>Real-time</td>
+		<td>Dynamic</td>
 		<td><code>brotli -4</code></td>
 		<td>69.64%</td>
 	</tr><tr>
-		<td>Precompression</td>
+		<td>Static</td>
 		<td><code>brotli -q 11</code></td>
 		<td>73.41%</td>
 	</tr><tr>
 		<td rowspan=2>Zstd</td>
-		<td>Real-time</td>
-		<td><code>zstd -8</code></td>
-		<td>71.32%</td>
+		<td>Dynamic</td>
+		<td><code>zstd -7</code></td>
+		<td>69.82%</td>
 	</tr><tr>
-		<td>Precompression<br/><i>(not recommended)</i></td>
-		<td><code>zstd -16</code></td>
+		<td>Static<br/><i>(not recommended)</i></td>
+		<td><code>zstd -19</code></td>
 		<td>72.92%</td>
 	</tr><tr>
 		<td rowspan=2>gzip</td>
-		<td>Real-time</td>
+		<td>Dynamic</td>
 		<td><code>gzip -4</code></td>
 		<td>66.48%</td>
 	</tr><tr>
-		<td>Precompression</td>
-		<td><code>zopfli --i25</code></td>
-		<td>>68%</td>
+		<td>Static</td>
+		<td><code>zopfli --i1</code></td>
+		<td>68.08%</td>
 	</tr></tbody>
 </table></div>
+
+On a case-by-case basis, [Compression Tester](https://tools.paulcalvano.com/compression-tester/) could be used to see algorithms in action. For a more comprehensive comparison, [Morotti's Compression Results](https://morotti.github.io/lzbench-web/) could be used.
 
 ### Bundle
 `lzip` is the de-facto standard of bundle compression, featuring good compression ratio with data recovery abilities. Quality should always set to `9`, unless a lower quality value is proven to yield a better result for smaller files, or time constraints are set.
