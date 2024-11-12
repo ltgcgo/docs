@@ -204,3 +204,5 @@ Sends the final segment of a message. The server should interpret "full payload 
 > Can be initiated bidirectionally. Only required over unreliable channels.
 
 Sends a list of unordered received frames *after* the last continuously received frame. Used to reduce frame retransmissions when a copy has already been received.
+
+After frame acknowledgement (message type `5`) is sent, unordered tailing acknowledgements could be sent multiple times with the same frame ID as the preceding frame acknowledgement message, as long as the list of acknowledged frames aren't fully sent yet. Frame IDs are all encoded in 7-bit VLVs, with each VLV considered as an element of the list.
