@@ -110,11 +110,12 @@ Different commands have different support levels. To meet a certain support leve
 | 2  | Socket aftertouch / signalling | 1 | No |
 | 3  | Jump | 1 | No |
 | 4  | Full payload send | 1 | Yes |
-| 5  | Payload acknowledge | 1 | Yes |
+| 5  | Frame acknowledge | 1 | Yes |
 | 6  | Error | 2 | No |
 | 7  | Implementation exclusive | 2 | No |
 | 8  | Partial payload send | 3 | Yes |
-| 9  | Partial payload send complete | 3 | Yes |
+| 9  | Partial payload send continue | 3 | Yes |
+| 10 | Unordered tailing acknowledgement | 3 | No |
 
 #### `0`: Socket close
 > Can be initiated bidirectionally.
@@ -157,7 +158,7 @@ Payload sets challenge type.
 > 
 > No responses are needed for jumps.
 
-Sends a junk frame. The receiving end should ignore jump messages.
+Sends a junk frame. The receiving end should ignore jump messages. Useful to implement noise.
 
 #### `4`: Full payload send
 > Can be initiated bidirectionally.
@@ -166,10 +167,10 @@ Sends a junk frame. The receiving end should ignore jump messages.
 
 Sends a full message. Analogous to `f0 .. .. f7`.
 
-#### `5`: Payload acknowledge
+#### `5`: Frame acknowledge
 > Can be initiated bidirectionally. Only required over unreliable channels.
 
-Sends acknowledgement of the last received sequencial message.
+Sends acknowledgement of the last received sequencial frame.
 
 #### `6`: Error
 > Can be initiated bidirectionally.
@@ -190,11 +191,16 @@ Implementation exclusive binary commands. Analogous to `f0 .. .. f7` or `ff .. .
 > 
 > Use type 5 (payload acknowledge) to send acknowledgements with the same frame ID.
 
-Sends a segment of a message. Used to begin and continue sending the segments of a full message. The server should begin to reject "full payload send" messages on the same socket. Analogous to `f0 .. ..`.
+Sends a segment of a message. Used to begin and continue sending the segments of a full message. The server should begin to interpret "full payload send" messages as "payload send complete" on the same socket. Analogous to `f0 .. ..`.
 
-#### `9`: Partial payload send complete
+#### `9`: Partial payload send continue
 > Can be initiated bidirectionally. Certain underlying transports may disable this.
 > 
 > Use type 5 (payload acknowledge) to send acknowledgements with the same frame ID.
 
-Sends the final segment of a message. The server should allow "full payload send" messages again on the same socket. Analogous to `f7 .. .. f7`.
+Sends the final segment of a message. The server should interpret "full payload send" messages as "payload send complete" on the same socket. Analogous to `f7 .. ..`.
+
+#### `10`: Unordered tailing acknowledgement
+> Can be initiated bidirectionally. Only required over unreliable channels.
+
+Sends a list of unordered received frames *after* the last continuously received frame. Used to reduce frame retransmissions when a copy has already been received.
