@@ -72,9 +72,6 @@ lxc.mount.entry = /dev/net dev/net none bind,create=dir
 lxc.cgroup2.devices.allow = c 10:200 rwm
 ```
 
-#### Limit container network access
-_From [How to restrict network access of LXC container](https://babarowski.com/blog/how-to-restrict-network-in-lxc/)._
-
 #### Limit CPU and RAM usage
 _From [Memory Controller ・cgroup2](https://facebookmicrosites.github.io/cgroup2/docs/cpu-controller.html)._
 
@@ -93,7 +90,7 @@ This sets the container to...
 - Allows using half of a core's worth of computing power.
 
 #### Raise limits on opened files
-_From [Proxmox ulimit hell: how to really increase open files ?](https://forum.proxmox.com/threads/proxmox-ulimit-hell-how-to-really-increase-open-files.81073/)_
+_From [Proxmox ulimit hell: how to really increase open files ?](https://forum.proxmox.com/threads/81073/)_
 
 In `/etc/sysctl.conf`, make sure the following lines are present. Feel free to adjust the values to your needs.
 
@@ -193,6 +190,92 @@ chmod 755 /var/lib/lxc/<containerName>
 chmod 755 /var/lib/lxc/<containerName>/rootfs
 chmod 640 /var/lib/lxc/<containerName>/config
 ```
+#### `nftables`
+The default config for `nftables` looks like this.
+
+```sh
+#!/usr/sbin/nft -f
+
+flush ruleset
+
+table inet filter {
+	chain input {
+		type filter hook input priority filter;
+	}
+	chain forward {
+		type filter hook forward priority filter;
+	}
+	chain output {
+		type filter hook output priority filter;
+	}
+}
+```
+
+- It's possible to match multiple ports at the same time. Instead of specifying a single port number (e.g. `443`), use curly braces: `{443, 8443}`. Ranges can also be specified: `1024-2047`.
+- If a certain rule only applies to traffic originating from certain interfaces, prefix the rule with `iif <interface>`. Can be a single interface (e.g. `iif "eth0"`) or multiple (e.g. `iif {"eth0", "ens15"}`).
+
+##### Transparent service exposure
+_From [nftables: forwarding without masquerading](https://serverfault.com/questions/1034595/), [Quick reference: nftables in 10 minutes](https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes)_.
+
+Because the LXC host is the network gateway of all LXC containers, service exposure without masquerading is entirely possible, allowing services inside LXC slices to obtain the actual IP addresses. Add the block below to begin specifying rules for service exposure.
+
+If you want to expose services on both IPv4 and IPv6, rules will need to be duplicated. It's also important to note that containers must have the respective IP version available, for it to be exposed transparently. LXC 6.0.0 and newer has IPv6 addresses assigned automatically, while 4.0.0 and newer can have IPv6 manually configured. Only LXC 5.0.0 and newer supports IPv6 connectivity behind NAT.
+
+```sh
+table ip nat {
+	chain prerouting {
+		type nat hook prerouting priority filter;
+		# Insert new rules for IPv4 here
+	}
+}
+table ip6 nat {
+	chain prerouting {
+		type nat hook prerouting priority filter;
+		# Insert new rules for IPv6 here
+	}
+}
+```
+
+Let's say we want to expose `10.0.3.2:443` for anyone on the Internet to access on port 443.
+
+```sh
+tcp dport 443 dnat to 10.0.3.2
+```
+
+If the port numbers are not the same, the port will need to be overriden.
+
+```sh
+tcp dport 443 dnat to 10.0.3.2:8443
+```
+
+Or multiple ports are to be exposed without overriding the port.
+
+```sh
+tcp dport {443, 8443} dnat to 10.0.3.2
+tcp dport 512-1023 dnat to 10.0.3.2
+```
+
+Or only expose access to (a) certain interface(s).
+
+```sh
+iif "eth0" tcp dport 443 dnat to 10.0.3.2
+iif {"eth0", "vlan0"} tcp dport 443 dnat to 10.0.3.2
+```
+
+An example of a rule with similar use under IPv6.
+
+```sh
+iif "he-ipv6" tcp dport {80, 443} dnat to [fc11:4514:1919:810::ff:fe00:2]
+```
+
+Flush your rulesets with the command below, so LXC slices will still have connectivity via NAT after flushing.
+
+```sh
+nft -f /etc/nftables.conf; systemctl restart lxc-net
+```
+
+##### Limit container network access
+_From [How to restrict network access of LXC container](https://babarowski.com/blog/how-to-restrict-network-in-lxc/)._
 
 ### Alpine
 #### Enable glibc compatibility
