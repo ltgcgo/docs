@@ -4,7 +4,7 @@ This section documents the processes of configuring LXC on distros supported by 
 
 #### Installation
 - Alpine: `apk add lxc lxcfs lxc-download lxc-bridge`
-- Debian: `apt install lxc`
+- Debian: `apt install lxc lxcfs lxc-templates uidmap libpam-cgfs bridge-utils --no-install-recommends`
 - openSUSE: `zypper in lxc`
 - Rocky Linux/AlmaLinux: `dnf install lxc lxcfs lxc-templates`
 - Photon: N/A
