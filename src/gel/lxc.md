@@ -194,6 +194,14 @@ chmod 755 /var/lib/lxc/<containerName>/rootfs
 chmod 640 /var/lib/lxc/<containerName>/config
 ```
 
+### Alpine
+#### Enable glibc compatibility
+Alpine installations come bundled with a helper script configuring `glibc` compatibility. It may not work under every situation, but it should handle most use cases. `root` is required.
+
+```sh
+bash ~/gel/distro/sh/glibc.sh
+```
+
 ### Podman
 This section documents the processes of setting up Podman on distros supported by Gel. To get Podman functioning, `fuse` and `tun` support has to be present.
 
