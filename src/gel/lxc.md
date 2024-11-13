@@ -21,7 +21,7 @@ To select a source image directly without the selection prompt, use the followin
 lxc-create -t download -n "<name>" -- --dist <distro> --release <release> --arch <arch>
 ```
 
-#### Assign static IPs
+#### Assign static IPv4 addresses
 _From [Setup network bridge in lxc-net](https://stanislas.blog/2018/02/setup-network-bridge-lxc-net/)._
 
 Create `/etc/lxc/dhcp.conf`. The definitions go in `dhcp-host=<containerName>,<ip>` format. Example below.
@@ -274,8 +274,36 @@ Flush your rulesets with the command below, so LXC slices will still have connec
 nft -f /etc/nftables.conf; systemctl restart lxc-net
 ```
 
-##### Limit container network access
-_From [How to restrict network access of LXC container](https://babarowski.com/blog/how-to-restrict-network-in-lxc/)._
+##### Network access restriction - IP-based
+_Inspired by [How to restrict network access of LXC container](https://babarowski.com/blog/how-to-restrict-network-in-lxc/)._
+
+> **Notice**
+> 
+> `nftable`-based network access control is still under investigation. Problems are expected to rise.
+> 
+> If fine-grained access control like destination-matching (e.g. domain) is desired, use EEP with transparent proxy on the host instead.
+> 
+> Since the current `nftables` approach requires [static IPs](#assign-static-ipv4-addresses) to be assigned first, but there is no way found to have IPv6 addresses assigned statically, IPv6 access might need to be disabled for the container.
+
+The `inet filter forward` section is where network access of individual containers is filtered.
+
+If whitelisted network access is desired, add a rule in the scheme shown below to the end of the section for that specific container.
+
+```sh
+iif "lxcbr0" ip saddr 10.0.3.2 drop;
+```
+
+Then add allowed access ranges before the final drop to grant access to specific addresses. If problems occur with transparent service exposure, they will need to be made exempt.
+
+```sh
+iif "lxcbr0" ip saddr 10.0.3.2 ip daddr 10.0.3.0-10.0.3.255 accept;
+```
+
+Or if network access isn't whitelisted, and access to certain ranges are to be blocked, add a rule in the scheme shown below.
+
+```sh
+iif "lxcbr0" ip saddr 10.0.3.2 ip daddr 10.0.3.2-10.0.3.255 drop;
+```
 
 ### Alpine
 #### Enable glibc compatibility
