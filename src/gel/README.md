@@ -13,15 +13,16 @@ The full flavour targets all sorts of servers. Unless storage is severely constr
 The slim flavour targets container hosts and VM hosts, which barely gets interacted directly, but still requires the ease-of-use found in the full version of Gel. It can also be used in other scenarios, if the full flavour contains packages you'd prefer not to be present on your system.
 
 ### Full list
-| Slim | Full | Name | LXC ready? |
-| ---- | ---- | ---- | ---------- |
-| `slimalp` | `alpine` | Alpine Stable | No |
-| `slimalma` | `alma` | AlmaLinux | Yes |
-| `slimdeb` | `debian` | Debian Stable | Yes |
-| `slimleap` | `leapsuse` | openSUSE Leap | Yes |
-| `slimsuse` | `opensuse` | openSUSE Tumbleweed | No |
-| `slimrock` | `rocky` | Rocky Linux | Yes |
-| `photon` | N/A | Photon Linux | No |
+
+| Slim | Full | Name | LXC ready? | LXC base size |
+| ---- | ---- | ---- | ---------- | ------------- |
+| `slimalp` | `alpine` | Alpine Stable | No | 11 MiB |
+| `slimalma` | `alma` | AlmaLinux | Yes | 433 MiB |
+| `slimdeb` | `debian` | Debian Stable | Yes | 363 MiB |
+| `slimleap` | `leapsuse` | openSUSE Leap | Yes | 190 MiB |
+| `slimsuse` | `opensuse` | openSUSE Tumbleweed | No | - |
+| `slimrock` | `rocky` | Rocky Linux | Yes | 433 MiB |
+| `photon` | N/A | Photon Linux | No | N/A |
 
 ## Usage & Security
 - [Installation and primitive security](usage.md)
