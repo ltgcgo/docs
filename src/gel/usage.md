@@ -50,6 +50,10 @@ If the swapfile at `/swapfile` needs to be loaded automatically across reboots, 
 ```
 
 #### `zswap`
+> **Notice**
+> 
+> All steps demonstrated below do not persist across reboots. Read [Setting up Zswap in Debian 11 GNU/Linux](https://baronhk.wordpress.com/2021/10/03/setting-up-zswap-in-debian-11-gnu-linux/) for persistence.
+
 Requires `swap` to be enabled. `zswap` creates a compressed cache in RAM for system to swap pages off to, before the system decides to offload to the on-disk swap instead. Enabling `zswap` on top of `swap` helps to lessen the burden dumped onto the disk, make memory usage more efficient, while increasing responsiveness, as some of the infrequently accessed pages now resides in the much-faster RAM instead.
 
 To see the current configurations for `zswap`, run the following command.
