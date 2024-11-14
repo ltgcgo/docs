@@ -305,14 +305,6 @@ Or if network access isn't whitelisted, and access to certain ranges are to be b
 iif "lxcbr0" ip saddr 10.0.3.2 ip daddr 10.0.3.2-10.0.3.255 drop;
 ```
 
-### Alpine
-#### Enable glibc compatibility
-Alpine installations come bundled with a helper script configuring `glibc` compatibility. It may not work under every situation, but it should handle most use cases. `root` is required.
-
-```sh
-bash ~/gel/distro/sh/glibc.sh
-```
-
 ### Podman
 This section documents the processes of setting up Podman on distros supported by Gel. To get Podman functioning, `fuse` and `tun` support has to be present.
 
