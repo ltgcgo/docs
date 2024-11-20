@@ -201,6 +201,9 @@ You should choose WavPack when...
 | WavPack | `wavpack -hhvx -x 3` |
 | FLAC | `flac -V8 -e --no-padding -f` |
 
+Additional considerations:
+- If you do not intend to distribute high bit-depth lossless audio, but the input you have is of high bit-depth, you can re-sample it to somewhere between 16-bit (-96 dB) and 24-bit (-144 dB). Use `--pre-quantize=16` for WavPack.
+
 ## Compression
 ### Web
 Brotli should be preferred over `gzip` at all times. Static low-entropy content (e.g. plain text files) should always be pre-compressed, with or without the original uncompressed file available. For dynamic content compression, `zstd` at level 8 consumes significantly less than the resources used for Brotli, all the while outperforming Brotli in terms of output size.
