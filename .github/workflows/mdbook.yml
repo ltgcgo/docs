@@ -40,19 +40,13 @@ jobs:
       - name: Build with mdBook
         run: mdbook build
       - name: Build a separate pages artifact
-        run: |
-          echo "$(date +"%s")" > build-time.txt
-          sudo apt install zopfli -y
-          rm -v 'book/FontAwesome/fonts/fontawesome-webfont.eot' 'book/FontAwesome/fonts/fontawesome-webfont.ttf'
-          tar cvf pages-build.tar book
-          zopfli --i1 -v pages-build.tar
-          rm -v pages-build.tar
+        run: "./shx ghGenerate"
       - name: Rewrite release
         uses: ncipollo/release-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          artifacts: "pages-build.tar.gz,build-time.txt"
+          artifacts: "pages-build.tar.gz,pages-build-gz.tar,pages-build-br.tar,build-time.txt"
           allowUpdates: true
           artifactErrorsFailBuild: true
           makeLatest: true
