@@ -49,6 +49,10 @@ jobs:
         run: |
           echo "$(date +"%s")" > build-time.txt
           tar cvf pages-build.tar book
+      - name: Rewrite tag
+        run: |
+          git tag pages-build HEAD
+          git push origin pages-build
       - name: Rewrite release
         uses: ncipollo/release-action@v1
         with:
@@ -59,8 +63,7 @@ jobs:
           removeArtifacts: true
           replacesArtifacts: true
           name: "Latest Page Build"
-          commit: "HEAD"
-          tag: "latest"
+          tag: "pages-build"
 
   # Deployment job
   deploy:
