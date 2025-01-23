@@ -32,15 +32,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install mdBook
-        run: |
-          bash sh/ghSetup.sh
+        run: "bash sh/ghSetup.sh"
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with mdBook
         run: mdbook build
       - name: Build a separate pages artifact
-        run: "./shx ghGenerate"
+        run: "bash sh/ghGenerate.sh"
       - name: Rewrite release
         uses: ncipollo/release-action@v1
         env:
