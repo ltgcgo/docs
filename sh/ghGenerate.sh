@@ -12,13 +12,18 @@ rm -v pages-build.tar
 cd book-gz
 tree -ifl | grep -E "${COMPRESS_CRIT}" | while IFS= read -r file; do
 	zopfli --i1 "$file"
-	rm -v "$file"
+	if [ -f "$file" ]; then
+		rm -v "$file"
+	fi
 done
 tar cvf ../pages-build-gz.tar *
 cd ..
 cd book-br
 tree -ifl | grep -E "${COMPRESS_CRIT}" | while IFS= read -r file; do
 	brotli -vq 11 "$file"
+	if [ -f "$file" ]; then
+		rm -v "$file"
+	fi
 done
 tar cvf ../pages-build-br.tar *
 cd ..
