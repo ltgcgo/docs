@@ -45,6 +45,20 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./book
+      - name: Build a separate pages artifact
+        run: |
+          echo "$(date +"%s")" > build-time.txt
+          tar cvf pages-build.tar book
+      - name: Rewrite release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "pages-build.tar,build-time.txt"
+          allowUpdates: true
+          artifactErrorsFailBuild: true
+          makeLatest: true
+          removeArtifacts: true
+          replacesArtifacts: true
+          name: "Latest Page Build"
 
   # Deployment job
   deploy:
