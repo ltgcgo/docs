@@ -41,14 +41,11 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build with mdBook
         run: mdbook build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./book
       - name: Build a separate pages artifact
         run: |
           echo "$(date +"%s")" > build-time.txt
           sudo apt install zopfli -y
+          rm -v 'book/FontAwesome/fonts/fontawesome-webfont.eot' 'book/FontAwesome/fonts/fontawesome-webfont.ttf'
           tar cvf pages-build.tar book
           zopfli --i1 -v pages-build.tar
           rm -v pages-build.tar
@@ -65,6 +62,10 @@ jobs:
           replacesArtifacts: true
           name: "Latest page build"
           tag: "pages-build"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./book
 
   # Deployment job
   deploy:
