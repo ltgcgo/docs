@@ -48,19 +48,22 @@ jobs:
       - name: Build a separate pages artifact
         run: |
           echo "$(date +"%s")" > build-time.txt
+          sudo apt install zopfli -y
           tar cvf pages-build.tar book
+          zopfli --i1 -v pages-build.tar
+          rm -v pages-build.tar
       - name: Rewrite release
         uses: ncipollo/release-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          artifacts: "pages-build.tar,build-time.txt"
+          artifacts: "pages-build.tar.gz,build-time.txt"
           allowUpdates: true
           artifactErrorsFailBuild: true
           makeLatest: true
           removeArtifacts: true
           replacesArtifacts: true
-          name: "Latest Page Build"
+          name: "Latest page build"
           tag: "pages-build"
 
   # Deployment job
