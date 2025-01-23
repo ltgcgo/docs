@@ -59,6 +59,8 @@ jobs:
           removeArtifacts: true
           replacesArtifacts: true
           name: "Latest Page Build"
+          commit: "HEAD"
+          tag: "latest"
 
   # Deployment job
   deploy:
