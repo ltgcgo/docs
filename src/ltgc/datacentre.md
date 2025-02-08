@@ -84,8 +84,6 @@
 | `STO` | `SE` | Stockholm | |
 | `TNP` | `SE` | Tjoernarp, Scania | Tjörnarp, Skåne |
 | `SGP` | `SG` | Singapore | |
-| `SGG` | `SG` | Jurong West, West Region | 西區裕廊西 |
-| `SGS` | `SG` | Simei, Tampine, East Region | 東區淡賓尼四美 |
 | `IST` | `TR` | Istanbul, Marmara | İstanbul, Marmara Bölgesi |
 | `CHW` | `TW` | Changhua County | 彰化縣 |
 | `TPE` | `TW` | Taipei City | 臺北市 |
