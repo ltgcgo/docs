@@ -117,12 +117,12 @@
 		<tr>
 			<td>12</td>
 			<td>✓</td>
-			<td>General-purpose effect</td>
+			<td>General-purpose effect<br/>PLG-AN ribbon X</td>
 		</tr>
 		<tr>
 			<td>13</td>
 			<td>✓</td>
-			<td>General-purpose effect</td>
+			<td>General-purpose effect<br/>PLG-AN ribbon Z</td>
 		</tr>
 		<tr>
 			<td>16</td>
