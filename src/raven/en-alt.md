@@ -55,7 +55,7 @@ Vowels require at most two keys.
 | `au` | aʊ | 𐑬 | 𐐵 | h**ow** |
 | `ir` | ɪə | 𐑾 | 𐐮𐐲 | **ear** |
 | `er` | ɛə | 𐑺 | 𐐯𐑉 | **air** |
-| `ur` | ʊə | 𐑫𐑩 | 𐐳𐐲 | s**ure** |
+| `ur` | ʊə | 𐑫𐑼 | 𐐳𐐲 | s**ure** |
 
 #### Shavian compatibles
 | Sequence | BEPA | Shavian | Deseret | Example |
