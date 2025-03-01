@@ -659,7 +659,7 @@
 		</tr>
 		<tr>
 			<td>YAMAHA PLG-150DX</td>
-			<td>✕</td>
+			<td>✓</td>
 			<td></td>
 		</tr>
 		<tr>
