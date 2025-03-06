@@ -14,7 +14,7 @@ Octavia supports the following ways of specifying chord information: XF chords.
 	<th>ID</th>
 	<th>XF ID</th>
 	<th>Specifier</th>
-	<th>Name</th>
+	<th>Full name</th>
 	<th>Voicing</th>
 	<th>Semitones</th>
 	<th>On QY?</th>
@@ -28,8 +28,8 @@ Octavia supports the following ways of specifying chord information: XF chords.
 	<td>1</td>
 	<td>0</td>
 </tr><tr>
-	<td rowspan=11>Major</td>
-	<td><code></code></td>
+	<td rowspan=21>Major</td>
+	<td><code>00</code></td>
 	<td><code>00</code></td>
 	<td><code>---</code><br/><code>M</code></td>
 	<td>Major</td>
@@ -94,7 +94,6 @@ Octavia supports the following ways of specifying chord information: XF chords.
 	<td>3+6+2</td>
 	<td>4, 9, 14</td>
 </tr><tr>
-	<td rowspan=6>Major seventh</td>
 	<td rowspan=2><code></code></td>
 	<td rowspan=2><code>02</code></td>
 	<td rowspan=2><code>M7</code></td>
@@ -108,109 +107,151 @@ Octavia supports the following ways of specifying chord information: XF chords.
 	<td><code></code></td>
 	<td>✕</td>
 	<td><code>M7(b5)</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>Major seventh flatted fifth</td>
+	<td>1+3+♭5+7</td>
+	<td>0, 4, 6, 11</td>
 </tr><tr>
-	<td><code></code></td>
-	<td><code>1c</code></td>
-	<td><code>M7aug</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td rowspan=2><code></code></td>
+	<td rowspan=2><code>1c</code></td>
+	<td rowspan=2><code>M7aug</code></td>
+	<td rowspan=2>Major seventh augmented</td>
+	<td>1+♯5+7</td>
+	<td>0, 8, 11</td>
 </tr><tr>
-	<td><code></code></td>
-	<td><code>05</code></td>
-	<td><code>M7(9)</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>1+3+♯5+7</td>
+	<td>0, 4, 8, 11</td>
 </tr><tr>
-	<td><code></code></td>
-	<td><code>03</code></td>
-	<td><code>M7(#11)</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td rowspan=2><code></code></td>
+	<td rowspan=2><code>05</code></td>
+	<td rowspan=2><code>M7(9)</code><br/><code>M7add9</code></td>
+	<td rowspan=2>Major seventh add ninth</td>
+	<td>1+2+3+7</td>
+	<td>0, 2, 4, 11</td>
 </tr><tr>
-	<td rowspan=10>Minor</td>
+	<td>1+2+3+5+7</td>
+	<td>0, 2, 4, 7, 11</td>
+</tr><tr>
+	<td rowspan=3><code></code></td>
+	<td rowspan=3><code>03</code></td>
+	<td rowspan=3><code>M7(#11)</code></td>
+	<td rowspan=3>Major seventh sharp eleventh</td>
+	<td>1+2+3+♯4+7</td>
+	<td>0, 2, 4, 6, 11</td>
+</tr><tr>
+	<td>1+3+♯4+5+7</td>
+	<td>0, 4, 6, 7, 11</td>
+</tr><tr>
+	<td>1+2+3+♯4+5+7</td>
+	<td>0, 2, 4, 6, 7, 11</td>
+</tr><tr>
+	<td rowspan=18>Minor</td>
 	<td><code></code></td>
 	<td><code>08</code></td>
 	<td><code>m</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>Minor</td>
+	<td>1+♭3+5</td>
+	<td>0, 3, 7</td>
 </tr><tr>
 	<td><code></code></td>
 	<td><code>09</code></td>
 	<td><code>m6</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>Minor sixth</td>
+	<td>1+♭3+5+6</td>
+	<td>0, 3, 7, 9</td>
 </tr><tr>
 	<td><code></code></td>
 	<td><code>0c</code></td>
 	<td><code>m(9)</code><br/><code>madd9</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>Minor add ninth</td>
+	<td>1+2+♭3+5</td>
+	<td>0, 2, 3, 7</td>
 </tr><tr>
-	<td><code></code></td>
-	<td><code>0a</code></td>
-	<td><code>m7</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td rowspan=2><code></code></td>
+	<td rowspan=2><code>0a</code></td>
+	<td rowspan=2><code>m7</code></td>
+	<td rowspan=2>Minor seventh</td>
+	<td>1+♭3+♭7</td>
+	<td>0, 3, 10</td>
+</tr><tr>
+	<td>1+♭3+5+♭7</td>
+	<td>0, 3, 7, 10</td>
 </tr><tr>
 	<td><code></code></td>
 	<td><code>0b</code></td>
 	<td><code>m7b5</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>Minor seventh flatted fifth</td>
+	<td>1+♭3+♭5+♭7</td>
+	<td>0, 3, 6, 10</td>
 </tr><tr>
-	<td><code></code></td>
-	<td><code>0d</code></td>
-	<td><code>m7(9)</code><br/><code>m7add9</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td rowspan=3><code></code></td>
+	<td rowspan=3><code>0d</code></td>
+	<td rowspan=3><code>m7(9)</code><br/><code>m7add9</code></td>
+	<td rowspan=3>Minor seventh add ninth</td>
+	<td>1+2+♭3+♭7</td>
+	<td>0, 2, 3, 7</td>
 </tr><tr>
-	<td><code></code></td>
-	<td><code>0e</code></td>
-	<td><code>m7(11)</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>1+2+♭3+5+♭7</td>
+	<td>0, 2, 3, 7, 10</td>
 </tr><tr>
-	<td><code></code></td>
-	<td><code>0f</code></td>
-	<td><code>mM7</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>♭3+♭7+2</td>
+	<td>3, 10, 14</td>
+</tr><tr>
+	<td rowspan=4><code></code></td>
+	<td rowspan=4><code>0e</code></td>
+	<td rowspan=4><code>m7(11)</code></td>
+	<td rowspan=4>Minor seventh eleventh</td>
+	<td>1+♭3+4+5</td>
+	<td>0, 3, 5, 7</td>
+</tr><tr>
+	<td>1+2+♭3+4+5</td>
+	<td>0, 2, 3, 5, 7</td>
+</tr><tr>
+	<td>1+♭3+4+5+♭7</td>
+	<td>0, 3, 5, 7, 10</td>
+</tr><tr>
+	<td>1+2+♭3+4+5+♭7</td>
+	<td>0, 2, 3, 5, 7, 10</td>
+</tr><tr>
+	<td rowspan=2><code></code></td>
+	<td rowspan=2><code>0f</code></td>
+	<td rowspan=2><code>mM7</code></td>
+	<td rowspan=2>Minor major seventh</td>
+	<td>1+♭3+7</td>
+	<td>0, 3, 11</td>
+</tr><tr>
+	<td>1+♭3+5+7</td>
+	<td>0, 3, 7, 11</td>
 </tr><tr>
 	<td><code></code></td>
 	<td>✕</td>
 	<td><code>mM7b5</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>Minor major seventh flatted fifth</td>
+	<td>1+♭3+♭5+7</td>
+	<td>0, 3, 6, 11</td>
 </tr><tr>
-	<td><code></code></td>
-	<td><code>10</code></td>
-	<td><code>mM7(9)</code><br/><code>mM7add9</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td rowspan=2><code></code></td>
+	<td rowspan=2><code>10</code></td>
+	<td rowspan=2><code>mM7(9)</code><br/><code>mM7add9</code></td>
+	<td rowspan=2>Minor major seventh add ninth</td>
+	<td>1+2+♭3+7</td>
+	<td>0, 2, 3, 7, 11</td>
 </tr><tr>
-	<td rowspan=10>Dominant</td>
-	<td><code></code></td>
-	<td><code>13</code></td>
-	<td><code>7</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>1+2+♭3+5+7</td>
+	<td>0, 2, 3, 7, 11</td>
+</tr><tr>
+	<td rowspan=12>Dominant</td>
+	<td rowspan=3><code></code></td>
+	<td rowspan=3><code>13</code></td>
+	<td rowspan=3><code>7</code></td>
+	<td rowspan=3>Seventh</td>
+	<td>1+3+♭7</td>
+	<td>0, 4, 10</td>
+</tr><tr>
+	<td>1+5+♭7</td>
+	<td>0, 7, 10</td>
+</tr><tr>
+	<td>1+3+5+♭7</td>
+	<td>0, 4, 7, 10</td>
 </tr><tr>
 	<td><code></code></td>
 	<td><code>14</code></td>
@@ -279,37 +320,37 @@ Octavia supports the following ways of specifying chord information: XF chords.
 	<td><code></code></td>
 	<td><code>11</code></td>
 	<td><code>dim</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>Diminished</td>
+	<td>1+♭3+♭5</td>
+	<td>0, 3, 6</td>
 </tr><tr>
 	<td><code></code></td>
 	<td><code>12</code></td>
 	<td><code>dim7</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>Diminished seventh</td>
+	<td>1+♭3+♭5+6</td>
+	<td>0, 3, 6, 9</td>
 </tr><tr>
 	<td rowspan=3>Other</td>
 	<td><code></code></td>
 	<td><code>1e</code></td>
 	<td><code>1+8</code></td>
-	<td></td>
+	<td>Perfect octave</td>
 	<td>1+8</td>
 	<td>0, 12</td>
 </tr><tr>
 	<td><code></code></td>
 	<td><code>1f</code></td>
 	<td><code>5</code><br/><code>1+5</code></td>
-	<td></td>
+	<td>Power</td>
 	<td>1+5</td>
-	<td></td>
+	<td>0, 7</td>
 </tr><tr>
 	<td><code></code></td>
 	<td><code>22</code></td>
 	<td><code>cc</code></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>Cancel</td>
+	<td>1+♭2+2</td>
+	<td>0, 1, 2</td>
 </tr></tbody></table>
 </div>
