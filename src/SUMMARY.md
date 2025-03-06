@@ -46,6 +46,7 @@
     - [SysEx](octavia/support/sysex.md)
     - [Targets](octavia/support/target.md)
     - [Standard visualizers](octavia/support/screen.md)
+    - [Extensions](octavia/support/ext.md)
   - [API]()
     - [state.mjs](octavia/state/README.md)
   - [Specifications]()
