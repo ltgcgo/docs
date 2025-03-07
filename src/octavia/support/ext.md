@@ -1,13 +1,96 @@
 # Extensions
 ## Port assign
-Octavia supports the following ways of specifying port assignment: standard meta port assign, XF port assign.
+Octavia supports the following ways of specifying port assignment: standard port assign, XF port assign.
+
+### Standard port assign
+This is a single-byte meta event of type `33` (`0x21`).
+
+`pp`
+
+- `pp`: `00`..`ff` → Port 1..256
+
+### XF port assign
+This is an implementation-specific meta event with schema provided below.
+
+`43 00 01 pp`
+
+- `pp`: `00`..`ff` → Port 1..256
 
 ## Lyrics
-Octavia supports the following ways of specifying lyrics: text event substitution, standard meta lyrics, XF lyrics.
+Octavia supports the following ways of specifying lyrics: standard lyrics, text event substitution, XF lyrics.
+
+### Standard lyrics
+This is a variable-length meta event of type `05` (`0x05`).
+
+To make any SMF parser function normally, the character encoding used must be backwards-compatible with ASCII. While suitable for use in any way desired, for karaoke capabilities, data programmers must follow the standard authored by AMEI (United States) and TUNE1000 Corporation (Canada). Below is an extension compatible to both of the mentioned standards.
+
+Despite the original version devised by the TUNE1000 Corporation requires the file to be in format 0 (single track), Octavia has no problem handling format 1 (multiple single-channel tracks) and format 2 (multiple mixed-channel tracks) files just fine without a constraining hardware.
+
+#### Escape sequences
+#### Controls
+##### Word break
+When the space character ` ` is received, a word will be broken. Karaoke implementations should not consider word breaks in their duration calculation.
+
+##### End of line
+When either `\v` (extension) or `\r` (AMEI) is received, a new line is signaled.
+
+##### End of paragraph
+When `\n` (AMEI) is received, a new paragraph/section is signaled.
+
+#### Tags
+##### Text encoding
+##### Song information
+##### Tag end
+#### Rubies
+#### Lyrics feed
+
+### Text event substitution
+Developed by TUNE1000 Corporation under the supposed name "Soft Karaoke". As the name used by Octavia suggests, these events hijack the standard text meta events. When toggled on, the text event substitution parser will take over the text event emitter.
+
+Despite the original version devised by the TUNE1000 Corporation requires the file to be in format 1 (multiple single-chanel tracks), Octavia has no problem handling format 0 (single track) and format 2 (multiple mixed-channel tracks) files just fine without a constraining hardware.
+
+#### Toggle
+Upon receiving the karaoke trigger among the text events, the text event substitution lyrics parser shall take over for the majority of the text events, leaving only tags intact. See "karaoke trigger" below for information.
+
+#### Tags
+Tag parsing shall be exempt from lyrics handling. Tags all precede with `@`, with the exact type specified for only a single byte. Each text event can only contain a single tag.
+
+##### Karaoke trigger
+Specified with `@K`. Contains either file type or copyright information.
+
+More often than not, you will receive `@KMIDI KARAOKE FILE` than any other text event. If the event is received exactly as-is, no copyright information will be displayed from it.
+
+##### Language
+##### Title
+##### Information
+
+### XF lyrics
+XF lyrics events hijack the standard lyrics meta events. When toggled on, the XF lyrics parser will take over the standard lyrics parser.
+
+#### Toggle
+Upon receiving the following cue point meta event (type `7`, `0x07`), the XF lyrics parser shall begin to take over the standard lyrics parser. Said event also provides text encoding information of lyrics to the parser, while .
+
+#### Control characters
+
+#### Part cues
+
+#### Scenes
+
+#### Lyrics feed
 
 ## Chords
-Octavia supports the following ways of specifying chord information: XF chords.
+Octavia supports the following ways of specifying chord information: XF chord type.
 
+### XF chord type
+This is an implementation-specific meta event with schema provided below.
+
+`43 7B 91 as cc na cc`
+
+- `a`: `0`..`6` → ♭𝄫, 𝄫, ♭, ♮, ♯, 𝄪, 𝄪♯
+- `s`: `1`..`7` → C, D, E, F, G, A, B
+- `cc`: See the "XF ID" field in the chord list.
+
+### Chord list
 <div class="table-wrapper">
 <table><thead><tr>
 	<th>Type</th>
