@@ -134,28 +134,28 @@ The details are exactly the same as above.
 	<td>1+3+5</td>
 	<td>0, 4, 7</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>02</code></td>
 	<td>✕</td>
 	<td><code>b5</code></td>
 	<td>Flatted fifth</td>
 	<td>1+3+♭5</td>
 	<td>0, 4, 6</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>03</code></td>
 	<td><code>07</code></td>
 	<td><code>aug</code></td>
 	<td>Augmented</td>
 	<td>1+3+♯5</td>
 	<td>0, 4, 8</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>01</code></td>
 	<td><code>20</code></td>
 	<td><code>sus4</code></td>
 	<td>Suspended fourth</td>
 	<td>1+4+5</td>
 	<td>0, 5, 7</td>
 </tr><tr>
-	<td rowspan=2><code></code></td>
+	<td rowspan=2><code>05</code></td>
 	<td rowspan=2><code>01</code></td>
 	<td rowspan=2><code>6</code></td>
 	<td rowspan=2>Sixth</td>
@@ -165,14 +165,14 @@ The details are exactly the same as above.
 	<td>1+3+5+6</td>
 	<td>0, 4, 7, 9</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>06</code></td>
 	<td><code>04</code></td>
 	<td><code>(9)</code><br/><code>add9</code></td>
 	<td>Add ninth</td>
 	<td>1+2+3+5</td>
 	<td>0, 2, 4, 7</td>
 </tr><tr>
-	<td rowspan=3><code></code></td>
+	<td rowspan=3><code>07</code></td>
 	<td rowspan=3><code>06</code></td>
 	<td rowspan=3><code>6(9)</code><br/><code>6add9</code></td>
 	<td rowspan=3>Sixth ninth</td>
@@ -185,7 +185,7 @@ The details are exactly the same as above.
 	<td>3+6+2</td>
 	<td>4, 9, 14</td>
 </tr><tr>
-	<td rowspan=2><code></code></td>
+	<td rowspan=2><code>20</code></td>
 	<td rowspan=2><code>02</code></td>
 	<td rowspan=2><code>M7</code></td>
 	<td rowspan=2>Major seventh</td>
@@ -195,14 +195,14 @@ The details are exactly the same as above.
 	<td>1+3+5+7</td>
 	<td>0, 4, 7, 11</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>22</code></td>
 	<td>✕</td>
 	<td><code>M7(b5)</code></td>
 	<td>Major seventh flatted fifth</td>
 	<td>1+3+♭5+7</td>
 	<td>0, 4, 6, 11</td>
 </tr><tr>
-	<td rowspan=2><code></code></td>
+	<td rowspan=2><code>23</code></td>
 	<td rowspan=2><code>1c</code></td>
 	<td rowspan=2><code>M7aug</code></td>
 	<td rowspan=2>Major seventh augmented</td>
@@ -212,7 +212,7 @@ The details are exactly the same as above.
 	<td>1+3+♯5+7</td>
 	<td>0, 4, 8, 11</td>
 </tr><tr>
-	<td rowspan=2><code></code></td>
+	<td rowspan=2><code>26</code></td>
 	<td rowspan=2><code>05</code></td>
 	<td rowspan=2><code>M7(9)</code><br/><code>M7add9</code></td>
 	<td rowspan=2>Major seventh add ninth</td>
@@ -222,7 +222,7 @@ The details are exactly the same as above.
 	<td>1+2+3+5+7</td>
 	<td>0, 2, 4, 7, 11</td>
 </tr><tr>
-	<td rowspan=3><code></code></td>
+	<td rowspan=3><code>24</code></td>
 	<td rowspan=3><code>03</code></td>
 	<td rowspan=3><code>M7(#11)</code></td>
 	<td rowspan=3>Major seventh sharp eleventh</td>
@@ -236,35 +236,35 @@ The details are exactly the same as above.
 	<td>0, 2, 4, 6, 7, 11</td>
 </tr><tr>
 	<td rowspan=23>Minor</td>
-	<td><code></code></td>
+	<td><code>10</code></td>
 	<td><code>08</code></td>
 	<td><code>m</code></td>
 	<td>Minor</td>
 	<td>1+♭3+5</td>
 	<td>0, 3, 7</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>70</code></td>
 	<td><code>21</code></td>
 	<td><code>sus2</code><br/><code>1+2+5</code></td>
 	<td>Suspended second</td>
 	<td>1+2+5</td>
 	<td>0, 2, 7</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>15</code></td>
 	<td><code>09</code></td>
 	<td><code>m6</code></td>
 	<td>Minor sixth</td>
 	<td>1+♭3+5+6</td>
 	<td>0, 3, 7, 9</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>16</code></td>
 	<td><code>0c</code></td>
 	<td><code>m(9)</code><br/><code>madd9</code></td>
 	<td>Minor add ninth</td>
 	<td>1+2+♭3+5</td>
 	<td>0, 2, 3, 7</td>
 </tr><tr>
-	<td rowspan=3><code></code></td>
+	<td rowspan=3><code>17</code></td>
 	<td rowspan=3>✕</td>
 	<td rowspan=3><code>m6(9)</code><br/><code>m6add9</code></td>
 	<td rowspan=3>Minor sixth add ninth</td>
@@ -277,7 +277,7 @@ The details are exactly the same as above.
 	<td>♭3+6+2</td>
 	<td>3, 9, 14</td>
 </tr><tr>
-	<td rowspan=2><code></code></td>
+	<td rowspan=2><code>50</code></td>
 	<td rowspan=2><code>0a</code></td>
 	<td rowspan=2><code>m7</code></td>
 	<td rowspan=2>Minor seventh</td>
@@ -287,21 +287,21 @@ The details are exactly the same as above.
 	<td>1+♭3+5+♭7</td>
 	<td>0, 3, 7, 10</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>52</code></td>
 	<td><code>0b</code></td>
 	<td><code>m7b5</code></td>
 	<td>Minor seventh flatted fifth</td>
 	<td>1+♭3+♭5+♭7</td>
 	<td>0, 3, 6, 10</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>53</code></td>
 	<td>✕</td>
 	<td><code>m7aug</code></td>
 	<td>Minor seventh augmented</td>
 	<td>1+♭3+♯5+♭7</td>
 	<td>0, 3, 8, 10</td>
 </tr><tr>
-	<td rowspan=3><code></code></td>
+	<td rowspan=3><code>56</code></td>
 	<td rowspan=3><code>0d</code></td>
 	<td rowspan=3><code>m7(9)</code><br/><code>m7add9</code></td>
 	<td rowspan=3>Minor seventh add ninth</td>
@@ -330,7 +330,7 @@ The details are exactly the same as above.
 	<td>1+2+♭3+4+5+♭7</td>
 	<td>0, 2, 3, 5, 7, 10</td>
 </tr><tr>
-	<td rowspan=2><code></code></td>
+	<td rowspan=2><code>30</code></td>
 	<td rowspan=2><code>0f</code></td>
 	<td rowspan=2><code>mM7</code></td>
 	<td rowspan=2>Minor major seventh</td>
@@ -340,14 +340,14 @@ The details are exactly the same as above.
 	<td>1+♭3+5+7</td>
 	<td>0, 3, 7, 11</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>32</code></td>
 	<td>✕</td>
 	<td><code>mM7b5</code></td>
 	<td>Minor major seventh flatted fifth</td>
 	<td>1+♭3+♭5+7</td>
 	<td>0, 3, 6, 11</td>
 </tr><tr>
-	<td rowspan=2><code></code></td>
+	<td rowspan=2><code>36</code></td>
 	<td rowspan=2><code>10</code></td>
 	<td rowspan=2><code>mM7(9)</code><br/><code>mM7add9</code></td>
 	<td rowspan=2>Minor major seventh add ninth</td>
@@ -358,7 +358,7 @@ The details are exactly the same as above.
 	<td>0, 2, 3, 7, 11</td>
 </tr><tr>
 	<td rowspan=12>Dominant</td>
-	<td rowspan=3><code></code></td>
+	<td rowspan=3><code>40</code></td>
 	<td rowspan=3><code>13</code></td>
 	<td rowspan=3><code>7</code></td>
 	<td rowspan=3>Seventh</td>
@@ -371,21 +371,21 @@ The details are exactly the same as above.
 	<td>1+3+5+♭7</td>
 	<td>0, 4, 7, 10</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>41</code></td>
 	<td><code>14</code></td>
 	<td><code>7sus4</code></td>
 	<td></td>
 	<td></td>
 	<td></td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>42</code></td>
 	<td><code>15</code></td>
 	<td><code>7b5</code></td>
 	<td></td>
 	<td></td>
 	<td></td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>43</code></td>
 	<td><code>1d</code></td>
 	<td><code>7aug</code></td>
 	<td></td>
@@ -399,7 +399,7 @@ The details are exactly the same as above.
 	<td></td>
 	<td></td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>46</code></td>
 	<td><code>16</code></td>
 	<td><code>7(9)</code><br/><code>7add9</code></td>
 	<td></td>
@@ -413,7 +413,7 @@ The details are exactly the same as above.
 	<td></td>
 	<td></td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>44</code></td>
 	<td><code>17</code></td>
 	<td><code>7(#11)</code></td>
 	<td></td>
@@ -435,14 +435,14 @@ The details are exactly the same as above.
 	<td></td>
 </tr><tr>
 	<td rowspan=2>Dimini­shed</td>
-	<td><code></code></td>
+	<td><code>75</code></td>
 	<td><code>11</code></td>
 	<td><code>dim</code></td>
 	<td>Diminished</td>
 	<td>1+♭3+♭5</td>
 	<td>0, 3, 6</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>76</code></td>
 	<td><code>12</code></td>
 	<td><code>dim7</code></td>
 	<td>Diminished seventh</td>
@@ -450,28 +450,28 @@ The details are exactly the same as above.
 	<td>0, 3, 6, 9</td>
 </tr><tr>
 	<td rowspan=4>Other</td>
-	<td><code></code></td>
+	<td><code>73</code></td>
 	<td><code>1e</code></td>
 	<td><code>1+8</code></td>
 	<td>Perfect octave</td>
 	<td>1+8</td>
 	<td>0, 12</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>72</code></td>
 	<td><code>1f</code></td>
 	<td><code>5</code><br/><code>1+5</code></td>
 	<td>Power</td>
 	<td>1+5</td>
 	<td>0, 7</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>71</code></td>
 	<td>✕</td>
 	<td><code>sus2sus4</code></td>
 	<td>Suspended second, suspended fourth</td>
 	<td>1+2+4+5</td>
 	<td>0, 2, 5, 7</td>
 </tr><tr>
-	<td><code></code></td>
+	<td><code>74</code></td>
 	<td><code>22</code></td>
 	<td><code>cc</code></td>
 	<td>Cancel</td>
@@ -480,19 +480,36 @@ The details are exactly the same as above.
 </tr></tbody></table>
 </div>
 
-### Chord mapping
-|        | `M`  | `M7` | `m`  | `mM7` | `7`  | `m7`  | Misc. |
-| ------ | ---- | ---- | ---- | ----- | ---- | ---- | ---- |
-| -      | `M`  | `M7` | `m` | `mM7` | `7` | `m7` | `sus2` |
-| `sus4` | `sus4` |  |  |  | `7sus4` |  | `sus2sus4` |
-| `b5`   | `b5` | `M7(b5)` |  | `mM7b5` | `7b5` | `m7b5` | `5` |
-| `aug`  | `aug` | `M7aug` |  |  | `7aug` | `m7aug` | `1+8` |
-| `6`    | `6` |  | `m6` |  |  |  | `cc` |
-| `add9` | `add9` | `M7(9)` | `madd9` | `mM7(9)` | `7(9)` | `m7(9)` |  |
-| `6(9)` | `6(9)` |  | `m6add9` |  |  |  | `dim` |
-| `#11`  |  | `M7(#11)` |  |  | `7(#11)` |  | `dim7` |  |
-| `9`    |  | `M9` | `m9` | `mM9` | `9` | `7(b13)` |  |
-| `11`   |  | `M11` | `m11` | `M9(#11)` | `11` | `m7(11)` |  |
-| `13`   |  | `M13` | `m13` | `M13(#11)` | `13` | `7(13)` |  |
-| `b9`   | `7b5(b9)` | `7aug(b9)` | `11b9` | `13b9` | `7(b9)` | `9b5` |  |
-| `#9`   | `7b5(#9)` | `7aug(#9)` |  |  | `7(#9)` | `9aug` |  |
+### Native chord mapping
+<div class="table-wrapper"><table>
+<thead><tr>
+<th>Type</th><th>Sub-category</th><th><code>M</code><br/>(<code>000</code>)</th><th><code>M7</code><br/>(<code>010</code>)</th><th><code>m</code><br/>(<code>001</code>)</th><th><code>mM7</code><br/>(<code>011</code>)</th><th><code>7</code><br/>(<code>100</code>)</th><th><code>m7</code><br/>(<code>101</code>)</th><th>Misc.<br/>(<code>111</code>)</th>
+</tr></thead>
+<tbody><tr>
+<td rowspan=8>Normal</td><td>-<br/>(<code>0000</code>)</td><td><code>M</code></td><td><code>M7</code></td><td><code>m</code></td><td><code>mM7</code></td><td><code>7</code></td><td><code>m7</code></td><td><code>sus2</code></td>
+</tr><tr>
+<td><code>sus4</code><br/>(<code>0001</code>)</td><td><code>sus4</code></td><td></td><td></td><td></td><td><code>7sus4</code></td><td></td><td><code>sus2sus4</code></td>
+</tr><tr>
+<td><code>b5</code><br/>(<code>0010</code>)</td><td><code>b5</code></td><td><code>M7(b5)</code></td><td></td><td><code>mM7b5</code></td><td><code>7b5</code></td><td><code>m7b5</code></td><td><code>5</code></td>
+</tr><tr>
+<td><code>aug</code><br/>(<code>0011</code>)</td><td><code>aug</code></td><td><code>M7aug</code></td><td></td><td></td><td><code>7aug</code></td><td><code>m7aug</code></td><td><code>1+8</code></td>
+</tr><tr>
+<td><code>#11</code><br/>(<code>0100</code>)</td><td></td><td><code>M7(#11)</code></td><td></td><td></td><td><code>7(#11)</code></td><td></td><td><code>cc</code></td>
+</tr><tr>
+<td><code>6</code><br/>(<code>0101</code>)</td><td><code>6</code></td><td></td><td><code>m6</code></td><td></td><td></td><td></td><td><code>dim</code></td>
+</tr><tr>
+<td><code>add9</code><br/>(<code>0110</code>)</td><td><code>add9</code></td><td><code>M7(9)</code></td><td><code>madd9</code></td><td><code>mM7(9)</code></td><td><code>7(9)</code></td><td><code>m7(9)</code></td><td><code>dim7</code></td>
+</tr><tr>
+<td><code>6(9)</code><br/>(<code>0111</code>)</td><td><code>6(9)</code></td><td></td><td><code>m6add9</code></td><td></td><td></td><td></td><td></td>
+</tr><tr>
+<td rowspan=3>Alt. 1</td><td><code>9</code></td><td style="background:#5af3"><code>9</code></td><td style="background:#5af3"><code>M9</code></td><td style="background:#5af3"><code>m9</code></td><td style="background:#5af3"><code>mM9</code></td><td style="background:#ff53"><code>7(b13)</code></td><td></td><td></td>
+</tr><tr>
+<td><code>11</code></td><td style="background:#5af3"><code>11</code></td><td style="background:#5af3"><code>M11</code></td><td style="background:#5af3"><code>m11</code></td><td><code>M9(#11)</code></td><td></td><td style="background:#5f53"><code>m7(11)</code></td><td></td>
+</tr><tr>
+<td><code>13</code></td><td style="background:#5af3"><code>13</code></td><td style="background:#5af3"><code>M13</code></td><td style="background:#5af3"><code>m13</code></td><td><code>M13(#11)</code></td><td style="background:#5f53"><code>7(13)</code></td><td></td><td></td>
+</tr><tr>
+<td rowspan=2>Alt. 2</td><td><code>b9</code></td><td style="background:#a5f3"><code>7b5(b9)</code></td><td style="background:#a5f3"><code>7aug(b9)</code></td><td style="background:#a5f3"><code>11b9</code></td><td style="background:#a5f3"><code>13b9</code></td><td style="background:#5f53"><code>7(b9)</code></td><td><code>9b5</code></td><td></td>
+</tr><tr>
+<td><code>#9</code></td><td style="background:#a5f3"><code>7b5(#9)</code></td><td style="background:#a5f3"><code>7aug(#9)</code></td><td></td><td></td><td style="background:#5f53"><code>7(#9)</code></td><td><code>9aug</code></td><td></td>
+</tr></tbody>
+</table></div>
