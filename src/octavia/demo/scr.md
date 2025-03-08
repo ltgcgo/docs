@@ -15,7 +15,7 @@ To begin using visualizers, you must select how you want to accept events. There
 #### Load MIDI files
 You can load standard MIDI files (`.mid` or `.kar`), load SysEx blobs (`.syx`), load voice remapping tables (`.mdat`) or custom voice bank files with this action. An audio track must be loaded with the MIDI file.
 
-Click on the "MIDI" button to load respective files. For multi-port MIDI files, port declarations via standard meta events and XGworks port assign events are all supported. Refer to [multi-port extensions](../support/ext.md#port-assign) for details.
+Click on the "MIDI" button to load respective files. For multi-port MIDI files, port declarations via standard meta events and XGworks port assign events are all supported. Refer to [multi-port extensions](../impl/ext.md#port-assign) for details.
 
 #### Load synced audio tracks
 You can load an audio file synced to the accompanying MIDI file with this action. A MIDI file must be loaded with the audio file.

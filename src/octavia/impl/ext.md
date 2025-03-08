@@ -1,6 +1,6 @@
 # Extensions
 ## Port assign
-Octavia supports the following ways of specifying port assignment: standard port assign, XF port assign.
+Octavia supports the following ways of specifying port assignment: standard port assign, XGworks port assign.
 
 ### Standard port assign
 This is a single-byte meta event of type `33` (`0x21`).
@@ -9,7 +9,7 @@ This is a single-byte meta event of type `33` (`0x21`).
 
 - `pp`: `00`..`ff` → Port 1..256
 
-### XF port assign
+### XGworks port assign
 This is an implementation-specific meta event with schema provided below.
 
 `43 00 01 pp`
@@ -45,7 +45,9 @@ When `\n` (AMEI) is received, a new paragraph/section is signaled.
 #### Lyrics feed
 
 ### Text event substitution
-Developed by TUNE1000 Corporation under the supposed name "Soft Karaoke". As the name used by Octavia suggests, these events hijack the standard text meta events. When toggled on, the text event substitution parser will take over the text event emitter.
+Developed by TUNE1000 Corporation under the supposed name "Soft Karaoke".
+
+As the name used by Octavia suggests, these events hijack the standard text meta events. When toggled on, the text event substitution parser will take over the text event emitter.
 
 Despite the original version devised by the TUNE1000 Corporation requires the file to be in format 1 (multiple single-chanel tracks), Octavia has no problem handling format 0 (single track) and format 2 (multiple mixed-channel tracks) files just fine without a constraining hardware.
 
@@ -65,6 +67,8 @@ More often than not, you will receive `@KMIDI KARAOKE FILE` than any other text 
 ##### Information
 
 ### XF lyrics
+Developed by Yamaha Corporation.
+
 XF lyrics events hijack the standard lyrics meta events. When toggled on, the XF lyrics parser will take over the standard lyrics parser.
 
 #### Toggle
@@ -79,16 +83,27 @@ Upon receiving the following cue point meta event (type `7`, `0x07`), the XF lyr
 #### Lyrics feed
 
 ## Chords
-Octavia supports the following ways of specifying chord information: XF chord type.
+Octavia supports the following ways of specifying chord information: XF chord type, YMCS chord control.
 
 ### XF chord type
 This is an implementation-specific meta event with schema provided below.
 
-`43 7B 91 as cc na cc`
+`43 7B 91 as cc as cc`
 
 - `a`: `0`..`6` → ♭𝄫, 𝄫, ♭, ♮, ♯, 𝄪, 𝄪♯
 - `s`: `1`..`7` → C, D, E, F, G, A, B
 - `cc`: See the "XF ID" field in the chord list.
+
+Notes:
+
+- When `as` is set to `7f`, the note is considered disabled.
+
+### YMCS chord control
+This is a SysEx message with schema provided below.
+
+`43 7E 02 as cc as cc`
+
+The details are exactly the same as above.
 
 ### Chord list
 <div class="table-wrapper">
@@ -106,7 +121,7 @@ This is an implementation-specific meta event with schema provided below.
 	<td>Other</td>
 	<td><code>ff</code></td>
 	<td><code>7f</code></td>
-	<td></td>
+	<td><code>---</code></td>
 	<td>No chords</td>
 	<td>1</td>
 	<td>0</td>
@@ -114,7 +129,7 @@ This is an implementation-specific meta event with schema provided below.
 	<td rowspan=21>Major</td>
 	<td><code>00</code></td>
 	<td><code>00</code></td>
-	<td><code>---</code><br/><code>M</code></td>
+	<td><code>   </code><br/><code>M</code></td>
 	<td>Major</td>
 	<td>1+3+5</td>
 	<td>0, 4, 7</td>
@@ -437,3 +452,20 @@ This is an implementation-specific meta event with schema provided below.
 	<td>0, 1, 2</td>
 </tr></tbody></table>
 </div>
+
+### Chord mapping
+|        | `M`  | `M7` | `m`  | `mM7` | `7`  | `m7`  | Misc. |
+| ------ | ---- | ---- | ---- | ----- | ---- | ---- | ---- |
+| -      | `M`  | `M7` | `m` | `mM7` | `7` | `m7` | `sus2` |
+| `sus4` | `sus4` |  |  |  | `7sus4` |  |  |
+| `b5`   | `b5` | `M7(b5)` |  | `mM7b5` | `7b5` | `m7b5` | `5` |
+| `aug`  | `aug` | `M7aug` |  |  | `7aug` |  | `1+8` |
+| `9`    |  |  |  |  |  |  |  |
+| `6`    | `6` |  | `m6` |  |  |  | `cc` |
+| `add9` | `add9` | `M7(9)` | `madd9` | `mM7(9)` | `7(9)` | `m7(9)` | `dim` |
+| `6(9)` | `6(9)` |  |  |  |  |  | `dim7` |
+| `b9`   |  |  |  |  | `7(b9)` |  |
+| `#9`   |  |  |  |  | `7(#9)` |  |
+| `11`   |  |  |  |  |  | `m7(11)` |
+| `#11`  |  | `M7(#11)` |  |  | `7(#11)` |  |
+| `b13`  |  |  |  |  | `7(b13)` | `7(13)` |
