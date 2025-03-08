@@ -126,7 +126,7 @@ The details are exactly the same as above.
 	<td>1</td>
 	<td>0</td>
 </tr><tr>
-	<td rowspan=21>Major</td>
+	<td rowspan=20>Major</td>
 	<td><code>00</code></td>
 	<td><code>00</code></td>
 	<td><code>   </code><br/><code>M</code></td>
@@ -147,13 +147,6 @@ The details are exactly the same as above.
 	<td>Augmented</td>
 	<td>1+3+♯5</td>
 	<td>0, 4, 8</td>
-</tr><tr>
-	<td><code></code></td>
-	<td><code>21</code></td>
-	<td><code>sus2</code><br/><code>1+2+5</code></td>
-	<td>Suspended second</td>
-	<td>1+2+5</td>
-	<td>0, 2, 7</td>
 </tr><tr>
 	<td><code></code></td>
 	<td><code>20</code></td>
@@ -242,13 +235,20 @@ The details are exactly the same as above.
 	<td>1+2+3+♯4+5+7</td>
 	<td>0, 2, 4, 6, 7, 11</td>
 </tr><tr>
-	<td rowspan=18>Minor</td>
+	<td rowspan=23>Minor</td>
 	<td><code></code></td>
 	<td><code>08</code></td>
 	<td><code>m</code></td>
 	<td>Minor</td>
 	<td>1+♭3+5</td>
 	<td>0, 3, 7</td>
+</tr><tr>
+	<td><code></code></td>
+	<td><code>21</code></td>
+	<td><code>sus2</code><br/><code>1+2+5</code></td>
+	<td>Suspended second</td>
+	<td>1+2+5</td>
+	<td>0, 2, 7</td>
 </tr><tr>
 	<td><code></code></td>
 	<td><code>09</code></td>
@@ -263,6 +263,19 @@ The details are exactly the same as above.
 	<td>Minor add ninth</td>
 	<td>1+2+♭3+5</td>
 	<td>0, 2, 3, 7</td>
+</tr><tr>
+	<td rowspan=3><code></code></td>
+	<td rowspan=3>✕</td>
+	<td rowspan=3><code>m6(9)</code><br/><code>m6add9</code></td>
+	<td rowspan=3>Minor sixth add ninth</td>
+	<td>1+♭3+6+2</td>
+	<td>0, 4, 9, 14</td>
+</tr><tr>
+	<td>1+♭3+5+6+2</td>
+	<td>0, 3, 7, 9, 14</td>
+</tr><tr>
+	<td>♭3+6+2</td>
+	<td>3, 9, 14</td>
 </tr><tr>
 	<td rowspan=2><code></code></td>
 	<td rowspan=2><code>0a</code></td>
@@ -280,6 +293,13 @@ The details are exactly the same as above.
 	<td>Minor seventh flatted fifth</td>
 	<td>1+♭3+♭5+♭7</td>
 	<td>0, 3, 6, 10</td>
+</tr><tr>
+	<td><code></code></td>
+	<td>✕</td>
+	<td><code>m7aug</code></td>
+	<td>Minor seventh augmented</td>
+	<td>1+♭3+♯5+♭7</td>
+	<td>0, 3, 8, 10</td>
 </tr><tr>
 	<td rowspan=3><code></code></td>
 	<td rowspan=3><code>0d</code></td>
@@ -429,7 +449,7 @@ The details are exactly the same as above.
 	<td>1+♭3+♭5+6</td>
 	<td>0, 3, 6, 9</td>
 </tr><tr>
-	<td rowspan=3>Other</td>
+	<td rowspan=4>Other</td>
 	<td><code></code></td>
 	<td><code>1e</code></td>
 	<td><code>1+8</code></td>
@@ -445,6 +465,13 @@ The details are exactly the same as above.
 	<td>0, 7</td>
 </tr><tr>
 	<td><code></code></td>
+	<td>✕</td>
+	<td><code>sus2sus4</code></td>
+	<td>Suspended second, suspended fourth</td>
+	<td>1+2+4+5</td>
+	<td>0, 2, 5, 7</td>
+</tr><tr>
+	<td><code></code></td>
 	<td><code>22</code></td>
 	<td><code>cc</code></td>
 	<td>Cancel</td>
@@ -457,13 +484,13 @@ The details are exactly the same as above.
 |        | `M`  | `M7` | `m`  | `mM7` | `7`  | `m7`  | Misc. |
 | ------ | ---- | ---- | ---- | ----- | ---- | ---- | ---- |
 | -      | `M`  | `M7` | `m` | `mM7` | `7` | `m7` | `sus2` |
-| `sus4` | `sus4` |  |  |  | `7sus4` |  |  |
+| `sus4` | `sus4` |  |  |  | `7sus4` |  | `sus2sus4` |
 | `b5`   | `b5` | `M7(b5)` |  | `mM7b5` | `7b5` | `m7b5` | `5` |
-| `aug`  | `aug` | `M7aug` |  |  | `7aug` |  | `1+8` |
+| `aug`  | `aug` | `M7aug` |  |  | `7aug` | `m7aug` | `1+8` |
 | `9`    |  |  |  |  |  |  |  |
 | `6`    | `6` |  | `m6` |  |  |  | `cc` |
 | `add9` | `add9` | `M7(9)` | `madd9` | `mM7(9)` | `7(9)` | `m7(9)` | `dim` |
-| `6(9)` | `6(9)` |  |  |  |  |  | `dim7` |
+| `6(9)` | `6(9)` |  | `m6add9` |  |  |  | `dim7` |
 | `b9`   |  |  |  |  | `7(b9)` |  |
 | `#9`   |  |  |  |  | `7(#9)` |  |
 | `11`   |  |  |  |  |  | `m7(11)` |
