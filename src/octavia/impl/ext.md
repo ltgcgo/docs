@@ -122,7 +122,7 @@ Explicitly indicates completion of tags.
 #### Rubies
 > This has not yet been supported by Octavia.
 
-Used to annotate the pronunciation of each unit.
+Used to annotate the pronunciation of each unit. While Octavia allows parsing rubies with opening and closing control characters split into different events, for compatibility reasons, it's recommended to have whole separate rubies contained in a single event.
 
 Example below.
 
@@ -133,7 +133,7 @@ Example below.
 平[へい]
 線[せん]
 \r
-輝[かかや]
+輝[かがや]
 く
 の
 は
@@ -151,6 +151,8 @@ While it is possible to provide lyrics via unorthodox means, it is generally rec
 
 There are some additional tips as well.
 
+- If there are no lyrics immediately at the beginning, placing a blank lyrics event or specifying tags in the first measure is recommended to turn on lyrics for certain devices.
+- Due to display area limitations, it's recommended that lines should be within 40 characters. Parsers, however, should not stop unintentionally if that limit is exceeded.
 - The dedicated new line/section events should be emitted after the last syllable of the line has ended, not immediately.
 
 A recommended example below.
@@ -228,7 +230,7 @@ Specified with `@T`. The fields listed below could be contained, which most does
 Specified with `@I`. Contains "other information", which has no surviving documentation anywhere.
 
 #### Controls
-Control character can only appear as the first character of each text event.
+Control character can *only* appear as the *first* character of each text event.
 
 ##### New line
 When `/` is received, a new line is signalled.
@@ -237,7 +239,7 @@ When `/` is received, a new line is signalled.
 When `\\` is received, a new section is signalled.
 
 #### Lyrics feed
-Similar to the standard lyrics, while it is possible to provide lyrics via unorthodox means,  to ensure maximum compatibility, it is generally recommended to dedicate every syllable to their own events.
+Similar to the standard lyrics, while it is possible to provide lyrics via unorthodox means, to ensure maximum compatibility, it is generally recommended to dedicate every syllable to their own events, with spaces either at the beginning or the end of a word.
 
 ### XF lyrics
 Developed by Yamaha Corporation.
@@ -245,18 +247,63 @@ Developed by Yamaha Corporation.
 XF lyrics events replace the standard lyrics meta events. When toggled on, the XF lyrics parser will take over the standard lyrics parser.
 
 #### Trigger
+> Documentation is not finished for this section.
+
 Upon receiving the following cue point meta event (type `7`, `0x07`), the XF lyrics parser shall begin to take over the standard lyrics parser. Said event also provides text encoding information of lyrics to the parser, while .
 
-#### Controls
-
 #### Part cues
+Upon receiving a 2-byte cue point meta event that begins with an ampersand (`&`), the XF cue parser shall attempt interpreting XF part cues. Valid values are listed below.
+
+- `&m`: Male
+- `&f`: Female
+- `&c`: Chorus
+- `&s`: Solo
+- `&p`: Plural or mixed
+- `&w`: Words or spoken line
+- `&x`: Non-vocal
+
+If non-vocal part cues are active, lyrics shall not be interpreted as karaoke, thus no duration calculations shall be performed. They are used to show functional information other than lyrics, such as `INTRO` (`イントロ` in Japanese), `INTERLUDE` (`間奏` in Japanese) and `ENDING` (`エンディング` in Japanese) markings.
 
 #### Scenes
+Upon receiving a cue point meta event that begins with a hash (`#`), the XF cue parser shall attempt interpreting XF scene numbers.
+
+Usually specified as a three-digit number, like `#001`. Only one-indexed integers are considered valid scene numbers.
+
+#### Controls
+##### Escape
+Prefix any of the following control characters with a backslash (`\`) to display themselves as-is. Use double backslashes (`\\`) to show the backslash itself.
+
+##### Space
+Instead of a normal ASCII space (` `), XF uses carets (`^`) for spaces.
+
+Usually appears at the end of each XF lyrics event. Octavia handles all occurances, but will only exclude ones at either end of a string from duration calculation.
+
+##### New line
+Instead of a normal ASCII carriage return (`\r`), XF uses slashes (`/`) to signal new lines. Percent signs (`%`) are also used to signal new lines, however even if Octavia handles them as if they are slashes, the original specification intended them to be semantic breaks with or without actual line breaks, and to be applicable on constrained displays.
+
+Usually appears at the end of each XF lyrics event. If the preceding syllable takes a little bit too long, it's recommended to have a dedicated new line event.
+
+##### New section
+Instead of a normal ASCII line feed (`\n`), XF uses left angle brackets (`<`) to signal new sections.
+
+Usually appears at the beginning of each XF lyrics event. Dedicating events to signal new sections is *not* recommended.
+
+##### Tab
+Instead of a normal ASCII horizontal tab (`\t`), XF uses right angle brackets (`>`) to provide horizontal tabs.
+
+Usually appears at the beginning of each XF lyrics event. Tabs should generally only be used at the beginning of a line.
 
 #### Rubies
 > This has not yet been supported by Octavia.
 
+Used to annotate the pronunciation of each unit.
+
+There are two types of rubies in XF, primary and secondary. Primary rubies are annotated via square brackets (`[]`), while auxillary rubies are annotated via round brackets (`()`). If display permits, primary rubies shall always be displayed. Secondary rubies are used to assist in utility functions like searching, thus should be hidden from view.
+
+Rubies specified with curly braces (`{}`) called "auxillery text" are considered invalid, thus ignored entirely in Octavia, however XF do recommend showing them as lyrics as-is.
+
 #### Lyrics feed
+See the [XF controls](#controls-2) section to acknowledge recommendations on producing XF lyrics.
 
 ### Solton
 > This has not yet been supported by Octavia.
