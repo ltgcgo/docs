@@ -122,6 +122,24 @@ Explicitly indicates completion of tags.
 #### Rubies
 > This has not yet been supported by Octavia.
 
+Used to annotate the pronunciation of each unit.
+
+Example below.
+
+```
+あ
+の
+地[ち]
+平[へい]
+線[せん]
+\r
+輝[かかや]
+く
+の
+は
+\r
+```
+
 #### Chords
 It is possible to include chord info. See the [TUNE chords](#tune-chords) section for further information.
 
@@ -181,7 +199,7 @@ As the name used by Octavia suggests, these events hijack the standard text meta
 
 Despite the original version devised by the TUNE1000 Corporation requires the file to be in format 1 (multiple single-chanel tracks), Octavia has no problem handling format 0 (single track) and format 2 (multiple mixed-channel tracks) files just fine without a constraining hardware.
 
-#### Toggle
+#### Trigger
 Upon receiving the karaoke trigger among the text events, the text event substitution lyrics parser shall take over for the majority of the text events, leaving only tags intact. See "karaoke trigger" below for information.
 
 #### Tags
@@ -209,12 +227,24 @@ Specified with `@T`. The fields listed below could be contained, which most does
 ##### Information
 Specified with `@I`. Contains "other information", which has no surviving documentation anywhere.
 
+#### Controls
+Control character can only appear as the first character of each text event.
+
+##### New line
+When `/` is received, a new line is signalled.
+
+##### New section
+When `\\` is received, a new section is signalled.
+
+#### Lyrics feed
+Similar to the standard lyrics, while it is possible to provide lyrics via unorthodox means,  to ensure maximum compatibility, it is generally recommended to dedicate every syllable to their own events.
+
 ### XF lyrics
 Developed by Yamaha Corporation.
 
 XF lyrics events replace the standard lyrics meta events. When toggled on, the XF lyrics parser will take over the standard lyrics parser.
 
-#### Toggle
+#### Trigger
 Upon receiving the following cue point meta event (type `7`, `0x07`), the XF lyrics parser shall begin to take over the standard lyrics parser. Said event also provides text encoding information of lyrics to the parser, while .
 
 #### Controls
@@ -235,7 +265,7 @@ Developed by Keytron Laboratories.
 
 Solton lyrics events augment the standard lyrics meta events.
 
-#### Toggle
+#### Trigger
 Solton lyrics do not have a toggle. However, because the first characters specified by Solton will always be either `<` or `%`, these two characters can serve as suggestions that the specific lyric event could be in the Solton format.
 
 #### Chords
