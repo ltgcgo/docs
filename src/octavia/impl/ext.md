@@ -42,6 +42,9 @@ When `\n` (AMEI) is received, a new paragraph/section is signaled.
 ##### Song information
 ##### Tag end
 #### Rubies
+#### Chords
+It is possible to include chord info. See the [TUNE chords](#tune-chords) section for further information.
+
 #### Lyrics feed
 
 ### Text event substitution
@@ -63,27 +66,98 @@ Specified with `@K`. Contains either file type or copyright information.
 More often than not, you will receive `@KMIDI KARAOKE FILE` than any other text event. If the event is received exactly as-is, no copyright information will be displayed from it.
 
 ##### Language
+Specified with `@L`. Contains a four-letter code of the language of the lyrics, which might be used to indicate the used text encoding. The only known codes are listed below, as such please contribute if possible!
+
+- `ENGL`: English
+
 ##### Title
+Specified with `@T`. The fields listed below could be contained, which most doesn't have any way to distinguish.
+
+- Song title (must be the first `@T` event)
+- Song artist (must be the second `@T` event)
+- Sequencer
+
 ##### Information
+Specified with `@I`. Contains "other information", which has no surviving documentation anywhere.
 
 ### XF lyrics
 Developed by Yamaha Corporation.
 
-XF lyrics events hijack the standard lyrics meta events. When toggled on, the XF lyrics parser will take over the standard lyrics parser.
+XF lyrics events replace the standard lyrics meta events. When toggled on, the XF lyrics parser will take over the standard lyrics parser.
 
 #### Toggle
 Upon receiving the following cue point meta event (type `7`, `0x07`), the XF lyrics parser shall begin to take over the standard lyrics parser. Said event also provides text encoding information of lyrics to the parser, while .
 
-#### Control characters
+#### Controls
 
 #### Part cues
 
 #### Scenes
 
+#### Rubies
+
 #### Lyrics feed
+
+### Solton
+> This has not yet been supported by Octavia.
+
+Developed by Keytron Laboratories.
+
+Solton lyrics events augment the standard lyrics meta events.
+
+#### Toggle
+Solton lyrics do not have a toggle. However, because the first characters specified by Solton will always be either `<` or `%`, these two characters can serve as suggestions that the specific lyric event could be in the Solton format.
+
+#### Chords
+It is possible to include chord info. See the [Solton chords](#solton-chords) section for further information.
+
+#### Lyrics feed
+When a line of lyrics get emitted with the `<` prefix, none of the characters will be immediately highlighted. The position of the highlighted character is instead controlled by cc31 on channel 1, with the value `0` highlighting nothing. This implies that cc31 will be initialized to `0`, and implicitly restricts each line of lyrics to 127 characters, prefix not included.
+
+```ini
+00 FF 05 ll <Nom Olenian # Hightlights nothing
+08 B0 1F 03 # Nom
+08 B0 1F 05 # Nom O
+08 B0 1F 07 # Nom Ole
+08 B0 1F 0B # Nom Olenian
+08 B0 1F 00 # Highlights nothing again
+00 FF 05 ll <Very tasty # Still highlights nothing
+08 B0 1F 02 # Ve
+08 B0 1F 04 # Very
+08 B0 1F 07 # Very ta
+08 B0 1F 0A # Very tasty
+```
+
+As demonstrated by the example, the lyrics events must be delivered before the highlighting cc31 events. Before a new line of lyrics is delivered, it's recommended to have cc31 reset to `0` for compatibility reasons, even though Octavia will automatically reset it to `0` on reception.
 
 ## Chords
 Octavia supports the following ways of specifying chord information: XF chord type, YMCS chord control.
+
+### TUNE chords
+> This has not yet been supported by Octavia.
+
+This is a text meta event with schema provided below. Each specific chord must be separated with a forward slash (`/`).
+
+`${root}${accidental}${chordType}`
+
+- `root`: Any of `C`, `D`, `E`, `F`, `G`, `A` and `B`. Must be a single character.
+- `accidental`: Any of `b` (flat), ` ` (natural) or `#` (sharp). Must be a single character, thus cannot be omitted.
+- `chordType`: The standard chord notation. See the "specifier" field in the chord list.
+
+Examples include "`E `" (space is preserved!), `E m7(11)`, `G#sus4` and `AbM7/Bb`.
+
+### Solton chords
+> This has not yet been supported by Octavia.
+
+This is a lyrics meta event with schema provided below.
+
+`${root}${accidental}${chordType}`
+
+- `root`: Any of `C`, `D`, `E`, `F`, `G`, `A` and `B`. Must be a single character.
+- `accidental`: Any of `bbb`, `bb`, `b` (flat), omitted (natural), `#` (sharp), `##` or `###`.
+- `chordType`: The standard chord notation. See the "specifier" field in the chord list.
+
+The whole chord event must be prefixed with a percent sign (`%`). While the original specification may only allow a single chord to be specified, Octavia supports specifying multiple delimited with either a forward slash (`/`) or a space (` `).
 
 ### XF chord type
 This is an implementation-specific meta event with schema provided below.
@@ -96,7 +170,7 @@ This is an implementation-specific meta event with schema provided below.
 
 Notes:
 
-- When `as` is set to `7f`, the note is considered disabled.
+- When `as` is set to `7F`, the note is considered disabled. Any `as` byte set to `7F` will immediately halt chord parsing on the event.
 
 ### YMCS chord control
 This is a SysEx message with schema provided below.
@@ -290,7 +364,7 @@ The details are exactly the same as above.
 	<td><code>52</code></td>
 	<td><code>0b</code></td>
 	<td><code>m7b5</code></td>
-	<td>Minor seventh flatted fifth</td>
+	<td>Minor seventh flatted fifth<br/>Half-diminished chord</td>
 	<td>1+♭3+♭5+♭7</td>
 	<td>0, 3, 6, 10</td>
 </tr><tr>
