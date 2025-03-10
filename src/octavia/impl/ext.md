@@ -27,9 +27,26 @@ To make any SMF parser function normally, the character encoding used must be ba
 Despite the original version devised by the TUNE1000 Corporation requires the file to be in format 0 (single track), Octavia has no problem handling format 1 (multiple single-channel tracks) and format 2 (multiple mixed-channel tracks) files just fine without a constraining hardware.
 
 #### Escape sequences
+> This has not yet been supported by Octavia.
+
+These escape sequences will affect how the lyrics events are parsed.
+
+- `\v`: Vertical tab. 
+- `\r`: Carriage return.
+- `\n`: Line feed.
+- `\\`: Backslash itself.
+
+These escape sequences won't affect the lyrics event parsing.
+
+- `\%`: The percent sign itself. Unescaped percent signs are used to notate chords.
+- `\[`, `\]`: The square brackets themselves. Unescaped square brackets are used to notate rubies.
+- `\{`, `\}`: The curly braces themselves. Unescaped curly braces are used to specify tags.
+
 #### Controls
 ##### Word break
-When the space character ` ` is received, a word will be broken. Karaoke implementations should not consider word breaks in their duration calculation.
+When the space character ` ` is received as the last character in the event payload, the continuous word stream will be broken. In Octavia's case, it will try to exclude the space characters at the beginning *and* at the end of the event payload from duration calculation. This, however, also means that space characters sandwiched between other characters will not break the word stream.
+
+Karaoke implementations should not consider word breaks in their duration calculation.
 
 ##### End of line
 When either `\v` (extension) or `\r` (AMEI) is received, a new line is signaled.
@@ -38,14 +55,124 @@ When either `\v` (extension) or `\r` (AMEI) is received, a new line is signaled.
 When `\n` (AMEI) is received, a new paragraph/section is signaled.
 
 #### Tags
+> This has not yet been supported by Octavia.
+
+Can be used to provide additional data. Tag specifiers can be in all caps, captilized at initials, or all in small caps.
+
+For compatibility reasons, tags must be specified at the beginning of each lyrics event, and there should only be a single tag in each.
+
 ##### Text encoding
-##### Song information
+Specifies the indicated text encoding of the lyrics, valid until the next override with events of the same type. Schema below.
+
+`{@${Encoding}}`
+
+A list of known possible encodings with their specifiers available below.
+
+| Specifier | Encoding   | Octavia |
+| --------- | ---------- | ------- |
+| `Unicode` | UTF-8      | UTF-8 (`utf-8`) |
+| `Latin`   | ISO 8859-1 | ISO 8859-15 (`l9`) |
+
+There are exceptions for handling text encoding. If the raw binary payload begins with the following values, the text encoding will be overridden to the ones listed below.
+
+| Bytes      | Encoding |
+| ---------- | -------- |
+| `EF BB BF` | UTF-8    |
+| `FF FE`    | UTF-16LE |
+| `FE FF`    | UTF-16BE |
+
+Examples below.
+
+```ini
+{@Latin} # ISO 8859-15
+{@Unicode} # UTF-8
+```
+
+##### Song metadata
+Provides metadata. While overwriting elsewhere mostly, Octavia allows stacking of certain metadata tags.
+
+`{#${key}=${value}}`
+
+Recommended keys below.
+
+| Key | Use | Stackable | Standard |
+| --- | --- | --------- | -------- |
+| Artist | Artist<br/>Performer | ✓ | ✓ |
+| Composer | Composer | ✓ | ✓ |
+| Lyrics | Lyricist | ✓ | ✓ |
+| Title | Song title | ✕ | ✓ |
+| Album | Album | ✓ | ✕ |
+| By | SMF programmer | ✕ | ✕ |
+| Date | Release date | ✕ | ✕ |
+| Genre | Genre | ✕ | ✕ |
+| Track | Track number/total | ✕ | ✕ |
+
+Examples below.
+
+```
+{#Artist=James Lord Pierpont}
+{#Title=Jingle Bells}
+```
+
 ##### Tag end
+`{#}`
+
+Explicitly indicates completion of tags.
+
 #### Rubies
+> This has not yet been supported by Octavia.
+
 #### Chords
 It is possible to include chord info. See the [TUNE chords](#tune-chords) section for further information.
 
 #### Lyrics feed
+While it is possible to provide lyrics via unorthodox means, it is generally recommended to conform to the following to ensure maximum compatibility.
+
+- Every syllable should have its dedicated lyrics event, with space appended to the last syllable or the punctuation mark of the last syllable of a word.
+- New lines (`\v`, `\r`) and new sections (`\n`) should have dedicated lyrics events.
+
+There are some additional tips as well.
+
+- The dedicated new line/section events should be emitted after the last syllable of the line has ended, not immediately.
+
+A recommended example below.
+
+```js
+00 FF 05 01 "A"
+08 FF 05 02 "ma"
+08 FF 05 05 "zing "
+08 FF 05 05 "grace"
+04 FF 05 01 "\r" // New line
+04 FF 05 04 "How "
+08 FF 05 06 "sweet "
+08 FF 05 04 "the "
+08 FF 05 05 "sound"
+04 FF 05 01 "\r" // New line
+04 FF 05 05 "That "
+08 FF 05 06 "saved "
+08 FF 05 02 "a "
+08 FF 05 07 "wretch "
+08 FF 05 05 "like "
+08 FF 05 02 "me"
+04 FF 05 01 "\n" // New section
+04 FF 05 02 "I "
+08 FF 05 05 "once "
+08 FF 05 04 "was "
+08 FF 05 04 "lost"
+04 FF 05 01 "\r" // New line
+04 FF 05 04 "But "
+08 FF 05 04 "now "
+08 FF 05 02 "I "
+08 FF 05 05 "found"
+04 FF 05 01 "\r" // New line
+04 FF 05 04 "Was "
+08 FF 05 06 "blind "
+08 FF 05 04 "but "
+08 FF 05 04 "now "
+08 FF 05 02 "I "
+08 FF 05 03 "see"
+04 FF 05 01 "\n" // New section
+```
 
 ### Text event substitution
 Developed by TUNE1000 Corporation under the supposed name "Soft Karaoke".
@@ -68,7 +195,9 @@ More often than not, you will receive `@KMIDI KARAOKE FILE` than any other text 
 ##### Language
 Specified with `@L`. Contains a four-letter code of the language of the lyrics, which might be used to indicate the used text encoding. The only known codes are listed below, as such please contribute if possible!
 
-- `ENGL`: English
+| Code   | Language | Encoding |
+| ------ | -------- | -------- |
+| `ENGL` | English  | ISO 8859-15 (`l9`) |
 
 ##### Title
 Specified with `@T`. The fields listed below could be contained, which most doesn't have any way to distinguish.
@@ -95,6 +224,7 @@ Upon receiving the following cue point meta event (type `7`, `0x07`), the XF lyr
 #### Scenes
 
 #### Rubies
+> This has not yet been supported by Octavia.
 
 #### Lyrics feed
 
