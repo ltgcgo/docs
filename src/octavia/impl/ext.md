@@ -122,7 +122,7 @@ Explicitly indicates completion of tags.
 #### Rubies
 > This has not yet been supported by Octavia.
 
-Used to annotate the pronunciation of each unit. While Octavia allows parsing rubies with opening and closing control characters split into different events, for compatibility reasons, it's recommended to have whole separate rubies contained in a single event.
+Used to annotate the pronunciation of each unit. The left square bracket (`[`) starts the ruby annotation for the text in the exact event before the markup, while the right square bracket (`]`) ends the active ruby annotation. It is recommended to separate each syllable inside the rubies in dedicated events.
 
 Example below.
 
@@ -130,15 +130,96 @@ Example below.
 あ
 の
 地[ち]
-平[へい]
-線[せん]
+平[へ
+い]
+線[せ
+ん]
 \r
-輝[かがや]
+輝[か
+が
+や]
 く
 の
 は
 \r
 ```
+
+Which should be displayed as the example below.
+
+<blockquote>
+<p>あの<ruby>地<rt>ち</rt></ruby><ruby>平<rt>へい</rt></ruby><ruby>線<rt>せん</rt></ruby></p>
+<p><ruby>輝<rt>かがや</rt></ruby>くのは</p>
+</blockquote>
+
+Some examples below. Green marks recommended practices, yellow marks practices supported but not recommended, and red marks unsupported mistakes. Practices marked in yellow will often result in errors in time parsing.
+
+<div class="table-wrapper"><table><thead><tr>
+	<td>Case</td>
+	<td>Example</td>
+	<td>Result</td>
+</tr></thead><tbody><tr style="background: #0f03">
+	<td>Ruby begins with preceding text</td>
+	<td><pre><code class="hljs">馬[う
+ま]
+だ</code></pre></td>
+	<td><ruby>馬<rt>うま</rt></ruby>だ</td>
+</tr><tr style="background: #ff03">
+	<td>Separate first syllable(s)</td>
+	<td><pre><code class="hljs">馬[
+う
+ま]
+だ</code></pre></td>
+	<td><ruby>馬<rt>うま</rt></ruby>だ</td>
+</tr><tr style="background: #ff03">
+	<td>Separate syllables not split</td>
+	<td><pre><code class="hljs">馬[うま]
+だ</code></pre></td>
+	<td><ruby>馬<rt>うま</rt></ruby>だ</td>
+</tr><tr style="background: #ff03">
+	<td>Separate ruby end markup</td>
+	<td><pre><code class="hljs">馬[う
+ま
+]
+だ</code></pre></td>
+	<td><ruby>馬<rt>うま</rt></ruby>だ</td>
+</tr><tr style="background: #ff03">
+	<td>Separate ruby end markup<br/>with the next syllable</td>
+	<td><pre><code class="hljs">馬[う
+ま
+]だ</code></pre></td>
+	<td><ruby>馬<rt>うま</rt></ruby>だ</td>
+</tr><tr style="background: #ff03">
+	<td>Next syllable directly<br/>with a proper end ruby</td>
+	<td><pre><code class="hljs">馬[う
+ま]だ</code></pre></td>
+	<td><ruby>馬<rt>うま</rt></ruby>だ</td>
+</tr><tr style="background: #f003">
+	<td>Ruby begins without preceding text</td>
+	<td><pre><code class="hljs">馬
+[う
+ま]
+だ</code></pre></td>
+	<td>馬<ruby><rt>うま</rt></ruby>だ</td>
+</tr><tr style="background: #f003">
+	<td><code>[</code> in a ruby</td>
+	<td><pre><code class="hljs">馬[う
+[ま]
+だ</code></pre></td>
+	<td>馬<ruby><rt>う[ま</rt></ruby>だ</td>
+</tr><tr style="background: #f003">
+	<td><code>]</code> out of a ruby</td>
+	<td><pre><code class="hljs">馬[う
+ま]
+だ]</code></pre></td>
+	<td>馬<ruby><rt>うま</rt></ruby>だ]</td>
+</tr><tr style="background: #f003">
+	<td>New line/section in a ruby</td>
+	<td><pre><code class="hljs">馬[う
+\r
+ま]
+だ</code></pre></td>
+	<td>馬<ruby><rt>う�ま</rt></ruby>だ</td>
+</tr></tbody></table></div>
 
 #### Chords
 It is possible to include chord info. See the [TUNE chords](#tune-chords) section for further information.
