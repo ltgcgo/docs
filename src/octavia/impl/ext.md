@@ -409,7 +409,7 @@ Usually appears at the beginning of each XF lyrics event. Tabs should generally 
 
 Used to annotate the pronunciation of each unit.
 
-There are two types of rubies in XF, primary and secondary. Primary rubies are annotated via square brackets (`[]`), while auxillary rubies are annotated via round brackets (`()`). If display permits, primary rubies shall always be displayed. Secondary rubies are used to assist in utility functions like searching, thus should be hidden from view.
+There are two types of rubies in XF, primary and secondary. Primary rubies are annotated via square brackets (`[]`), while secondary rubies are annotated via round brackets (`()`). If display permits, primary rubies shall always be displayed. Secondary rubies are used to assist in utility functions like searching, thus should be hidden from view.
 
 Rubies specified with curly braces (`{}`) called "auxillery text" are considered invalid, thus ignored entirely in Octavia, however XF do recommend showing them as lyrics as-is.
 
@@ -512,7 +512,7 @@ The details are exactly the same as above.
 </tr></thead><tbody><tr>
 	<td>Other</td>
 	<td><code>ff</code></td>
-	<td><code>7f</code></td>
+	<td><code>22</code> (has root)<br/><code>7f</code>(no root)</td>
 	<td><code>---</code></td>
 	<td>No chords</td>
 	<td>1</td>
@@ -864,7 +864,7 @@ The details are exactly the same as above.
 	<td>0, 2, 5, 7</td>
 </tr><tr>
 	<td><code>74</code></td>
-	<td><code>22</code></td>
+	<td>✕</td>
 	<td><code>cc</code></td>
 	<td>Cancel</td>
 	<td>1+♭2+2</td>
