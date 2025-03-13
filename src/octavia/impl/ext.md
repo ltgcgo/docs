@@ -78,6 +78,7 @@ A list of known possible encodings with their specifiers available below.
 | --------- | ---------- | ------- |
 | `Unicode` | UTF-8      | UTF-8 (`utf-8`) |
 | `Latin`   | ISO 8859-1 | ISO 8859-15 (`l9`) |
+| `JP`      | Shift-JIS  | Shift-JIS (`sjis`) |
 
 There are exceptions for handling text encoding. If the raw binary payload begins with the following values, the text encoding will be overridden to the ones listed below.
 
@@ -92,6 +93,7 @@ Examples below.
 ```ini
 {@Latin} # ISO 8859-15
 {@Unicode} # UTF-8
+{@JP} # Shift-JIS
 ```
 
 ##### Song metadata
