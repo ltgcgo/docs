@@ -1,3 +1,9 @@
+<style>
+rt {
+	font-size: 1.2rem;
+}
+</style>
+
 # Extensions
 ## Port assign
 Octavia supports the following ways of specifying port assignment: standard port assign, XGworks port assign.
@@ -205,20 +211,44 @@ Some examples below. Green marks recommended practices, yellow marks practices s
 	<td><pre><code class="hljs">馬[う
 [ま]
 だ</code></pre></td>
-	<td>馬<ruby><rt>う[ま</rt></ruby>だ</td>
+	<td><ruby>馬<rt>う[ま</rt></ruby>だ</td>
 </tr><tr style="background: #f003">
 	<td><code>]</code> out of a ruby</td>
 	<td><pre><code class="hljs">馬[う
 ま]
 だ]</code></pre></td>
-	<td>馬<ruby><rt>うま</rt></ruby>だ]</td>
+	<td><ruby>馬<rt>うま</rt></ruby>だ]</td>
 </tr><tr style="background: #f003">
-	<td>New line/section in a ruby</td>
+	<td rowspan=5>Control characters in a ruby</td>
 	<td><pre><code class="hljs">馬[う
 \r
 ま]
 だ</code></pre></td>
-	<td>馬<ruby><rt>う�ま</rt></ruby>だ</td>
+	<td><ruby>馬<rt>う�ま</rt></ruby>だ</td>
+</tr><tr style="background: #f003">
+	<td><pre><code class="hljs">馬[う
+\n
+ま]
+だ</code></pre></td>
+	<td><ruby>馬<rt>う�ま</rt></ruby>だ</td>
+</tr><tr style="background: #f003">
+	<td><pre><code class="hljs">馬[う
+{
+ま]
+だ</code></pre></td>
+	<td><ruby>馬<rt>う�ま</rt></ruby>だ</td>
+</tr><tr style="background: #f003">
+	<td><pre><code class="hljs">馬[う
+}
+ま]
+だ</code></pre></td>
+	<td><ruby>馬<rt>う�ま</rt></ruby>だ</td>
+</tr><tr style="background: #f003">
+	<td><pre><code class="hljs">馬[う
+{#}
+ま]
+だ</code></pre></td>
+	<td><ruby>馬<rt>う���ま</rt></ruby>だ</td>
 </tr></tbody></table></div>
 
 #### Chords
