@@ -47,6 +47,27 @@ None of the encodings listed are involved with patent concerns.
 		<td>FLAC</td>
 		<td><code>.flac</code></td>
 	</tr><tr>
+		<td rowspan=6 style="max-width: min-content"><b>Timed text</b></td>
+		<td rowspan=4><b>Subtitles</b></td>
+		<td>ASSA</td>
+		<td><code>.ass</code> <code>.ssa</code></td>
+	</tr><tr>
+		<td>WebVTT</td>
+		<td><code>.vtt</code></td>
+	</tr><tr>
+		<td>SubRip</td>
+		<td><code>.srt</code></td>
+	</tr><tr>
+		<td>SubViewer</td>
+		<td><code>.sbv</code></td>
+	</tr><tr>
+		<td rowspan=2><b>Lyrics</b></td>
+		<td>LRC</td>
+		<td><code>.lrc</code></td>
+	</tr><tr>
+		<td>OpenTRC</td>
+		<td><code>.trc</code></td>
+	</tr><tr>
 		<td rowspan=6 style="max-width:min-content"><b>Compre­ssion</b></td>
 		<td rowspan=3><b>Web</b></td>
 		<td>Zstd</td>
