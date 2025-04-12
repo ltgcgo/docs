@@ -12,6 +12,7 @@
 - [Guidelines]()
   - [Technologies](ltgc/tech.md)
   - [Content encoding](ltgc/encode.md)
+  - [Media requirements](ltgc/media.md)
   - [Region and DC codes](ltgc/datacentre.md)
   - [Points of Presence](ltgc/pop.md)
   - [Versioning](ltgc/versioning.md)

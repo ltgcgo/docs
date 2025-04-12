@@ -3,12 +3,13 @@ None of the encodings listed are involved with patent concerns.
 
 <div><table>
 	<thead><tr>
-		<th>Usage</th>
-		<th>Encoding</th>
+		<th colspan=2>Usage</th>
+		<th>Format</th>
 		<th>Extension</th>
 	</tr></thead>
 	<tbody><tr>
-		<td rowspan=4><b>Rasterized image</b></td>
+		<td rowspan=5><b>Image</b></td>
+		<td rowspan=4><b>Rasterized</b></th>
 		<td>JPEG XL</td>
 		<td><code>.jxl</code></td>
 	</tr><tr>
@@ -21,11 +22,12 @@ None of the encodings listed are involved with patent concerns.
 		<td>AVIF</td>
 		<td><code>.avif</code></td>
 	</tr><tr>
-		<td><b>Vector image</b></td>
+		<td><b>Vector</b></td>
 		<td>SVG</td>
 		<td><code>.svg</code></td>
 	</tr><tr>
-		<td rowspan=3><b>Lossy audio</b></td>
+		<td rowspan=6><b>Audio</b></td>
+		<td rowspan=4><b>Lossy</b></td>
 		<td>Opus</td>
 		<td><code>.opus</code></td>
 	</tr><tr>
@@ -35,14 +37,18 @@ None of the encodings listed are involved with patent concerns.
 		<td>AAC-LC</td>
 		<td><code>.m4a</code> <code>.aac</code></td>
 	</tr><tr>
-		<td rowspan=2><b>Lossless audio</b></td>
+		<td>AC-3</td>
+		<td><code>.ac3</code></td>
+	</tr><tr>
+		<td rowspan=2><b>Lossless</b></td>
 		<td>WavPack</td>
 		<td><code>.wv</code></td>
 	</tr><tr>
 		<td>FLAC</td>
 		<td><code>.flac</code></td>
 	</tr><tr>
-		<td rowspan=3><b>Web compression</b></td>
+		<td rowspan=6 style="max-width:min-content"><b>Compre­ssion</b></td>
+		<td rowspan=3><b>Web</b></td>
 		<td>Zstd</td>
 		<td><code>.zst</code></td>
 	</tr><tr>
@@ -52,7 +58,7 @@ None of the encodings listed are involved with patent concerns.
 		<td>gzip</td>
 		<td><code>.gz</code></td>
 	</tr><tr>
-		<td rowspan=3><b>Bundle compression</b></td>
+		<td rowspan=3><b>Archive</b></td>
 		<td>lzip</td>
 		<td><code>.lz</code> <code>.tlz</code></td>
 	</tr><tr>
@@ -62,7 +68,7 @@ None of the encodings listed are involved with patent concerns.
 		<td>xz</td>
 		<td><code>.xz</code> <code>.txz</code></td>
 	</tr><tr>
-		<td><b>Font</b></td>
+		<td colspan=2><b>Font</b></td>
 		<td>WOFF2</td>
 		<td><code>.woff2</code></td>
 	</tr></tbody>
@@ -172,17 +178,19 @@ Lossy animated WebP is the current baseline for animated image sequences, while 
 ### Lossy
 When high sampling rates are required, choose Vorbis. When support for the Apple ecosystem is required, choose AAC-LC. Otherwise use Opus under all possible scenarios, but beware that Opus only supports sampling at 48kHz.
 
-Below are the suggested bitrates under different scenarios, when encoding stereo audio content under either 44.1kHz or 48kHz. Audio content should be encoded with constrained variable bitrate (CVBR).
+Below are the suggested bitrates under different scenarios, when encoding stereo audio content under either 44.1kHz or 48kHz, which are the recommended sampling rates for delivery. For production purposes, higher sampling rates can be applied with respective scaling bitrates. Audio content should be encoded with constrained variable bitrate (CVBR) when available, falling back to VBR and CBR in order when technical restrictions apply.
 
-The AAC-LC encoder in question is `libfdk_aac`, being the best FOSS AAC-LC encoder out there. The only AAC-LC encoder better than `libfdk_aac` is Apple's Audio Toolbox, which is proprietary and not in consideration.
+The AAC-LC encoder in question is `libfdk_aac`, being the best FOSS AAC-LC encoder out there. The only AAC-LC encoders better than `libfdk_aac` are `fhgaac` from Fraunhofer IIS and iTunes Audio Toolbox from Apple, which are proprietary and not within consideration of this guideline.
 
 | Codec  | Basic   | Stream  | Balanced | Generic | Quality |
 | ------ | ------- | ------- | -------- | ------- | ------- |
 | Opus   | 96kbps  | 144kbps | 160kbps  | 192kbps | 256kbps |
-| Vorbis | 128kbps | 160kbps | 192kbps  | 224kbps | 320kbps |
+| Vorbis | 104kbps | 152kbps | 176kbps  | 208kbps | 288kbps |
 | AAC-LC | 128kbps | 160kbps | 192kbps  | 224kbps | 320kbps |
 
-Keep in mind that the scenario under "basic" indicates that, all audio content encoded with provided parameters should be virtually indistinguishable from LAME-encoded MP3 files at 192kbps.
+Keep in mind that the scenario under "basic" indicates that, all audio content encoded with provided parameters should be virtually indistinguishable from LAME-encoded MP3 files at 192kbps. As AAC-LC suffers severely from bitrate depletion, *under no circumstances* should content encoded with AAC-LC have target bitrate go below 96kbps.
+
+For surround sound (audio with at least 4 channels) delivered with high bitrates, AC-3 can be used. The minimum target bitrate for 5.1 channel audio at 44.1 kHz is 320kbps, while recommended bitrate sits at 384kbps.
 
 ### Lossless
 Streaming lossless audio is generally considered a bad idea due to high bandwidth usage. It's generally more useful for archival purposes.
@@ -251,7 +259,7 @@ The table below provides a quick reference of levels and estimated size reductio
 
 On a case-by-case basis, [Compression Tester](https://tools.paulcalvano.com/compression-tester/) could be used to see algorithms in action. For a more comprehensive comparison, [Morotti's Compression Results](https://morotti.github.io/lzbench-web/) could be used.
 
-### Bundle
+### Archive
 `lzip` is the de-facto standard of bundle compression, featuring good compression ratio with data recovery abilities. Quality should always set to `9`, unless a lower quality value is proven to yield a better result for smaller files, or time constraints are set.
 
 `bzip2` or `xz` should only be considered for compatibility purposes.

@@ -28,7 +28,7 @@ Octavia supports the following ways of specifying lyrics: standard lyrics, text 
 ### Standard lyrics
 This is a variable-length meta event of type `05` (`0x05`).
 
-To make any SMF parser function normally, the character encoding used must be backwards-compatible with ASCII. While suitable for use in any way desired, for karaoke capabilities, data programmers must follow the standard authored by AMEI (United States) and TUNE1000 Corporation (Canada). Below is an extension compatible to both of the mentioned standards.
+To make any SMF parser function normally, the character encoding used must be backwards-compatible with ASCII. While suitable for use in any way desired, for karaoke capabilities, data programmers must follow the standard authored by MMA (United States), AMEI (Japan) and TUNE1000 Corporation (Canada). Below is an extension compatible to both of the mentioned standards.
 
 Despite the original version devised by the TUNE1000 Corporation requires the file to be in format 0 (single track), Octavia has no problem handling format 1 (multiple single-channel tracks) and format 2 (multiple mixed-channel tracks) files just fine without a constraining hardware.
 
@@ -55,10 +55,10 @@ When the space character ` ` is received as the last character in the event payl
 Karaoke implementations should not consider word breaks in their duration calculation.
 
 ##### End of line
-When either `\v` (extension) or `\r` (AMEI) is received, a new line is signaled.
+When either `\v` (extension) or `\r` (MMA/AMEI) is received, a new line is signaled.
 
 ##### End of paragraph
-When `\n` (AMEI) is received, a new paragraph/section is signaled.
+When `\n` (MMA/AMEI) is received, a new paragraph/section is signaled.
 
 #### Tags
 > This has not yet been supported by Octavia.
