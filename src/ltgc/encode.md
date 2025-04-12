@@ -1,6 +1,4 @@
 # Content encoding
-None of the encodings listed are involved with patent concerns.
-
 <div><table>
 	<thead><tr>
 		<th colspan=2>Usage</th>
@@ -55,18 +53,18 @@ None of the encodings listed are involved with patent concerns.
 		<td>WebVTT</td>
 		<td><code>.vtt</code></td>
 	</tr><tr>
-		<td>SubRip</td>
-		<td><code>.srt</code></td>
-	</tr><tr>
 		<td>SubViewer</td>
 		<td><code>.sbv</code></td>
 	</tr><tr>
-		<td rowspan=2><b>Lyrics</b></td>
-		<td>LRC</td>
-		<td><code>.lrc</code></td>
+		<td>SubRip</td>
+		<td><code>.srt</code></td>
 	</tr><tr>
+		<td rowspan=2><b>Lyrics</b></td>
 		<td>OpenTRC</td>
 		<td><code>.trc</code></td>
+	</tr><tr>
+		<td>LRC</td>
+		<td><code>.lrc</code></td>
 	</tr><tr>
 		<td rowspan=6 style="max-width:min-content"><b>Compre­ssion</b></td>
 		<td rowspan=3><b>Web</b></td>
@@ -95,7 +93,7 @@ None of the encodings listed are involved with patent concerns.
 	</tr></tbody>
 </table></div>
 
-Read below for further details.
+None of the encodings listed are involved with patent concerns. Read below for further details.
 
 ## Rasterized image encoding
 ### Lossy still
@@ -232,6 +230,13 @@ You should choose WavPack when...
 
 Additional considerations:
 - If you do not intend to distribute high bit-depth lossless audio, but the input you have is of high bit-depth, you can re-sample it to somewhere between 16-bit (-96 dB) and 24-bit (-144 dB). Use `--pre-quantize=16` for WavPack.
+
+## Timed text
+### Subtitles
+There are no preferences on subtitle formats, all listed formats can be chosen depending on the capabilities.
+
+### Lyrics
+OpenTRC shall be preferred over LRC.
 
 ## Compression
 ### Web
