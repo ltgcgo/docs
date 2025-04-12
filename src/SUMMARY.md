@@ -9,7 +9,7 @@
   - [Acceptable usage](ltgc/aup.md)
   - [Terms of service](ltgc/tos.md)
   - [UGC availability](ltgc/nougc.md)
-- [Guidelines]()
+- [Guidelines & standards]()
   - [Technologies](ltgc/tech.md)
   - [Content encoding](ltgc/encode.md)
   - [Media requirements](ltgc/media.md)
