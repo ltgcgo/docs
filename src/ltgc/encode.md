@@ -274,7 +274,7 @@ For static precompression, the original file can be omitted when the space is co
 
 The table below provides a quick reference of levels and estimated size reduction by use case.
 
-<div><table>
+<div class="table-wrapper"><table>
 	<thead><tr>
 		<th>Algorithm</th>
 		<th>Use</th>
