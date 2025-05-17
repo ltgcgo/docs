@@ -1,24 +1,34 @@
 # Content encoding
-<div><table>
+<div class="table-wrapper"><table>
 	<thead><tr>
 		<th colspan=2>Usage</th>
 		<th>Format</th>
 		<th>Extension</th>
 	</tr></thead>
 	<tbody><tr>
-		<td rowspan=5><b>Image</b></td>
-		<td rowspan=4><b>Rasterized</b></th>
+		<td rowspan=8><b>Image</b></td>
+		<td rowspan=5><b>Rasterized</b></th>
 		<td>JPEG XL</td>
 		<td><code>.jxl</code></td>
-	</tr><tr>
-		<td>JPEG</td>
-		<td><code>.jpg</code></td>
 	</tr><tr>
 		<td>WebP</td>
 		<td><code>.webp</code></td>
 	</tr><tr>
+		<td>JPEG 2000</td>
+		<td><code>.jp2</code></td>
+	</tr><tr>
+		<td>JPEG</td>
+		<td><code>.jpg</code></td>
+	</tr><tr>
 		<td>AVIF</td>
 		<td><code>.avif</code></td>
+	</tr><tr>
+		<td rowspan=2><b>Throughput</b></td>
+		<td>JPEG XL</td>
+		<td><code>.jxl</code></td>
+	</tr><tr>
+		<td>HTJ2K</td>
+		<td><code>.jph</code></td>
 	</tr><tr>
 		<td><b>Vector</b></td>
 		<td>SVG</td>
@@ -103,6 +113,7 @@ Compared to all other image formats, JPEG XL offers jawdropping image fidelity, 
 
 Things to take notice of:
 
+* JPEG 2000 is *not* supported by most modern browsers. Unless you clearly acknowledge that the applied environment supports it, do not use it.
 * mozJPEG-fronted JPEG, while offering a good choice for backwards-compatibility, shouldn't be used unless necessary when size is a consideration. mozJPEG is generally superseded by `jpegli`.
 * AVIF offers an advantage on size, when progressive support, boundary artifacts and codec performance (slower than all others multiple times) aren't in consideration.
 * AVIF is observed to have fewer observable artifacts for images with a simpler shading.
@@ -158,11 +169,20 @@ The size ratio values listed below approach expectations on a large scale, based
 	</tr><tr>
 		<td>Delivery+</td>
 		<td><code>cwebp -m 5 -q 99</code></td>
-		<td>-</td>
+		<td>?26.8%</td>
 	</tr><tr>
 		<td>Near-lossless</td>
 		<td><code>cwebp -near_lossless 60</code></td>
 		<td>62.3%</td>
+	</tr><tr>
+		<td rowspan=2>JPEG 2000</td>
+		<td>Delivery+ (OpenJPEG)</td>
+		<td><code>opj_compress -n 6 -I -SOP -EPH -mct 1 -p RPCL -b 64,64 -c "[256,256],[256,256],[128,128]" -t 512,512 -q 48 -O "JP2"</code></td>
+		<td>21.72%</td> 
+	</tr><tr>
+		<td>Delivery+ (Grok)</td>
+		<td><code>grk_compress -n 6 -I -S -E -u R -Y 1 -p RPCL -b 64,64 -c "[256,256],[256,256],[128,128]" -t 512,512 -q 45 -O "JP2"</code></td>
+		<td>-</td> 
 	</tr><tr>
 		<td>JPEG</td>
 		<td>Delivery</td>
@@ -192,6 +212,14 @@ Do *not* enable progressive encoding for JPEG XL lossless, or the resulting file
 
 ### Lossy animated
 Lossy animated WebP is the current baseline for animated image sequences, while lossy animated AVIF offers the best quality against others by a wide margin. Lossy animated JPEG XL doesn't offer a significant advantage against WebP, and is currently beaten by AVIF.
+
+### High-throughput lossy
+| Codec   | Ratio  | Parameters |
+| ------- | ------ | ---------- |
+| OpenJPH | 54.91% | `ojph_compress -tileparts R -reversible false -colour_trans true -prog_order RPCL -block_size "{64,64}" -precincts "{256,256},{256,256},{128,128}" -num_decomps 5` |
+| JPEG XL | ?36.8% | `cjxl --num_threads -1 -j 0 -m 0 -d 0.25 -e 3 --faster_decoding 2` |
+
+HT lossy is used when visually-lossless video feeds over constrained bandwidth are needed. While HTJ2K has a slightly worse compression than JPEG XL, it more than complimented in terms of speed, ranging from 15% to 100% addition depending on the scenario.
 
 ## Audio encoding
 ### Lossy
