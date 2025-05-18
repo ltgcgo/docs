@@ -158,7 +158,7 @@ The size factor values listed below approach expectations on a large scale, base
 		<td><code>cjxl -j 0 -m 1 -d 0.2 -e 7</code></td>
 		<td>3.07</td>
 	</tr><tr>
-		<td rowspan=4>WebP</td>
+		<td rowspan=5>WebP</td>
 		<td>Delivery (quality)</td>
 		<td><code>cwebp -m 5 -psnr 56 -qrange 90 99</code></td>
 		<td>4.717</td>
@@ -166,6 +166,10 @@ The size factor values listed below approach expectations on a large scale, base
 		<td>Delivery (speed)</td>
 		<td><code>cwebp -m 5 -q 95</code></td>
 		<td>5.952</td>
+	</tr><tr>
+		<td>Delivery</td>
+		<td><code>cwebp -m 5 -q 92</code></td>
+		<td>7.803</td>
 	</tr><tr>
 		<td>Delivery+</td>
 		<td><code>cwebp -m 5 -q 99</code></td>
