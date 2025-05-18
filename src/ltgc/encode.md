@@ -131,20 +131,20 @@ Explanations of image encoding uses:
 | Delivery+ | 85 | 1.0 | 0.0004 |
 | Near-lossless | 90+ | 0.4- | 0.0001- |
 
-The size ratio values listed below approach expectations on a large scale, based on experiments conducted on a relatively large scale with non-photographic images modelling 15.6% lossy inputs. Lossless inputs induce better (smaller) expectations, while lossy inputs tip the balance in reverse. Photograpic images will generally have a better (smaller) ratio than non-photographic images, but individual images may still yield greatly varied results.
+The size factor values listed below approach expectations on a large scale, based on experiments conducted on a relatively large scale with non-photographic images modelling 15.6% lossy inputs. Lossless inputs induce better (smaller) expectations, while lossy inputs tip the balance in reverse. Photograpic images will generally have a better (smaller) ratio than non-photographic images, but individual images may still yield greatly varied results.
 
 <div class="table-wrapper"><table>
 	<thead><tr>
 		<th>Codec</th>
 		<th>Use</th>
 		<th>Params</th>
-		<th>Ratio</th>
+		<th>Factor</th>
 	</tr></thead>
 	<tbody><tr>
 		<td rowspan=4>JPEG XL</td>
 		<td>Delivery (quality)</td>
 		<td><code>cjxl -j 0 -d 2 -e 7 -p --progressive_dc 1</code></td>
-		<td>8.52%</td>
+		<td>11.74</td>
 	</tr><tr>
 		<td>Delivery (speed)</td>
 		<td><code>cjxl -j 0 -d 2 -e 4 -p --progressive_dc 1</code></td>
@@ -152,33 +152,33 @@ The size ratio values listed below approach expectations on a large scale, based
 	</tr><tr>
 		<td>Delivery+</td>
 		<td><code>cjxl -j 0 -d 1 -e 7 -p --progressive_dc 1</code></td>
-		<td>14%</td>
+		<td>7.143</td>
 	</tr><tr>
 		<td>Near-lossless</td>
 		<td><code>cjxl -j 0 -m 1 -d 0.2 -e 7</code></td>
-		<td>32.6%</td>
+		<td>3.07</td>
 	</tr><tr>
 		<td rowspan=4>WebP</td>
 		<td>Delivery (quality)</td>
 		<td><code>cwebp -m 5 -psnr 56 -qrange 90 99</code></td>
-		<td>21.2%</td>
+		<td>4.717</td>
 	</tr><tr>
 		<td>Delivery (speed)</td>
 		<td><code>cwebp -m 5 -q 95</code></td>
-		<td>16.8%</td>
+		<td>5.952</td>
 	</tr><tr>
 		<td>Delivery+</td>
 		<td><code>cwebp -m 5 -q 99</code></td>
-		<td>?26.8%</td>
+		<td>4.372</td>
 	</tr><tr>
 		<td>Near-lossless</td>
 		<td><code>cwebp -near_lossless 60</code></td>
-		<td>62.3%</td>
+		<td>1.605</td>
 	</tr><tr>
 		<td rowspan=2>JPEG 2000</td>
 		<td>Delivery+ (OpenJPEG)</td>
 		<td><code>opj_compress -n 6 -I -SOP -EPH -mct 1 -p RPCL -b 64,64 -c "[256,256],[256,256],[128,128]" -t 512,512 -q 48 -O "JP2"</code></td>
-		<td>21.72%</td> 
+		<td>4.604</td> 
 	</tr><tr>
 		<td>Delivery+ (Grok)</td>
 		<td><code>grk_compress -n 6 -I -S -E -u R -Y 1 -p RPCL -b 64,64 -c "[256,256],[256,256],[128,128]" -t 512,512 -q 45 -O "JP2"</code></td>
@@ -187,12 +187,12 @@ The size ratio values listed below approach expectations on a large scale, based
 		<td>JPEG</td>
 		<td>Delivery</td>
 		<td><code>cjpegli -d 1 -p 2</code></td>
-		<td>16.8%</td> 
+		<td>5.952</td> 
 	</tr><tr>
 		<td>AVIF</td>
 		<td>Delivery</td>
 		<td><code>[effort=4,lossless=false,Q=90]</code></td>
-		<td>15.7%</td>
+		<td>6.369</td>
 	</tr></tbody>
 </table></div>
 
@@ -207,17 +207,17 @@ Do *not* enable progressive encoding for JPEG XL lossless, or the resulting file
 
 | Codec | Parameters | Ratio |
 | ----- | ---------- | ----- |
-| JPEG XL | `cjxl -j 0 -d 0 -e 7` | 70.2% |
-| WebP | `cwebp -m 6 -lossless` | 78.1% |
+| JPEG XL | `cjxl -j 0 -d 0 -e 7` | 1.425 |
+| WebP | `cwebp -m 6 -lossless` | 1.28 |
 
 ### Lossy animated
 Lossy animated WebP is the current baseline for animated image sequences, while lossy animated AVIF offers the best quality against others by a wide margin. Lossy animated JPEG XL doesn't offer a significant advantage against WebP, and is currently beaten by AVIF.
 
 ### High-throughput lossy
-| Codec   | Ratio  | Parameters |
-| ------- | ------ | ---------- |
-| OpenJPH | 54.91% | `ojph_compress -tileparts R -reversible false -colour_trans true -prog_order RPCL -block_size "{64,64}" -precincts "{256,256},{256,256},{128,128}" -num_decomps 5` |
-| JPEG XL | ?36.8% | `cjxl --num_threads -1 -j 0 -m 0 -d 0.25 -e 3 --faster_decoding 2` |
+| Codec   | Ratio | Parameters |
+| ------- | ----- | ---------- |
+| OpenJPH | 1.821 | `ojph_compress -tileparts R -reversible false -colour_trans true -prog_order RPCL -block_size "{64,64}" -precincts "{256,256},{256,256},{128,128}" -num_decomps 5` |
+| JPEG XL | 3.363 | `cjxl --num_threads -1 -j 0 -m 0 -d 0.25 -e 3 --faster_decoding 2` |
 
 HT lossy is used when visually-lossless video feeds over constrained bandwidth are needed. While HTJ2K has a slightly worse compression than JPEG XL, it more than complimented in terms of speed, ranging from 15% to 100% addition depending on the scenario.
 
@@ -279,35 +279,43 @@ The table below provides a quick reference of levels and estimated size reductio
 		<th>Algorithm</th>
 		<th>Use</th>
 		<th>Params</th>
-		<th>Reduction<br/>Ratio</th>
+		<th>Factor</th>
 	</tr></thead>
 	<tbody><tr>
-		<td rowspan=2>Brotli</td>
+		<td rowspan=3>Brotli</td>
 		<td>Dynamic</td>
 		<td><code>brotli -4</code></td>
-		<td>69.64%</td>
+		<td>3.294</td>
+	</tr><tr>
+		<td>Static-</td>
+		<td><code>brotli -9</code></td>
+		<td>-</td>
 	</tr><tr>
 		<td>Static</td>
 		<td><code>brotli -q 11</code></td>
-		<td>73.41%</td>
+		<td>3.761</td>
 	</tr><tr>
 		<td rowspan=2>Zstd</td>
 		<td>Dynamic</td>
 		<td><code>zstd -7</code></td>
-		<td>69.82%</td>
+		<td>3.313</td>
 	</tr><tr>
 		<td>Static<br/><i>(not recommended)</i></td>
 		<td><code>zstd -19</code></td>
-		<td>72.92%</td>
+		<td>3.693</td>
 	</tr><tr>
-		<td rowspan=2>gzip</td>
+		<td rowspan=3>gzip</td>
 		<td>Dynamic</td>
 		<td><code>gzip -4</code></td>
-		<td>66.48%</td>
+		<td>2.983</td>
+	</tr><tr>
+		<td>Static-</td>
+		<td><code>gzip -9</code></td>
+		<td>-</td>
 	</tr><tr>
 		<td>Static</td>
 		<td><code>zopfli --i1</code></td>
-		<td>68.08%</td>
+		<td>3.133</td>
 	</tr></tbody>
 </table></div>
 
