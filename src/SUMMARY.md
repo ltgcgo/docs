@@ -20,11 +20,10 @@
   - [Project origins](ltgc/project-origin.md)
   - [List of technologies](ltgc/list-tech.md)
   - [Sizes of data types](ltgc/list-dtype.md)
-
-# Services
-- [Lavender](lavender/README.md)
-  - [Panels](lavender/panel.md)
-- [IM services](matrix/README.md)
+- [Domains & Services](ltgc/ds.md)
+  - [Lavender](lavender/README.md)
+    - [Panels](lavender/panel.md)
+  - [IM services](matrix/README.md)
 
 # Projects
 - [Ditzy](ditzy/README.md)
