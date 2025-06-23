@@ -4,7 +4,7 @@ This section documents the processes of configuring LXC on distros supported by 
 
 #### Installation
 - Alpine: `apk add lxc lxcfs lxc-download lxc-bridge`
-- Debian: `apt install lxc lxcfs lxc-templates uidmap libpam-cgfs bridge-utils --no-install-recommends`
+- Debian: `apt install lxc lxcfs lxc-templates uidmap libpam-cgfs bridge-utils rsync --no-install-recommends`
 - openSUSE: `zypper in lxc`
 - Rocky Linux/AlmaLinux: `dnf install lxc lxcfs lxc-templates`
 - Photon: N/A
@@ -139,6 +139,19 @@ The containers configured these way are unprivileged, however they are owned by 
 
 You can create the container before or after assigning subordinate IDs manually, but it must be done before modifying the container's configuration file. All commands in this section assume `root` privilege unless told explicitly otherwise.
 
+#### Mount folders from host
+To mount a folder from the host with read-only permissions, append this in the container config. Remove `ro` to allow writing.
+
+```ini
+lxc.mount.entry = <hostPath> <containerPath> none ro,bind 0 0
+```
+
+Keep in mind that the host path must be prefixed with `/`, while the container path should not. For example, if mounting `/run/horniDeer` to `/tmp/horniDeer` in the container, the following line should be present.
+
+```ini
+lxc.mount.entry = /run/horniDeer tmp/horniDeer none ro,bind 0 0
+```
+
 ##### Select and map subordinate IDs
 Subordinate IDs permit mapping a range of IDs to a user, allowing the container to run unprivileged without the typical downsides. To avoid conflicts, it's advised to reserve a relatively large gap between different unprivileged containers in multiples of `65536`, the minimum required amount of subordinate IDs for running unprivileged containers of any kind.
 
@@ -212,7 +225,14 @@ table inet filter {
 ```
 
 - It's possible to match multiple ports at the same time. Instead of specifying a single port number (e.g. `443`), use curly braces: `{443, 8443}`. Ranges can also be specified: `1024-2047`.
-- If a certain rule only applies to traffic originating from certain interfaces, prefix the rule with `iif <interface>`. Can be a single interface (e.g. `iif "eth0"`) or multiple (e.g. `iif {"eth0", "ens15"}`).
+- If a certain rule only applies to traffic originating from certain interfaces, prefix the rule with `iif <interface>`. Can be a single interface (e.g. `iif "eth0"`) or multiple (e.g. `iif {"eth0", "ens15"}`). Use `iifname` instead of `iif` if you are not sure if the interfaces are going to be present, and swap the first `i` with `o` (e.g. `oif`) if you want to select outbound interfaces instead.
+- Common selectors: `iifname`, `oifname`, `ct`, `ip`, `ip6`, `icmp`, `icmpv6`, `sctp`, `tcp`, `udp`, `udplite`.
+  - [`ip`](https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes#Ip): `protocol`, `ttl`, `saddr`, `daddr`
+  - [`ip6`](https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes#Ip6): `nexthdr`, `hoplimit`, `saddr`, `daddr`
+  - [`icmp`](https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes#Ip), `icmpv6`: `type`
+  - `sctp`, `tcp`, `udp`, `udplite`: `sport`, `dport`
+  - [`ct`](https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes#Ct): `direction`, `mark`, `state`, `status`
+- [Common actions](https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes#Statements): `accept`, `drop`, `reject`, `dnat`, `snat`, `masquerade`
 
 ##### Transparent service exposure
 _From [nftables: forwarding without masquerading](https://serverfault.com/questions/1034595/), [Quick reference: nftables in 10 minutes](https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes)_.
@@ -268,6 +288,8 @@ An example of a rule with similar use under IPv6.
 iif "he-ipv6" tcp dport {80, 443} dnat to [fc11:4514:1919:810::ff:fe00:2]
 ```
 
+Feel free to swap `tcp` to any kind of layer 4 protocol you intend to use, namely `icmp`, `icmpv6`, `sctp`, `tcp`, `udp`, `udplite` and more.
+
 Flush your rulesets with the command below, so LXC slices will still have connectivity via NAT after flushing.
 
 ```sh
@@ -283,7 +305,7 @@ _Inspired by [How to restrict network access of LXC container](https://babarowsk
 > 
 > If fine-grained access control like destination-matching (e.g. domain) is desired, use EEP with transparent proxy on the host instead.
 > 
-> Since the current `nftables` approach requires [static IPs](#assign-static-ipv4-addresses) to be assigned first, but there is no way found to have IPv6 addresses assigned statically, IPv6 access might need to be disabled for the container.
+> The current `nftables` approach requires [static IPs](#assign-static-ipv4-addresses) to be assigned first, but a static IPv6 address must be assigned via a static MAC address, as such remember to define a static MAC address for the container.
 
 The `inet filter forward` section is where network access of individual containers is filtered.
 
