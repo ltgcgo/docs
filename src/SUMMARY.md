@@ -68,6 +68,7 @@
   - [Tibetan](raven/bo.md)
 - [Rochelle](rochelle/README.md)
   - [Text emitter](rochelle/text-emit.md)
+- [Scope](scope/README.md)
 - [shx](shx/README.md)
 - [Silk](silk/README.md)
   - [Inclusion](silk/include.md)
