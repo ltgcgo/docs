@@ -15,7 +15,7 @@ Scope allows use cases like:
 - Rotate PSKs to existing networks with [ML-KEM](https://en.wikipedia.org/wiki/Kyber) and [X448](https://en.wikipedia.org/wiki/Curve448), ensuring post-quantum security.
 - Build a mesh tree network, where only hubs are the directly connected peers (mesh), and traffic between edges must be routed through the mesh.
 
-1. "Open UDP NAT" means UDP NAT with endpoint-independent mapping, which only includes the following UDP NAT: full-cone (type 1), restricted cone (type 2), port-restricted cone (type 3).
+1. "Open UDP NAT" means UDP NAT with endpoint-independent mapping, which only includes the following UDP NAT types: full-cone (type 1), restricted cone (type 2), port-restricted cone (type 3).
 
 ## How does it work?
 1. A central registry server is configured.
