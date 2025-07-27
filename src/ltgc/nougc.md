@@ -7,67 +7,72 @@ If you've been redirected to this page, it's likely that you have been denied di
 
 ## List of countries affected
 ### Denied from high-liberty and restricted UGC services
-* `AE`: United Arab Emirates
-* `AF`: Afghanistan
-* `AZ`: Azerbaijan
-* `BD`: Bangladesh
-* `BH`: Bahrain
-* `BT`: Bhutan
-* `BY`: Belarus
-* `CN`: China
-* `CU`: Cuba
-* `DJ`: Djibouti
-* `DZ`: Algeria
-* `EG`: Egypt
-* `ER`: Eritrea
-* `ET`: Ethiopia
-* `GT`: Guatemala
-* `HN`: Honduras
-* `KH`: Cambodia
-* `KZ`: Kazakhstan
-* `IL`: Israel
-* `IN`: India
-* `IQ`: Iraq
-* `IR`: Iran
-* `LA`: Laos
-* `LB`: Lebanon
-* `LY`: Libya
-* `MM`: Myanmar
-* `NI`: Nicaragua
-* `NK` (`KP`): North Korea
-* `OM`: Oman
-* `PK`: Pakistan
-* `PS`: Palestine
-* `RU`: Russia
-* `RW`: Rwanda
-* `SA`: Saudi Arabia
-* `SD`: Sudan
-* `SL`: Sri Lanka
-* `SO`: Somalia
-* `SY`: Syria
-* `TJ`: Tajikstan
-* `TM`: Turkmenistan
-* `TR`: Turkey
-* `UZ`: Uzbekistan
-* `VE`: Venezuela
-* `VN`: Vietnam
-* `YE`: Yemen
+#### Legality
+- `UK`: United Kingdom
+
+#### Visitor safety
+- `AE`: United Arab Emirates
+- `AF`: Afghanistan
+- `AZ`: Azerbaijan
+- `BD`: Bangladesh
+- `BH`: Bahrain
+- `BT`: Bhutan
+- `BY`: Belarus
+- `CN`: China
+- `CU`: Cuba
+- `DJ`: Djibouti
+- `DZ`: Algeria
+- `EG`: Egypt
+- `ER`: Eritrea
+- `ET`: Ethiopia
+- `GT`: Guatemala
+- `HN`: Honduras
+- `KH`: Cambodia
+- `KZ`: Kazakhstan
+- `IL`: Israel
+- `IN`: India
+- `IQ`: Iraq
+- `IR`: Iran
+- `LA`: Laos
+- `LB`: Lebanon
+- `LY`: Libya
+- `MM`: Myanmar
+- `NI`: Nicaragua
+- `NK` (`KP`): North Korea
+- `OM`: Oman
+- `PK`: Pakistan
+- `PS`: Palestine
+- `RU`: Russia
+- `RW`: Rwanda
+- `SA`: Saudi Arabia
+- `SD`: Sudan
+- `SL`: Sri Lanka
+- `SO`: Somalia
+- `SY`: Syria
+- `TJ`: Tajikstan
+- `TM`: Turkmenistan
+- `TR`: Turkey
+- `UZ`: Uzbekistan
+- `VE`: Venezuela
+- `VN`: Vietnam
+- `YE`: Yemen
 
 ### Denied from high-liberty UGC services
-* `BO`: Bolivia
-* `CD`: Democratic Republic of Congo
-* `CM`: Cameroon
-* `GQ`: Equatorial Guinea
-* `HK`: Hong Kong
-* `KG`: Kyrgyzstan
-* `JO`: Jordan
-* `KW`: Kuwait
-* `LS`: Lesotho
-* `MA`: Morocco
-* `MX`: Mexico
-* `PE`: Peru
-* `PH`: Philippines
-* `SG`: Singapore
-* `SS`: South Sudan
-* `SV`: El Salvador
-* `UG`: Uganda
+#### Visitor safety
+- `BO`: Bolivia
+- `CD`: Democratic Republic of Congo
+- `CM`: Cameroon
+- `GQ`: Equatorial Guinea
+- `HK`: Hong Kong
+- `KG`: Kyrgyzstan
+- `JO`: Jordan
+- `KW`: Kuwait
+- `LS`: Lesotho
+- `MA`: Morocco
+- `MX`: Mexico
+- `PE`: Peru
+- `PH`: Philippines
+- `SG`: Singapore
+- `SS`: South Sudan
+- `SV`: El Salvador
+- `UG`: Uganda

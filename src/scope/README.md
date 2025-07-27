@@ -6,7 +6,7 @@
 > - While Scope is tested extensively with a cluster with around 20 peers, there's no guarantee that it can scale to larger ones.
 > - Scope's direct peer connection currently **only** works on networks with open NATs (NAT type 1-3). It may fall back to relayed connection via hubs only if configured.
 
-Scope is a WireGuard network orchestration utility mainly geared towards establishing meshed networks, inspired by the poorly-maintained [`wgsd`](https://github.com/jwhited/wgsd). Unlike `wgsd`, Scope utilizes HTTP for information exchange and UDP for connectivity probe.
+Scope is a WireGuard network orchestration utility mainly geared towards establishing meshed networks, inspired by the poorly-maintained [`wgsd`](https://github.com/jwhited/wgsd). Unlike `wgsd`, Scope utilizes HTTP for information exchange and UDP for connectivity probing.
 
 Scope allows use cases like:
 
