@@ -8,7 +8,8 @@ If you've been redirected to this page, it's likely that you have been denied di
 ## List of countries affected
 ### Denied from high-liberty and restricted UGC services
 #### Legality
-- `UK`: United Kingdom
+- `FR`: France ([Arcom](https://www.arcom.fr/se-documenter/espace-juridique/textes-juridiques/referentiel-technique-sur-la-verification-de-lage-pour-la-protection-des-mineurs-contre-la-pornographie-en-ligne), [SREN](https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000047533100/))
+- `UK`: United Kingdom ([Online Safety Act](https://www.gov.uk/government/collections/online-safety-act))
 
 #### Visitor safety
 - `AE`: United Arab Emirates
