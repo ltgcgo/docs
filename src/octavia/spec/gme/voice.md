@@ -25,7 +25,7 @@ The above portion is not yet decided.
 | 024 | Electro Kit           | 1     |
 | 025 | Analog Kit            | 1     |
 | 026 | Analog Kit 2          | 3     |
-| 027 | Dance Kit             | 3     |
+| 027 | Dance Kit             | 2     |
 | 028 | Rave Kit              | 5     |
 | 030 | Apogee Kit            | 4     |
 | 031 | Perigee Kit           | 4     |
