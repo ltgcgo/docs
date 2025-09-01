@@ -132,13 +132,6 @@ root  hard  nofile  1048576 unset
 
 Reboot the host and the container(s) to apply the changes.
 
-#### Manual unprivileged container setup
-_Extended from [this blog post](https://blog.benoitblanchon.fr/lxc-unprivileged-container/)._
-
-The containers configured these way are unprivileged, however they are owned by `root`, this is due to the problems surrounding unprivileged containers when owned by unprevileged users.
-
-You can create the container before or after assigning subordinate IDs manually, but it must be done before modifying the container's configuration file. All commands in this section assume `root` privilege unless told explicitly otherwise.
-
 #### Mount folders from host
 To mount a folder from the host with read-only permissions, append this in the container config. Remove `ro` to allow writing.
 
@@ -151,6 +144,13 @@ Keep in mind that the host path must be prefixed with `/`, while the container p
 ```ini
 lxc.mount.entry = /run/horniDeer tmp/horniDeer none ro,bind 0 0
 ```
+
+#### Manual unprivileged container setup
+_Extended from [this blog post](https://blog.benoitblanchon.fr/lxc-unprivileged-container/)._
+
+The containers configured these way are unprivileged, however they are owned by `root`, this is due to the problems surrounding unprivileged containers when owned by unprevileged users.
+
+You can create the container before or after assigning subordinate IDs manually, but it must be done before modifying the container's configuration file. All commands in this section assume `root` privilege unless told explicitly otherwise.
 
 ##### Select and map subordinate IDs
 Subordinate IDs permit mapping a range of IDs to a user, allowing the container to run unprivileged without the typical downsides. To avoid conflicts, it's advised to reserve a relatively large gap between different unprivileged containers in multiples of `65536`, the minimum required amount of subordinate IDs for running unprivileged containers of any kind.
