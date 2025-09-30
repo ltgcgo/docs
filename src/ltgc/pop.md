@@ -14,6 +14,7 @@ Being listed here does not necessarily indicate that a server is definitively lo
 | `na-1` | North America West |
 | `na-2` | North America East |
 | `na-3` | North America Middle |
+| `na-0` | Non-serving North American regions |
 | `ap-1` | East Asia |
 | `ap-2` | South East Asia |
 | `ap-3` | Middle Asia |
@@ -66,19 +67,27 @@ North America is a special case, in which different states/provinces are tiered 
 | 1    | `na-1` | California (US) | Los Angeles, San Jose, Fremont, San Clara |
 | 1    | `na-2` | Virginia (US) | Ashburn |
 | 2    | `na-2` | New York (US) | New York City, Buffalo |
+| 2    | `na-2` | Ontario (CA) | Toronto |
 | 2    | `na-2` | Québec (CA) | Montréal |
 | 3    | `na-1` | British Colombia (CA) | Vancouver |
 | 3    | `na-2` | New Jersey (US) | Secaucus |
-| 3    | `na-2` | Ontario (CA) | Toronto |
 | 3    | `na-1` | Oregon (US) | Portland |
 | 4    | `na-2` | Alberta (CA) | Calgery |
 | 4    | `na-3` | Colorado (US) | Denver |
 | 4    | `na-3` | Illinois (US) | Chicago |
 | 4    | `na-3` | Manitoba (CA) | Winnipeg |
-| 4    | `na-3` | Missouri (US) | Kansas City, St. Louis |
 | 4    | `na-1` | Nevada (US) | Las Vegas |
 | 4    | `na-1` | Utah (US) | Salt Lake City |
 | 4    | `na-1` | Washington (CA) | Seattle |
+| 0    | `na-0` | Arizona (US) | Phoenix |
+| 0    | `na-0` | Mississippi (US) | Jackson |
+| 0    | `na-0` | Missouri (US) | Kansas City, St. Louis |
+| 0    | `na-0` | North Carolina (US) | Greensboro |
+| 0    | `na-0` | North Dakota (US) | Fargo |
+| 0    | `na-0` | Ohio (US) | Columbus, Cincinnati |
+| 0    | `na-0` | South Dakota (US) | Sioux Falls, Rapid City |
+| 0    | `na-0` | Texas (US) | Dallas, Austin |
+| 0    | `na-0` | Wyoming (US) | Cheyenne, Casper |
 
 ### Russia
 Like North America, different oblasts/krais/republics are tiered differently.
