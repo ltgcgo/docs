@@ -117,15 +117,16 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 | 8     | S-YXG2006LE |
 | 9     | PSR-220, PSR-225, PSR-230, PSR-240, PSR-270, PSR-280, PSR-282, PSR-330, PSR-340, PSR-GX76 |
 | 10    | PSR-203, PSR-205, PSR-273, PSR-275, PSR-290, PSR-292, PSR-293, PSR-295, PSR-350, PSR-450, PSR-E303, PSR-E403, PSR-E413, PSR-K1 |
-| 12    |  |
-| 13    |  |
-| 14    |  |
+| 12    | PSR-530, PSR-540, PSR-630, PSR-640, PSR-730, PSR-740 |
+| 13    | PSR-1500, PSR-3000, PSR-OR700, PSR-S500, PSR-S550 |
+| 14    | PSR-1000, PSR-1100, PSR-2000, PSR-2100, PSR-8000, PSR-9000, PSR-9000Pro |
 | 64    | Unidentified modern XG synth |
 
 - The levels depicted here do **not** refer to actual XG levels.
 - Levels between 0 and 7 refer to classic XG, 8 and above refer to modern XG. Except for model-exclusive voices, higher classic XG support levels always encompass lower XG support levels.
 - Levels equal to and above 12 are currently not truly assigned.
-- PLG100-XG adds **Dance Kit** on top of the MU50 voices. QY100 and PLG100-XG share the same sample pool that's different from MU Basic sample pool.
+- PLG100-XG adds **Dance Kit** on top of the MU50 voices, just like modern XG. QY100 and PLG100-XG share the same sample pool that's different from the MU Basic sample pool.
+- The assigned program number of **Dance Kit** in modern XG can either be `027` or `112`, and synths can support either or both, resulting in some incompatibilities.
 
 #### Classic
 | Target      | Type | Status |
