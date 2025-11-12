@@ -1,6 +1,5 @@
-# Targets
-## Supported targets
-### General support table
+# Supported targets
+## General support table
 The following list of targets have their support by Octavia status presented in a table. A target can be a **m**odel, a **p**lugin board, a **l**ineup, or a **s**tandard.
 
 A supported standard may also have a list of specific target models listed.
@@ -38,7 +37,7 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 
 1. Octavia implements XG level 3.0 or later, and XG version 2.0 or later.
 
-#### Custom sound banks
+### Custom sound banks
 - Voice name maps (`.mdat`)
 - SysEx bank dumps (`.syx`)
   - KORG X5 (05R/W)
@@ -51,8 +50,8 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 - Korg Program/Combi/Global (`.pcg`)
   - Korg KROSS 2
 
-### Specific targets
-#### Roland MT-32
+## Specific targets
+### Roland MT-32
 | Target  | Type | Status |
 | ------- | ---- | ------ |
 | MT-32   | M    | ✓      |
@@ -66,7 +65,14 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 | RA-50   | M    | -      |
 | E-20    | M    | -      |
 
-#### Roland GS
+### Roland GS
+| Level | Target |
+| ----- | ------ |
+| 1     | SC-55, SC-33, SC-155, SC-50, SD-35, SC-55K, SC-55ST, SK-50 |
+| 2     | SC-88, SC-88ST, SC-88VL, M-GS64 |
+| 3     | SC-88 Pro, SC-880, SC-88ST Pro, SK-88 Pro |
+| 4     | SC-8850, SC-8820, SC-D70, SK-500 |
+
 | Target    | Type | Status |
 | --------- | ---- | ------ |
 | CM-300    | M    | ✓      |
@@ -74,14 +80,20 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 | SC-88     | L    | ✓      |
 | SC-88 Pro | L    | ✓      |
 | SC-8850   | L    | ✓      |
-| SD-20     | M    | ✓      |
 | SD-35     | M    | ✓      |
-| SD-50     | M    | ✓      |
-| SD-80     | M    | ✓      |
-| SD-90     | M    | ✓      |
-| SK-50     | L    | -      |
+| SK-50     | M    | ✓      |
+| SK-88 Pro | M    | ✓      |
+| SK-500    | M    | ✓      |
 
-#### Yamaha TG
+### Roland SD
+| Target    | Type | Status | Level |
+| --------- | ---- | ------ | ----- |
+| SD-20     | M    | ✓      | 1     |
+| SD-80     | M    | ✓      | 2     |
+| SD-90     | M    | ✓      | 2     |
+| SD-50     | M    | ✓      | 0     |
+
+### Yamaha TG
 | Target | Type | Status |
 | ------ | ---- | ------ |
 | TG55   | M    | -      |
@@ -91,13 +103,36 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 | TG500  | M    | -      |
 | TG300  | M    | ✓      |
 
-#### Yamaha XG
+### Yamaha XG
+| Level | Target |
+| ----- | ------ |
+| 0     | XGlite |
+| 1     | MU50, MU10, MU15, DB50XG, DB51XG, DB60XG, PLG100-XG, SW60XG, S-YXG50, S-YXG70, S-YXG100 |
+| 2     | MU80 |
+| 3     | QY70, QY100, QY700 |
+| 4     | MU90 |
+| 5     | MU100, SW1000XG |
+| 6     | MU128 |
+| 7     | MU1000, MU2000, MU500 |
+| 8     | S-YXG2006LE |
+| 9     | PSR-220, PSR-225, PSR-230, PSR-240, PSR-270, PSR-280, PSR-282, PSR-330, PSR-340, PSR-GX76 |
+| 10    | PSR-203, PSR-205, PSR-273, PSR-275, PSR-290, PSR-292, PSR-293, PSR-295, PSR-350, PSR-450, PSR-E303, PSR-E403, PSR-E413, PSR-K1 |
+| 12    |  |
+| 13    |  |
+| 14    |  |
+| 64    | Unidentified modern XG synth |
+
+- The levels depicted here do **not** refer to actual XG levels.
+- Levels between 0 and 7 refer to classic XG, 8 and above refer to modern XG. Except for model-exclusive voices, higher classic XG support levels always encompass lower XG support levels.
+- Levels equal to and above 12 are currently not truly assigned.
+- PLG100-XG adds **Dance Kit** on top of the MU50 voices. QY100 and PLG100-XG share the same sample pool that's different from MU Basic sample pool.
+
+#### Classic
 | Target      | Type | Status |
 | ----------- | ---- | ------ |
-| DBXG50      | M    | ✓      |
-| DBXG51      | M    | ✓      |
-| DBXG60      | M    | ✓      |
-| MU5         | M    | ✓      |
+| DB50XG      | M    | ✓      |
+| DB51XG      | M    | ✓      |
+| DB60XG      | M    | ✓      |
 | MU80        | M    | ✓      |
 | MU50        | M    | ✓      |
 | MU90        | L    | ✓      |
@@ -117,4 +152,13 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 | S-YXG50     | M    | ✓      |
 | S-YXG70     | M    | ✓      |
 | S-YXG100    | M    | ✓      |
+
+#### Modern
+| Target      | Type | Status |
+| ----------- | ---- | ------ |
 | S-YXG2006LE | M    | ✓      |
+| PSR-220     | L    | -      |
+| PSR-203     | L    | -      |
+| PSR-530     | L    | -      |
+| PSR-1500    | L    | -      |
+| PSR-1000    | L    | -      |
