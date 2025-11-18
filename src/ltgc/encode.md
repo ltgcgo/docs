@@ -286,7 +286,11 @@ The table below provides a quick reference of levels and estimated size reductio
 		<th>Factor</th>
 	</tr></thead>
 	<tbody><tr>
-		<td rowspan=3>Brotli</td>
+		<td rowspan=4>Brotli</td>
+		<td>Transit</td>
+		<td><code>brotli -1</code></td>
+		<td>2.892</td>
+	</tr><tr>
 		<td>Dynamic</td>
 		<td><code>brotli -4</code></td>
 		<td>3.294</td>
@@ -299,7 +303,11 @@ The table below provides a quick reference of levels and estimated size reductio
 		<td><code>brotli -q 11</code></td>
 		<td>3.761</td>
 	</tr><tr>
-		<td rowspan=2>Zstd</td>
+		<td rowspan=3>Zstd</td>
+		<td>Transit</td>
+		<td><code>zstd -4</code></td>
+		<td>3.295</td>
+	</tr><tr>
 		<td>Dynamic</td>
 		<td><code>zstd -7</code></td>
 		<td>3.313</td>
