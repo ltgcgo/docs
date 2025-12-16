@@ -8,6 +8,8 @@ If you've been redirected to this page, it's likely that you have been denied di
 ## List of countries and regions affected
 ### Denied from high-liberty and restricted UGC services
 #### Legality
+- `AU`: Australia ([Social Media Age Restrictions (eSafety)](https://www.esafety.gov.au/about-us/industry-regulation/social-media-age-restrictions))
+- `DK`: Denmark
 - `ES`: Spain ([Cartera Digital Beta (Pajaporte)](https://digital.gob.es/especificaciones_tecnicas.html))
 - `FR`: France ([Arcom](https://www.arcom.fr/se-documenter/espace-juridique/textes-juridiques/referentiel-technique-sur-la-verification-de-lage-pour-la-protection-des-mineurs-contre-la-pornographie-en-ligne), [SREN](https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000047533100/))
 - `IT`: Italy ([Testo coordinato del decreto-legge 15](https://www.gazzettaufficiale.it/eli/id/2023/11/14/23A06292/sg))
