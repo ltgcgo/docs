@@ -2,8 +2,11 @@
 As per effort of decreasing the learning curve as much as possible, all English phonetical alphabets share the same set of key map.
 
 ## Included alphabets
+### Jones-Gimson system
+The Jones-Gimson system is a branch of IPA that's adapted to better transcribe English pronunciation of British English and its variants, mostly utilized by non-American dictionaries.
+
 ### British English Phonetic Alphabet
-BEPA is an adaptation of International Phonetic Alphabet, optimized to represent the sounds of British English, and by extension all of its variants.
+BEPA is an informal name of the Jones-Gimson system.
 
 ### Shavian alphabet
 The [Shavian alphabet](https://en.wikipedia.org/wiki/Shavian_alphabet) is a constructed alphabet aims to permit efficient writing and spelling for British English Received Pronunciation.
