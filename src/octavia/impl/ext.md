@@ -37,9 +37,9 @@ Despite the original version devised by the TUNE1000 Corporation requires the fi
 
 These escape sequences will affect how the lyrics events are parsed.
 
-- `\v`: Vertical tab. 
-- `\r`: Carriage return.
-- `\n`: Line feed.
+- `\v` (`\x0b`): Vertical tab.
+- `\r` (`\x0d`): Carriage return.
+- `\n` (`\x0a`): Line feed.
 - `\\`: Backslash itself.
 
 These escape sequences won't affect the lyrics event parsing.
