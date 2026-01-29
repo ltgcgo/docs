@@ -35,46 +35,56 @@ TSV files describing certain properties of individual voices.
 - `VXP`: Voice property ID
 
 #### VL properties
-- `BNS`: VL Breath Noise Source
-  - `0`: None
-  - `1`: Modulation wheel
-  - `2`: Blow strength
-  - `4`: Throat formant
-- `BNM`: VL Breath Noise Amplitude from Mod Wheel
-  - `0`: -1
-  - `64`: 0
-  - `127`: 1
-- `BNB`: VL Breath Noise Amplitude from Blow Strength
-- `BNT`: VL Breath Noise Amplitude from Throat Formant
-- `BNV`: VL Breath Noise Value Floor
-  - `-128`: -1
-  - `0`: 0
-  - `127`: 1
-- `BND`: VL Breath Noise Blow Strength Decay Duration
-- `BNL`: VL Breath Noise Blow Strength Decay Level
-- `BAD`: VL Breath Attack Duration, specified in milliseconds
-- `BAL`: VL Breath Attack Level
-  - `0`: -64 (from a very wide triangle)
-  - `64`: 0 (no attack EG)
-  - `127`: 63 (from a very narrow triangle)
-- `BDD`: VL Breath Decay Duration, specified in milliseconds
-- `BDL`: VL Breath Decay Level
-  - `0`: Decay to 0 (pluck)
-  - `64`: Decay to 50.4%
-  - `127`: No decay
-- `TOM`: VL Throat Formant Oscillation from Modulation
-  - `0`: None
-  - `127`: Maximum
-- `TOS`: VL Throat Formant Oscillation Speed, specified in milliseconds when a cycle completes.
-- `TOT`: VL Throat Formant Oscillation Type
-  - `0`: None
-  - `1`: Single oscillator
-  - `2`: Double oscillator (single oscillator modulated by an additional LFO)
-- `TFS`: VL Throat Formant Source
-  - `0`: Constant until set
-  - `1`: cc1 (Modulation wheel)
-  - ...
-  - `13`: cc13 (default VL throat formant source)
-  - ...
-  - `32`: Always constant
-- `TFV`: VL Throat Formant Value, the fixed default value for certain instruments.
+- Breath Noise
+  - `BNS`: VL Breath Noise Source
+    - `0`: None
+    - `1`: Modulation wheel
+    - `2`: Blow strength
+    - `4`: Throat formant
+  - `BNM`: VL Breath Noise Amplitude from Mod Wheel
+    - `0`: -1
+    - `64`: 0
+    - `128`: 1
+  - `BNB`: VL Breath Noise Amplitude from Blow Strength
+  - `BNT`: VL Breath Noise Amplitude from Throat Formant
+  - `BNV`: VL Breath Noise Value Floor
+    - `0`: -1
+    - `64`: 0
+    - `128`: 1
+  - `BND`: VL Breath Noise Blow Strength Decay Duration
+  - `BNL`: VL Breath Noise Blow Strength Decay Level
+- Breath Strength
+  - `BDD`: VL Breath Decay Duration, specified in milliseconds
+  - `BDL`: VL Breath Decay Level
+    - `0`: Decay to 0 (pluck)
+    - `64`: Decay to 50%
+    - `128`: No decay
+- Embouchure
+  - `EAD`: VL Embouchure Attack Duration, specified in milliseconds
+  - `EAL`: VL Embouchure Attack Level
+    - `0`: -64 (from a very wide triangle)
+    - `64`: 0 (no attack EG)
+    - `128`: 64 (from a very narrow triangle)
+  - `ECS`: VL Embouchure Controller Source
+    - `0`: Constant until set
+    - `1`: cc1 (Modulation wheel)
+    - `13`: cc13 (default VL throat formant source)
+    - ...
+    - `32`: Always constant
+  - `EPB`: VL Embouchure Pitch Bend Source Toggle
+    - `0`: Disable
+    - `1`: Enable
+  - `EDV`: VL Embouchure Default Value, the fixed value for certain instruments.
+  - `EOT`: VL Embouchure Oscillation Type
+    - `0`: None
+    - `1`: Single oscillator
+    - `2`: Double oscillator (single oscillator modulated by an additional LFO)
+  - `EOM`: VL Embouchure Oscillation from Modulation
+    - `0`: None
+    - `127`: Maximum
+  - `EOD`: VL Embouchure Oscillation Duration, specified in milliseconds when a cycle completes.
+  - `EOA`: VL Embouchure Oscillation Amplitude.
+    - `0`: Minimum (`1`)
+    - `127`: Maximum (`128`)
+  - `ESD`: VL Embouchure Oscillation Secondary Duration.
+  - `ESA`: VL Embouchure Oscillation Secondary Amplitude.
