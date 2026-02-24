@@ -876,7 +876,39 @@ The details are exactly the same as above. _YMCS chord control_ serves a differe
 </tr></tbody></table>
 </div>
 
-### Old draft chord mapping
+#### Categories
+##### Main categories
+Main categories are represented as singular values.
+
+- `0`: `M` Major
+- `1`: `M7` Major seventh
+- `2`: `m` Minor
+- `3`: `m7` Minor seventh
+- `4`: `7` Dominant
+- `5`: `mM7` Minor major seventh
+- `f`: Other
+
+##### Sub-categories
+> Sub-categories are subject to change at any given time.
+
+Sub-categories are represented as bit-fields.
+
+- `0000` `00000000 00000000`: Base
+- `0001` `00000000 00000001`: `sus4`
+- `0002` `00000000 00000010`: `b5`
+- `0004` `00000000 00000100`: `aug`
+- `0008` `00000000 00001000`: `6`
+- `0010` `00000000 00010000`: `add9`
+- `0020` `00000000 00100000`: `b9`
+- `0040` `00000000 01000000`: `9`
+- `0080` `00000000 10000000`: `#9`
+- `0100` `00000001 00000000`: `11`
+- `0200` `00000010 00000000`: `#11`
+- `0400` `00000100 00000000`: `b13`
+- `0800` `00001000 00000000`: `13`
+- `1000` `00010000 00000000`: `sus2`
+
+#### Old draft chord mapping
 <div class="table-wrapper"><table>
 <thead><tr>
 <th>Type</th><th>Sub-category</th><th><code>M</code><br/>(<code>000</code>)</th><th><code>M7</code><br/>(<code>010</code>)</th><th><code>m</code><br/>(<code>001</code>)</th><th><code>mM7</code><br/>(<code>011</code>)</th><th><code>7</code><br/>(<code>100</code>)</th><th><code>m7</code><br/>(<code>101</code>)</th><th>Misc.<br/>(<code>111</code>)</th>
