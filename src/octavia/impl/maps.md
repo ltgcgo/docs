@@ -38,9 +38,10 @@ TSV files describing certain properties of individual voices.
 - Breath Noise
   - `BNS`: VL Breath Noise Source
     - `0`: None
-    - `1`: Modulation wheel
-    - `2`: Blow strength
-    - `4`: Throat formant
+    - `1`: cc1 (Modulation wheel)
+    - ...
+    - `32`: Blow strength
+    - `33`: Embouchure
   - `BNM`: VL Breath Noise Amplitude from Mod Wheel
     - `0`: -1
     - `64`: 0
