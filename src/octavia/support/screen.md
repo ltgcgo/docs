@@ -41,12 +41,12 @@ The font used for labels is Jost, licensed under SIL OFL.
 ### Octavia QY
 * **Lead developer**: Lumière Élevé
 
-A recreation of the screens on the Yamaha QY line up, with help from JayB.
+A recreation of the screens on the Yamaha QY line up, with help from JayB. Additional chord bitmaps and positioning also received help from GFHK-SDGM.
 
 ### Octavia PSR
 * **Lead developer**: GFHK-SDGM
 
-A recreation of the screens on Yamaha PSR.
+A recreation of the screens on Yamaha PSR-170.
 
 ### Octavia SC-8850
 * **Lead developer**: Lumière Élevé

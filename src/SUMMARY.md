@@ -16,6 +16,7 @@
   - [Region and DC codes](ltgc/datacentre.md)
   - [Points of Presence](ltgc/pop.md)
   - [Versioning](ltgc/versioning.md)
+  - [Encryption & Hashing](ltgc/encryption.md)
 - [Miscellaneous]()
   - [Project origins](ltgc/project-origin.md)
   - [List of technologies](ltgc/list-tech.md)
