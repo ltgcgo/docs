@@ -10,7 +10,6 @@
 - [CoreDNS](http://coredns.io)
 - [I2Pd](https://i2pd.website)
 - [IPFS](https://ipfs.io)
-- [Lokinet](https://lokinet.org)
 - [Tor](https://torproject.org)
 - [WireGuard](https://wireguard.com)
 - [Yggdrasil](https://yggdrasil-network.github.io)
@@ -74,6 +73,10 @@ Technologies listed here will have their usage be discouraged and avoided. Howev
 
 ## Banned technologies
 Usage of technologies listed here are entirely banned within LTGC. Bans do not extend to members themselves.
+
+### Networking
+- [Lokinet](https://lokinet.org)
+- [OpenVPN](https://openvpn.net)
 
 ### Frameworks
 - [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet)
