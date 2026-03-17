@@ -4,6 +4,8 @@ If you're accessing any Lightingale service from a VPN, chances are you're alrea
 
 We strongly support privacy and anonimity, while also highly detest the idea of fattening any commercial VPN vendor. VPNs do not offer privacy or security on the Internet in any way, let alone either anonimity or anti-censorship, and in no way any of them contribute to the effort of developing either anti-censorship or concealing technology to truly liberate the masses. As such, we've long since decided to take direct action, actively identifying and fingerprinting VPNs, while advising people to switch to real solutions instead.
 
+Notice that EPs (encapsulated/encrypted proxies) do **not** count as VPNs, as they are fundamentally different.
+
 ## Client
 We identify some client programs as high-risk, and block requests from those programs if identified.
 
