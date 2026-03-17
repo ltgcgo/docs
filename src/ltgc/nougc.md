@@ -5,10 +5,15 @@ We offer two levels of UGC services: high-liberty and restricted. Levels are sep
 
 If you've been redirected to this page, it's likely that you have been denied direct access to our UGC service, and we have no other choice but to offer our deepest apology.
 
+We also recommend the following sources for further information.
+
+- [Age Verification Resources](https://action.freespeechcoalition.com/age-verification-resources/)
+
 ## List of countries and regions affected
 ### Denied from high-liberty and restricted UGC services
 #### Legality
 - `AU`: Australia ([Social Media Age Restrictions (eSafety)](https://www.esafety.gov.au/about-us/industry-regulation/social-media-age-restrictions))
+- `BR`: Brazil ([15.211/2025/FELCA](https://www.gov.br/mdh/pt-br/assuntos/noticias/2025/novembro/brasil-apresenta-avancos-em-seguranca-digital-da-infancia-e-lanca-eca-digital-em-ingles-durante-cupula-social-do-g20-na-africa-do-sul/eca-digital-ing-v2.pdf))
 - `DK`: Denmark
 - `ES`: Spain ([Cartera Digital Beta (Pajaporte)](https://digital.gob.es/especificaciones_tecnicas.html))
 - `FR`: France ([Arcom](https://www.arcom.fr/se-documenter/espace-juridique/textes-juridiques/referentiel-technique-sur-la-verification-de-lage-pour-la-protection-des-mineurs-contre-la-pornographie-en-ligne), [SREN](https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000047533100/))
@@ -75,6 +80,7 @@ If you've been redirected to this page, it's likely that you have been denied di
 #### Legality
 - `US`.`AL`: Alabama, United States (HB 164)
 - `US`.`AR`: Arkansas, United States (SB 66 Act 612)
+- `US`.`CA`: California, United States (AB 1043)
 - `US`.`FL`: Florida, United States (HB 3, SB 1792)
 - `US`.`GA`: Georgia, United States (SB 351)
 - `US`.`IN`: Indiana, United States (SB 17)
