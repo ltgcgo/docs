@@ -40,22 +40,27 @@ This document is not yet complete.
 	<td>Lossy (Opus)</td>
 	<td>160kbps</td>
 	<td>256kbps</td>
-	<td colspan=2 rowspan=4 style="text-align: center;">N/A</br>Lossless-only</td>
+	<td>256kbps</td>
+	<td rowspan=5 style="text-align: center;">Lossless-only</td>
 </tr><tr>
 	<td>Lossy (Musepack)</td>
 	<td>176kbps</td>
+	<td>256kbps</td>
 	<td>256kbps</td>
 </tr><tr>
 	<td>Lossy (Vorbis)</td>
 	<td>192kbps</td>
 	<td>320kbps</td>
+	<td>320kbps</td>
 </tr><tr>
 	<td>Lossy (AAC-LC)</td>
 	<td>192kbps</td>
 	<td>320kbps</td>
+	<td>320kbps</td>
 </tr><tr>
 	<td>Lossy (AC-3, 5.1ch)</td>
 	<td>320kbps</td>
+	<td>384kbps</td>
 	<td>384kbps</td>
 </tr></tbody></table></div>
 

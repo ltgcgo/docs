@@ -34,10 +34,13 @@
 		<td>SVG</td>
 		<td><code>.svg</code></td>
 	</tr><tr>
-		<td rowspan=6><b>Audio</b></td>
-		<td rowspan=4><b>Lossy</b></td>
+		<td rowspan=7><b>Audio</b></td>
+		<td rowspan=5><b>Lossy</b></td>
 		<td>Opus</td>
 		<td><code>.opus</code></td>
+	</tr><tr>
+		<td>Musepack</td>
+		<td><code>.mpc</code> <code>.mpp</code></td>
 	</tr><tr>
 		<td>Vorbis</td>
 		<td><code>.ogg</code></td>
@@ -232,6 +235,8 @@ When high sampling rates are required, choose Vorbis. When support for the Apple
 Below are the suggested bitrates under different scenarios, when encoding stereo audio content under either 44.1kHz or 48kHz, which are the recommended sampling rates for delivery. For production purposes, higher sampling rates can be applied with respective scaling bitrates. Audio content should be encoded with constrained variable bitrate (CVBR) when available, falling back to VBR and CBR in order when technical restrictions apply.
 
 The AAC-LC encoder in question is `libfdk_aac`, being the best FOSS AAC-LC encoder out there. The only AAC-LC encoders better than `libfdk_aac` are `fhgaac` from Fraunhofer IIS and iTunes Audio Toolbox from Apple, which are proprietary and not within consideration of this guideline.
+
+> This table is outdated.
 
 | Codec  | Basic   | Stream  | Balanced | Generic | Quality |
 | ------ | ------- | ------- | -------- | ------- | ------- |
