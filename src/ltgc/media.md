@@ -40,7 +40,7 @@ This document is not yet complete.
 	<td>Lossy (Opus)</td>
 	<td>160kbps</td>
 	<td>256kbps</td>
-	<td colspan=2 rowspan=4>N/A<b/r>Lossless-only</td>
+	<td colspan=2 rowspan=4 style="text-align: center;">N/A</br>Lossless-only</td>
 </tr><tr>
 	<td>Lossy (Musepack)</td>
 	<td>176kbps</td>
