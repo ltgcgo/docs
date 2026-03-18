@@ -39,16 +39,20 @@ This document is not yet complete.
 </tr><tr>
 	<td>Lossy (Opus)</td>
 	<td>160kbps</td>
-	<td>192kbps</td>
-	<td colspan=2 rowspan=4></td>
+	<td>256kbps</td>
+	<td colspan=2 rowspan=4>N/A<b/r>Lossless-only</td>
+</tr><tr>
+	<td>Lossy (Musepack)</td>
+	<td>176kbps</td>
+	<td>256kbps</td>
 </tr><tr>
 	<td>Lossy (Vorbis)</td>
-	<td>176kbps</td>
-	<td>208kbps</td>
+	<td>192kbps</td>
+	<td>320kbps</td>
 </tr><tr>
 	<td>Lossy (AAC-LC)</td>
 	<td>192kbps</td>
-	<td>224kbps</td>
+	<td>320kbps</td>
 </tr><tr>
 	<td>Lossy (AC-3, 5.1ch)</td>
 	<td>320kbps</td>
