@@ -1,13 +1,11 @@
 # Encryption & Hashing
 
 ## Encryption
-Allowed encryption algorithms (and operation modes) are listed below. While actual recommendations are marked in bold, order of each entry does not imply preference, and decisions must be also made with strength and availability in mind.
+Allowed encryption algorithms (and operation modes) are listed below. While actual recommendations are marked in bold, order of each entry does not imply preference, and decisions must be also made with strength and availability in mind. Constant-time implementations are an absolute requirement.
 
 This documentation does not include encryption system designs, refer to relevant materials before designing encryption systems.
 
 ### Symmetric
-Avoid using symmetric ciphers with less than 192-bit comparative key size if possible, as Grover's algorithm may half the security of 128-bit keys down to effectively 64-bit, reducing brute-forcing to be further within reach. Do not ever reuse nonce, keep rotating keys within a reasonable duration if possible, and always include message authentication (all listed operating modes include authentication).
-
 <div class="table-wrapper"><table>
 	<thead><tr>
 		<td>Algorithm</td>
@@ -35,10 +33,12 @@ Avoid using symmetric ciphers with less than 192-bit comparative key size if pos
 </table></div>
 
 - XChacha20 allows 192-bit nonce, while Chacha20 only allows 64-bit nonce.
+- Do not ever reuse nonce, as such misuse will cripple security.
+- Message authentication is required implicitly, as we did not list any operation mode without message authentication.
+- Symmetric keys should be rotated at least once every 90 days despite the industry norm of 180, with duration shortened more and more with increased data confidentiality. Leaked symmetric keys should be revoked as soon as possible, and ephemeral keys that expire on session finishes are recommended.
+- Avoid using symmetric ciphers with less than 192-bit comparative key size if possible, as Grover's algorithm may half the security of 128-bit keys down to effectively 64-bit, reducing brute-forcing to be further within reach.
 
 ### Asymmetric
-Combine PQ with non-PQ asymmetric algorithms, in case either is broken.
-
 <div class="table-wrapper"><table>
 	<thead><tr>
 		<td>Field</td>
@@ -82,10 +82,15 @@ Combine PQ with non-PQ asymmetric algorithms, in case either is broken.
 	</tr></tbody>
 </table></div>
 
+- Apart from HQC waiting NIST finalization, all PQ algorithms have been formally published by NIST.
+- Combine PQ with non-PQ asymmetric algorithms, in case either is broken.
+
 ## Hashing
 Recommended hashing algorithms are listed below. While actual recommendations are marked in bold, order of each entry does not imply preference, and decisions must be also made with strength and availability in mind.
 
 ### Secret deriviation
+While higher costs increase security, it will impact performance. Balance your parameters based on your need, and benchmark whenever unsure.
+
 #### Argon2
 - Mode: Prefer `argon2id`.
 - Memory: At least 19 MiB, 64 MiB recommended.
@@ -97,7 +102,7 @@ Sources:
 2. [OWASP Cheat Sheet - Password storage cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
 
 #### Scrypt
-- Space cost: At least 2<sup>17</sup>.
+- Space cost: At least 2<sup>16</sup>.
 - Block size: At least 8 (1 KiB).
 - Parallelism: At least 1.
 - Output: 32 bytes.
@@ -116,13 +121,13 @@ Sources:
 	</tr></thead>
 	<tbody><tr>
 		<td>SHA2</td>
-		<td>224, 512/224, <b>256</b>,<br/>512/256, 384, 512</td>
+		<td><b>256</b>,<br/>512/256, 384, 512</td>
 	</tr><tr>
 		<td>SHA3</td>
 		<td>224, <b>256</b>, 384, 512</td>
 	</tr><tr>
 		<td>BLAKE2</td>
-		<td><b>BLAKE2b</b>, 1~<b>32</b>~64 B<br/>BLAKE2s, 1~<b>32</b></td>
+		<td><b>BLAKE2b</b>, 1~<b>32</b>~64 B<br/>BLAKE2s, 1~<b>32</b> B</td>
 	</tr><tr>
 		<td>BLAKE3</td>
 		<td>Any, <b>256</b></td>
@@ -139,7 +144,7 @@ We currently do not utilize ECH directly on our servers. This is still a WIP.
 Whenever available, we will serve the certificate hash used for direct connections to our endpoints under [this URL](https://www.ltgc.cc/cert-sha256) for whoever requiring it. Exact certificate hash can be utilized to confirm if MITM attacks are observed.
 
 ### Authorities (CA)
-We currently issue certificates from the following certificate authorities. Hashes of the utilized root certificates are up-to-date as of 7th March, 2026.
+We currently issue certificates from the following certificate authorities. Hashes of the utilized root certificates are up-to-date as of 7th March, 2026. All of our certificates are included in CT (certificate transparency) logs.
 
 - [Amazon Trust Services](https://www.amazontrust.com/repository/)
   - `Amazon Root CA 1` (CS): `87dcd4dc74640a322cd205552506d1be64f12596258096544986b4850bc72706`
