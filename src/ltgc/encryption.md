@@ -113,6 +113,17 @@ Sources:
 		<td>Configuration</td>
 	</tr></thead>
 	<tbody><tr>
+		<td>SHA2</td>
+		<td>224, 512/224, <b>256</b>,<br/>512/256, 384, 512</td>
+	</tr><tr>
+		<td>SHA3</td>
+		<td>224, <b>256</b>, 384, 512</td>
+	</tr><tr>
+		<td>BLAKE2</td>
+		<td><b>BLAKE2b</b>, 1~<b>32</b>~64 B<br/>BLAKE2s, 1~<b>32</b></td>
+	</tr><tr>
+		<td>BLAKE3</td>
+		<td>Any, <b>256</b></td>
 	</tr></tbody>
 </table></div>
 
