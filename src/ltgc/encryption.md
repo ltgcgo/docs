@@ -6,7 +6,7 @@ Allowed encryption algorithms (and operation modes) are listed below. While actu
 This documentation does not include encryption system designs, refer to relevant materials before designing encryption systems.
 
 ### Symmetric
-Avoid using symmetric ciphers with less than 192-bit comparative key size, as Grover's algorithm halves the security of 128-bit keys down to effectively 64-bit, reducing brute-forcing to be further within reach. Do not ever reuse nonce, and keep rotating keys within a reasonable duration if possible.
+Avoid using symmetric ciphers with less than 192-bit comparative key size if possible, as Grover's algorithm may half the security of 128-bit keys down to effectively 64-bit, reducing brute-forcing to be further within reach. Do not ever reuse nonce, keep rotating keys within a reasonable duration if possible, and always include message authentication (all listed operating modes include authentication).
 
 <div class="table-wrapper"><table>
 	<thead><tr>
