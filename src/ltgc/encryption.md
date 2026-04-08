@@ -1,10 +1,12 @@
 # Encryption & Hashing
 
 ## Encryption
-Recommended encryption algorithms (and operation modes) are listed below. Order of each entry implies preference, however decisions must be also made with strength and availability in mind.
+Allowed encryption algorithms (and operation modes) are listed below. While actual recommendations are marked in bold, order of each entry does not imply preference, and decisions must be also made with strength and availability in mind.
+
+This documentation does not include encryption system designs, refer to relevant materials before designing encryption systems.
 
 ### Symmetric
-Avoid using symmetric ciphers with less than 192-bit comparative key size.
+Avoid using symmetric ciphers with less than 192-bit comparative key size, as Grover's algorithm halves the security of 128-bit keys down to effectively 64-bit, reducing brute-forcing to be further within reach. Do not ever reuse nonce, and keep rotating keys within a reasonable duration if possible.
 
 <div class="table-wrapper"><table>
 	<thead><tr>
@@ -81,7 +83,7 @@ Combine PQ with non-PQ asymmetric algorithms, in case either is broken.
 </table></div>
 
 ## Hashing
-Recommended hashing algorithms are listed below. Order of each entry implies preference, however decisions must be also made with strength and availability in mind.
+Recommended hashing algorithms are listed below. While actual recommendations are marked in bold, order of each entry does not imply preference, and decisions must be also made with strength and availability in mind.
 
 ### Secret deriviation
 #### Argon2
@@ -128,7 +130,7 @@ Sources:
 </table></div>
 
 ## TLS
-This section outlines how we utilize TLS encryption.
+This section outlines how we utilize TLS encryption. We generally only recommend TLS 1.3, only falling back to TLS 1.2 when absolutely necessary.
 
 ### ECH
 We currently do not utilize ECH directly on our servers. This is still a WIP.
