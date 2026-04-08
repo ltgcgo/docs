@@ -1,5 +1,121 @@
 # Encryption & Hashing
 
+## Encryption
+Recommended encryption algorithms (and operation modes) are listed below. Order of each entry implies preference, however decisions must be also made with strength and availability in mind.
+
+### Symmetric
+Avoid using symmetric ciphers with less than 192-bit comparative key size.
+
+<div class="table-wrapper"><table>
+	<thead><tr>
+		<td>Algorithm</td>
+		<td>Size</td>
+		<td>Mode</td>
+	</tr></thead>
+	<tbody><tr>
+		<td><b>XChacha20</b></td>
+		<td rowspan=2>256</td>
+		<td rowspan=2>Poly1305</td>
+	</tr><tr>
+		<td>Chacha20</td>
+	</tr><tr>
+		<td>Threefish</td>
+		<td>256, 512,<br/>1024</td>
+		<td rowspan=4>GCM-SIV, <b>GCM</b>,<br/>CTR-HMAC</td>
+	</tr><tr>
+		<td><b>AES</b></td>
+		<td rowspan=3>128, <b>192</b>,<br/>256</td>
+	</tr><tr>
+		<td>Twofish</td>
+	</tr><tr>
+		<td>Serpent</td>
+	</tr></tbody>
+</table></div>
+
+- XChacha20 allows 192-bit nonce, while Chacha20 only allows 64-bit nonce.
+
+### Asymmetric
+Combine PQ with non-PQ asymmetric algorithms, in case either is broken.
+
+<div class="table-wrapper"><table>
+	<thead><tr>
+		<td>Field</td>
+		<td title="Is it post-quantum?">PQ?</td>
+		<td>Algo­rithm</td>
+		<td>Size/strength</td>
+	</tr></thead>
+	<tbody><tr>
+		<td rowspan=4>Key</td>
+		<td rowspan=2>✓</td>
+		<td><b>ML-KEM</b><br/>(CRYSTALS-<br/>Kyber)</td>
+		<td>512, <b>768</b>, 1024</td>
+	</tr><tr>
+		<td>HQC</td>
+		<td>128, <b>192</b>, 256</td>
+	</tr><tr>
+		<td rowspan=2>✕</td>
+		<td><b>X448</b></td>
+		<td>224</td>
+	</tr><tr>
+		<td>X25519</td>
+		<td>128</td>
+	</tr><tr>
+		<td rowspan=5>Signa­ture</td>
+		<td rowspan=3>✓</td>
+		<td><b>ML-DSA</b><br/>(CRYSTALS-<br/>Dilithium)</td>
+		<td>44, <b>65</b>, 87</td>
+	</tr><tr>
+		<td>SLH-DSA<br/>(SPHINCS+)</td>
+		<td>SHA-2/SHAKE, <b>s</b>/f:<br/>128, <b>192</b>, 256</td>
+	</tr><tr>
+		<td>FALCON</td>
+		<td><b>512</b>, 512-P,<br/>1024, 1024-P</td>
+	</tr><tr>
+		<td rowspan=2>✕</td>
+		<td><b>Ed448</b></td>
+		<td>224</td>
+	</tr><tr>
+		<td>Ed25519</td>
+		<td>128</td>
+	</tr></tbody>
+</table></div>
+
+## Hashing
+Recommended hashing algorithms are listed below. Order of each entry implies preference, however decisions must be also made with strength and availability in mind.
+
+### Secret deriviation
+#### Argon2
+- Mode: Prefer `argon2id`.
+- Memory: At least 19 MiB, 64 MiB recommended.
+- Iteration: At least 2, 3 recommended.
+- Parallelism: At least 1, 4 recommended.
+
+Sources:
+1. [RFC 9106](https://www.rfc-editor.org/rfc/rfc9106)
+2. [OWASP Cheat Sheet - Password storage cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
+
+#### Scrypt
+- Space cost: At least 2<sup>17</sup>.
+- Block size: At least 8 (1 KiB).
+- Parallelism: At least 1.
+- Output: 32 bytes.
+
+#### Balloon
+- Space cost: At least 32 (SHA2-256) or 16 (SHA2-512)
+- Time cost: At least 2000 (SHA2-256) or 1000 (SHA2-512).
+- Parallelism: At least 1.
+- Output: 32 bytes.
+
+### General-purpose
+<div class="table-wrapper"><table>
+	<thead><tr>
+		<td>Algorithm</td>
+		<td>Configuration</td>
+	</tr></thead>
+	<tbody><tr>
+	</tr></tbody>
+</table></div>
+
 ## TLS
 This section outlines how we utilize TLS encryption.
 
