@@ -12,12 +12,34 @@ We also recommend the following sources for further information.
 ## List of countries and regions affected
 ### Denied from high-liberty and restricted UGC services
 #### Legality
+- `AT`: Austria
 - `AU`: Australia ([Social Media Age Restrictions (eSafety)](https://www.esafety.gov.au/about-us/industry-regulation/social-media-age-restrictions))
+- `BE`: Belgium
+- `BG`: Bulgaria
 - `BR`: Brazil ([15.211/2025/FELCA](https://www.gov.br/mdh/pt-br/assuntos/noticias/2025/novembro/brasil-apresenta-avancos-em-seguranca-digital-da-infancia-e-lanca-eca-digital-em-ingles-durante-cupula-social-do-g20-na-africa-do-sul/eca-digital-ing-v2.pdf))
+- `CY`: Cyprus
+- `DE`: Germany
 - `DK`: Denmark
+- `EE`: Estonia
 - `ES`: Spain ([Cartera Digital Beta (Pajaporte)](https://digital.gob.es/especificaciones_tecnicas.html))
+- `FI`: Finland
 - `FR`: France ([Arcom](https://www.arcom.fr/se-documenter/espace-juridique/textes-juridiques/referentiel-technique-sur-la-verification-de-lage-pour-la-protection-des-mineurs-contre-la-pornographie-en-ligne), [SREN](https://www.legifrance.gouv.fr/dossierlegislatif/JORFDOLE000047533100/))
+- `GR`: Greece
+- `HR`: Croatia
+- `HU`: Hungary
+- `IE`: Ireland
 - `IT`: Italy ([Testo coordinato del decreto-legge 15](https://www.gazzettaufficiale.it/eli/id/2023/11/14/23A06292/sg))
+- `LT`: Lithuania
+- `LU`: Luxembourg
+- `LV`: Latvia
+- `MT`: Malta
+- `NL`: Netherlands
+- `PL`: Poland
+- `PT`: Portugal
+- `RO`: Romania
+- `SE`: Sweden
+- `SI`: Slovenia
+- `SK`: Slovakia
 - `UK`: United Kingdom ([Online Safety Act](https://www.gov.uk/government/collections/online-safety-act))
 - `US`.`AZ`: Arizona, United States (HB 2112)
 - `US`.`MS`: Mississippi, United States (HB 1126)
