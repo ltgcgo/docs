@@ -179,7 +179,7 @@ The size factor values listed below approach expectations on a large scale, base
 		<td>4.372</td>
 	</tr><tr>
 		<td>Near-lossless</td>
-		<td><code>cwebp -near_lossless 60</code></td>
+		<td><code>cwebp -m 5 -near_lossless 60</code></td>
 		<td>1.605</td>
 	</tr><tr>
 		<td rowspan=2>JPEG 2000</td>
