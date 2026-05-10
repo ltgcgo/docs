@@ -212,8 +212,8 @@ JPEG XL lossless and WebP lossless are mostly on par, either could be the better
 
 Do *not* enable progressive encoding for JPEG XL lossless, or the resulting file will be several times bigger than PNG files.
 
-| Codec | Parameters | Ratio |
-| ----- | ---------- | ----- |
+| Codec | Parameters | Factor |
+| ----- | ---------- | ------ |
 | JPEG XL | `cjxl -j 0 -d 0 -e 7` | 1.425 |
 | WebP | `cwebp -m 6 -lossless` | 1.28 |
 
@@ -230,9 +230,9 @@ HT lossy is used when visually-lossless video feeds over constrained bandwidth a
 
 ## Audio encoding
 ### Lossy
-When high sampling rates are required, choose Vorbis. When support for the Apple ecosystem is required, choose AAC-LC. Otherwise use Opus under all possible scenarios, but beware that Opus only supports sampling at 48kHz.
+When high sampling rates are required, choose Vorbis. When support for the Apple ecosystem is required, choose AAC-LC. When you hear smearing/pre-echo and doesn't consider browser support, choose Musepack. Otherwise use Opus, but beware that Opus only supports sampling at 48kHz.
 
-Below are the suggested bitrates under different scenarios, when encoding stereo audio content under either 44.1kHz or 48kHz, which are the recommended sampling rates for delivery. For production purposes, higher sampling rates can be applied with respective scaling bitrates. Audio content should be encoded with constrained variable bitrate (CVBR) when available, falling back to VBR and CBR in order when technical restrictions apply.
+Below are the suggested bitrates under different scenarios, when encoding stereo audio content under either 44.1kHz or 48kHz, which are the recommended sampling rates for delivery. For production purposes, higher sampling rates can be applied with respective scaling bitrates. Audio content should be encoded with constrained variable bitrate (CVBR) when available, falling back to VBR then CBR in order when technical restrictions apply.
 
 The AAC-LC encoder in question is `libfdk_aac`, being the best FOSS AAC-LC encoder out there. The only AAC-LC encoders better than `libfdk_aac` are `fhgaac` from Fraunhofer IIS and iTunes Audio Toolbox from Apple, which are proprietary and not within consideration of this guideline.
 
