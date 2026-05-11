@@ -230,9 +230,9 @@ HT lossy is used when visually-lossless video feeds over constrained bandwidth a
 
 ## Audio encoding
 ### Lossy
-When high sampling rates are required, choose Vorbis. When support for the Apple ecosystem is required, choose AAC-LC. When you hear smearing/pre-echo and doesn't consider browser support, choose Musepack. Otherwise use Opus, but beware that Opus only supports sampling at 48kHz.
+When you hear smearing/pre-echo and don't consider browser support, choose Musepack. When high sampling rates are required, choose Vorbis. When support for the Apple ecosystem is required, choose AAC-LC. Otherwise use Opus, but beware that Opus only supports sampling at 48kHz.
 
-Below are the suggested bitrates under different scenarios, when encoding stereo audio content under either 44.1kHz or 48kHz, which are the recommended sampling rates for delivery. For production purposes, higher sampling rates can be applied with respective scaling bitrates. Audio content should be encoded with constrained variable bitrate (CVBR) when available, falling back to VBR then CBR in order when technical restrictions apply.
+Below are the suggested bitrates under different scenarios, when encoding stereo audio content under either 44.1kHz or 48kHz, which are the recommended sampling rates for delivery. Before updating the table below, Musepack follows the bitrates of Opus. For production purposes, higher sampling rates can be applied with respective scaling bitrates. Audio content should be encoded with constrained variable bitrate (CVBR) when available, falling back to VBR then CBR in order when technical restrictions apply.
 
 The AAC-LC encoder in question is `libfdk_aac`, being the best FOSS AAC-LC encoder out there. The only AAC-LC encoders better than `libfdk_aac` are `fhgaac` from Fraunhofer IIS and iTunes Audio Toolbox from Apple, which are proprietary and not within consideration of this guideline.
 
@@ -242,9 +242,9 @@ The AAC-LC encoder in question is `libfdk_aac`, being the best FOSS AAC-LC encod
 | ------ | ------- | ------- | -------- | ------- | ------- |
 | Opus   | 96kbps  | 144kbps | 160kbps  | 192kbps | 256kbps |
 | Vorbis | 104kbps | 152kbps | 176kbps  | 208kbps | 288kbps |
-| AAC-LC | 128kbps | 160kbps | 192kbps  | 224kbps | 320kbps |
+| AAC-LC | 128kbps | 160kbps | 192kbps  | 256kbps | 320kbps |
 
-Keep in mind that the scenario under "basic" indicates that, all audio content encoded with provided parameters should be virtually indistinguishable from LAME-encoded MP3 files at 192kbps. As AAC-LC suffers severely from bitrate depletion, *under no circumstances* should content encoded with AAC-LC have target bitrate go below 96kbps.
+Keep in mind that the scenario under "basic" indicates that, audio content encoded with provided parameters should be virtually indistinguishable from LAME-encoded MP3 files at 192kbps on average. As AAC-LC suffers severely from bitrate depletion, *under no circumstances* should content encoded with AAC-LC have target bitrate go below 96kbps.
 
 For surround sound (audio with at least 4 channels) delivered with high bitrates, AC-3 can be used. The minimum target bitrate for 5.1 channel audio at 44.1 kHz is 320kbps, while recommended bitrate sits at 384kbps.
 
