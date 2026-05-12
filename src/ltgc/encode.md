@@ -116,6 +116,7 @@ Compared to all other image formats, JPEG XL offers jawdropping image fidelity, 
 
 Things to take notice of:
 
+* For fully opaque images, remember to remove alpha channels. Unnecessary alpha layers can cause noticeable delay in progressive loading.
 * JPEG 2000 is *not* supported by most modern browsers. Unless you clearly acknowledge that the applied environment supports it, do not use it.
 * mozJPEG-fronted JPEG, while offering a good choice for backwards-compatibility, shouldn't be used unless necessary when size is a consideration. mozJPEG is generally superseded by `jpegli`.
 * AVIF offers an advantage on size, when progressive support, boundary artifacts and codec performance (slower than all others multiple times) aren't in consideration.
@@ -232,7 +233,7 @@ HT lossy is used when visually-lossless video feeds over constrained bandwidth a
 ### Lossy
 When you hear smearing/pre-echo and don't consider browser support, choose Musepack. When high sampling rates are required, choose Vorbis. When support for the Apple ecosystem is required, choose AAC-LC. Otherwise use Opus, but beware that Opus only supports sampling at 48kHz.
 
-Below are the suggested bitrates under different scenarios, when encoding stereo audio content under either 44.1kHz or 48kHz, which are the recommended sampling rates for delivery. Before updating the table below, Musepack follows the bitrates of Opus. For production purposes, higher sampling rates can be applied with respective scaling bitrates. Audio content should be encoded with constrained variable bitrate (CVBR) when available, falling back to VBR then CBR in order when technical restrictions apply.
+Below are the suggested bitrates under different scenarios influenced by HydrogenAudio, when encoding stereo audio content under either 44.1kHz or 48kHz, which are the recommended sampling rates for delivery. Before updating the table below, Musepack follows the bitrates of Opus. For production purposes, higher sampling rates can be applied with respective scaling bitrates. Audio content should be encoded with constrained variable bitrate (CVBR) when available, falling back to VBR then CBR in order when technical restrictions apply.
 
 The AAC-LC encoder in question is `libfdk_aac`, being the best FOSS AAC-LC encoder out there. The only AAC-LC encoders better than `libfdk_aac` are `fhgaac` from Fraunhofer IIS and iTunes Audio Toolbox from Apple, which are proprietary and not within consideration of this guideline.
 
