@@ -14,7 +14,7 @@ echo "$(date +"%s")" > build-time.txt
 cp -Lr book book-raw
 cd book-raw
 printf "" > ../fileHashes.tsv
-tree -ifl | while IFS= read -r file; do
+find . -type f | while IFS= read -r file; do
 	if [ -f "$file" ]; then
 		# Is a file
 		fileHash="$(sha256sum "${file}" | cut -d' ' -f1)"
@@ -40,7 +40,7 @@ rm -r book-raw
 cp -Lr book book-base
 cd book-base
 printf "" > ../fileHashes.tsv
-tree -ifl | while IFS= read -r file; do
+find . -type f | while IFS= read -r file; do
 	if [ -f "$file" ]; then
 		# Is a file
 		if [ "$(echo "$file" | grep -E "$COMPRESS_CRIT")" != "" ]; then
@@ -50,7 +50,7 @@ tree -ifl | while IFS= read -r file; do
 		fi
 	fi
 done
-tree -ifld | while IFS= read -r folder; do
+find . -type d | while IFS= read -r folder; do
 	if [ -d "$folder" ]; then
 		rmdir -p "$folder" 2>/dev/null
 	fi
@@ -62,7 +62,7 @@ rm -r book-base
 cp -Lr book book-gz
 cd book-gz
 printf "" > ../fileHashes.tsv
-tree -ifl | while IFS= read -r file; do
+find . -type f | while IFS= read -r file; do
 	if [ -f "$file" ]; then
 		# Is a file
 		if [ "$(echo "$file" | grep -E "$COMPRESS_CRIT")" != "" ]; then
@@ -86,7 +86,7 @@ tree -ifl | while IFS= read -r file; do
 		fi
 	fi
 done
-tree -ifld | while IFS= read -r folder; do
+find . -type d | while IFS= read -r folder; do
 	if [ -d "$folder" ]; then
 		rmdir -p "$folder" 2>/dev/null
 	fi
@@ -99,7 +99,7 @@ rm -r book-gz
 cp -Lr book book-br
 cd book-br
 printf "" > ../fileHashes.tsv
-tree -ifl | while IFS= read -r file; do
+find . -type f | while IFS= read -r file; do
 	if [ -f "$file" ]; then
 		# Is a file
 		if [ "$(echo "$file" | grep -E "$COMPRESS_CRIT")" != "" ]; then
@@ -123,7 +123,7 @@ tree -ifl | while IFS= read -r file; do
 		fi
 	fi
 done
-tree -ifld | while IFS= read -r folder; do
+find . -type d | while IFS= read -r folder; do
 	if [ -d "$folder" ]; then
 		rmdir -p "$folder" 2>/dev/null
 	fi
