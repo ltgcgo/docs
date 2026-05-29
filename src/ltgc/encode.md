@@ -292,7 +292,7 @@ The table below provides a quick reference of levels and estimated size reductio
 		<th>Factor</th>
 	</tr></thead>
 	<tbody><tr>
-		<td rowspan=4>Brotli</td>
+		<td rowspan=5>Brotli</td>
 		<td>Transit</td>
 		<td><code>brotli -1</code></td>
 		<td>2.892</td>
@@ -301,15 +301,19 @@ The table below provides a quick reference of levels and estimated size reductio
 		<td><code>brotli -4</code></td>
 		<td>3.294</td>
 	</tr><tr>
-		<td>Static-</td>
+		<td>Balanced</td>
 		<td><code>brotli -9</code></td>
-		<td>-</td>
+		<td>3.495</td>
 	</tr><tr>
 		<td>Static</td>
+		<td><code>brotli -q 10</code></td>
+		<td>3.717</td>
+	</tr><tr>
+		<td>Static+<br/><i>(not recommended)</i></td>
 		<td><code>brotli -q 11</code></td>
 		<td>3.761</td>
 	</tr><tr>
-		<td rowspan=3>Zstd</td>
+		<td rowspan=4>Zstd</td>
 		<td>Transit</td>
 		<td><code>zstd -4</code></td>
 		<td>3.295</td>
@@ -317,6 +321,10 @@ The table below provides a quick reference of levels and estimated size reductio
 		<td>Dynamic</td>
 		<td><code>zstd -7</code></td>
 		<td>3.313</td>
+	</tr><tr>
+		<td>Balanced</td>
+		<td><code>zstd -16</code></td>
+		<td>3.607</td>
 	</tr><tr>
 		<td>Static<br/><i>(not recommended)</i></td>
 		<td><code>zstd -19</code></td>
@@ -327,13 +335,13 @@ The table below provides a quick reference of levels and estimated size reductio
 		<td><code>gzip -4</code></td>
 		<td>2.983</td>
 	</tr><tr>
-		<td>Static-</td>
+		<td>Balanced</td>
 		<td><code>gzip -9</code></td>
-		<td>-</td>
+		<td>3.124</td>
 	</tr><tr>
-		<td>Static</td>
+		<td>Static+<br/><i>(not recommended)</i></td>
 		<td><code>zopfli --i1</code></td>
-		<td>3.133</td>
+		<td>3.269</td>
 	</tr></tbody>
 </table></div>
 
