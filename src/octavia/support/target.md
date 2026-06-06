@@ -129,30 +129,30 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 - The assigned program number of **Dance Kit** in modern XG can either be `027` or `112`, and synths can support either or both, resulting in some incompatibilities.
 
 #### Classic
-| Target      | Type | Status |
-| ----------- | ---- | ------ |
-| DB50XG      | M    | ✓      |
-| DB51XG      | M    | ✓      |
-| DB60XG      | M    | ✓      |
-| MU80        | M    | ✓      |
-| MU50        | M    | ✓      |
-| MU90        | L    | ✓      |
-| MU10        | M    | ✓      |
-| MU100       | L    | ✓      |
-| MU15        | M    | ✓      |
-| MU128       | L    | ✓      |
-| MU1000      | L    | ✓      |
-| MU2000      | L    | ✓      |
-| MU500       | M    | ✓      |
-| PLG100-XG   | P    | ✓      |
-| QY700       | M    | ✓      |
-| QY70        | M    | ✓      |
-| QY100       | M    | ✓      |
-| SW60XG      | M    | ✓      |
-| SW1000XG    | M    | ✓      |
-| S-YXG50     | M    | ✓      |
-| S-YXG70     | M    | ✓      |
-| S-YXG100    | M    | ✓      |
+| Target      | Type | Status | Sound type |
+| ----------- | ---- | ------ | -------- |
+| DB50XG      | M    | ✓      | MU Basic (non-MU) |
+| DB51XG      | M    | ✓      | MU Basic (non-MU) |
+| DB60XG      | M    | ✓      | MU Basic (non-MU) |
+| MU80        | M    | ✓      | MU Basic (MU) |
+| MU50        | M    | ✓      | MU Basic (MU) |
+| MU90        | L    | ✓      | MU Basic (MU) |
+| MU10        | M    | ✓      | MU Basic (Unknown) |
+| MU100       | L    | ✓      | MU Basic (MU) + MU100 Native |
+| MU15        | M    | ✓      | MU Basic (MU) |
+| MU128       | L    | ✓      | MU Basic (MU) + MU100 Native |
+| MU1000      | L    | ✓      | MU Basic (MU) + MU100 Native |
+| MU2000      | L    | ✓      | MU Basic (MU) + MU100 Native |
+| MU500       | M    | ✓      | MU Basic (MU) + MU100 Native |
+| PLG100-XG   | P    | ✓      | QY100/PLG100-XG |
+| QY700       | M    | ✓      | MU Basic (Unknown) |
+| QY70        | M    | ✓      | MU Basic (Unknown) |
+| QY100       | M    | ✓      | QY100/PLG100-XG |
+| SW60XG      | M    | ✓      | MU Basic (non-MU) |
+| SW1000XG    | M    | ✓      | MU Basic (non-MU) |
+| S-YXG50     | M    | ✓      | MU Basic (non-MU) |
+| S-YXG70     | M    | ✓      | MU Basic (non-MU) |
+| S-YXG100    | M    | ✓      | MU Basic (non-MU) |
 
 #### Modern
 | Target      | Type | Status |
