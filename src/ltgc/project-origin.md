@@ -90,7 +90,7 @@
 			<td></td>
 		</tr>
 		<tr>
-			<td>Octavia</td>
+			<td>Octavia Melody</td>
 			<td></td>
 		</tr>
 		<tr>

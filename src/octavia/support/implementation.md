@@ -476,7 +476,7 @@
 			<td>3D Roll Angle</td>
 		</tr>
 		<tr>
-			<td rowspan=29>Non-Registered Parameters</td>
+			<td rowspan=60>Non-Registered Parameters</td>
 			<td><code>0x0108</code></td>
 			<td>✓</td>
 			<td>Vibrato Rate<br/><i>Redirected to cc76</i></td>
@@ -622,18 +622,173 @@
 			<td>Drum EQ Treble Frequency</td>
 		</tr>
 		<tr>
+			<td><code>0x4100</code></td>
+			<td>✓</td>
+			<td>SD-20 Set Selection</td>
+		</tr>
+		<tr>
+			<td><code>0x5801</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Charactor<br/><i>Store only</i></td>
+		</tr>
+		<tr>
+			<td><code>0x5820</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Tone Switch</td>
+		</tr>
+		<tr>
+			<td><code>0x5822</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Tone Bass Gain</td>
+		</tr>
+		<tr>
+			<td><code>0x5824</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Tone Treble Gain</td>
+		</tr>
+		<tr>
+			<td><code>0x5827</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Tone Mid Gain</td>
+		</tr>
+		<tr>
+			<td><code>0x5830</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Scale Tuning C</td>
+		</tr>
+		<tr>
+			<td><code>0x5831</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Scale Tuning C#</td>
+		</tr>
+		<tr>
+			<td><code>0x5832</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Scale Tuning D</td>
+		</tr>
+		<tr>
+			<td><code>0x5833</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Scale Tuning Eb</td>
+		</tr>
+		<tr>
+			<td><code>0x5834</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Scale Tuning E</td>
+		</tr>
+		<tr>
+			<td><code>0x5835</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Scale Tuning F</td>
+		</tr>
+		<tr>
+			<td><code>0x5836</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Scale Tuning F#</td>
+		</tr>
+		<tr>
+			<td><code>0x5837</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Scale Tuning G</td>
+		</tr>
+		<tr>
+			<td><code>0x5838</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Scale Tuning Ab</td>
+		</tr>
+		<tr>
+			<td><code>0x5839</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Scale Tuning A</td>
+		</tr>
+		<tr>
+			<td><code>0x583a</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Scale Tuning Bb</td>
+		</tr>
+		<tr>
+			<td><code>0x583b</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Scale Tuning B</td>
+		</tr>
+		<tr>
+			<td><code>0x5840</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Reverb Global Switch</td>
+		</tr>
+		<tr>
+			<td><code>0x5841</code></td>
+			<td>✓</td>
+			<td>HyperCanvas Reverb Type</td>
+		</tr>
+		<tr>
+			<td><code>0x5842</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Reverb Time</td>
+		</tr>
+		<tr>
+			<td><code>0x5850</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Chorus Global Switch</td>
+		</tr>
+		<tr>
+			<td><code>0x5851</code></td>
+			<td>✓</td>
+			<td>HyperCanvas Chorus Type</td>
+		</tr>
+		<tr>
+			<td><code>0x5852</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Chorus Rate</td>
+		</tr>
+		<tr>
+			<td><code>0x5853</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Chorus Depth</td>
+		</tr>
+		<tr>
+			<td><code>0x5854</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Chorus Feedback</td>
+		</tr>
+		<tr>
+			<td><code>0x5855</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Chorus to Reverb Send</td>
+		</tr>
+		<tr>
+			<td><code>0x5870</code></td>
+			<td>✓</td>
+			<td>HyperCanvas Master Volume</td>
+		</tr>
+		<tr>
+			<td><code>0x5871</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Master Fine Tuning</td>
+		</tr>
+		<tr>
+			<td><code>0x5872</code></td>
+			<td>✕</td>
+			<td>HyperCanvas Master Coarse Tuning</td>
+		</tr>
+		<tr>
+			<td><code>0x587f</code></td>
+			<td>✓</td>
+			<td>HyperCanvas System Reset</td>
+		</tr>
+		<tr>
 			<td colspan=2>Program Change</td>
 			<td>✓ 0-127</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowspan=22>System Exclusive</td>
+			<td rowspan=31>System Exclusive</td>
 			<td>General MIDI</td>
 			<td>✓</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>General MIDI rev. 2</td>
+			<td>General MIDI 2</td>
 			<td>✓</td>
 			<td></td>
 		</tr>
@@ -678,7 +833,37 @@
 			<td></td>
 		</tr>
 		<tr>
+			<td>YAMAHA CS1x</td>
+			<td>✓</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>YAMAHA S90 ES</td>
+			<td>✓</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>YAMAHA Motif ES</td>
+			<td>✓</td>
+			<td></td>
+		</tr>
+		<tr>
 			<td>YAMAHA TG300</td>
+			<td>✓</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>YAMAHA DOC</td>
+			<td>✓</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>YAMAHA QY10</td>
+			<td>✓</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>YAMAHA QY20</td>
 			<td>✓</td>
 			<td></td>
 		</tr>
@@ -718,6 +903,16 @@
 			<td></td>
 		</tr>
 		<tr>
+			<td>KORG PA</td>
+			<td>✓</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>KORG KROSS 2</td>
+			<td>✓</td>
+			<td></td>
+		</tr>
+		<tr>
 			<td>KAWAI GMega</td>
 			<td>✓</td>
 			<td>Also known as KAWAI K11</td>
@@ -735,6 +930,11 @@
 		<tr>
 			<td>ALESIS NanoSynth</td>
 			<td>✕</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Gravis UltraSound</td>
+			<td>✓</td>
 			<td></td>
 		</tr>
 		<tr>

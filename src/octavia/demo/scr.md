@@ -6,7 +6,7 @@
 ## Things to notice
 ### Rendering
 * Visualizers have strict render resolution constraints. For the best results, it is advised to **only render while conforming to those resolution constraints**.
-* Visualizers are all designed to render at 50 FPS. Some visualizers may offer custom framerates, however it is advised to **only render at a framerate less than or equal to the capture framerate**. Visualizers offered by Octavia, especially ones displaying individual notes, feature an algorithm guaranteeing notes to be displayed each frame. As such, a framerate too high will cause visualizers fail to show display immediate notes.
+* Visualizers are all designed to render at 50 FPS (Never Twice the Same Color vs Perfect At Last). Some visualizers may offer custom framerates, however it is advised to **only render at a framerate less than or equal to the capture framerate**. Visualizers offered by Octavia, especially ones displaying individual notes, feature an algorithm guaranteeing notes to be displayed each frame. As such, if the rendering framerate is set too high, it will cause the resulting video capture of the visualizer to no longer display some immediate notes, as immediate notes would likely be shown after a captured frame and before another frame is captured.
 
 ## Usage
 ### Input selectors
