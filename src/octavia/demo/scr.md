@@ -1,7 +1,7 @@
 # Visualizer
 > **Warning**
 > 
-> This section covers how to use the visualizers bundled as public demos, as such it does not reflect the behaviour of the respective modules themselves.
+> This section covers how to use the visualizers bundled as public demos, as such it does not reflect the behaviour of the respective components themselves.
 
 ## Things to notice
 ### Rendering
@@ -48,6 +48,9 @@ This is the simplest selection system used. Demos are indexed by a unique letter
 Demos are grouped by collections. To select a specific demo, first select the desired collection, then select the desired file. Pressing the "load" button will load the demo, while long presses or alt clicks will load *and* play the demo.
 
 ### Explore
+#### Reading voice selection numbers
+The **"cc0 → PC → cc32"** order is used by Octavia to both display and internally select voices. While designed to support reception of voice selection in the industry-standard "cc0 → cc32 → PC" order and the unconventional "cc32 → cc0 → PC" order, except for Roland GS, this order nonetheless is subjectively considered the most natural, as it reflects the common "category → voice → variation" designation better, especially for Yamaha XG, General MIDI 2 and Roland SD.
+
 #### Toggle authentic mode ("true mode")
 To allow visualizers function normally after possible legal strikes, most visualizers render under the "libre" mode. In libre mode, assets used are replaced with libre counter parts as much as possible, with famous examples like the libre 5 by 7 font from SynPix.
 
@@ -63,5 +66,5 @@ Certain visualizers offer various rendering modes. You can switch between modes 
 
 |     | Top | Bottom |
 | --- | --- | ------ |
-| QY  | song info, part info | N/A |
+| QY  | song info (chord + style), song info (voice),<br/>part info (basic), part info (effects) | (same) |
 | PSR | song title, voice name, rhythm | measure, tempo |
