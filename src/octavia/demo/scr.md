@@ -49,7 +49,11 @@ Demos are grouped by collections. To select a specific demo, first select the de
 
 ### Explore
 #### Reading voice selection numbers
+> This subsection documents behavior held true across the Octavia ecosystem.
+
 The **"cc0 → PC → cc32"** order is used by Octavia to both display and internally select voices. While designed to support reception of voice selection in the industry-standard "cc0 → cc32 → PC" order and the unconventional "cc32 → cc0 → PC" order, except for Roland GS, this order nonetheless is subjectively considered the most natural, as it reflects the common "category → voice → variation" designation better, especially for Yamaha XG, General MIDI 2 and Roland SD.
+
+Visualisers designed to recreate hardware displays tend to show the raw values as-is, while visualisers without such confinement tend to show the slightly-remapped values.
 
 #### Toggle authentic mode ("true mode")
 To allow visualizers function normally after possible legal strikes, most visualizers render under the "libre" mode. In libre mode, assets used are replaced with libre counter parts as much as possible, with famous examples like the libre 5 by 7 font from SynPix.
