@@ -51,7 +51,7 @@ Demos are grouped by collections. To select a specific demo, first select the de
 #### Reading voice selection numbers
 > This subsection documents behavior held true across the Octavia ecosystem.
 
-The **"cc0 → PC → cc32"** order is used by Octavia to both display and internally select voices. While designed to support reception of voice selection in the industry-standard "cc0 → cc32 → PC" order and the unconventional "cc32 → cc0 → PC" order, except for Roland GS, this order nonetheless is subjectively considered the most natural, as it reflects the common "category → voice → variation" designation better, especially for Yamaha XG, General MIDI 2 and Roland SD.
+The "**cc0 → PC → cc32**" order (or **Bank MSB → Program Change → Bank LSB**) is used by Octavia to both display and internally select voices. While designed to support reception of voice selection in the industry-standard "cc0 → cc32 → PC" order and the unconventional "cc32 → cc0 → PC" order, this order nonetheless is subjectively considered the most natural except for Roland GS, as it reflects the common "category → voice → variation" designation better, especially for Yamaha XG, General MIDI 2, Roland SD and Yamaha/KORG synthesizer-native voices. Roland GS uses cc0 to select variations, and cc32 to select family (SC-55, SC-88...).
 
 Visualisers designed to recreate hardware displays tend to show the raw values as-is, while visualisers without such confinement tend to show the slightly-remapped values.
 
