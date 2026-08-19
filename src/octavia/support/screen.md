@@ -5,12 +5,14 @@ For a guide on how to use the public demos, refer to [demo visualizer usage](../
 
 ## Visualizers
 ### Octavia Cambiare
-* **Lead developer**: Lumière Élevé
+- **Lead developer**: Lumière Élevé
+- **Started since**: 30 Aug 2023
 
 The most feature-rich visualizer built on top of Octavia available. Inspired by MegaMID, vanBasco Karaoke Player and TiMidity++, Octavia Cambiare is designed from the ground up, and seeks to entirely replace what inspired it.
 
 ### Octavia MU
-* **Lead developer**: Lumière Élevé
+- **Lead developer**: Lumière Élevé
+- **Started since**: 3 Sep 2022
 
 A recreation of the screens on the Yamaha MU line up. Bitmap is collected with collective effort.
 
@@ -25,33 +27,38 @@ Special thanks to all of the people who had contributed the MU bitmap! If you se
 * MJG0117
 
 ### Octavia SC
-* **Lead developer**: Lumière Élevé
+- **Lead developer**: Lumière Élevé
+- **Started since**: 21 Sep 2022
 
 A recreation of the screens on Roland SC-55, Roland SC-88 and Roland SC-88 Pro.
 
 The font used for labels is Work Sans, licensed under SIL OFL.
 
 ### Octavia NS5R
-* **Lead developer**: Lumière Élevé
+- **Lead developer**: Lumière Élevé
+- **Started since**: 20 Oct 2022
 
 A recreation of the screens on KORG NS5R, with help from JayB.
 
 The font used for labels is Jost, licensed under SIL OFL.
 
 ### Octavia QY
-* **Lead developer**: Lumière Élevé
+- **Lead developer**: Lumière Élevé
+- **Started since**: 31 Dec 2022
 
-A recreation of the screens on the Yamaha QY line up, with help from JayB. Additional chord bitmaps and positioning also received help from GFHK-SDGM.
+A recreation of the screens on the Yamaha QY line up, QY100 and QY70 specifically, with help from JayB. Additional chord bitmaps and positioning also received help from GFHK-SDGM.
 
 ### Octavia PSR
-* **Lead developer**: GFHK-SDGM
+- **Lead developer**: GFHK-SDGM
+- **Started since**: 7 Jan 2023
 
 A recreation of the screens on Yamaha PSR-170.
 
 ### Octavia SC-8850
-* **Lead developer**: Lumière Élevé
+- **Lead developer**: Lumière Élevé
+- **Started since**: 7 May 2024
 
-A recreation of the screen on Roland SC-8850.
+A recreation of the screen on Roland SC-8850. Hardware verification done by Thorndust.
 
 #### Bitmap contributors
 Special thanks to all of the people who had contributed the SC-8850 bitmap!
@@ -63,9 +70,21 @@ Special thanks to all of the people who had contributed the SC-8850 bitmap!
 * Lumière Élevé
 
 ### Octavia MU15
-* **Lead developer**: Lumière Élevé
+- **Lead developer**: Lumière Élevé
+- **Started since**: TBD
 
-A recreation of the screen on Yamaha MU15.
+A recreation of the screen on Yamaha MU15 and MU5.
+
+### Octavia SD
+- **Lead developer**: Lumière Élevé
+- **Started since**: TBD
+
+A recreation of the Roland SD-90 screen.
+
+### Octavia KROSS
+- **Lead developer**: Lumière Élevé
+- **Started since**: TBD
+A recreation of the KORG KROSS 2 screen.
 
 ## Support and specification table
 |                  | MU | SC | NS5R | QY | PSR | SC-8850 | MU15 | Cambiare | TUI |
@@ -111,3 +130,4 @@ A recreation of the screen on Yamaha MU15.
 1. Planned feature, not yet implemented.
 2. Octavia NS5R can render voice names with at most 12 characters under certain conditions.
 3. Except for Octavia MU, Octavia PSR and Octavia MU15, the intensity of pixel blur is customizable.
+4. TUI is no longer maintained, and should not be used due to [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting) vulnerabilities.
