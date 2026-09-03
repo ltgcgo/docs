@@ -1371,224 +1371,224 @@
 			<td rowspan=29>System Exclusive<br/>Standard Support</td>
 			<td>General MIDI</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>General MIDI 2</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>YAMAHA XG</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>YAMAHA PLG-150AP/DR/PC/PF</td>
 			<td>✕</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td>AWM2 plugin cards</td>
 		</tr>
 		<tr>
 			<td>YAMAHA PLG-150AN</td>
 			<td>✕</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>YAMAHA PLG-150DX</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>YAMAHA PLG-100SG</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>YAMAHA PLG-150VL</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>YAMAHA CS2x</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>YAMAHA S90 ES</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>YAMAHA Motif ES</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>YAMAHA TG300</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>YAMAHA DOC</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td>Yamaha Clavinova included.</td>
 		</tr>
 		<tr>
 			<td>YAMAHA QY10</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>YAMAHA QY20</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>Roland GS</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>Roland SD</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>Roland C/M</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td>Roland MT-32 included.</td>
 		</tr>
 		<tr>
 			<td>KORG NS5R</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>KORG N1R</td>
 			<td>✕</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td>Redirected to NS5R</td>
 		</tr>
 		<tr>
 			<td>KORG X5D(R)</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>KORG 05R/W</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>KORG PA</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>KORG KROSS 2</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>KAWAI GMega</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td>Also known as KAWAI K11</td>
 		</tr>
 		<tr>
 			<td>AKAI SG01</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>CASIO GZ-50M</td>
 			<td>✓</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>ALESIS NanoSynth</td>
 			<td>✕</td>
-			<td>✕</td>
 			<td>←</td>
+			<td>✕</td>
 			<td>←</td>
 			<td></td>
 		</tr>
