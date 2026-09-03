@@ -17,32 +17,32 @@
 		<tr>
 			<td rowspan=2>MIDI 1.0<br/>Channel</td>
 			<td>Default</td>
-			<td>✓ 1-16</td>
+			<td>✓<br/>1-16</td>
 			<td>✕</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>Changed</td>
-			<td>✓ 1-16</td>
+			<td>✓<br/>1-16</td>
 			<td>✕</td>
 			<td>Supports up to 256 channels.</td>
 		</tr>
 		<tr>
 			<td colspan=2>Note number</td>
-			<td>✓ 0-127</td>
+			<td>✓<br/>0-127</td>
 			<td>✕</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td rowspan=2>Mode</td>
 			<td>Default</td>
-			<td>3</td>
+			<td>-<br/>3</td>
 			<td>-</td>
 			<td>Omni off, polyphonic</td>
 		</tr>
 		<tr>
 			<td>Messages</td>
-			<td>✓ 3, 4</td>
+			<td>✓<br/>3, 4</td>
 			<td>✕</td>
 			<td></td>
 		</tr>
@@ -55,7 +55,7 @@
 		</tr>
 		<tr>
 			<td>MIDI 1.0<br/>Note off</td>
-			<td>✓ <code>8n xx</code><br/><code>9n vv</code></td>
+			<td>✓<br/><code>8n xx</code><br/><code>9n vv</code></td>
 			<td>✕</td>
 			<td><code>vv</code>=<code>00 00</code>-<code>00 7f</code> (<code>0x0000</code>-<code>0x007f</code>)<br/><code>xx</code>=<code>00 00</code>-<code>7f 7f</code> (<code>0x0000</code>-<code>0x3fff</code>)</td>
 		</tr>
@@ -81,7 +81,7 @@
 		</tr>
 		<tr>
 			<td colspan=2>Program Change</td>
-			<td>✓ 0-127</td>
+			<td>✓<br/>0-127</td>
 			<td>✕</td>
 			<td></td>
 		</tr>
@@ -502,13 +502,25 @@
 			<td><code>0x0001</code></td>
 			<td>✓</td>
 			<td>✕</td>
-			<td>Fine Tuning</td>
+			<td>Fine Tune</td>
 		</tr>
 		<tr>
 			<td><code>0x0002</code></td>
 			<td>✓</td>
 			<td>✕</td>
-			<td>Coarse Tuning</td>
+			<td>Coarse Tune</td>
+		</tr>
+		<tr>
+			<td><code>0x0003</code></td>
+			<td>✕</td>
+			<td>✕</td>
+			<td>Tuning Program Select</td>
+		</tr>
+		<tr>
+			<td><code>0x0004</code></td>
+			<td>✕</td>
+			<td>✕</td>
+			<td>Tuning Bank Select</td>
 		</tr>
 		<tr>
 			<td><code>0x0005</code></td>
@@ -677,13 +689,13 @@
 			<td><code>0x18rr</code></td>
 			<td>✓</td>
 			<td>✕</td>
-			<td>Drum Coarse Tuning</td>
+			<td>Drum Coarse Tune</td>
 		</tr>
 		<tr>
 			<td><code>0x19rr</code></td>
 			<td>✓</td>
 			<td>✕</td>
-			<td>Drum Fine Tuning</td>
+			<td>Drum Fine Tune</td>
 		</tr>
 		<tr>
 			<td><code>0x1arr</code></td>
@@ -785,73 +797,73 @@
 			<td><code>0x5830</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Scale Tuning C</td>
+			<td>HyperCanvas Scale Tune C</td>
 		</tr>
 		<tr>
 			<td><code>0x5831</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Scale Tuning C#</td>
+			<td>HyperCanvas Scale Tune C#</td>
 		</tr>
 		<tr>
 			<td><code>0x5832</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Scale Tuning D</td>
+			<td>HyperCanvas Scale Tune D</td>
 		</tr>
 		<tr>
 			<td><code>0x5833</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Scale Tuning Eb</td>
+			<td>HyperCanvas Scale Tune Eb</td>
 		</tr>
 		<tr>
 			<td><code>0x5834</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Scale Tuning E</td>
+			<td>HyperCanvas Scale Tune E</td>
 		</tr>
 		<tr>
 			<td><code>0x5835</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Scale Tuning F</td>
+			<td>HyperCanvas Scale Tune F</td>
 		</tr>
 		<tr>
 			<td><code>0x5836</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Scale Tuning F#</td>
+			<td>HyperCanvas Scale Tune F#</td>
 		</tr>
 		<tr>
 			<td><code>0x5837</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Scale Tuning G</td>
+			<td>HyperCanvas Scale Tune G</td>
 		</tr>
 		<tr>
 			<td><code>0x5838</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Scale Tuning Ab</td>
+			<td>HyperCanvas Scale Tune Ab</td>
 		</tr>
 		<tr>
 			<td><code>0x5839</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Scale Tuning A</td>
+			<td>HyperCanvas Scale Tune A</td>
 		</tr>
 		<tr>
 			<td><code>0x583a</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Scale Tuning Bb</td>
+			<td>HyperCanvas Scale Tune Bb</td>
 		</tr>
 		<tr>
 			<td><code>0x583b</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Scale Tuning B</td>
+			<td>HyperCanvas Scale Tune B</td>
 		</tr>
 		<tr>
 			<td><code>0x5840</code></td>
@@ -917,13 +929,13 @@
 			<td><code>0x5871</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Master Fine Tuning</td>
+			<td>HyperCanvas Master Fine Tune</td>
 		</tr>
 		<tr>
 			<td><code>0x5872</code></td>
 			<td>✕</td>
 			<td>✕</td>
-			<td>HyperCanvas Master Coarse Tuning</td>
+			<td>HyperCanvas Master Coarse Tune</td>
 		</tr>
 		<tr>
 			<td><code>0x587f</code></td>
