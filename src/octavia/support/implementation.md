@@ -993,7 +993,7 @@
 			<td></td>
 		</tr>
 		<tr>
-			<td>YAMAHA CS1x</td>
+			<td>YAMAHA CS2x</td>
 			<td>✓</td>
 			<td>✕</td>
 			<td></td>
