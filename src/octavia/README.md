@@ -41,6 +41,7 @@ We're now hosting a new place to handle development talks! If you don't have a G
 ### Implementation
 * [Basic messages](impl/basic.md)
 * [Control changes](impl/cc.md)
+* [Mode](impl/mode.md)
 * [RPN/NRPN values](impl/pn.md)
 * [Audio Effects](impl/efx.md)
 
@@ -52,13 +53,11 @@ We're now hosting a new place to handle development talks! If you don't have a G
 ### Documentation
 _API documentation is available on JSR (`jsr.io`)._
 
-#### Values
-
 #### Base API
 * [`state.mjs`: State processing virtual device](https://jsr.io/@ltgc/octavia/doc/state/)
 * [`basic.mjs`: Basis for building visualisers](https://jsr.io/@ltgc/octavia/doc/basic/)
 * [`bridge.mjs`: Basis for middleware](https://jsr.io/@ltgc/octavia/doc/bridge/)
-* [`chord.mjs`: Chord representations and IO](https://jsr.io/@ltgc/octavia/doc/bridge/)
+* [`chord.mjs`: Chord representations and IO](https://jsr.io/@ltgc/octavia/doc/chord/)
 * [`micc.mjs`: Musical Instruction Compiler Collection](https://jsr.io/@ltgc/octavia/doc/micc/)
 
 #### Component API
