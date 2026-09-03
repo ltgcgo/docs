@@ -49,10 +49,19 @@ We're now hosting a new place to handle development talks! If you don't have a G
 * [Roland MT-32](sysex/devex/mt32.md)
 * [KORG 05/X5/N5](sysex/devex/korgX5N5.md)
 
-### API documentation
-* [`state.mjs`: the core processing unit](state/)
-* [`basic.mjs`: the basis for visualizers](basic/)
-* [`bridge.mjs`: the basis for middleware](bridge/)
-* [`disp.mjs`: ready-made example visualizers](disp/)
-* [`middle.mjs`: ready-made middleware](middle/)
-* [`micc.mjs`: streaming assembler and disassembler](micc/)
+### Documentation
+_API documentation is available on JSR (`jsr.io`)._
+
+#### Values
+
+#### Base API
+* [`state.mjs`: State processing virtual device](https://jsr.io/@ltgc/octavia/doc/state/)
+* [`basic.mjs`: Basis for building visualisers](https://jsr.io/@ltgc/octavia/doc/basic/)
+* [`bridge.mjs`: Basis for middleware](https://jsr.io/@ltgc/octavia/doc/bridge/)
+* [`chord.mjs`: Chord representations and IO](https://jsr.io/@ltgc/octavia/doc/bridge/)
+* [`micc.mjs`: Musical Instruction Compiler Collection](https://jsr.io/@ltgc/octavia/doc/micc/)
+
+#### Component API
+* [`cambiare.mjs`: Embeddable Octavia Cambiare](https://jsr.io/@ltgc/octavia/doc/cambiare/)
+* [`disp.mjs`: Ready-made embeddable bundled visualisers](https://jsr.io/@ltgc/octavia/doc/disp/)
+* [`middle.mjs`: Ready-made middleware components]()
