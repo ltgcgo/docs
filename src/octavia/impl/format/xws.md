@@ -1,5 +1,7 @@
 # XGworks Original File
-XGworks Original File (`.xws`) is the file format used to store sequenced projects for Yamaha XGworks.
+XGworks Original File (`.xws`) is the file format used to store sequenced projects by [Yamaha XGworks (Japanese Wikipedia)](https://ja.wikipedia.org/wiki/XGworks).
+
+Yamaha XGworks, unlike Cubase, was a sequencer directly developed and released by Yamaha. XGworks was superceded by SOL (Sequence Object Linking) with the [`.yws`](./yws.md) format. Both XGworks and SOL are abandonware, dead since 2009.
 
 ## Format categorisation
 ### XWS
@@ -8,12 +10,24 @@ XGworks Original File (`.xws`) is the file format used to store sequenced projec
 - **Chunk type**: FourCC
 - **Chunk size**: [`u32be`](../../../ltgc/list-dtype.md)
 - **Padding**: None
-- **Canonical order**: `S4WH <[S4WB ...]> [S4WT ...] S4ST SCRS SCRA SCRD`
+- **Validation targets**: Yamaha XGworks 4.0.7
+
+## Canonical order
+### XWS
+```
+S4WH
+<[S4WB ...]>
+[S4WT ...]
+S4ST
+SCRS
+SCRA
+SCRD
+```
 
 ## Chunks
 All valid chunks are listed below.
-
-### Working Header
+### XWS
+#### Working Header
 - **Type**: `S4WH`
 - **MICC group**: `yamaha.xgworks.header`
 
@@ -24,7 +38,7 @@ HEAD
 ```
 Only a single element.
 
-#### HEAD
+##### `HEAD`
 ```
 vv 00 tt tt 00 00 bb bb dd dd 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -36,14 +50,14 @@ vv 00 tt tt 00 00 bb bb dd dd 00 00 00 00 00 00
 - `bb` (`u16be`): Contained block/clip count.
 - `dd` (`u16be`): MIDI time division. `01 E0` (`480`) is the most common value.
 
-### Working Block
+#### Working Block
 - **Type**: `S4WB`
 - **MICC group**: [`mma.smfTrack`](./smf.md#)
 - **Track type**: `S4WB`
 
 Contains an ordinary SMF type 1 `MTrk` stream as a clip. Single channel only.
 
-### Working Track
+#### Working Track
 - **Type**: `S4WT`
 - **MICC group**: `yamaha.xgworks.track` (not final)
 - **Track type**: `S4WT`
@@ -55,7 +69,7 @@ HEAD [TRCK ...]
 ```
 Directly chained chunks, without distinct types and length to indicate or aid segmentation.
 
-#### HEAD
+##### `HEAD`
 ```
 tt 00 cc ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ??
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -68,7 +82,7 @@ ll [nn ...]
 - `ll` (`u8`): Block name length.
 - `nn` (`u8[]`): Raw bytes of the encoded block name string.
 
-#### TRCK
+##### `TRCK`
 ```
 tt 00 ss ss ss ss ee ee ee ee bb bb bb bb ?? ??
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -81,16 +95,16 @@ ll [nn ...]
 - `ll` (`u8`): Block name length.
 - `nn` (`u8[]`): Raw bytes of the encoded block name string.
 
-### S4ST
+#### `S4ST`
 Unknown. All files seem to have the same content.
 
-### SCRS
+#### `SCRS`
 Specifics unknown. Likely used for records of styles. All files seem to have four `00` bytes.
 
-### SCRA
+#### `SCRA`
 Specifics unknown. Likely used for records of audio. All files seem to have four `00` bytes.
 
-### SCRD
+#### `SCRD`
 Unknown. Support currently not intended. All files seem to have four `00` bytes.
 
 ## Shared data sectors

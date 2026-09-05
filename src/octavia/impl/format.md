@@ -14,7 +14,7 @@ These pages describes the current state of file support by the Octavia MICC subs
 | `.midi2` | [Standard MIDI Clip](./format/smf2.md) | ✓ | - | - | - |
 | `.wrk` `.bun` | [Cakewalk Work Normal](./format/wrk.md) | - | - | ✕ | ✕ |
 | `.xws` | [XGworks Original File](./format/xws.md) | ✓ | - | - | ✕ |
-| `.yws` | [Yamaha SOL Project](./format/yws.md) | ✕ | ✕ | ✕ | ✕ |
+| `.yws` | [Sequence Object Linking File](./format/yws.md) | ✕ | ✕ | ✕ | ✕ |
 
 ### Tracker
 | Extension | Name | <span title="Understood?">U?</span> | <span title="Import supported?">I?</span> | <span title="Export supported?">O?</span> | <span title="Lossless Canonical Roundtrip?">R?</span> |

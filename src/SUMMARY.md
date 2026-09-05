@@ -46,6 +46,7 @@
       - [Cakewalk Work Normal](octavia/impl/format/wrk.md)
       - [Impulse Tracker](octavia/impl/format/it.md)
       - [MIDI Instruction Assembly](octavia/impl/format/mia.md)
+      - [Sequence Object Linking File](octavia/impl/format/yws.md)
       - [Standard MIDI File](octavia/impl/format/smf.md)
       - [Standard MIDI Clip](octavia/impl/format/smf2.md)
       - [XGworks Original File](octavia/impl/format/xws.md)
