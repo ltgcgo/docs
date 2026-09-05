@@ -8,8 +8,11 @@ XGworks Original File (`.xws`) is the file format used to store sequenced projec
 - **Chunk type**: FourCC
 - **Chunk size**: [`u32be`](../../../ltgc/list-dtype.md)
 - **Padding**: None
+- **Canonical order**: `S4WH <[S4WB ...]> [S4WT ...] S4ST SCRS SCRA SCRD`
 
 ## Chunks
+All valid chunks are listed below.
+
 ### Working Header
 - **Type**: `S4WH`
 - **MICC group**: `yamaha.xgworks.header`
