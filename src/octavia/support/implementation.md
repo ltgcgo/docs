@@ -527,7 +527,7 @@
 			<td></td>
 			<td>✕</td>
 			<td></td>
-			<td>High Resolution Velocity<br/>Affects MIDI 1.0 note on and note off.</td>
+			<td>High Resolution Velocity<br/><i>Affects MIDI 1.0 note on and note off</i></td>
 		</tr>
 		<tr>
 			<td>91</td>
@@ -1693,6 +1693,9 @@
 </div>
 
 ### Notes
+- Some cells are blank because they are in an invalid combination. For example it doesn't make sense to indicate MIDI 2.0 status in a MIDI 1.0 column.
 - The state engine itself may truncate the resolution of some MIDI 2.0 messages, which effects transmission but not passthrough. Other components, including MICC, are not affected by truncation.
+
+### Explanations
 - `??`: Ignored bytes.
 - **Omni**: When active, a single part will receive from all channels (N:1). Octavia does *not* support this mode in any form, its scope only maps channels to parts in a 1:N relationship.
