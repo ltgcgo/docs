@@ -3,8 +3,11 @@ XGworks Original File (`.xws`) is the file format used to store sequenced projec
 
 Yamaha XGworks, unlike Cubase, was a sequencer directly developed and released by Yamaha. XGworks was superceded by SOL (Sequence Object Linking) with the [`.yws`](./yws.md) format. Both XGworks and SOL are abandonware, dead since 2009.
 
+The format specified below was reverse-engineered by [*Lumière Élevé*](https://github.com/PoneyClairDeLune).
+
 ## Format categorisation
 ### XWS
+- **MICC group**: `yamaha.xgworks`
 - **Schema**: Chunked TLV
 - **Header size**: 0
 - **Chunk type**: FourCC
