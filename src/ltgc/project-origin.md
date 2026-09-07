@@ -51,7 +51,7 @@
 			<td><a href="https://www.fimfiction.net/user/181949">ItchyStomach</a></td>
 			<td><a href="https://www.fimfiction.net/story/406711">Shed My Skin</a></td>
 			<td>Mint</td>
-			<td>Mint Flower (Split Horizon)</td>
+			<td><i>Mint Flower</i>, a cover name of <i>Split Horizon</i></td>
 		</tr>
 		<tr>
 			<td><a href="https://www.fimfiction.net/user/237050">Jigsaw</a></td>
@@ -63,15 +63,15 @@
 			<td rowspan=11>Lauren Faust</td>
 			<td rowspan=11>My Little Pony: Friendship is Magic</td>
 			<td>Berry</td>
-			<td>Berry Punch</td>
+			<td><i>Berry Punch</i></td>
 		</tr>
 		<tr>
 			<td>Ditzy</td>
-			<td>Ditzy Doo (Derpy Hooves)</td>
+			<td><i>Ditzy Doo</i>, also known as <i>Derpy Hooves</i></td>
 		</tr>
 		<tr>
 			<td>Eclipsed</td>
-			<td>S02E04, Luna Eclipsed</td>
+			<td>S02E04, <i>Luna Eclipsed</i></td>
 		</tr>
 		<tr>
 			<td>Flitter</td>
@@ -79,37 +79,37 @@
 		</tr>
 		<tr>
 			<td>Heartstrings</td>
-			<td>Lyra Heartstrings</td>
+			<td><i>Lyra Heartstrings</i></td>
 		</tr>
 		<tr>
 			<td>Inkwell</td>
-			<td>Raven Inkwell</td>
+			<td><i>Raven Inkwell</i></td>
 		</tr>
 		<tr>
 			<td>Minuette</td>
-			<td></td>
+			<td>Also known as <i>Colgate</i></td>
 		</tr>
 		<tr>
-			<td>Octavia Melody</td>
-			<td></td>
+			<td>Octavia</td>
+			<td><i>Octavia Melody</i></td>
 		</tr>
 		<tr>
 			<td>Raven</td>
-			<td>Raven Inkwell</td>
+			<td><i>Raven Inkwell</i></td>
 		</tr>
 		<tr>
 			<td>Rosegap</td>
-			<td>Roseluck</td>
+			<td><i>Roseluck</i></td>
 		</tr>
 		<tr>
 			<td>Twinkle Sprinkles</td>
-			<td>Twilight Sparkle</td>
+			<td>A joke name of <i>Twilight Sparkle</i></td>
 		</tr>
 		<tr>
 			<td rowspan=3><a href="https://www.fimfiction.net/user/6374">Random_User</a></td>
 			<td rowspan=3><a href="https://www.fimfiction.net/story/79294">A Swift Message</a></td>
-			<td>Graceful Lattice</td>
-			<td></td>
+			<td>Lattice</td>
+			<td><i>Graceful Lattice</i></td>
 		</tr>
 		<tr>
 			<td>Ink Stone</td>
@@ -120,10 +120,16 @@
 			<td></td>
 		</tr>
 		<tr>
+			<td><a href="https://www.fimfiction.net/user/42761/Riddle-Me-Think">Riddle-Me-Think</a></td>
+			<td><a href="https://www.fimfiction.net/story/105113/">Acceptance</a><br/><a href="https://www.fimfiction.net/story/212019/">Unforgotten</a></td>
+			<td>Octavia Splash</td>
+			<td><i>Cypher Splash</i></td>
+		</tr>
+		<tr>
 			<td><a href="https://www.fimfiction.net/user/173490">Starscribe</a></td>
 			<td><a href="https://www.fimfiction.net/story/31089">Fine Print</a></td>
 			<td>Rosegap</td>
-			<td>Spark Gap (Tracy, or "Tracing")</td>
+			<td><i>Spark Gap (Tracy, "Tracing")</i></td>
 		</tr>
 		<tr>
 			<td rowspan=3><a href="https://www.fimfiction.net/user/134940">Thadius0</a></td>
@@ -133,11 +139,11 @@
 		</tr>
 		<tr>
 			<td>Scope</td>
-			<td>Scope Lens</td>
+			<td><i>Scope Lens</i></td>
 		</tr>
 		<tr>
 			<td>WingBlade</td>
-			<td>Midnight Song's wing blade</td>
+			<td><i>Midnight Song</i>'s wing blade</td>
 		</tr>
 		<tr>
 			<td><a href="https://www.fimfiction.net/user/144">Wanderer D</a></td>
