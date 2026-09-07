@@ -8,10 +8,10 @@ Cakewalk Bundle (`.bun`) is the file format used by Cakewalk to bundle audio alo
 > **Note**
 > 
 > An existing alternative implementation of `.wrk` parser, [Drumstick](https://github.com/pedrolcl/drumstick), was discovered through [`wrk2mid`](https://github.com/pedrolcl/wrk2mid). For the following reasons, we've decided to not get involved with Drumstick in any form, including interacting with its source code.
-> - During our testing, `.wrk` files even remotely new (produced at least later than 1997) all fail the conversion proces of `wrk2mid`. This includes...
+> - During our testing, `.wrk` files even remotely new (produced at least later than 1997) all fail the conversion proces of `wrk2mid`. It does *not* mean you will have the broken experience like us. This includes...
 >   - Official demo songs distributed by Cakewalk (Twelve Tone Systems).
 >   - Any `.wrk` file produced by our own validation target, _Cakewalk Home Studio 2002_.
-> - Drumstick is licensed under GNU GPL v3, which conflicts with GNU LGPL v3, the license Octavia and its MICC subsystem distributes under. We do not want to impose additional restrictions GNU GPL v3 may impose on our downstream consumers that's not present in GNU LGPL v3 already.
+> - Drumstick is licensed under GNU GPL v3, which conflicts with GNU LGPL v3, the license Octavia and its MICC subsystem distribute under. We do not want to impose additional restrictions GNU GPL v3 may impose on our downstream consumers that aren't already present in GNU LGPL v3.
 
 ## Format categorisation
 ### BUN
