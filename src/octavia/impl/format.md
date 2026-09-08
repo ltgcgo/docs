@@ -1,7 +1,9 @@
 # File Formats
-These pages describes the current state of file support by the Octavia MICC subsystem.
+These pages documents various file formats the Octavia MICC subsystem have an interest in supporting in detail.
 
 ## Support
+This section documents formats supported by the full Octavia MICC subsystem, **not** the compatibility shims released. Compatibility shims largely support SMF only.
+
 - ✓: Yes
 - -: Planned
 - ✕: No
