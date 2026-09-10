@@ -48,6 +48,12 @@
 			<td></td>
 		</tr>
 		<tr>
+			<td><a href="https://fabricmc.net/">FabricMC</a></td>
+			<td><a href="https://github.com/FabricMC/yarn">Yarn</a></td>
+			<td>Octavia Mane</td>
+			<td><i>Mane</i> and <i>Yarn</i> are all strands. <i>Mapped Addresses, Named Extensions</i> is a backronym.</td>
+		</tr>
+		<tr>
 			<td><a href="https://www.fimfiction.net/user/181949">ItchyStomach</a></td>
 			<td><a href="https://www.fimfiction.net/story/406711">Shed My Skin</a></td>
 			<td>Mint</td>
@@ -60,8 +66,8 @@
 			<td></td>
 		</tr>
 		<tr>
-			<td rowspan=11>Lauren Faust</td>
-			<td rowspan=11>My Little Pony: Friendship is Magic</td>
+			<td rowspan=10>Lauren Faust</td>
+			<td rowspan=10>My Little Pony: Friendship is Magic</td>
 			<td>Berry</td>
 			<td><i>Berry Punch</i></td>
 		</tr>
@@ -72,10 +78,6 @@
 		<tr>
 			<td>Eclipsed</td>
 			<td>S02E04, <i>Luna Eclipsed</i></td>
-		</tr>
-		<tr>
-			<td>Flitter</td>
-			<td></td>
 		</tr>
 		<tr>
 			<td>Heartstrings</td>
@@ -106,6 +108,12 @@
 			<td>A joke name of <i>Twilight Sparkle</i></td>
 		</tr>
 		<tr>
+			<td><a href="https://www.fimfiction.net/user/7623">Nyerguds</a></td>
+			<td><a href="https://www.fimfiction.net/story/22618">Flitter</a></td>
+			<td>Flitter</td>
+			<td></td>
+		</tr>
+		<tr>
 			<td rowspan=3><a href="https://www.fimfiction.net/user/6374">Random_User</a></td>
 			<td rowspan=3><a href="https://www.fimfiction.net/story/79294">A Swift Message</a></td>
 			<td>Lattice</td>
@@ -132,8 +140,12 @@
 			<td><i>Spark Gap (Tracy, "Tracing")</i></td>
 		</tr>
 		<tr>
-			<td rowspan=3><a href="https://www.fimfiction.net/user/134940">Thadius0</a></td>
-			<td rowspan=3><a href="https://www.fimfiction.net/story/258497">Shifting Melodies</a></td>
+			<td rowspan=4><a href="https://www.fimfiction.net/user/134940">Thadius0</a></td>
+			<td rowspan=4><a href="https://www.fimfiction.net/story/258497">Shifting Melodies</a></td>
+			<td>Octavia Scroll</td>
+			<td><i>Lengthy Scroll</i><br/>Formerly known as MIDI DB.</td>
+		</tr>
+		<tr>
 			<td>Painted Palette</td>
 			<td></td>
 		</tr>
