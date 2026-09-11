@@ -19,7 +19,7 @@
 **Octavia Dirigere** is a utility that bundles a player, an I/O router, and a translator together. It's one of the two spiritual successors of the old Octavia middleware.
 
 ## Mane
-> _See also: [Octavia Mane]()_
+> _See also: [Octavia Mane](./components/mane.md)_
 
 **Octavia Mane** (backronym _Mapped Addresses, Named Extensions_) is a data sheet collection that supplies bidirectional mappings between raw bytes and readable names, akin to Fabric Yarn mappings, which the name of this project was inspired from. Mane mappings are used to conduct readable assembly and disassembly in Octavia MICC, however Octavia's own SysEx interpreter uses binary data directly, thus does not rely on Mane in any way.
 

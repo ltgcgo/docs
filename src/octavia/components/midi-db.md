@@ -1,8 +1,14 @@
 # Octavia Scroll
-**Octavia Scroll**, also known as MIDI Database or `midi-db`, is a data sheet collection supplying comprehensive voice bank, variable name mappings and EFX ID mappings to the Octavia project.
+> _See also: [Mane](./mane.md)_
+
+**Octavia Scroll**, also known as _MIDI Database_ or `midi-db`, is a data sheet collection supplying comprehensive voice bank, variable name mappings and EFX ID mappings to the Octavia project.
 
 ## Built artefacts
+Octavia Scroll also builds compatible definition files from its own data sheets with ridiculously large coverage.
+
 ### Cakewalk Instrument Definition
+These files are intended to be used with [Falcosoft SoundFont MIDI Player](https://falcosoft.hu/softwares.html#midiplayer).
+
 - [`OctaviaRecommend.ins`](https://gh.ltgc.cc/midi-db/dist/OctaviaRecommend.ins) (mixed)
 - [`OctaviaAlternative.ins`](https://gh.ltgc.cc/midi-db/dist/OctaviaAlternative.ins) (mixed)
 
@@ -26,10 +32,15 @@
 - The drum kits in `OctaviaAlternative.ins` default to SC-88 Pro instead of SC-88 with unset MSB.
 
 ### MusE Instrument Definition File
+These files are intended to be used with [MusE](https://muse-sequencer.github.io/).
+
+TBD
 
 ## Bank allocation plane
 ### Allocation table
 The table below shows how Octavia maps voices internally from raw bank values. It may reflect how the real hardware allocates the bank planes, however it does *not* reflect the actual raw bank values.
+
+Columns indicate bank LSB, rows indicate bank MSB.
 
 <div class="table-wrapper">
 <style>table td {
