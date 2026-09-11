@@ -38,6 +38,10 @@ For specific SysEx support range, refer to [Supported SysEx Instructions](./syse
 1. Octavia implements XG level 3.0 or later, and XG version 2.0 or later.
 
 ### Custom sound banks
+> **Warning**
+> 
+> This section is outdated. Please refer to [MICC formats](../impl/format.md) instead.
+
 - Voice name maps (`.mdat`)
 - SysEx bank dumps (`.syx`)
   - KORG X5 (05R/W)

@@ -21,7 +21,7 @@
 ## Mane
 > _See also: [Octavia Mane]()_
 
-**Octavia Mane** (backronym _Mapped Addresses, Named Extensions_) supplies bidirectional mappings between raw bytes and readable names, akin to Fabric Yarn mappings, which the name of this project was inspired from. Mane mappings are used to conduct readable assembly and disassembly in Octavia MICC, however Octavia's own SysEx interpreter uses binary data directly, thus does not rely on Mane in any way.
+**Octavia Mane** (backronym _Mapped Addresses, Named Extensions_) is a data sheet collection that supplies bidirectional mappings between raw bytes and readable names, akin to Fabric Yarn mappings, which the name of this project was inspired from. Mane mappings are used to conduct readable assembly and disassembly in Octavia MICC, however Octavia's own SysEx interpreter uses binary data directly, thus does not rely on Mane in any way.
 
 ## MICC
 > _See also: [Octavia MICC](), [MIA](./impl/format/mia.md), [Formats](./impl/format.md), [Extensions](./impl/ext.md), [JSR](https://jsr.io/@ltgc/octavia/doc/micc)_
@@ -41,9 +41,9 @@ MICC also ships various compatibility shims, both bundled into regular Octavia r
 **Octavia Panorama** is a macro-level file manipulation utility, backed by Octavia MICC and Seamstress. It handles rough file editing, like track splicing, track merging, and more.
 
 ## Scroll
-> _See also: [Octavia Scroll]()_
+> _See also: [Octavia Scroll](./components/midi-db.md)_
 
-**Octavia Scroll**, also known as MIDI Database or `midi-db`, is a data sheet collection supplying voice bank, variable name mappings and EFX ID mappings to the Octavia project.
+**Octavia Scroll**, also known as MIDI Database or `midi-db`, is a data sheet collection supplying comprehensive voice bank, variable name mappings and EFX ID mappings to the Octavia project.
 
 ## Sognare
 > **Warning**: WIP
