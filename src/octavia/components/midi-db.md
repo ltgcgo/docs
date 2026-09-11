@@ -288,7 +288,7 @@ td.roll-7 {background: #af05}</style>
 	<td class="roll-2" rowspan=7>GS SC-88<br/>Section 1</td>
 	<td class="roll-3" rowspan=7>GS SC-88 Pro<br/>Section 1</td>
 	<td class="roll-4" rowspan=7>GS SC-8850<br/>Section 1</td>
-	<td class="" colspan=123 rowspan=47></td>
+	<td class="" colspan=123 rowspan=31></td>
 </tr><tr>
 	<td>002</td>
 </tr><tr>
@@ -378,28 +378,42 @@ td.roll-7 {background: #af05}</style>
 	<td class="roll-1" rowspan=2>GS SC-88<br/>Section 5</td>
 	<td class="roll-2" rowspan=4>GS SC-88 Pro<br/>Section 5</td>
 	<td class="roll-3" rowspan=8>GS SC-8850<br/>Section 5</td>
+	<td class="roll-4"><span class="glue">PLG-AP</span></td>
 </tr><tr>
 	<td>033</td>
+	<td class="" rowspan=7></td>
+	<td class="roll-1" colspan=2>PLG-VL Preset</td>
+	<td class="roll-2" colspan=2>PLG-VL User</td>
 </tr><tr>
 	<td>034</td>
+	<td class="" rowspan=6></td>
 </tr><tr>
 	<td>035</td>
+	<td class="roll-3"><span class="glue">PLG-DX</span> User</td>
+	<td class="roll-4" colspan=2>PLG-DX Preset</td>
 </tr><tr>
 	<td>036</td>
+	<td class="" rowspan=4></td>
+	<td class="roll-4" colspan=2>PLG-AN Preset</td>
+	<td class="roll-5"><span class="glue">PLG-AN</span> User</td>
+	<td class="roll-6">AN1x</td>
 </tr><tr>
 	<td>037</td>
+	<td class="" colspan=123 rowspan=11></td>
 </tr><tr>
 	<td>038</td>
 </tr><tr>
 	<td>039</td>
 </tr><tr>
 	<td>040</td>
-	<td class="" colspan=2 rowspan=8></td>
+	<td class="" rowspan=8></td>
+	<td class="" rowspan=8></td>
 	<td class="roll-0">GS SC-88<br/>Section 6</td>
 	<td class="roll-1" rowspan=6>GS SC-88 Pro<br/>Section 6</td>
 	<td class="roll-2" rowspan=8>GS SC-8850<br/>Section 6</td>
 </tr><tr>
 	<td>041</td>
+	<td class="" rowspan=7></td>
 </tr><tr>
 	<td>042</td>
 </tr><tr>
@@ -410,6 +424,7 @@ td.roll-7 {background: #af05}</style>
 	<td>045</td>
 </tr><tr>
 	<td>046</td>
+	<td class="" rowspan=2></td>
 </tr><tr>
 	<td>047</td>
 </tr><tr>
