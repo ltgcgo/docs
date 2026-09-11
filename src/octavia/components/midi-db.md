@@ -561,6 +561,8 @@ td.roll-7 {background: #af05}</style>
 </tr><tr>
 	<td>080</td>
 	<td class="roll-0">NS5R<br/>PrgU</td>
+	<td class="" colspan=15></td>
+	<td class="roll-1" rowspan=2>SD-90 Special</td>
 </tr><tr>
 	<td>081</td>
 	<td class="roll-1">NS5R 05R/W<br/>PrgA</td>
@@ -579,6 +581,9 @@ td.roll-7 {background: #af05}</style>
 	<td>086</td>
 </tr><tr>
 	<td>087</td>
+	<td class="" colspan=16></td>
+	<td class="roll-7" colspan=5>SD-50 Special</td>
+	<td class="roll-0">SD-50 Drums</td>
 </tr><tr>
 	<td>088</td>
 	<td class="roll-0">NS5R<br/>CmbU</td>
