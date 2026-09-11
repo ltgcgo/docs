@@ -1,4 +1,6 @@
 # Components
+> _See also: [Project Origin](../ltgc/project-origin.md)_
+
 ## Cambiare
 > _See also: [Visualiser](./demo/scr.md), [Standard visualizers](./support/screen.md), [JSR](https://jsr.io/@ltgc/octavia/doc/cambiare)_
 

@@ -1,10 +1,12 @@
 # Octavia Scroll
-> _See also: [Mane](./mane.md)_
+**Octavia Scroll**, also known as **MIDI Database** or `midi-db`, is a data sheet collection supplying comprehensive voice bank, variable name mappings and EFX ID mappings to the Octavia project.
 
-**Octavia Scroll**, also known as _MIDI Database_ or `midi-db`, is a data sheet collection supplying comprehensive voice bank, variable name mappings and EFX ID mappings to the Octavia project.
+Data sheets organised and compiled by Octavia Scroll are licensed under CC BY-SA 4.0.
+
+[**Octavia Mane**](./mane.md) is a sister project to **Octavia Scroll** covering a different aspect. Visit the link to learn more.
 
 ## Built artefacts
-Octavia Scroll also builds compatible definition files from its own data sheets with ridiculously large coverage.
+Octavia Scroll also builds compatible definition files from its own data sheets with ridiculously large coverage. Bank MSB and LSB values are re-normalised back to raw values.
 
 ### Cakewalk Instrument Definition
 These files are intended to be used with [Falcosoft SoundFont MIDI Player](https://falcosoft.hu/softwares.html#midiplayer).
@@ -29,7 +31,7 @@ These files are intended to be used with [Falcosoft SoundFont MIDI Player](https
 | PLG150-DX | ✓ | ✕ |
 | PLG150-AN | ✓ | ✓ |
 
-- The drum kits in `OctaviaAlternative.ins` default to SC-88 Pro instead of SC-88 with unset MSB.
+- The drum kits in `OctaviaAlternative.ins` default to SC-88 Pro instead of SC-88 with unset MSB and LSB.
 
 ### MusE Instrument Definition File
 These files are intended to be used with [MusE](https://muse-sequencer.github.io/).
@@ -469,6 +471,12 @@ td.roll-7 {background: #af05}</style>
 	<td class="roll-0">GM 1 AG-10<br/>Capital</td>
 </tr><tr>
 	<td>057</td>
+	<td class="" colspan=112></td>
+	<td class="roll-0">DOC</td>
+	<td class="roll-1">QY10</td>
+	<td class="roll-2">QY20</td>
+	<td class="" colspan=13></td>
+	<td class="roll-0">GUS</td>
 </tr><tr>
 	<td>058</td>
 </tr><tr>
@@ -491,8 +499,16 @@ td.roll-7 {background: #af05}</style>
 	<td class="roll-4" colspan=2><span class="glue">Yamaha ES</span><br/>User Program</td>
 	<td class="roll-5"><span class="glue">Yamaha ES</span><br/>Preset Drums</td>
 	<td class="roll-6"><span class="glue">Yamaha ES</span><br/>User Drums</td>
-	<td class="roll-3" colspan=3><span class="glue">Yamaha ES</span><br/>Plug User</td>
-	<td class="roll-3" colspan=6><span class="glue">Motif ES</span><br/>Preset Program</td>
+	<td class="roll-7" colspan=3><span class="glue">Yamaha ES</span><br/>Plug User</td>
+	<td class="roll-0" colspan=6><span class="glue">Motif ES</span><br/>Preset Program</td>
+	<td class="roll-1" colspan=4><span class="glue">CS1x</span> Preset<br/>Performance 1</td>
+	<td class="roll-2" colspan=4><span class="glue">CS1x</span> Preset<br/>Performance 2</td>
+	<td class="roll-3" colspan=4><span class="glue">CS1x</span> Preset<br/>Performance 3</td>
+	<td class="roll-4"><span class="glue">CS1x CS2x</span><br/>Drum Kits</td>
+	<td class="roll-5" colspan=2><span class="glue">CS2x</span> Preset<br/>Performance 1</td>
+	<td class="roll-6" colspan=2><span class="glue">CS2x</span> Preset<br/>Performance 2</td>
+	<td class="roll-7" colspan=2><span class="glue">CS2x</span> Preset<br/>Performance 3</td>
+	<td class="roll-0" colspan=2><span class="glue">CS2x</span> Preset<br/>Performance 4</td>
 </tr><tr>
 	<td>064</td>
 	<td class="roll-0">XG<br/>SFX</td>
@@ -569,16 +585,48 @@ td.roll-7 {background: #af05}</style>
 	<td>094</td>
 </tr><tr>
 	<td>095</td>
+	<td class="roll-7"><span class="glue">XG PLG-DR</span></td>
+	<td class="roll-0"><span class="glue">XG PLG-PC</span></td>
 </tr><tr>
 	<td>096</td>
+	<td class="roll-0"><span class="glue">XG PLG-PF</span></td>
+	<td class="" colspan=15></td>
+	<td class="roll-0" colspan=10>GM2 SD Classic Set</td>
+	<td class="" colspan=38></td>
+	<td class="roll-0" colspan=42>XG PLG-PF</td>
+	<td class="roll-1"><span class="glue">XG PLG-AP</span></td>
+	<td class="" colspan=21></td>
 </tr><tr>
 	<td>097</td>
+	<td class="" colspan=16></td>
+	<td class="roll-1" colspan=5>GM2 SD Contemp Set</td>
+	<td class="" colspan=91></td>
+	<td class="roll-1" colspan=8>XG PLG-VL</td>
+	<td class="roll-2" colspan=8>XG PLG-VL Octavia Extension</td>
 </tr><tr>
 	<td>098</td>
+	<td class="roll-2"><span class="glue">XG PLG-SG</span></td>
+	<td class="" colspan=15></td>
+	<td class="roll-2" colspan=5>GM2 SD Solo Set</td>
+	<td class="" colspan=107></td>
 </tr><tr>
 	<td>099</td>
+	<td class="roll-3"><span class="glue">XG PLG-DX</span></td>
+	<td class="" colspan=15></td>
+	<td class="roll-3" colspan=5>GM2 SD Enhanced Set</td>
+	<td class="" colspan=43></td>
+	<td class="roll-3" colspan=17>XG PLG-DX</td>
+	<td class="" colspan=15></td>
+	<td class="roll-3" colspan=14>XG PLG-DX Non-proxy</td>
+	<td class="" colspan=18></td>
 </tr><tr>
 	<td>100</td>
+	<td class="roll-4"><span class="glue">XG PLG-AN</span></td>
+	<td class="" colspan=63></td>
+	<td class="roll-4" colspan=18>XG PLG-AN</td>
+	<td class="" colspan=14></td>
+	<td class="roll-4" colspan=12>XG PLG-AN</td>
+	<td class="" colspan=20></td>
 </tr><tr>
 	<td>101</td>
 </tr><tr>
@@ -587,14 +635,18 @@ td.roll-7 {background: #af05}</style>
 	<td>103</td>
 </tr><tr>
 	<td>104</td>
-	<td class="" colspan=104></td>
-	<td class="roll-4" colspan=48>XG PSR<br/>Compatible</td>
+	<td class="roll-0">GM2 SD<br/>Drums Classic</td>
+	<td class="" colspan=103></td>
+	<td class="roll-0" colspan=48>XG PSR<br/>Compatible</td>
 </tr><tr>
 	<td>105</td>
+	<td class="roll-1">GM2 SD<br/>Drums Contemp</td>
 </tr><tr>
 	<td>106</td>
+	<td class="roll-2">GM2 SD<br/>Drums Solo</td>
 </tr><tr>
 	<td>107</td>
+	<td class="roll-3">GM2 SD<br/>Drums Enhanced</td>
 </tr><tr>
 	<td>108</td>
 	<td class="" colspan=128></td>
@@ -625,16 +677,16 @@ td.roll-7 {background: #af05}</style>
 	<td>120</td>
 	<td class="roll-0">GM 2<br/>Drum Kit</td>
 	<td class="roll-1">GM 2 PA<br/>Drum Kit</td>
+	<td class="" colspan=126></td>
+	<td class="roll-0">GUS<br/>Drum Kit</td>
 </tr><tr>
 	<td>121</td>
-	<td class="roll-1">GM 2<br/>Capital</td>
-	<td class="roll-2" colspan=9>GM 2<br/>Variation</td>
+	<td class="roll-1">GM 2 Melodic<br/>Capital</td>
+	<td class="roll-2" colspan=9>GM 2 Melodic<br/>Variation</td>
 	<td class="" colspan=6></td>
-	<td class="roll-2">GM 2 XG<br/>Capital</td>
-	<td class="roll-2" colspan=11>GM 2 XG<br/>Variation</td>
+	<td class="roll-2" colspan=12>GM 2 XG<br/>Melodic</td>
 	<td class="" colspan=4></td>
-	<td class="roll-2"><span class="glue">GM 2 PA</span><br/>Capital</td>
-	<td class="roll-2" colspan=31>GM 2 PA<br/>Variation</td>
+	<td class="roll-2" colspan=32>GM 2 PA<br/>Melodic</td>
 </tr><tr>
 	<td>122</td>
 </tr><tr>
