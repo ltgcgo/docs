@@ -29,7 +29,7 @@
 
 ## Bank allocation plane
 ### Allocation table
-The table below shows how Octavia maps voices internally from raw bank values. It may reflect how the real hardware allocates the bank planes, however 1:1 synth native mapping is not guaranteed.
+The table below shows how Octavia maps voices internally from raw bank values. It may reflect how the real hardware allocates the bank planes, however it does *not* reflect the actual raw bank values.
 
 <div class="table-wrapper">
 <style>table td {
@@ -318,6 +318,7 @@ td.roll-7 {background: #af05}</style>
 	<td class="roll-1" rowspan=4>GS SC-88<br/>Section 3</td>
 	<td class="roll-2" rowspan=8>GS SC-88 Pro<br/>Section 3</td>
 	<td class="roll-3" rowspan=8>GS SC-8850<br/>Section 3</td>
+	<td class="roll-4" colspan=2><span class="glue">XG MU2000</span>Sampling</td>
 </tr><tr>
 	<td>017</td>
 </tr><tr>
@@ -454,6 +455,7 @@ td.roll-7 {background: #af05}</style>
 	<td>055</td>
 </tr><tr>
 	<td>056</td>
+	<td class="roll-0">GM 1 AG-10<br/>Capital</td>
 </tr><tr>
 	<td>057</td>
 </tr><tr>
@@ -464,10 +466,22 @@ td.roll-7 {background: #af05}</style>
 	<td>060</td>
 </tr><tr>
 	<td>061</td>
+	<td class="roll-5">NS5R GS<br/>Drum Kit</td>
 </tr><tr>
 	<td>062</td>
+	<td class="roll-6">GM 1 AG-10<br/>Drum Kit</td>
 </tr><tr>
 	<td>063</td>
+	<td class="roll-7" colspan=6>KROSS 2<br/>Preset Program</td>
+	<td class="roll-0" colspan=4>KROSS 2<br/>User Program</td>
+	<td class="roll-1" colspan=3>KROSS 2<br/>Preset Combination</td>
+	<td class="roll-2" colspan=4>KROSS 2<br/>User Combination</td>
+	<td class="roll-3" colspan=4><span class="glue">S90 ES</span><br/>Preset Program</td>
+	<td class="roll-4" colspan=2><span class="glue">Yamaha ES</span><br/>User Program</td>
+	<td class="roll-5"><span class="glue">Yamaha ES</span><br/>Preset Drums</td>
+	<td class="roll-6"><span class="glue">Yamaha ES</span><br/>User Drums</td>
+	<td class="roll-3" colspan=3><span class="glue">Yamaha ES</span><br/>Plug User</td>
+	<td class="roll-3" colspan=6><span class="glue">Motif ES</span><br/>Preset Program</td>
 </tr><tr>
 	<td>064</td>
 	<td class="roll-0">XG<br/>SFX</td>
@@ -504,12 +518,17 @@ td.roll-7 {background: #af05}</style>
 	<td>079</td>
 </tr><tr>
 	<td>080</td>
+	<td class="roll-0">NS5R<br/>PrgU</td>
 </tr><tr>
 	<td>081</td>
+	<td class="roll-1">NS5R 05R/W<br/>PrgA</td>
+	<td class="roll-2"><span class="glue">03R/W</span><br/>PrgA</td>
 </tr><tr>
 	<td>082</td>
+	<td class="roll-2">NS5R X5DR<br/>PrgB</td>
 </tr><tr>
 	<td>083</td>
+	<td class="roll-3">NS5R<br/>PrgC</td>
 </tr><tr>
 	<td>084</td>
 </tr><tr>
@@ -520,12 +539,17 @@ td.roll-7 {background: #af05}</style>
 	<td>087</td>
 </tr><tr>
 	<td>088</td>
+	<td class="roll-0">NS5R<br/>CmbU</td>
 </tr><tr>
 	<td>089</td>
+	<td class="roll-1">NS5R 05R/W<br/>CmbA</td>
+	<td class="roll-2"><span class="glue">03R/W</span><br/>CmbA</td>
 </tr><tr>
 	<td>090</td>
+	<td class="roll-2">NS5R X5DR<br/>CmbB</td>
 </tr><tr>
 	<td>091</td>
+	<td class="roll-3">NS5R<br/>CmbC</td>
 </tr><tr>
 	<td>092</td>
 </tr><tr>
