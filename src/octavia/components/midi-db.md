@@ -64,7 +64,7 @@ td.roll-4 {background: #80f5}
 td.roll-5 {background: #f5a5}
 td.roll-6 {background: #f505}
 td.roll-7 {background: #af05}</style>
-<table>
+<table id="table-of-pain">
 <thead><tr>
 	<th></th>
 	<th>000</th>
@@ -736,4 +736,58 @@ td.roll-7 {background: #af05}</style>
 	<td class="roll-4"><span class="glue">MT-32</span><br/>Drum Kit</td>
 </tr></tbody>
 </table>
+<script>"use strict";
+(async () => {
+self.tableOfPain = document.querySelector("table#table-of-pain");
+const lsbOffsetX = new Map(), msbOffsetY = new Map();
+for (const cell of tableOfPain.children[0].children[0].children) {
+	const parsed = parseInt(cell.innerText);
+	//console.debug(parsed, cell.offsetLeft, cell);
+	if (!Number.isNaN(parsed)) {
+		lsbOffsetX.set(cell.offsetLeft, parsed);
+	};
+};
+for (const parentCell of tableOfPain.children[1].children) {
+	const cell = parentCell.children[0];
+	const parsed = parseInt(cell.innerText);
+	//console.debug(parsed, cell.offsetTop, cell);
+	if (!Number.isNaN(parsed)) {
+		msbOffsetY.set(cell.offsetTop, parsed);
+	};
+};
+//console.debug(lsbOffsetX, msbOffsetY);
+const docTitle = document.title;
+for (const lineCell of tableOfPain.children[1].children) {
+	for (let i = 0; i < lineCell.children.length; i ++) {
+		const e = lineCell.children[i];
+		if (i > 0) {
+			if (e.innerText.trim().length <= 0) {
+				continue;
+			};
+			const startMsb = msbOffsetY.get(e.offsetTop);
+			const startLsb = lsbOffsetX.get(e.offsetLeft);
+			let finalTitle = `MSB ${`${startMsb}`.padStart(3, "0")}`;
+			if (e.rowSpan > 1) {
+				finalTitle += `-${`${startMsb + e.rowSpan - 1}`.padStart(3, "0")}`;
+			};
+			finalTitle += `, LSB ${`${startLsb}`.padStart(3, "0")}`;
+			if (e.colSpan > 1) {
+				finalTitle += `-${`${startLsb + e.colSpan - 1}`.padStart(3, "0")}`;
+			};
+			e.title = finalTitle;
+			e.addEventListener("mouseover", (ev) => {
+				ev.preventDefault();
+				ev.stopImmediatePropagation();
+				document.title = finalTitle;
+			});
+			e.addEventListener("mouseout", (ev) => {
+				ev.preventDefault();
+				ev.stopImmediatePropagation();
+				document.title = docTitle;
+			});
+		};
+	}; 
+}
+})();
+</script>
 </div>
