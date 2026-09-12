@@ -40,17 +40,17 @@ A list of frequently consulted documentation pages is available below. For the f
 * [Targets](support/target.md)
 * [Standard visualizers](support/screen.md)
 
-### Documentation
-_API documentation is available on JSR (`jsr.io`)._
+### Developer Documentation
+> API documentation is available on JSR (`jsr.io`). For user-facing components, please refer to the [components](./components.md) page.
 
 #### Base API
 * [`state.mjs`: State processing virtual device](https://jsr.io/@ltgc/octavia/doc/state/)
 * [`basic.mjs`: Basis for building visualisers](https://jsr.io/@ltgc/octavia/doc/basic/)
-* [`bridge.mjs`: Basis for middleware](https://jsr.io/@ltgc/octavia/doc/bridge/)
+* [`bridge.mjs`: Middleware components](https://jsr.io/@ltgc/octavia/doc/bridge/)
 * [`chord.mjs`: Chord representations and IO](https://jsr.io/@ltgc/octavia/doc/chord/)
 * [`micc.mjs`: Musical Instruction Compiler Collection](https://jsr.io/@ltgc/octavia/doc/micc/)
 
 #### Component API
 * [`cambiare.mjs`: Embeddable Octavia Cambiare](https://jsr.io/@ltgc/octavia/doc/cambiare/)
 * [`disp.mjs`: Ready-made embeddable bundled visualisers](https://jsr.io/@ltgc/octavia/doc/disp/)
-* [`middle.mjs`: Ready-made middleware components]()
+* [`middle.mjs`: Ready-made middleware]() (may get renamed or removed)
