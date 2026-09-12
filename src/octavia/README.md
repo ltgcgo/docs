@@ -28,6 +28,8 @@ We're now hosting a new place to handle development talks! If you don't have a G
 * Telegram group chat: [Click to join DTM Hub](https://t.me/+0I30mcOPTSQ0ZGIx)
 
 ## Further documentation
+A list of frequently consulted documentation pages is available below. For the full documentation, please check the sidebar.
+
 ### Demo usage
 * [Visualizers](demo/scr.md)
 * [Middleware](demo/mw.md)
@@ -37,18 +39,6 @@ We're now hosting a new place to handle development talks! If you don't have a G
 * [SysEx instructions sheet](support/sysex.md)
 * [Targets](support/target.md)
 * [Standard visualizers](support/screen.md)
-
-### Implementation
-* [Basic messages](impl/basic.md)
-* [Control changes](impl/cc.md)
-* [Mode](impl/mode.md)
-* [RPN/NRPN values](impl/pn.md)
-* [Audio Effects](impl/efx.md)
-
-### SysEx documentation
-* [Mutual instructions](sysex/mutual.md)
-* [Roland MT-32](sysex/devex/mt32.md)
-* [KORG 05/X5/N5](sysex/devex/korgX5N5.md)
 
 ### Documentation
 _API documentation is available on JSR (`jsr.io`)._
