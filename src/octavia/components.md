@@ -18,14 +18,14 @@
 ## Dirigere
 > **Warning**: WIP
 
-**Octavia Dirigere** is a utility that bundles a player, an I/O router, and a translator together. It's one of the two spiritual successors of the old Octavia middleware.
+**Octavia Dirigere** is a utility that bundles a player, an I/O router, and a translator together. It's one of the two spiritual successors of the old Octavia middleware, with excellent built-in support for complex multi-port MIDI compositions. Pick one between Dirigere and Splash, or you may encounter conflicts.
 
-If you are not able to use Dirigere for various reasons, we have the following recommendations to hook up with Octavia Splash instead.
+If you are not able to use Dirigere for various reasons, following programs are recommended to hook up with Octavia Splash instead.
 
-- [Falcosoft MIDI Player](https://falcosoft.hu/softwares.html#midiplayer) is recommended for single-port playback.
+- [Falcosoft MIDI Player](https://falcosoft.hu/softwares.html#midiplayer) is recommended for single-port playback. Octavia Dirigere aims to be able to compete with Falcosoft MIDI Player.
 - MIDITrail is recommended for multi-port playback, however the official website on OSDN is offline. Supports standard multi-port assignments.
 - XGworks is recommended for multi-port playback, however it has been discontinued for decades. Supports XGworks-native multi-port assignments.
-- vanBasco's MIDI Player, however the official websites are offline.
+- vanBasco's MIDI Player can be used for single-port playback, however the official websites are offline.
 
 TMIDI Player is **not** recommended due to time synchronisation problems.
 
