@@ -23,7 +23,8 @@
 If you are not able to use Dirigere for various reasons, we have the following recommendations to hook up with Octavia Splash instead.
 
 - [Falcosoft MIDI Player](https://falcosoft.hu/softwares.html#midiplayer) is recommended for single-port playback.
-- MIDITrail is recommended for multi-port playback, however the official websites (OSDN) are offline.
+- MIDITrail is recommended for multi-port playback, however the official website on OSDN is offline. Supports standard multi-port assignments.
+- XGworks is recommended for multi-port playback, however it has been discontinued for decades. Supports XGworks-native multi-port assignments.
 - vanBasco's MIDI Player, however the official websites are offline.
 
 TMIDI Player is **not** recommended due to time synchronisation problems.
