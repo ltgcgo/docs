@@ -32,7 +32,7 @@ This section documents formats supported by the full Octavia MICC subsystem, **n
 | `.m2a` `.m2k` | [Yamaha MU2000 Sampling Audio](./format/m2a.md) | - | - | ✕ | ✕ |
 | `.mdat` | [Octavia Native Voice Map Data](./maps.md) | ✓ | - | - | ✕ |
 | `.pcg` | [Korg Program, Combi and Global](./format/pcg.md) | ✓ | - | ✕ | ✕ |
-| `.sf2` `.sf3` | SoundFont | N/A | ✕ | ✕ | ✕ |
+| `.sf2` `.sf3` | SoundFont<sup>1</sup> | N/A | ✕ | ✕ | ✕ |
 | `.syx` | SysEx Voice Bank Dump<sup>2</sup> | ✓ | ✕ | ✕ | ✕ |
 | `.w7e` `.s7e` | [Yamaha ES Voice Editor](./format/s7e.md) | - | - | ✕ | ✕ |
 | `.x5` `.05r` | [Korg X5 Voice Bank Dump](./format/x5.md)<sup>2,3</sup> | ✓ | ✕ | ✕ | ✕ |

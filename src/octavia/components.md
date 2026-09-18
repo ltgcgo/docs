@@ -20,6 +20,14 @@
 
 **Octavia Dirigere** is a utility that bundles a player, an I/O router, and a translator together. It's one of the two spiritual successors of the old Octavia middleware.
 
+If you are not able to use Dirigere for various reasons, we have the following recommendations to hook up with Octavia Splash instead.
+
+- [Falcosoft MIDI Player](https://falcosoft.hu/softwares.html#midiplayer) is recommended for single-port playback.
+- MIDITrail is recommended for multi-port playback, however the official websites (OSDN) are offline.
+- vanBasco's MIDI Player, however the official websites are offline.
+
+TMIDI Player is **not** recommended due to time synchronisation problems.
+
 ## Mane
 > _See also: [Octavia Mane](./components/mane.md)_
 
