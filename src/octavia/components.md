@@ -59,7 +59,7 @@ MICC also ships various compatibility shims, both bundled into regular Octavia r
 ## Simulacris
 > **Warning**: WIP
 
-**Octavia Simulacris** is a bitmap to SysEx bidirectional conversion utility. It is an alternative to `img2syx` written by [`@now-its-dark@github.com`](). It supports the following SysEx bitmap delivery measures.
+**Octavia Simulacris** is a bitmap to SysEx bidirectional conversion utility. It is an alternative to `img2syx` written by [`@now-its-dark@github.com`](https://github.com/now-its-dark/). It supports the following SysEx bitmap delivery measures.
 
 | Type | Dimensions |
 | ---- | ---------- |
