@@ -66,6 +66,12 @@
 			<td></td>
 		</tr>
 		<tr>
+			<td><a href="https://github.com/jonsneyers">Jon Sneyers</a></td>
+			<td><a href="https://github.com/cloudinary/ssimulacra2">SSIMULACRA 2</a></td>
+			<td>Octavia Simulacris</td>
+			<td></td>
+		</tr>
+		<tr>
 			<td rowspan=10>Lauren Faust</td>
 			<td rowspan=10>My Little Pony: Friendship is Magic</td>
 			<td>Berry</td>
@@ -162,6 +168,12 @@
 			<td><a href="https://www.fimfiction.net/story/31089">The Three Sisters</a></td>
 			<td>Acari</td>
 			<td></td>
+		</tr>
+		<tr>
+			<td><a href="https://www.fimfiction.net/user/26998">vren55</a></td>
+			<td><a href="https://www.fimfiction.net/story/82748">Princess Celestia: The Changeling Queen</a><br/><a href="https://www.fimfiction.net/story/287745">Equestria's Changeling Queen and the Abyssal Empress</a></td>
+			<td>Octavia Simulacris</td>
+			<td><i>Queen Simulacris</i></td>
 		</tr>
 	</tbody>
 </table>

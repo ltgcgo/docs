@@ -16,7 +16,7 @@
 > Octavia bundles other recreated embeddable synth LCD-style displays into its releases as well. They are not related to Cambiare.
 
 ## Dirigere
-> **Warning**: WIP
+> **Warning**: WIP, name change pending
 
 **Octavia Dirigere** is a utility that bundles a player, an I/O router, and a translator together. It's one of the two spiritual successors of the old Octavia middleware, with excellent built-in support for complex multi-port MIDI compositions. Pick one between Dirigere and Splash, or you may encounter conflicts.
 
@@ -56,8 +56,21 @@ MICC also ships various compatibility shims, both bundled into regular Octavia r
 
 **Octavia Scroll**, also known as MIDI Database or `midi-db`, is a data sheet collection supplying comprehensive voice bank, variable name mappings and EFX ID mappings to the Octavia project.
 
-## Sognare
+## Simulacris
 > **Warning**: WIP
+
+**Octavia Simulacris** is a bitmap to SysEx bidirectional conversion utility. It is an alternative to `img2syx` written by [`@now-its-dark@github.com`](). It supports the following SysEx bitmap delivery measures.
+
+| Type | Dimensions |
+| ---- | ---------- |
+| XG Bitmap Display | 16×16, 2:1 |
+| GS Frame Draw | 16×16, 2:1 |
+| N5 Bitmap Display | 32×16, 1:1 |
+| N5 Screen Dump | 144×40, 1:1 |
+| SC-8850 Screen Dump | 160×64, 1:1 |
+
+## Sognare
+> **Warning**: WIP, name change pending
 
 **Octavia Sognare** (formerly referred to as **AnyWorks**) is a sequencer built on top of Octavia MICC, Octavia Scroll and Octavia Mane, heavily inspired by XGworks.
 
