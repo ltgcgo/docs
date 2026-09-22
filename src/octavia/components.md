@@ -18,16 +18,20 @@
 ## Dirigere
 > **Warning**: WIP, name change pending
 
-**Octavia Dirigere** is a utility that bundles a player, an I/O router, and a translator together. It's one of the two spiritual successors of the old Octavia middleware, with excellent built-in support for complex multi-port MIDI compositions. Pick one between Dirigere and Splash, or you may encounter conflicts.
+> **Warning**
+> 
+> Pick one between Dirigere and Splash, or you may encounter conflicts.
+
+**Octavia Dirigere** is a utility that bundles a player, an I/O router, and a translator together. Dirigere is akin to a patchbay, _Falcosoft MIDI Player_ and [_ShowMIDI_](https://github.com/gbevin/ShowMIDI) bundled into one. It's one of the two spiritual successors of the old Octavia middleware, with excellent built-in support for complex multi-port MIDI compositions.
 
 If you are not able to use Dirigere for various reasons, following programs are recommended to hook up with Octavia Splash instead.
 
 - [Falcosoft MIDI Player](https://falcosoft.hu/softwares.html#midiplayer) is recommended for single-port playback. Octavia Dirigere aims to be able to compete with Falcosoft MIDI Player.
-- MIDITrail is recommended for multi-port playback, however the official website on OSDN is offline. Supports standard multi-port assignments.
+- MIDITrail is recommended for multi-port playback, however the original website on OSDN is offline, and we're unable to confirm if the current website is genuine. Supports standard multi-port assignments.
 - XGworks is recommended for multi-port playback, however it has been discontinued for decades. Supports XGworks-native multi-port assignments.
 - vanBasco's MIDI Player can be used for single-port playback, however the official websites are offline.
 
-TMIDI Player is **not** recommended due to time synchronisation problems.
+Despite supporting multiple MIDI ports, TMIDI Player is **not** recommended due to time synchronisation problems.
 
 ## Mane
 > _See also: [Octavia Mane](./components/mane.md)_
@@ -77,4 +81,8 @@ MICC also ships various compatibility shims, both bundled into regular Octavia r
 ## Splash
 > _See also: [Octavia Splash]()_
 
-**Octavia Splash** is a lightweight MIDI event routing, real-time disassembly and manipulation tool, akin to _Bome SendSX_, _SNoize MIDI Monitor_  and the MIDI port settings dialogue in DAWs. It's one of the two spiritual successors of the old Octavia middleware.
+> **Warning**
+> 
+> Pick one between Dirigere and Splash, or you may encounter conflicts.
+
+**Octavia Splash** is a lightweight MIDI event routing, real-time disassembly and manipulation tool, akin to _[Bome SendSX](https://www.bome.com/products/sendsx)_, _[SNoize MIDI Monitor](https://www.snoize.com/MIDIMonitor/)_, [ShowMIDI](https://github.com/gbevin/ShowMIDI) and the MIDI port settings dialogue in DAWs. It's one of the two spiritual successors of the old Octavia middleware.
