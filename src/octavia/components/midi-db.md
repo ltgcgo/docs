@@ -9,8 +9,9 @@ Data sheets organised and compiled by Octavia Scroll are licensed under CC BY-SA
 Octavia Scroll also builds compatible definition files from its own data sheets with ridiculously large coverage. Bank MSB and LSB values are re-normalised back to raw values.
 
 ### Cakewalk Instrument Definition
-These files are intended to be used with [Falcosoft SoundFont MIDI Player](https://falcosoft.hu/softwares.html#midiplayer).
+These files are intended to be used with programs compatible with `.ins` files, like [Falcosoft SoundFont MIDI Player](https://falcosoft.hu/softwares.html#midiplayer) and [Cakewalk](../impl/format/wrk.md). We're open for requests on building device-specific definition files.
 
+#### Mixed definitions
 - [`OctaviaRecommend.ins`](https://gh.ltgc.cc/midi-db/dist/OctaviaRecommend.ins) (mixed)
 - [`OctaviaAlternative.ins`](https://gh.ltgc.cc/midi-db/dist/OctaviaAlternative.ins) (mixed)
 
