@@ -14,7 +14,7 @@ if (self.location?.search?.length > 1) {
 const denialReason = searchMap.get("reason");
 if (denialReason?.length > 0) {
 	denialReasonDisp.append("Your access has been blocked for the reason: ");
-	const detailedReason = {"vpn":"VPN usage","client":"Blocked client","denyAnonymity":"Source website denies anonymity."}[denialReason];
+	const detailedReason = {"vpn":"VPN usage","client":"Outdated or blocked client","denyAnonymity":"Source website denies anonymity"}[denialReason];
 	const shownReason = document.createElement(detailedReason?.length > 0 ? "b" : "i");
 	shownReason.append(detailedReason ?? denialReason);
 	denialReasonDisp.append(shownReason);
@@ -31,7 +31,7 @@ We strongly support privacy and anonimity, while also highly detest the idea of 
 Notice that EPs (encapsulated/encrypted proxies) do **not** count as VPNs, as they are fundamentally different.
 
 ## Client
-We identify some clients as high-risk, and block requests from those clients upon identification. If you are using some risky browsers and are privacy-concious, consider switching to one of [Firefox](https://www.firefox.com/en-GB/download/all/desktop-esr/) and [Cromite](https://github.com/uazo/cromite/releases/latest).
+We identify some clients as high-risk, and block requests from those clients upon identification. If you are using some risky browsers and are privacy-concious, consider switching to one of [Firefox](https://www.firefox.com/en-GB/download/all/desktop-esr/), [Thorium](https://thorium.rocks), and [Cromite](https://github.com/uazo/cromite/releases/latest).
 
 ## FAQ
 ### I'm using a VPN, what should I do?
