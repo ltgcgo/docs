@@ -1,4 +1,28 @@
 # Access denial
+<div>
+<p id="denial-reason"></p>
+<script>
+const denialReasonDisp = document.querySelector("p#denial-reason");
+const searchMap = new Map();
+if (self.location?.search?.length > 1) {
+	for (const item of location.search.substring(1).split("&")) {
+		const tokens = item.split("=");
+		searchMap.set(decodeURIComponent(tokens[0]), decodeURIComponent(tokens[1]));
+	};
+};
+//console.debug(searchMap);
+const denialReason = searchMap.get("reason");
+if (denialReason?.length > 0) {
+	denialReasonDisp.append("Your access has been blocked for the reason: ");
+	const detailedReason = {"vpn":"VPN usage","client":"Blocked client","denyAnonymity":"Source website denies anonymity."}[denialReason];
+	const shownReason = document.createElement(detailedReason?.length > 0 ? "b" : "i");
+	shownReason.append(detailedReason ?? denialReason);
+	denialReasonDisp.append(shownReason);
+	denialReasonDisp.append(".");
+};
+</script>
+</div>
+
 ## VPN
 If you're accessing any Lightingale service from a VPN, chances are you're already blocked by us, but will get unblocked if with mixnets like Tor, or encrypted proxies. This is intentional.
 
