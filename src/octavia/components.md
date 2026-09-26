@@ -20,18 +20,18 @@
 
 > _See also: [Octavia Candy]()_
 
-**Octavia Candy** (formerly referred to as **AnyEdit**) is a synth editor. It aims to offer a modern alternative to various legacy editors like _XG Editor_, _GS Advanced Editor_ and _Korg X5/N5 Editor_. By leveraging both the state engine and Octavia MICC, Candy handles editing various supported synths in a unified interface, so users don't need to relearn using similar programs again and again, with support for dry running against the state engine and generating SysEx strings without sending them anywhere.
+**Octavia Candy**, formerly referred to as **AnyEdit**, is a synth editor. It aims to offer a modern alternative to various legacy editors like _XG Editor_, _GS Advanced Editor_ and _Korg X5/N5 Editor_. By leveraging both the state engine and Octavia MICC, Candy handles editing various supported synths in a unified interface, so users don't need to relearn using similar programs again and again, with support for dry running against the state engine and generating SysEx strings without sending them anywhere.
 
 Unlike the `dasmSingle` tool being text-first and expert-facing, Octavia Candy is a GUI-first application, so you are not forced to learn MIA and Octavia Mane before wanting to edit anything. Octavia Candy is also MIDI-only, not intended for editing the self-embedding trackers.
 
-## Dirigere
-> **Warning**: WIP, name change pending
+## Coloratura
+> **Warning**: WIP
 
 > **Warning**
 > 
 > Pick one between Dirigere and Splash, or you may encounter conflicts.
 
-**Octavia Dirigere** is a utility that bundles a player, an I/O router, and a translator together. Dirigere is akin to a patchbay, _Falcosoft MIDI Player_ and [_ShowMIDI_](https://github.com/gbevin/ShowMIDI) bundled into one. It's one of the two spiritual successors of the old Octavia middleware, with excellent built-in support for complex multi-port MIDI compositions.
+**Octavia Coloratura**, formerly known as **Octavia Dirigere**, is a utility that bundles a player, an I/O router, and a translator together. Dirigere is akin to a patchbay, _Falcosoft MIDI Player_ and [_ShowMIDI_](https://github.com/gbevin/ShowMIDI) bundled into one. It's one of the two spiritual successors of the old Octavia middleware, with excellent built-in support for complex multi-port MIDI compositions.
 
 If you are not able to use Dirigere for various reasons, following programs are recommended to hook up with Octavia Splash instead.
 
@@ -41,6 +41,18 @@ If you are not able to use Dirigere for various reasons, following programs are 
 - vanBasco's MIDI Player can be used for single-port playback, however the official websites are offline.
 
 Despite supporting multiple MIDI ports, TMIDI Player is **not** recommended due to time synchronisation problems.
+
+## Dawn
+> **Warning**: WIP
+
+**Octavia Dawn**, formerly known as **Octavia Panorama**, is a macro-level file manipulation utility, backed by Octavia MICC and Seamstress. It handles rough file editing, like track splicing, track merging, and more.
+
+## Lyre
+> _See also: [JSR](https://jsr.io/@ltgc/octavia/doc/state), [JSR (full)](https://jsr.io/@ltgc/octavia/doc)_
+
+**Octavia Lyre**, formerly referred to as just **Octavia**, is the state tracking engine. It tracks state by attempting interpretation of incoming events, then lightly emulate state changes of an imaginery synth that happens to speak a lot of dialects.
+
+Octavia Lyre is the root of the project that every other project stemmed from.
 
 ## Mane
 > _See also: [Octavia Mane](./components/mane.md)_
@@ -54,15 +66,10 @@ Despite supporting multiple MIDI ports, TMIDI Player is **not** recommended due 
 
 MICC also ships various compatibility shims, both bundled into regular Octavia releases ([JSR](https://jsr.io/@ltgc/octavia/doc/miccCompat)) and released as standalone modules, to offer projects relying on alternatives a viable transition path to MICC, especially consumers of unmaintained libraries.
 
-## Octavia
-> _See also: [Octavia](./), [JSR](https://jsr.io/@ltgc/octavia/doc/state), [JSR (full)](https://jsr.io/@ltgc/octavia/doc)_
-
-**Octavia** is the state engine making state tracking possible.
-
-## Panorama
+## Moonrise
 > **Warning**: WIP
 
-**Octavia Panorama** is a macro-level file manipulation utility, backed by Octavia MICC and Seamstress. It handles rough file editing, like track splicing, track merging, and more.
+**Octavia Moonrise**, formerly referred to as **Octavia Sognare** and **AnyWorks**, is a sequencer built on top of Octavia MICC, Octavia Scroll and Octavia Mane, heavily inspired and influenced by XGworks.
 
 ## Scroll
 > _See also: [Octavia Scroll](./components/midi-db.md)_
@@ -81,11 +88,6 @@ MICC also ships various compatibility shims, both bundled into regular Octavia r
 | N5 Bitmap Display | 32×16, 1:1 |
 | N5 Screen Dump | 144×40, 1:1 |
 | SC-8850 Screen Dump | 160×64, 1:1 |
-
-## Sognare
-> **Warning**: WIP, name change pending
-
-**Octavia Sognare** (formerly referred to as **AnyWorks**) is a sequencer built on top of Octavia MICC, Octavia Scroll and Octavia Mane, heavily inspired by XGworks.
 
 ## Splash
 > _See also: [Octavia Splash]()_

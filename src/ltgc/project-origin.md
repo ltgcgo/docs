@@ -120,6 +120,12 @@
 			<td><i>Candy Apple</i></td>
 		</tr>
 		<tr>
+			<td><a href="https://github.com/muse-sequencer">MusE Project</a></td>
+			<td><a href="https://muse-sequencer.github.io/">MusE</a></td>
+			<td>Octavia Lyre</td>
+			<td></td>
+		</tr>
+		<tr>
 			<td><a href="https://www.fimfiction.net/user/7623">Nyerguds</a></td>
 			<td><a href="https://www.fimfiction.net/story/22618">Flitter</a></td>
 			<td>Flitter</td>
