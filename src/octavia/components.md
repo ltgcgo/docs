@@ -22,7 +22,7 @@
 
 **Octavia Candy** (formerly referred to as **AnyEdit**) is a synth editor. It aims to offer a modern alternative to various legacy editors like _XG Editor_, _GS Advanced Editor_ and _Korg X5/N5 Editor_. By leveraging both the state engine and Octavia MICC, Candy handles editing various supported synths in a unified interface, so users don't need to relearn using similar programs again and again, with support for dry running against the state engine and generating SysEx strings without sending them anywhere.
 
-Unlike the `dasmSingle` tool being text-first and expert-facing, Octavia Candy is a GUI-first application, so you are not forced to learn MIA and Octavia Mane before wanting to edit anything.
+Unlike the `dasmSingle` tool being text-first and expert-facing, Octavia Candy is a GUI-first application, so you are not forced to learn MIA and Octavia Mane before wanting to edit anything. Octavia Candy is also MIDI-only, not intended for editing the self-embedding trackers.
 
 ## Dirigere
 > **Warning**: WIP, name change pending
