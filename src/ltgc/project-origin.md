@@ -114,6 +114,12 @@
 			<td>A joke name of <i>Twilight Sparkle</i></td>
 		</tr>
 		<tr>
+			<td><a href="https://www.fimfiction.net/user/218208">Meep the Changeling</a></td>
+			<td><a href="https://www.fimfiction.net/story/590852">Amethyst Dawn</a></td>
+			<td>Octavia Candy</td>
+			<td><i>Candy Apple</i></td>
+		</tr>
+		<tr>
 			<td><a href="https://www.fimfiction.net/user/7623">Nyerguds</a></td>
 			<td><a href="https://www.fimfiction.net/story/22618">Flitter</a></td>
 			<td>Flitter</td>
