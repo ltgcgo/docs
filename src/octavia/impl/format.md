@@ -23,7 +23,9 @@ This section documents formats supported by the full Octavia MICC subsystem, **n
 | Extension | Name | <span title="Understood?">U?</span> | <span title="Import supported?">I?</span> | <span title="Export supported?">O?</span> | <span title="Lossless Canonical Roundtrip?">R?</span> |
 | --------- | ---- | -- | -- | -- | -- |
 | `.it` | [Impulse Tracker](./format/it.md) | ✕ | ✕ | ✕ | - |
-| `.mptm` | [OpenMPT Module](./format/mptn.md) | ✕ | ✕ | ✕ | ✕ |
+| `.mptm` | [Open ModPlug Tracker Module](./format/mptn.md) | ✕ | ✕ | ✕ | ✕ |
+| `.s3m` | [Scream Tracker 3 Module](./format/s3m.md) | ✕ | ✕ | ✕ | ✕ |
+| `.xm` | [Fast Tracker 2 Module](./format/xm.md) | ✕ | ✕ | ✕ | ✕ |
 
 ### Voice banks
 | Extension | Name | <span title="Understood?">U?</span> | <span title="Import supported?">I?</span> | <span title="Export supported?">O?</span> | <span title="Lossless Canonical Roundtrip?">R?</span> |
