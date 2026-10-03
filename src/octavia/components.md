@@ -71,6 +71,13 @@ MICC also ships various compatibility shims, both bundled into regular Octavia r
 
 **Octavia Moonrise**, formerly referred to as **Octavia Sognare** and **AnyWorks**, is a sequencer built on top of Octavia MICC, Octavia Scroll and Octavia Mane, heavily inspired and influenced by XGworks.
 
+## Scratch
+> **Warning**: WIP
+
+**Octavia Scratch** is a web-compliant wrapper around `libopenmpt` focused around `AudioWorklet`.
+
+Unlike [Chiptune v3](https://github.com/DrSnuggles/chiptune), the API surface largely takes after `HTMLAudioElement`, and it uses [the official `libopenmpt` WebAssembly builds](https://lib.openmpt.org/libopenmpt/) instead of customised Emscripten JS artefacts.
+
 ## Scroll
 > _See also: [Octavia Scroll](./components/midi-db.md)_
 
