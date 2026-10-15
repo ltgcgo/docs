@@ -78,7 +78,7 @@ A list of known possible encodings with their specifiers available below.
 | --------- | ---------- | ------- |
 | `Unicode` | UTF-8      | UTF-8 (`utf-8`) |
 | `Latin`   | ISO 8859-1 | ISO 8859-15 (`l9`) |
-| `JP`      | Shift-JIS  | Shift-JIS (`sjis`) |
+| `JP`      | Shift JIS  | Shift JIS (`sjis`) |
 
 There are exceptions for handling text encoding. If the raw binary payload begins with the following values, the text encoding will be overridden to the ones listed below.
 
@@ -328,9 +328,11 @@ More often than not, you will receive `@KMIDI KARAOKE FILE` than any other text 
 ##### Language
 Specified with `@L`. Contains a four-letter code of the language of the lyrics, which might be used to indicate the used text encoding. The only known codes are listed below, as such please contribute if possible!
 
-| Code   | Language | Encoding |
-| ------ | -------- | -------- |
-| `ENGL` | English  | ISO 8859-15 (`l9`) |
+| Code      | Language             | Encoding   | Octavia |
+| --------- | -------------------- | ---------- | ------- |
+| `CHINESE` | Unknown Chinese      | Unknown    | Unset   |
+| `ENGL`    | English              | ISO 8859-1 | ISO 8859-15 (`l9`) |
+| `ENGLISH` | English              | ISO 8859-1 | ISO 8859-15 (`l9`) |
 
 ##### Title
 Specified with `@T`. The fields listed below could be contained, which most doesn't have any way to distinguish.

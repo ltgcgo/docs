@@ -103,7 +103,7 @@ When receiving GM and GM2 System On, Octavia Lyre can choose different target mo
 
 ### Internal
 - `?`: The default "nothing" mode, generally matching vendor-neutral General MIDI 2. Octavia Lyre will try to detect the correct mode in this mode, and its behaviour will not follow established hardware.
-- `css`: (WIP) A generic provider (Cheap Software Synth). An alias to `?`, however Lyre will not attempt mode detection. Modelled after FluidSynth, compatible with MobileBAE.
+- `css`: (WIP) A generic provider (Cheap Software Synth). An alias to `?`, however Lyre will not attempt mode detection. Loosely follows various software synths, like FluidSynth and MobileBAE.
 
 ### Pre-GM
 - `doc`: Yamaha DOC. DOC is short for Disk Orchestra Collection.
