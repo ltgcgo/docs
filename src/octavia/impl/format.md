@@ -17,7 +17,7 @@ This section documents formats supported by the full Octavia MICC subsystem, **n
 | `.midi2` | [Standard MIDI Clip](./format/smf2.md) | ✓ | - | - | - |
 | `.rmi` | [RIFF-wrapped Standard MIDI File](./format/smf.md#rmi) | ✓ | - | ✕ | ✕ |
 | `.sng` | [Korg Synth Internal Song](./format/sng.md) | - | - | ✕ | ✕ |
-| `.tjn` `.etjn` | [(Encrypted) Tae**j**in Norae](./format/tjn.md) | - | - | ✕ | ✕ |
+| `.tjn` `.etjn` | [(Encrypted) Tae**j**in Nolae](./format/tjn.md) | - | - | ✕ | ✕ |
 | `.wrk` `.bun` | [Cakewalk Work Normal](./format/wrk.md) | - | - | ✕ | ✕ |
 | `.xws` | [XGworks Original File](./format/xws.md) | ✓ | - | - | ✕ |
 | `.yws` | [Sequence Object Linking File](./format/yws.md) | ✕ | ✕ | ✕ | ✕ |
@@ -25,7 +25,8 @@ This section documents formats supported by the full Octavia MICC subsystem, **n
 ### Tracker
 | Extension | Name | <span title="Understood?">U?</span> | <span title="Import supported?">I?</span> | <span title="Export supported?">O?</span> | <span title="Lossless Canonical Roundtrip?">R?</span> |
 | --------- | ---- | -- | -- | -- | -- |
-| `.it` | [Impulse Tracker](./format/it.md) | - | - | - | - |
+| `.it` | [Impulse Tracker Module](./format/it.md) | - | - | - | - |
+| `.mod` | [ProTracker Module](./format/mod.md) | - | - | - | - |
 | `.mptm` | [Open ModPlug Tracker Module](./format/mptn.md) | - | - | - | - |
 | `.s3m` | [Scream Tracker 3 Module](./format/s3m.md) | - | - | ✕ | ✕ |
 | `.xm` | [Fast Tracker 2 Module](./format/xm.md) | - | - | ✕ | ✕ |
@@ -43,7 +44,7 @@ This section documents formats supported by the full Octavia MICC subsystem, **n
 | `.x5` `.05r` | [Korg X5 Voice Bank Dump](./format/x5.md)<sup>2,3</sup> | ✓ | ✕ | ✕ | ✕ |
 
 1. Support for the format is denied.
-2. Support is delegated to the Octavia state engine instead.
+2. Support is delegated to Octavia Lyre instead.
 3. Converted to `.syx` first before handling begins.
 
 ## Lossless Canonical Roundtrip
