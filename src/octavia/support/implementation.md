@@ -1694,7 +1694,7 @@
 
 ### Notes
 - Some cells are blank because they are in an invalid combination. For example it doesn't make sense to indicate MIDI 2.0 status in a MIDI 1.0 column.
-- The state engine itself may truncate the resolution of some MIDI 2.0 messages, which effects transmission but not passthrough. Other components, including MICC, are not affected by truncation.
+- Lyre the state engine itself may truncate the resolution of some MIDI 2.0 messages, which effects transmission but not passthrough. Other components, including MICC, are not affected by truncation.
 
 ### Explanations
 - `??`: Ignored bytes.

@@ -103,7 +103,7 @@ When receiving GM and GM2 System On, Octavia Lyre can choose different target mo
 
 ### Internal
 - `?`: The default "nothing" mode, generally matching vendor-neutral General MIDI 2. Octavia Lyre will try to detect the correct mode in this mode, and its behaviour will not follow established hardware.
-- `css`: (WIP) A generic provider (Cheap Software Synth). An alias to `?`, however Lyre will not attempt mode detection. Loosely follows various software synths, like FluidSynth and MobileBAE.
+- `css`: (WIP) A generic provider (Cheap Software Synth). An alias to `?`, however Lyre will not attempt mode detection. Loosely follows various software synths that ignore large swathes of standards, like FluidSynth and MobileBAE.
 
 ### Pre-GM
 - `doc`: Yamaha DOC. DOC is short for Disk Orchestra Collection.
@@ -120,7 +120,7 @@ When receiving GM and GM2 System On, Octavia Lyre can choose different target mo
 - `gs`: Roland GS. GS is short for General Sound. Modelled after Roland SC-8850.
 - `gus`: Gravis UltraSound.
 - `k11`: Kawai GMega or K11.
-- `motif`: Yamaha Motif ES.
+- `motifes`: Yamaha Motif ES.
 - `ns5r`: Korg NS5R. Compatible with NX5R, and has limited compatibility with Korg N1R and N5. Modelled after Korg NS5R.
 - `s90es`: Yamaha S90 ES.
 - `sc`: Roland GS mode, but with mode 1 or mode 2 set. Specific to Roland SoundCanvas SC-88 and SC-88 Pro. Modelled after SC-88 Pro.
