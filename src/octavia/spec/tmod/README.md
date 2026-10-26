@@ -7,7 +7,7 @@ Octavia attempts generalisation of terminology regarding shared concepts across 
 | Channel | (Oscillator) slot |
 | Effect (slot) | Control (slot) |
 | (PCM) sample | (PCM/FM) oscillator (data) |
-| Volume slot | Envelope slot |
+| Volume slot | Amplitude slot |
 
 ## Meta fields
 > See also: [Impulse Tracker header fields](../../impl/format/it.md#header-fields)
@@ -22,14 +22,14 @@ Octavia attempts generalisation of terminology regarding shared concepts across 
 | Instrument count        | `0x00` |
 | Oscillator count        | `0x00` |
 | Pattern count           | `0x00` () |
-| Created version         | `0x4C4F`LE (`LO`, **L**ightingale **O**ctavia) |
+| Created version         | `0xD64C`LE (`LÖ`, **L**ightingale **O**ctavia;<br/>"Ö" is chosen to distinguish from pyIT) |
 | Compatible version      | `0x0214`LE (follows Schism) |
 | Basic flags             | ↓ |
 | Use stereo              | `true` |
 | Use mixing₂             | `false` (obsolete field) |
 | Voice type              | `false` (sample) |
 | Slide type              | `true` |
-| Legacy controls₁        | `false` |
+| Scream 3 controls₁      | `false` |
 | Linked portamento       | `false` |
 | MIDI controlled pitch₂  | `true` |
 | Request MIDI macros     | `false` |
