@@ -69,6 +69,8 @@
       - [Drum note mapping](octavia/spec/gme/drum.md)
       - [Events, CC and RPN](octavia/spec/gme/ch.md)
       - [System Exclusive](octavia/spec/gme/sysex.md)
+    - [MIDI](octavia/spec/midi/README.md)
+    - [Tracker](octavia/spec/tmod/README.md)
 - [Painted Palette](painted/README.md)
   - [Web UI](painted/web.md)
   - [Command line](painted/cli.md)
