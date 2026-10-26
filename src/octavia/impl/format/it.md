@@ -11,48 +11,48 @@ The `.it` file format implementation in MICC follows the Schism Tracker, only fa
 ### Header fields
 > See also: [Meta fields](../../spec/tmod/#meta-fields)
 
-| Generalised Name        | Impulse / Schism             | ModPlug |
-| ----------------------- | ---------------------------- | ------- |
-| Sequence name           | Song name                    | ←       |
-| Time signature hints    | Pattern highlight            | ←       |
-| Rows per beat           | ←                            | ←       |
-| Rows per measure        | ←                            | ←       |
-| Sequence order count    | Order number                 | ←       |
-| Instrument count        | Instrument number            | ←       |
-| Oscillator count        | Sample number                | ←       |
-| Pattern count           | Pattern number               | ←       |
-| Created version         | Created with version         | ←       |
-| Compatible version      | Compatible with version      | ←       |
-| Basic flags             | Flag                         | ←       |
-| Use stereo              | Flag (stereo)                | ←       |
-| Use mixing₂             | Flag (mixing)                | ←       |
-| Voice type              | Flag (instrument/sample)     | ←       |
-| Slide type              | Flag (linear slide)          | ←       |
-| Legacy controls₁        | Flag (old effects)           | ←       |
-| Linked portamento       | Flag (link G with E & F)     | ←       |
-| MIDI controlled pitch₂  | Flag (MIDI pitch controlled) | ←       |
-| Request MIDI macros     | Flag (request MIDI macros)   | ←       |
-| Extended filter range   |         | Flag (extended filter range) |
-| Existence hint flags    | Special                      | ←       |
-| Has song message        | Special (song message)       | ←       |
-| Has edit history        | Special (edit history)       | ←       |
-| Has embedded highlight₂ | Special (embedded highlight) | ←       |
-| Has MIDI macro          | Special (embed MIDI macro)   | ←       |
-| Master volume           | Global volume                | ←       |
-| Oscillator volume       | Mix volume             | Sample Volume |
-| Initial TPR₃            | Initial speed                   | TPR₃ |
-| Initial tempo           | ←                            | ←       |
-| Pan separation          | ←                            | ←       |
-| Pitch bend range        | Pitch wheel depth            | ?       |
-| Message size            | Message length               | ←       |
-| Message offset          | ←                            | ←       |
-| Reserved                | ←                            | ←       |
-| Initial slot panpot     | Initial channel pan          | ?       |
-| Initial slot loudness₄  | Initial channel volume       | ?       |
-| Sequence order          | Orders                      | Sequence |
-| Instrument offsets      | ←                            | ←       |
-| Oscillator offsets      | Sample offsets               | ←       |
-| Pattern offsets         | ←                            | ←       |
+| Generalised Name          | Impulse / Schism             | ModPlug | Type |
+| ------------------------- | ---------------------------- | ------- | ---- |
+| Sequence name             | Song name                    | ←       | `u8[26]` |
+| **Time signature hints**  | Pattern highlight            | ←       | ↓ `u8[2]` |
+| _Rows per beat_           | ←                            | ←       | `u8` |
+| _Rows per measure_        | ←                            | ←       | `u8` |
+| Sequence order count      | Order number                 | ←       | `u16le` |
+| Instrument count          | Instrument number            | ←       | `u16le` |
+| Oscillator count          | Sample number                | ←       | `u16le` |
+| Pattern count             | Pattern number               | ←       | `u16le` |
+| Created version           | Created with version         | ←       | `u16le` |
+| Compatible version        | Compatible with version      | ←       | `u16le` |
+| **Basic flags**           | Flag                         | ←       | ↓ `bool[16]` |
+| _Toggle stereo_           | Flag (stereo)                | ←       | `bool` |
+| _Toggle mixing₂_          | Flag (mixing)                | ←       | `bool` |
+| _Voice type_              | Flag (instrument/sample)     | ←       | `bool` |
+| _Slide type_              | Flag (linear slide)          | ←       | `bool` |
+| _Legacy controls₁_        | Flag (old effects)           | ←       | `bool` |
+| _Linked portamento_       | Flag (link G with E & F)     | ←       | `bool` |
+| _MIDI controlled pitch₂_  | Flag (MIDI pitch controlled) | ←       | `bool` |
+| _Request MIDI macros_     | Flag (request MIDI macros)   | ←       | `bool` |
+| _Extended filter range_   |         | Flag (extended filter range) | `bool` |
+| **Existence hint flags**  | Special                      | ←       | ↓ `bool[16]` |
+| _Has song message_        | Special (song message)       | ←       | `bool` |
+| _Has edit history_        | Special (edit history)       | ←       | `bool` |
+| _Has embedded highlight₂_ | Special (embedded highlight) | ←       | `bool` |
+| _Has MIDI macro_          | Special (embed MIDI macro)   | ←       | `bool` |
+| Master volume             | Global volume                | ←       | `u8` |
+| Oscillator volume         | Mix volume             | Sample Volume | `u8` |
+| Initial TPR₃              | Initial speed                   | TPR₃ | `u8` |
+| Initial tempo             | ←                            | ←       | `u8` |
+| Pan separation            | ←                            | ←       | `u8` |
+| Pitch bend range          | Pitch wheel depth            | ?       | `u8` |
+| Message size              | Message length               | ←       | `u16le` |
+| Message offset            | ←                            | ←       | `u32le` |
+| Reserved                  | ←                            | ←       | `u32le` |
+| Initial slot panpot       | Initial channel pan          | ?       | `u8[64]` |
+| Initial slot loudness₄    | Initial channel volume       | ?       | `u8[64]` |
+| Sequence order            | Orders                      | Sequence | `u8[]` |
+| Instrument offsets        | ←                            | ←       | `u32le[]` |
+| Oscillator offsets        | Sample offsets               | ←       | `u32le[]` |
+| Pattern offsets           | ←                            | ←       | `u32le[]` |
 
 1. Tracker effects are called "controls" in Octavia to signify their relations with MIDI control changes.
 2. These fields do not have their uses clearly known.

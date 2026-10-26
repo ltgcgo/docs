@@ -11,35 +11,39 @@ This section documents formats supported by the full Octavia MICC subsystem, **n
 ### MIDI
 | Extension | Name | <span title="Understood?">U?</span> | <span title="Import supported?">I?</span> | <span title="Export supported?">O?</span> | <span title="Lossless Canonical Roundtrip?">R?</span> |
 | --------- | ---- | -- | -- | -- | -- |
-| `.kyc` | [Kum**y**oung Container](./format/kyc.md) | - | - | ✕ | ✕ |
-| `.mia` `.mii` | [MIDI Instruction Assembly](./format/mia.md) | ✓ | - | - | - |
-| `.mid` `.kar` | [Standard MIDI File](./format/smf.md) | ✓ | ✓ | - | - |
-| `.midi2` | [Standard MIDI Clip](./format/smf2.md) | ✓ | - | - | - |
-| `.rmi` | [RIFF-wrapped Standard MIDI File](./format/smf.md#rmi) | ✓ | - | ✕ | ✕ |
-| `.sng` | [Korg Synth Internal Song](./format/sng.md) | - | - | ✕ | ✕ |
-| `.tjn` `.etjn` | [(Encrypted) Tae**j**in Nolae](./format/tjn.md) | - | - | ✕ | ✕ |
-| `.wrk` `.bun` | [Cakewalk Work Normal](./format/wrk.md) | - | - | ✕ | ✕ |
+| `.kyc` | [**K**um**y**oung **C**ontainer](./format/kyc.md) | - | - | ✕ | ✕ |
+| `.mia` `.mii` | [**M**IDI **I**nstruction **A**ssembly](./format/mia.md) | ✓ | - | - | - |
+| `.mid` `.kar` | [Standard **MID**I File](./format/smf.md) | ✓ | ✓ | - | - |
+| `.midi2` | [Standard **MIDI** Clip](./format/smf2.md) | ✓ | - | - | - |
+| `.rmi` | [**R**IFF-wrapped Standard **MI**DI File](./format/smf.md#rmi) | ✓ | - | ✕ | ✕ |
+| `.sng` | [Korg Synth Internal **S**o**ng**](./format/sng.md) | - | - | ✕ | ✕ |
+| `.tjn` `.etjn` | [(**E**ncrypted) **T**ae**j**in Nolae](./format/tjn.md) | - | - | ✕ | ✕ |
+| `.wrk` `.bun` | [Cakewalk **W**o**rk** Normal](./format/wrk.md) | - | - | ✕ | ✕ |
 | `.xws` | [XGworks Original File](./format/xws.md) | ✓ | - | - | ✕ |
 | `.yws` | [Sequence Object Linking File](./format/yws.md) | ✕ | ✕ | ✕ | ✕ |
+
+#### Auxillary abbreviations
+- `.xws`: **X**G**w**orks **S**equence
+- `.yws`: **Y**amaha **W**orking **S**equence
 
 ### Tracker
 | Extension | Name | <span title="Understood?">U?</span> | <span title="Import supported?">I?</span> | <span title="Export supported?">O?</span> | <span title="Lossless Canonical Roundtrip?">R?</span> |
 | --------- | ---- | -- | -- | -- | -- |
-| `.it` | [Impulse Tracker Module](./format/it.md) | - | - | - | - |
-| `.mod` | [ProTracker Module](./format/mod.md) | - | - | - | - |
-| `.mptm` | [Open ModPlug Tracker Module](./format/mptn.md) | - | - | - | - |
-| `.s3m` | [Scream Tracker 3 Module](./format/s3m.md) | - | - | ✕ | ✕ |
-| `.xm` | [Fast Tracker 2 Module](./format/xm.md) | - | - | ✕ | ✕ |
+| `.it` | [**I**mpulse **T**racker Module](./format/it.md) | - | - | - | - |
+| `.mod` | [(ProTracker) **Mod**ule](./format/mod.md) | - | - | - | - |
+| `.mptm` | [Open **M**od**P**lug **T**racker **M**odule](./format/mptn.md) | - | - | - | - |
+| `.s3m` | [**S**cream Tracker **3** **M**odule](./format/s3m.md) | - | - | ✕ | ✕ |
+| `.xm` | [E**x**tended **M**odule (Fast Tracker 2)](./format/xm.md) | - | - | ✕ | ✕ |
 
 ### Voice banks
 | Extension | Name | <span title="Understood?">U?</span> | <span title="Import supported?">I?</span> | <span title="Export supported?">O?</span> | <span title="Lossless Canonical Roundtrip?">R?</span> |
 | --------- | ---- | -- | -- | -- | -- |
-| `.dls` | [Downloadable Sound](./format/dls.md) | - | - | - | ✕ |
-| `.m2a` `.m2k` | [Yamaha MU2000 Sampling Audio](./format/m2a.md) | - | - | ✕ | ✕ |
-| `.mdat` | [Octavia Native Voice Map Data](./maps.md) | ✓ | - | - | ✕ |
-| `.pcg` | [Korg Program, Combi and Global](./format/pcg.md) | ✓ | - | ✕ | ✕ |
-| `.sf2` `.sf3` | SoundFont<sup>1</sup> | N/A | ✕ | ✕ | ✕ |
-| `.syx` | SysEx Voice Bank Dump<sup>2</sup> | ✓ | ✕ | ✕ | ✕ |
+| `.dls` | [**D**own**l**oadable **S**ound](./format/dls.md) | - | - | - | ✕ |
+| `.m2a` `.m2k` | [Yamaha **M**U**2**000 Sampling **A**udio](./format/m2a.md) | - | - | ✕ | ✕ |
+| `.mdat` | [Octavia Native Voice **M**ap **D**ata](./maps.md) | ✓ | - | - | ✕ |
+| `.pcg` | [Korg **P**rogram, **C**ombi and **G**lobal](./format/pcg.md) | ✓ | - | ✕ | ✕ |
+| `.sf2` `.sf3` | **S**ound**F**ont<sup>1</sup> | N/A | ✕ | ✕ | ✕ |
+| `.syx` | **Sy**sE**x** Voice Bank Dump<sup>2</sup> | ✓ | ✕ | ✕ | ✕ |
 | `.w7e` `.s7e` | [Yamaha ES Voice Editor](./format/s7e.md) | - | - | ✕ | ✕ |
 | `.x5` `.05r` | [Korg X5 Voice Bank Dump](./format/x5.md)<sup>2,3</sup> | ✓ | ✕ | ✕ | ✕ |
 
