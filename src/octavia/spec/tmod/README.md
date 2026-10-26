@@ -1,12 +1,17 @@
 # Tracker Modules
 ## Generalised terms
+Octavia attempts generalisation of terminology regarding shared concepts across the sequenced music landscape. Below is a list of tracker-specific terms generalised to minimise possible confusion across the fields.
+
 | Tracker | Generalised |
 | ------- | ----------- |
 | Channel | (Oscillator) slot |
 | Effect (slot) | Control (slot) |
+| (PCM) sample | (PCM/FM) oscillator (data) |
 | Volume slot | Envelope slot |
 
 ## Meta fields
+> See also: [Impulse Tracker header fields](../../impl/format/it.md#header-fields)
+
 | Generalised Name        | MICC IT Default |
 | ----------------------- | ------------ |
 | Sequence name           | `Untitled Sequence` |

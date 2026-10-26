@@ -1,7 +1,16 @@
 # Impulse Tracker
 > See also: [Tracker](../../spec/tmod/), [generalised terms](../../spec/tmod/#generalised-terms)
 
-## Meta fields
+Impulse Tracker Module (`.it`) is the file format used to store modules by Impulse Tracker. A `.it` file contains data regarding but not limited to patterns, pattern sequence order, oscillators, etc. Like most classic tracker module formats, `.it` files are self-contained.
+
+[Impulse Tracker](https://en.wikipedia.org/wiki/Impulse_Tracker) was a proprietary music tracker developed by Jeffery Lim for the DOS platform, with its last version released back in 1999, and since becoming abandonware. It was [made open-source](https://github.com/jthlim/impulse-tracker) in 2014. [Schism Tracker](https://schismtracker.org) is an up-to-date, open-source, and cross-platform re-implementation of Impulse Tracker.
+
+The `.it` file format implementation in MICC follows the Schism Tracker, only falling back to _Open_ ModPlug Tracker for features unavailable in the Schism Tracker.
+
+## Fields
+### Header fields
+> See also: [Meta fields](../../spec/tmod/#meta-fields)
+
 | Generalised Name        | Impulse / Schism             | ModPlug |
 | ----------------------- | ---------------------------- | ------- |
 | Sequence name           | Song name                    | ←       |

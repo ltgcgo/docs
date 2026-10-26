@@ -7,7 +7,7 @@
 
 > **Octavia Cambiare** is also available as a standalone module for use in other software projects.
 
-**Octavia Cambiare** is a feature-rich dashboard-like visualiser designed to maximise information exposure, backed by the Octavia state engine. Its usage overlaps with but is not limited to the following cases:
+**Octavia Cambiare** is a feature-rich dashboard-like visualiser designed to maximise information exposure, backed by Octavia Lyre. Its usage overlaps with but is not limited to the following cases:
 
 - Archive-grade and research-grade visualisation
 - Behaviour (compatibility, ideal synth state, sequencer) monitoring
@@ -23,7 +23,7 @@
 
 > _See also: [Octavia Candy]()_
 
-**Octavia Candy**, formerly referred to as **AnyEdit**, is a synth editor. It aims to offer a modern alternative to various legacy editors like _XG Editor_, _GS Advanced Editor_ and _Korg X5/N5 Editor_. By leveraging both the state engine and Octavia MICC, Candy handles editing various supported synths in a unified interface, so users don't need to relearn using similar programs again and again, with support for dry running against the state engine and generating SysEx strings without sending them anywhere.
+**Octavia Candy**, formerly referred to as **AnyEdit**, is a synth editor. It aims to offer a modern alternative to various legacy editors like _XG Editor_, _GS Advanced Editor_ and _Korg X5/N5 Editor_. By leveraging both Octavia Lyre and Octavia MICC, Candy handles editing various supported synths in a unified interface, so users don't need to relearn using similar programs again and again, with support for dry running against Octavia Lyre and generating SysEx strings without sending them anywhere.
 
 Unlike the `dasmSingle` tool being text-first and expert-facing, Octavia Candy is a GUI-first application, so you are not forced to learn MIA and Octavia Mane before wanting to edit anything. Octavia Candy is also MIDI-only, not intended for editing the self-embedding trackers.
 
@@ -79,7 +79,7 @@ Despite supporting multiple MIDI ports, TMIDI Player is **not** recommended due 
 
 ## Modules and data sheets
 ### Lyre
-> _See also: [JSR](https://jsr.io/@ltgc/octavia/doc/state), [JSR (full)](https://jsr.io/@ltgc/octavia/doc)_
+> _See also: [JSR (legacy Lyre G2)](https://jsr.io/@ltgc/octavia/doc/state), [JSR (full)](https://jsr.io/@ltgc/octavia/doc)_
 
 **Octavia Lyre**, formerly referred to as just **Octavia**, is the state tracking engine. It tracks state by attempting interpretation of incoming events, then lightly emulate state changes of an imaginery synth that happens to speak a lot of dialects.
 
