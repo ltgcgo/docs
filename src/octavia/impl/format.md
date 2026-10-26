@@ -17,7 +17,7 @@ This section documents formats supported by the full Octavia MICC subsystem, **n
 | `.midi2` | [Standard **MIDI** Clip](./format/smf2.md) | ✓ | - | - | - |
 | `.rmi` | [**R**IFF-wrapped Standard **MI**DI File](./format/smf.md#rmi) | ✓ | - | ✕ | ✕ |
 | `.sng` | [Korg Synth Internal **S**o**ng**](./format/sng.md) | - | - | ✕ | ✕ |
-| `.tjn` `.etjn` | [(**E**ncrypted) **T**ae**j**in Nolae](./format/tjn.md) | - | - | ✕ | ✕ |
+| `.tjn` `.etjn` | [(**E**ncrypted) **T**ae**j**in **N**olae](./format/tjn.md) | - | - | ✕ | ✕ |
 | `.wrk` `.bun` | [Cakewalk **W**o**rk** Normal](./format/wrk.md) | - | - | ✕ | ✕ |
 | `.xws` | [XGworks Original File](./format/xws.md) | ✓ | - | - | ✕ |
 | `.yws` | [Sequence Object Linking File](./format/yws.md) | ✕ | ✕ | ✕ | ✕ |
