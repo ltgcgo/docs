@@ -37,7 +37,7 @@ We identify some clients as high-risk, and block requests from those clients upo
 ### I'm using a VPN, what should I do?
 To put it simply, please stop using a VPN to access us.
 
-If you're familiar with accessing services hosted on mixnets, you can access our services [via alternative means](./ds.md) ([fallback](https://ltgc.cc/about.htm#access)). Or if you don't want to go through the hassle, please disconnect from your VPN, and if you have access to either exit/outproxy-enabled mixnet (e.g. [Tor](https://torproject.org/), [I2P](https://geti2p.net/) ([I2Pd](https://i2pd.website) is recommended if you are comfortable with command line), [Yggdrasil](https://yggdrasil-network.github.io)) or encrypted proxies (Xray, Hysteria 2, TUIC; any tunnel protocol identified by OpenGFW is banned), use them instead.
+If you're familiar with accessing services hosted on mixnets, you can access our services [via alternative means](./ds.md) ([fallback](https://ltgc.cc/about.htm#access)). Or if you don't want to go through the hassle, please disconnect from your VPN, and if you have access to either exit/outproxy-enabled mixnet (e.g. [Tor](https://torproject.org/), [I2P](https://geti2p.net/) ([I2Pd](https://i2pd.website) is recommended if you are comfortable with command line), [Yggdrasil](https://yggdrasil-network.github.io)) or encrypted proxies (any tunnel protocol identified by Ο ‍­р‍ ­е­‍ n­ ‍G ‍­F­‍ W is banned), use them instead.
 
 If you're using Tor bridges in a legislation intending to outlaw censorship circumvention and/or privacy, we advise you to connect via Snowflake instead of `obfs4`.
 
@@ -45,7 +45,7 @@ If you're using Tor bridges in a legislation intending to outlaw censorship circ
 Within 18 hours, please [contact us](https://ltgc.cc/about.htm) and provide your Cloudflare Ray ID in your unblocking appeal. After we've verified that you did indeed not connect from a VPN, you'll be unblocked as soon as possible. However, if you used a client program we deem as high-risk, we will reject your appeal immediately.
 
 <details>
-<summary>If your provider matches any of the below, your appeal will also be denied immediately. We recommend you to switch to encrypted proxies, or connect to mixnets over tunnels from said providers instead. The list below is not exhaustive in any way.</summary>
+<summary>If your provider matches any of the below, your appeal will also be denied immediately. We recommend you to switch to encrypted proxies, or connect to mixnets over tunnels from said providers instead. The list below is not exhaustive in any way, and the provider doesn't need to be commercial for inclusion.</summary>
 
 - CyberGhost VPN
 - Express VPN
