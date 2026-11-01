@@ -1,11 +1,11 @@
 # Impulse Tracker
 > See also: [Tracker](../../spec/tmod/), [generalised terms](../../spec/tmod/#generalised-terms)
 
-Impulse Tracker Module (`.it`) is the file format used to store modules by Impulse Tracker. A `.it` file contains data regarding but not limited to patterns, pattern sequence order, oscillators, etc. Like most classic tracker module formats, `.it` files are self-contained.
+Impulse Tracker Module (`.it`) is the file format used to store modules by Impulse Tracker. A `.it` file contains data regarding but not limited to patterns, pattern sequence order, oscillators, etc. Like most classic tracker module formats, `.it` files are self-contained. `.mptm` files are `.it` files with ModPlug extensions.
 
-[Impulse Tracker](https://en.wikipedia.org/wiki/Impulse_Tracker) was a proprietary music tracker developed by Jeffery Lim for the DOS platform, with its last version released back in 1999, and since becoming abandonware. It was [made open-source](https://github.com/jthlim/impulse-tracker) in 2014. [Schism Tracker](https://schismtracker.org) is an up-to-date, open-source, and cross-platform re-implementation of Impulse Tracker.
+[Impulse Tracker](https://en.wikipedia.org/wiki/Impulse_Tracker) was a proprietary music tracker developed by Jeffery Lim for the DOS platform, with its last version released back in 1999, and since becoming abandonware. It was [made open-source](https://github.com/jthlim/impulse-tracker) in 2014. [Schism Tracker](https://schismtracker.org) is an up-to-date, open-source, and cross-platform re-implementation of Impulse Tracker. [Open ModPlug Tracker](https://openmpt.org) is an independent open-source tracker derived from the original ModPlug Tracker, with its playback engine used by the Schism Tracker.
 
-The `.it` file format implementation in MICC follows the Schism Tracker, only falling back to _Open_ ModPlug Tracker for features unavailable in the Schism Tracker. Do note that all strings in the Impulse Tracker should use the slightly-modified DOS (CP 437) encoding, and reserve at least a null byte (`0x00`) at the end to prevent bugs with C strings in other implementations.
+The `.it` file format implementation in MICC follows the Schism Tracker, only falling back to _Open_ ModPlug Tracker for features unavailable in the Schism Tracker, or are explicitly ModPlug extensions. Do note that all strings in this format should use the slightly-modified DOS (CP 437) encoding, and reserve at least a null byte (`0x00`) at the end to prevent bugs with C strings in other implementations.
 
 ## Format categorisation
 ### IT
@@ -19,15 +19,26 @@ The `.it` file format implementation in MICC follows the Schism Tracker, only fa
 - **Padding**: None
 - **Validation targets**: Schism Tracker 20260524
 
+### MPTM
+> This format cannot be read by TLV libraries like Seamstress, as it does not contain a size field for each chunk.
+
+- **MICC group**: `tracker.modplug`
+- **Schema**: Custom
+- **Header size**: 0
+- **Chunk type**: FourCC
+- **Chunk size**: N/A
+- **Padding**: None
+- **Validation targets**: OpenMPT 1.32
+
 ## Canonical order
 ### IT
 ```
 IMPM
-IMPI
-IMPS
-IMPP
-MPTX
-MPTS
+<[IMPI]>
+[IMPS]
+[IMPP]
+<MPTX>
+<MPTS>
 ```
 
 ## Chunks
@@ -45,7 +56,7 @@ MPTS
 | `001E` | **Time signature hint**   | Pattern highlight            | ←       | ↓ `u8[2]` | ... |
 | `001E` | _Rows per beat_           | ←                            | ←       | `u8` | ... |
 | `001F` | _Rows per measure_        | ←                            | ←       | `u8` | ... |
-| `0020` | Sequence order count      | Order list number            | ←       | `u16le` | [0, 256) |
+| `0020` | Pattern order size        | Order list number            | ←       | `u16le` | [0, 256) |
 | `0022` | Instrument count          | Instrument number            | ←       | `u16le` | [0, 256) |
 | `0024` | Oscillator count          | Sample number                | ←       | `u16le` | [0, 256) |
 | `0026` | Pattern count             | Pattern number               | ←       | `u16le` | [0, 240]<br/>... |
@@ -69,7 +80,7 @@ MPTS
 | `0030` | Master volume             | Global volume                | ←       | `u8` | [0, 128] |
 | `0031` | Oscillator volume         | Mix volume             | Sample Volume | `u8` | [0, 128] |
 | `0032` | Initial TPR₂              | Initial speed                   | TPR₃ | `u8` | [0, 96] |
-| `0033` | Initial tempo             | ←                            | ←       | `u8` | [0, 256) |
+| `0033` | Initial declared tempo    | Initial tempo                | ←       | `u8` | [0, 256) |
 | `0034` | Pan separation            | ←                            | ←       | `u8` | [0, 128] |
 | `0035` | Pitch bend range          | Pitch wheel depth            | ?       | `u8` | [0, 48] |
 | `0036` | Message size              | Message length               | ←       | `u16le` | [0, 2¹⁶) |
@@ -77,7 +88,7 @@ MPTS
 | `003C` | Reserved                  | ←                            | ←       | `u8[4]` | |
 | `0040` | Initial slot panpot       | Initial channel pan          | ?       | `u8[64]` | 0 .. 32 .. 64: L .. C .. R |
 | `0080` | Initial slot loudness₃    | Initial channel volume       | ?       | `u8[64]` | [0, 64] |
-| `00C0` | Sequence order            | Orders                      | Sequence | `u8[]` | ... |
+| `00C0` | Pattern order             | Orders                      | Sequence | `u8[]` | ... |
 | ?      | Instrument offsets        | ←                            | ←       | `u32le[]` | ... |
 | ?      | Oscillator offsets        | Sample offsets               | ←       | `u32le[]` | ... |
 | ?      | Pattern offsets           | ←                            | ←       | `u32le[]` | ... |
@@ -116,7 +127,7 @@ MPTS
 > The actual FourCC type in use is reversed, likely due to endianness mismatch. Use `XTPM` instead.
 
 - **Type**: `MPTX`
-- **MICC group**: `tracker.impulse.modplugExt`
+- **MICC group**: `tracker.modplug.ext`
 
 ModPlug Tracker eXtensions. Contains additional data for instruments, encoded in TLV with FourCC chunk types and `u16le` chunk sizes. Exact fields still unknown.
 
@@ -124,7 +135,7 @@ ModPlug Tracker eXtensions. Contains additional data for instruments, encoded in
 > The actual FourCC type in use is reversed, likely due to endianness mismatch. Use `STPM` instead.
 
 - **Type**: `MPTS`
-- **MICC group**: `tracker.impulse.metadata`
+- **MICC group**: `tracker.modplug.meta`
 
 ModPlug Tracker Song (metadata), an extension from ModPlug Tracker. Contains additional metadata fields, encoded in TLV with FourCC chunk types and `u16le` chunk sizes.
 

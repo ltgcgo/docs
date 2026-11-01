@@ -31,7 +31,7 @@ This section documents formats supported by the full Octavia MICC subsystem, **n
 | --------- | ---- | -- | -- | -- | -- |
 | `.it` | [**I**mpulse **T**racker Module](./format/it.md) | - | - | - | - |
 | `.mod` | [(ProTracker) **Mod**ule](./format/mod.md) | - | - | - | - |
-| `.mptm` | [Open **M**od**P**lug **T**racker **M**odule](./format/mptn.md) | - | - | - | - |
+| `.mptm` | [Open **M**od**P**lug **T**racker **M**odule](./format/it.md) | - | - | - | - |
 | `.s3m` | [**S**cream Tracker **3** **M**odule](./format/s3m.md) | - | - | ✕ | ✕ |
 | `.xm` | [E**x**tended **M**odule (Fast Tracker 2)](./format/xm.md) | - | - | ✕ | ✕ |
 
